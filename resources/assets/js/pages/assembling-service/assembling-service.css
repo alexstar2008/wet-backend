@@ -1,0 +1,96 @@
+.assembling-service{
+    /* overflow: hidden; */
+    margin-top: 55px;
+    margin-bottom: 200px;
+}
+
+/* icons */
+.circle-icon{
+    vertical-align: middle;
+    font-family: Garamond, sans-serif;
+    float: right;
+    margin-top: 40px;
+    text-align: center;
+    font-weight: bold;
+    box-sizing: border-box;
+    width: 42px;
+    height: 42px;
+    border: 4px solid #207ca1;
+    border-radius: 50%;
+    font-size: 1.6em;
+    color: #207ca1;
+}
+@media screen and (max-width: 767px) {
+    .circle-icon{
+        margin: 0 auto;
+        float:none;
+        font-size: 2em;
+        margin-top: 20px;
+    }
+    .list_type-one-header{
+        margin-top: 20px;
+    }
+}
+
+/* engineers */
+.engineers{
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.border_right_dark-blue{
+    border-right: 2px solid #167198;
+}
+.no_left_padding{
+    padding-left:0 !important;
+}
+.no_right_padding{
+    padding-right:0 !important;
+}
+.engineers h4{
+    color:#0f4c65;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+.engineers span{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:#0f4c65;
+    font-size: 1.15em;
+}
+.engineers address{
+    margin-top:30px; 
+}
+.engineers-phones{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:#0f4c65;
+    font-size: 1.1em;
+}
+@media screen and (max-width: 767px) {
+    .border_right_dark-blue{
+        border-right:none;
+    }
+    .no_left_padding{
+        padding-left:15px !important;
+    }
+    .no_right_padding{
+        padding-right:15px !important;
+    }
+    .engineers{
+        margin-bottom: 30px;
+    }
+    .engineers address{
+        margin-top: 10px;
+    }
+}
+
+.card-img-assembling{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+.card-img-assembling img{
+    max-width: 80px;
+}
+.cbp-title{
+    font-size: 1em !important;
+}

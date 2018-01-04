@@ -1,0 +1,26 @@
+/* Footer */
+footer{
+    height: 50px;
+    background-color: #23748e;
+  }
+  .footer-text{
+    float: right;
+    margin-right: 6%;
+    color:#fff;
+    font-size: 1em;
+    padding-top: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  @media screen and (max-width:767px) {
+    .footer-text{
+      margin-right: 0;
+      float: none;
+      text-align: center;
+    }
+    
+  }
+  @media screen and (max-width:409px) {
+    footer{
+      height: 70px;
+    }
+  }

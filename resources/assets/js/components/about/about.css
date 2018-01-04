@@ -1,0 +1,48 @@
+/* About */
+.about{
+    background-color: #23748e;
+    overflow-x: hidden;
+  }
+  .about-line{
+    border-bottom: 2px solid #fff;
+  }
+  .about-line:last-of-type{
+    margin: 40px 0;
+  }
+  .about-desc{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:#fff;
+    font-size: 1.15em;
+    margin-top: 15px;
+  }
+  .about-desc-wrapper{
+    padding: 0 10%;
+  }
+  .about-desc:first-of-type{
+    margin-top: 25px;
+  }
+  .logo-wrapper{
+    text-align: left;
+    margin: 20px 0 20px 30px; 
+  }
+  .about .icons{
+    margin: 0;
+  }
+  @media screen and (max-width:767px) {
+    .about-desc{
+      text-align: center;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .logo-wrapper{
+      text-align: center;
+      margin-left: 0;
+      margin-right: 0;
+    }
+    .about .icons{
+      margin: 0 auto;
+    }
+    .about-desc-wrapper{
+      padding: 0;
+    }
+  }

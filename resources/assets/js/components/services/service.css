@@ -1,0 +1,70 @@
+/* Icons */
+.services{
+    margin-top: 55px; 
+  }
+  .services-wrapper{
+    margin-top: 40px;
+    margin-bottom: 15px;
+  }
+  .icons-item{
+    margin-bottom: 35px;
+  }
+  .icons-content{
+    min-height: 150px;
+  }
+  .icons-desc{
+    text-align: center;
+    color:#0f4c65;
+    font-size: 1.3em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 22px;
+    padding-top: 20px;
+    max-width: 230px;
+    margin: 0 auto;
+  }
+  .icons {
+    background-image: url(/imgs/sprite-icons.png);
+    background-repeat: no-repeat;
+    display: block;
+    margin: 0 auto;
+  }
+  .icons-chooseIcon {
+    width: 105px;
+    height: 72px;
+    background-position: -5px -5px;
+  }
+  .icons-creation {
+    width: 105px;
+    height: 72px;
+    background-position: -120px -5px;
+  }
+  .icons-invest {
+    width: 105px;
+    height: 72px;
+    background-position: -5px -87px;
+  }
+  .icons-logo-blue {
+    width: 150px;
+    height: 51px;
+    background-position: -120px -87px;
+  }
+  .icons-logo-white {
+    width: 169px;
+    height: 57px;
+    background-position: -5px -169px;
+  }
+  .icons-reconstruction {
+    width: 104px;
+    height: 72px;
+    background-position: -235px -5px;
+  }
+  .icons-release {
+    width: 105px;
+    height: 72px;
+    background-position: -280px -87px;
+  }
+  .icons-service {
+    width: 105px;
+    height: 72px;
+    background-position: -184px -169px;
+  }

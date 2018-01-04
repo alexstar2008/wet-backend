@@ -1,0 +1,48 @@
+/* Map */
+.map-title{
+    letter-spacing: 1px;
+    color:#0f4c65;
+    font-size: 1.3em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+  }
+  .map-wrapper{
+    margin:30px auto 60px auto ; 
+    text-align: center;
+  }
+  .map-iframe{
+    border: 2px solid #4a8eab;
+    max-width: 725px;
+    width:100%;
+    height: auto;
+    text-align: center;
+    height:490px;
+  }
+  .map-label{
+      text-align: center;
+      text-transform: uppercase;
+      color:#0f4c65;
+      letter-spacing: 2px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-weight: bold;
+      font-size: 1em;
+      margin-bottom: 20px;
+  }
+  @media screen and (max-width:409px) {
+    .map-iframe{
+      height: 350px;
+    }
+  }
+  @media screen and (max-width:767px) {
+    .map-iframe{
+      height: 350px;
+    }
+    .map-wrapper{
+      margin:30px auto 30px auto ; 
+    }
+    
+  }
+  
+  

@@ -1,0 +1,22 @@
+.about-us{
+    margin-top: 55px;
+    margin-bottom: 100px;  
+    overflow-x: hidden;
+}
+.about-us_list{
+    margin-bottom: 50px;
+}
+.about-us_list-header{
+    color:#0f4c65;
+    font-family: Verdana,Geneva,Tahoma,sans-serif;    
+    margin-top: 30px;
+    font-weight: bold;
+    font-size:1.15em;   
+    text-transform: uppercase;
+}
+.about-us_list-item{
+    font-family: Verdana,Geneva,Tahoma,sans-serif;    
+    color:#0f4c65;
+    font-size:1.15em;
+    line-height: 22px;
+}

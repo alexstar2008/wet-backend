@@ -1,0 +1,77 @@
+.references{
+    margin-top: 55px;
+    margin-bottom: 100px;   
+}
+
+/* Table-references */
+.references_table_wrapper{
+    overflow: auto;
+    padding: 5px !important;
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+.references_table{
+    border: 1px solid #abb4b4;
+    /* margin: 0 auto; */
+}
+.references_table th{
+    background-color: #fff;
+    font-family: Verdana,Geneva,Tahoma,sans-serif;
+    font-size: 1.15em;
+    color:#0f4b65;
+    font-weight: normal;
+    width: 250px;
+    text-align: center;
+    padding: 15px 0;
+    border-right: 1px solid #abb4b4;
+}
+.references_table th:last-child{
+    width: 400px;  
+}
+.references_section_header{
+    font-size: 1.15em;
+    text-transform: uppercase;
+    color:#fff;
+    background-color: #207ca1;
+    text-align: center;
+    padding: 13px 0;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+}
+/* row */
+.references_table tr{
+    border-bottom:1px solid #abb4b4;
+}
+.references_row td{
+    text-align: center;
+    font-family: Verdana,Geneva,Tahoma,sans-serif;
+    font-size: 1.15em;
+    color:#0f4b65;
+    background-color: #fff;
+    padding: 10px 0 14px 0;
+    border-right: 1px solid #abb4b4;
+}
+.references_row_colored td{
+    background-color: #e8f4f4;
+}
+td.references_cell_colored{
+    background-color: #e8f4f4;
+}
+@media screen and (max-width:767px) {
+    .paragraph-header{
+        text-align: center;
+        margin-top: 0;
+    }
+    .references_table th{
+        padding-left:3px;
+        padding-right:3px;
+    }
+    .references_row td{
+        padding-left:3px;
+        padding-right:3px;
+    }
+    .paragraph-list-header{
+        margin-top: 25px;
+    }
+}

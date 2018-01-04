@@ -1,0 +1,213 @@
+/* Navigation */
+.navbar-toggle{
+    border: 1px solid #fff;
+  }
+  .navbar{
+    border-radius: 0;
+    background-color: #2d7fa2;
+    border: none;
+  }
+  .navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+  }
+  .navbar .navbar-collapse {
+    text-align: center;
+  }
+  .navbar-toggle .icon-bar{
+    background-color:#fff;
+  }
+.nav-item{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:#fff;
+    font-weight: bold;
+    font-size: 0.9em;
+    text-shadow: 1px #2d7fa2;
+    background-color: #2d7fa2 ;
+    padding: 20px 35px !important;
+    transition: background-color .5s;
+}
+.nav-item:hover,.nav-item:active,.nav-item:focus{
+    transition: background-color 1s;
+    background-color: #fff !important;
+    color:#0f4c65 !important;
+}
+.open > a{
+  background-color: #fff !important;
+  color:#0f4c65 !important;
+}
+  @media screen and (max-width:1185px) and (min-width:768px) {
+    .nav-item{
+      padding: 20px 10px !important;
+    }
+    .phone-list-item{
+      font-size: 1em;
+    }
+    .header-title{
+      margin-top: 10px;
+      font-size: 1.3em;
+    }
+  }
+  @media screen and (max-width:767px){
+    .nav-item{
+      font-size: 1.15em;
+    }
+  }
+  
+  
+   .navbar{
+     margin-bottom: 0 !important;
+   }
+   ul.dropdown-menu{
+       padding: 0;
+   }
+   ul.dropdown-menu .nav-sub-item{
+       color:#fff;
+   }
+    a.nav-sub-item{
+    box-sizing: border-box;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:#fff;
+    font-weight: bold !important;
+    font-size: 0.9em !important;
+    background-color: #2d7fa2;
+    padding: 10px 24px !important;
+    transition: background-color .5s;
+}
+@media screen and (max-width:1185px){
+    a.nav-sub-item{
+       padding: 10px 14px !important;
+    }
+}
+@media screen and (max-width:767px){
+    a.nav-sub-item{
+        text-align: left;
+    }
+}
+.nav-sub-item:hover,.nav-sub-item:active,.nav-sub-item:focus{
+  transition: background-color 1s;
+  background-color: #fff !important;
+  color:#0f4c65 !important;
+}
+
+
+.logo{
+  padding: 10px 0;
+  text-align: center;
+}
+.logo img{
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+}
+.header-title{
+  text-transform: uppercase;
+  font-family: 'Philosopher', sans-serif;
+  color:#207ca1;
+  font-size: 1.5em;
+  text-shadow: 2px #207ca1;
+  letter-spacing: 1px;
+  margin-top: 25px;
+}
+
+
+.phone-list-wrapper{
+  border-left: 1px solid #207ca1;
+}
+.phone-list{
+  list-style-type: none;
+  padding: 7px 0;
+  padding-left: 30px;
+  border-left: 1px solid #b8cfd8;
+  margin:5px 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.phone-list-item{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color:#207ca1;
+  font-size: 1.15em;
+  text-shadow: 1px #207ca1;
+}
+.phone-list-item-title{
+  display: inline-block;
+  width: 90px;
+  vertical-align: top;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+header .phone-list-item-content{
+  vertical-align: top;
+  display: inline-block;
+  text-align: right;
+  width: 170px;
+}
+@media screen and (max-width:767px){
+  .header-title{
+    margin-top: 0;
+  }
+  .phone-list{
+    text-align: center;
+    border-top: 1px solid #b8cfd8;
+    border-left:none;
+    font-size: 12px;
+    padding: 20px 0;
+    margin-top: 0;
+  }
+  .phone-list-wrapper{
+    border-top: 1px solid #207ca1;
+    border-left:none;
+  }
+  .phone-list-item{
+    font-size: 1.3em;
+  }
+}
+@media screen and (min-width:767px) and (max-width:1199px){
+  .phone-list-item-title{
+    width: 75px;
+  }
+  header .phone-list-item-content{
+    width: 140px;
+  }
+}
+
+
+
+/* Arrow up */
+.arrow-up{
+  position: fixed;
+  bottom: 10%;
+  right:5%;
+  padding-top: 4px;
+  width: 52px;
+  height: 52px;
+  background-color: rgba(15, 76, 101, 0.5);
+  border-radius: 50%;
+  color:#fff;
+  text-align: center;
+  transition: background-color .5s;
+}
+.arrow-up:hover{
+  background-color: rgba(15, 76, 101, 1);
+  transition: background-color .5s;
+}
+@media screen and (max-width:767px){
+  .arrow-up{
+    width: 42px;
+    height: 42px;
+  }
+  .arrow-up i{
+    font-size: 2em !important;
+    padding-top: 5px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .arrow-up{
+    left: calc(100%/2 + 585px);
+  }
+  
+}

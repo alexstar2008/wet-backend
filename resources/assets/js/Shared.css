@@ -1,0 +1,188 @@
+/* Header */
+body{
+    background-color: #fff;
+  }
+  header{
+    width: 100%;
+    position: fixed; 
+    z-index: 1000;
+    background-color: #fff; 
+  }
+  .main-wrapper{
+    overflow-x: hidden;
+  }
+  .main-wrapper>div{
+    padding-top: 132px;
+    overflow-x: hidden;
+  }
+  @media screen and (max-height:767px) {
+    .main-wrapper>div{
+      padding-top: 120px;
+    } 
+  }
+  
+  @media screen and (max-width:767px){
+    body{
+      font-size: 12px;
+    }
+  }
+
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+ }
+/* Address.jsx */
+.address-title{
+    color:#0f4c65;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+.address-item{
+    text-align: center;
+  }
+.address-inline{
+    display: inline-block;
+    width: 85%;
+    vertical-align: top;
+    text-align: left;
+}
+.address-marker{
+    color:#207ca1;
+    font-size: 2em;
+    min-width: 25px;
+    width: 5%;
+} 
+.address-content{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:#0f4c65;
+    font-size: 1.15em;
+}   
+/*phone-list*/
+.address-item .phone-list{
+    list-style-type: none;
+    border-left: none;  
+    padding-left: 0;
+}
+.address-item .phone-list li{
+    font-size:1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:#0f4c65;
+    padding-top: 5px;
+}
+.address-item .phone-list div:first-child {
+    font-weight: bold;
+    display: inline-block;
+    width: 100px;
+    vertical-align: top;
+}
+.phone-list-item-content{
+    vertical-align: top;
+    display: inline-block;
+    text-align: right;
+    width: 140px;
+}
+
+/*------------TITLES-----------*/
+/* SUB-TITLE */
+.paragraph_title{
+    text-align: center;
+    text-transform: uppercase;
+    color:#0f4c65;
+    letter-spacing: 2px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+/* PAGE-TITLE */
+.category_title{
+    text-align: center;
+    text-transform: uppercase;
+    color:#0f4c65;
+    letter-spacing: 2px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+  .white{
+    color: WHITE;
+  }
+/*------------TEXT-----------*/
+/* PARAGRAPH-TEXT */
+.paragraph-text{
+    font-family: Verdana,Geneva,Tahoma,sans-serif;
+    font-size: 1.15em;
+    margin-top: 25px;
+}
+.blue{
+    color:#0f4b65;
+}
+
+/* Paragraph shared */
+/* bold title and bold list headers */
+/* left padding of each item */
+.paragraph-header{
+    font-family: Verdana,Geneva,Tahoma,sans-serif;    
+    margin-top: 25px;
+    font-weight: bold;
+    color:#0f4c65;
+    font-size:1.2em;
+}
+.paragraph-list-header{
+    font-family: Verdana,Geneva,Tahoma,sans-serif;    
+    margin-top: 50px;
+    font-weight: bold;
+    color:#0f4c65;
+    font-size:1.15em;
+}
+.paragraph-list-item{
+    font-family: Verdana,Geneva,Tahoma,sans-serif;    
+    color:#0f4c65;
+    font-size:1.15em;
+    padding-left: 35px;
+}
+.dark-blue{
+ color: #0f4c65 !important;
+}
+/* list with subitems no padding */
+.list_type-one-header{
+    color:#0f4c65;
+    font-family: Verdana,Geneva,Tahoma,sans-serif;    
+    margin-top: 40px;
+    font-weight: bold;
+    font-size:1.15em;   
+    text-transform: uppercase;
+}
+.list_type-one-item{
+    font-family: Verdana,Geneva,Tahoma,sans-serif;    
+    color:#0f4c65;
+    font-size:1.15em;
+    line-height: 22px;
+}
+/* header and dash list */
+.unordered-list-header{
+    font-family: Verdana,Geneva,Tahoma,sans-serif;    
+    margin-top: 20px;
+    font-weight: bold;
+    color:#0f4c65;
+    font-size:1.15em;
+}
+.unordered-list{
+    margin-top: 7px;
+    padding-left: 20px;
+}
+.unordered-list li{
+    list-style-type: none;
+    font-family: Verdana,Geneva,Tahoma,sans-serif;    
+    color:#0f4c65;
+    font-size:1.15em;
+}
+.unordered-list li:before {
+    content: "-";
+}
+
+/* fuck */
+.margin_bottom_50{
+    margin-bottom: 50px;
+}

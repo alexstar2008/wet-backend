@@ -1,0 +1,28 @@
+.content-box{
+    margin: 0 auto;
+    margin-top:25px;
+}
+.content-box-icon{
+    position: absolute;
+    top: 14px;
+    left: 6px;
+    color:#0f4c65;
+    background-color: #fff;
+    border: 2px solid #217da1;    
+    border-radius: 25%;
+    width: 20px;
+    height:20px;
+}
+.content-box-icon i{
+    position: absolute;
+    left:0;
+    bottom: 2px;
+}
+.content-box-body{
+    background-color: #fff;
+    padding: 25px 30px;
+    border: 1px solid #217da1;
+    font-family: Verdana,Geneva,Tahoma,sans-serif;    
+    color:#0f4c65;
+    font-size:1.15em;
+}

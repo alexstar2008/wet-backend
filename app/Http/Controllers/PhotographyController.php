@@ -42,8 +42,8 @@ class PhotographyController extends Controller
 
         $file = $request->file('img');
         if ($file) {
-            $lastId = Photography::all()->last()->id;
-            $imgId = isset($lastId) ? $lastId + 1 : 1;
+            $lastPhoto = Photography::all()->last();
+            $imgId = isset($lastPhoto) ? $lastPhoto->id + 1 : 1;
             $imgName = 'photo' . $imgId . '.' . $file->getClientOriginalExtension();
 
             $file->move(public_path() . '/photos', $imgName);
@@ -52,7 +52,7 @@ class PhotographyController extends Controller
 
         $photo->save();
 
-        return redirect('/admin/photo');
+        return redirect('/admin/photos');
     }
 
 
@@ -94,7 +94,7 @@ class PhotographyController extends Controller
 
         $photo->save();
 
-        return redirect('/admin/photo');
+        return redirect('/admin/photos');
     }
 
     /**
@@ -106,6 +106,6 @@ class PhotographyController extends Controller
     public function destroy(Photography $photography)
     {
         $photography->delete();
-        return redirect('/admin/photo');
+        return redirect('/admin/photos');
     }
 }

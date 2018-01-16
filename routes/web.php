@@ -11,6 +11,7 @@
 |
 */
 
+
 Route::get('/', 'HomeController');
 Route::get('/contacts', 'HomeController');
 Route::get('/assembling-service', 'HomeController');
@@ -19,5 +20,9 @@ Route::get('/we-offer', 'HomeController');
 Route::get('/photo-gallery', 'HomeController');
 Route::get('/reference', 'HomeController');
 
-Route::resource('admin/photos','PhotographyController');
+
+Route::get('/admin', function () {
+    return view('admin.home');
+});
+Route::resource('admin/photos', 'PhotographyController');
 

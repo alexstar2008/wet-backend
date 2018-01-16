@@ -3,7 +3,19 @@
     /*min-height: 100vh;*/
     /*flex-direction: column;*/
 /*}*/
+body{
+    overflow-x: hidden;
+}
+.photo-img{
+    max-width: 150px;
+}
 
 /*main {*/
     /*flex: 1 0 auto;*/
 /*}*/
+.back-btn{
+    margin-top: 50px;
+}
+.page-footer{
+    padding-top: 0;
+}

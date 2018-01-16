@@ -59,12 +59,12 @@ class PhotographyController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Photography $photography
+     * @param  \App\Photography $photo
      * @return \Illuminate\Http\Response
      */
-    public function edit(Photography $photography)
+    public function edit(Photography $photo)
     {
-        return view('admin.photo.edit', compact($photography));
+        return view('admin.photo.edit', compact('photo'));
     }
 
     /**
@@ -100,12 +100,19 @@ class PhotographyController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Photography $photography
+     * @param  Integer $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Photography $photography)
+    public function destroy($id)
     {
+        $photography = Photography::find($id);
+
+        $img = public_path() . '/photos/' . $photography->img;
+        if (file_exists($img)) {
+            unlink($img);
+        }
         $photography->delete();
+
         return redirect('/admin/photos');
     }
 }

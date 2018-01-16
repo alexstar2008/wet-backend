@@ -5,8 +5,9 @@
         <div class="card">
             <h4 class="center-align">Список обьектов</h4>
             <div class="row">
-                <div class="col s12 offset-m1">
-                    <a class="waves-effect waves-light btn green" href="/admin/photos/create">Добавить новое фото обьекта</a>
+                <div class="col s12 center-align">
+                    <a class="waves-effect waves-light btn green" href="/admin/photos/create">Добавить новое фото
+                        обьекта</a>
                 </div>
             </div>
             <div class="row">
@@ -23,15 +24,24 @@
                         </thead>
                         <tbody>
                         @foreach($photos as $photo)
-                            <td>{{$photo->name}}</td>
-                            <td>{{$photo->desc}}</td>
-                            <td><img src="{{asset('/photos/'.$photo->img)}}"/></td>
-                            <td>
-                                <a class="waves-effect waves-light btn blue lighten-2">Редактировать</a>
-                            </td>
-                            <td>
-                                <a class="waves-effect waves-light btn red">Удалить</a>
-                            </td>
+                            <tr>
+                                <td>{{$photo->name}}</td>
+                                <td>{{$photo->desc}}</td>
+                                <td>
+                                    <img src="{{asset('/photos/'.$photo->img)}}" class="photo-img"/>
+                                </td>
+                                <td>
+                                    <a class="waves-effect waves-light btn blue lighten-2"
+                                       href="/admin/photos/{{$photo->id}}/edit">Редактировать</a>
+                                </td>
+                                <td>
+                                    {{ Form::open(['url'=>'/admin/photos/'.$photo->id,'method'=>'delete']) }}
+                                    <button class="btn waves-effect waves-light red" type="submit" name="action">
+                                        Удалить
+                                    </button>
+                                    {{ Form::close() }}
+                                </td>
+                            </tr>
                         @endforeach
                         </tbody>
                     </table>

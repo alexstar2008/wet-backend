@@ -19,3 +19,5 @@ Route::get('/we-offer', 'HomeController');
 Route::get('/photo-gallery', 'HomeController');
 Route::get('/reference', 'HomeController');
 
+Route::resource('admin/photos','PhotographyController');
+

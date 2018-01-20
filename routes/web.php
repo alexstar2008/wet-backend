@@ -25,4 +25,7 @@ Route::get('/admin', function () {
     return view('admin.home');
 });
 Route::resource('admin/photos', 'PhotographyController');
+Route::resource('admin/reference_category','ReferenceCategoryController');
 
+Route::get('admin/reference_equipment/{id}','ReferenceEquipmentController@index');
+Route::resource('admin/reference_equipment','ReferenceEquipmentController');

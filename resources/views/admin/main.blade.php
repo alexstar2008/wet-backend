@@ -24,7 +24,7 @@
                 <a href="/" class="brand-logo left">WET</a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li><a href="/admin/photos">Фото обьектов</a></li>
-                    <li><a href="/admin/reference">Референс</a></li>
+                    <li><a href="/admin/reference_category">Референс</a></li>
                 </ul>
             </div>
         </div>

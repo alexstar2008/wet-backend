@@ -18,7 +18,7 @@ class CreateReferenceEquipmentTable extends Migration
             $table->string('mission',300);
             $table->string('equipment',300);
             $table->integer('category_id')->unsigned();
-            $table->foreign('category_id')->references('id')->on('reference_categories');
+            $table->foreign('category_id')->references('id')->on('reference_categories')->onDelete('cascade');
             $table->timestamps();
         });
     }

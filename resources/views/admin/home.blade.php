@@ -10,7 +10,7 @@
                 </div>
                 <div class="card-action">
                     <a href="/admin/photos">Фото обьектов</a>
-                    <a href="/admin/reference">Референс</a>
+                    <a href="/admin/reference_category">Референс</a>
                 </div>
             </div>
         </div>

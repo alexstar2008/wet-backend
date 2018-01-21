@@ -3,13 +3,10 @@
 @section('content')
     <div class="container">
         <div class="card">
-            <h2 class="center-align">Референс</h2>
-            <h4 class="center-align">Список категорий</h4>
+            <h4 class="center-align">Список предприятий</h4>
             <div class="row">
                 <div class="col s12 center-align">
-                    <a class="waves-effect waves-light btn green" href="/admin/reference_category/create">
-                        Добавить новую категорию
-                    </a>
+                    <a class="waves-effect waves-light btn green" href="/admin/reference_enterprise/{{$id}}/create">Добавить предприятие</a>
                 </div>
             </div>
             <div class="row">
@@ -20,25 +17,19 @@
                             <th>Название</th>
                             <th></th>
                             <th></th>
-                            <th></th>
                         </tr>
                         </thead>
                         <tbody>
-                        @foreach($categories as $category)
+                        @foreach($enterprises as $enterprise)
                             <tr>
-                                <td>{{$category->name}}</td>
+                                <td>{{$enterprise->name}}</td>
                                 <td>
                                     <a class="waves-effect waves-light btn blue lighten-2"
-                                       href="/admin/reference_category/{{$category->id}}/edit">Редактировать</a>
+                                       href="/admin/reference_enterprise/{{$id}}/single/{{$enterprise->id}}/edit">Редактировать</a>
                                 </td>
                                 <td>
-                                    <a class="waves-effect waves-light btn blue lighten-2"
-                                       href="/admin/reference_enterprise/{{$category->id}}/">
-                                        Предприятия категории
-                                    </a>
-                                </td>
-                                <td>
-                                    {{ Form::open(['url'=>'/admin/reference_category/'.$category->id,'method'=>'delete']) }}
+                                    {{ Form::open(['url'=>'/admin/reference_enterprise/'.$enterprise->id,'method'=>'delete']) }}
+                                    <input type="hidden" value="{{$id}}" name="category" />
                                     <button class="btn waves-effect waves-light red" type="submit" name="action">
                                         Удалить
                                     </button>

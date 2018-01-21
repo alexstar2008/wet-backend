@@ -26,6 +26,16 @@ Route::get('/admin', function () {
 });
 Route::resource('admin/photos', 'PhotographyController');
 Route::resource('admin/reference_category','ReferenceCategoryController');
-
-Route::get('admin/reference_equipment/{id}','ReferenceEquipmentController@index');
 Route::resource('admin/reference_equipment','ReferenceEquipmentController');
+
+
+Route::prefix('admin/reference_enterprise/')->group(function() {
+    Route::get('{id}','ReferenceEnterpriseController@index');
+    Route::get('{id}/create','ReferenceEnterpriseController@create');
+
+    Route::get('{categoryId}/single/{id}/edit','ReferenceEnterpriseController@edit');
+    Route::put('{id}','ReferenceEnterpriseController@update');
+
+    Route::post('/','ReferenceEnterpriseController@store');
+    Route::delete('{enterpriseId}','ReferenceEnterpriseController@destroy');
+});

@@ -6,7 +6,7 @@
             <a class="waves-effect waves-light btn red back-btn" href="/admin/photos/">Назад</a>
         </div>
     </div>
-    <h4 class="center-align">Редактирование фото обьекта</h4>
+    <h4 class="center-align">Редактирование </h4>
     {{ Form::open(['url'=>'/admin/photos/'.$photo->id,'method'=>'put','class'=>'col s12"','files'=>true]) }}
     <div class="row">
         <div class="input-field col s12 m6 offset-m2">

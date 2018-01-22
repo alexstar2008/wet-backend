@@ -21,21 +21,34 @@ Route::get('/photo-gallery', 'HomeController');
 Route::get('/reference', 'HomeController');
 
 
+//--Admin
 Route::get('/admin', function () {
     return view('admin.home');
 });
+//Photo
 Route::resource('admin/photos', 'PhotographyController');
+//Category
 Route::resource('admin/reference_category','ReferenceCategoryController');
-Route::resource('admin/reference_equipment','ReferenceEquipmentController');
-
-
+//Enterprise
 Route::prefix('admin/reference_enterprise/')->group(function() {
-    Route::get('{id}','ReferenceEnterpriseController@index');
-    Route::get('{id}/create','ReferenceEnterpriseController@create');
+    Route::get('{category_id}','ReferenceEnterpriseController@index');
+    Route::get('/single/{enterprise_id}','ReferenceEnterpriseController@single');
+    Route::get('{category_id}/create','ReferenceEnterpriseController@create');
 
-    Route::get('{categoryId}/single/{id}/edit','ReferenceEnterpriseController@edit');
+    Route::get('{category_id}/single/{id}/edit','ReferenceEnterpriseController@edit');
     Route::put('{id}','ReferenceEnterpriseController@update');
 
     Route::post('/','ReferenceEnterpriseController@store');
     Route::delete('{enterpriseId}','ReferenceEnterpriseController@destroy');
+});
+//Equipment
+Route::prefix('admin/reference_equipment/')->group(function() {
+    Route::get('{enterprise_id}','ReferenceEquipmentController@index');
+    Route::get('{id}/create','ReferenceEquipmentController@create');
+
+    Route::get('{categoryId}/single/{id}/edit','ReferenceEquipmentController@edit');
+    Route::put('{id}','ReferenceEquipmentController@update');
+
+    Route::post('/','ReferenceEquipmentController@store');
+    Route::delete('{enterpriseId}','ReferenceEquipmentController@destroy');
 });

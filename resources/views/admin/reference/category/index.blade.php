@@ -29,13 +29,13 @@
                                 <td>{{$category->name}}</td>
                                 <td>
                                     <a class="waves-effect waves-light btn blue lighten-2"
-                                       href="/admin/reference_category/{{$category->id}}/edit">Редактировать</a>
-                                </td>
-                                <td>
-                                    <a class="waves-effect waves-light btn blue lighten-2"
                                        href="/admin/reference_enterprise/{{$category->id}}/">
                                         Предприятия категории
                                     </a>
+                                </td>
+                                <td>
+                                    <a class="waves-effect waves-light btn blue lighten-2"
+                                       href="/admin/reference_category/{{$category->id}}/edit">Редактировать</a>
                                 </td>
                                 <td>
                                     {{ Form::open(['url'=>'/admin/reference_category/'.$category->id,'method'=>'delete']) }}

@@ -10,6 +10,11 @@ body{
     max-width: 150px;
 }
 
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
 /*main {*/
     /*flex: 1 0 auto;*/
 /*}*/
@@ -18,4 +23,9 @@ body{
 }
 .page-footer{
     padding-top: 0;
+}
+.card{
+    margin-top: 50px;
+    padding-top: 25px;
+    padding-bottom: 50px;
 }

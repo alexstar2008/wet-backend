@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\ReferenceEnterprise;
+use App\ReferenceEquipment;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use phpDocumentor\Reflection\Types\Integer;
@@ -11,23 +12,34 @@ class ReferenceEnterpriseController extends Controller
 {
     /**
      * Show enterprises of category
-     * @param Integer $id
-     * @return Integer $id;
+     * @param Integer category_id
+     * @return Response
      */
-    public function index($id)
+    public function index($category_id)
     {
-        $enterprises = ReferenceEnterprise::where('category_id', $id)->get();
-        return view('admin.reference.enterprise.index', compact('enterprises', 'id'));
+        $enterprises = ReferenceEnterprise::where('category_id', $category_id)->get();
+        return view('admin.reference.enterprise.index', compact('enterprises', 'category_id'));
+    }
+
+    /**
+     * Get category of enterprise
+     * @param Integer $enterprise_id
+     * @return Response
+     */
+    public function single($enterprise_id)
+    {
+        $category_id = ReferenceEnterprise::find($enterprise_id)->category_id;
+        return redirect('/admin/reference_enterprise/'.$category_id);
     }
 
     /**
      * Show enterprises of category
-     * @param Integer $id
+     * @param Integer $category_id
      * @return Integer $id;
      */
-    public function create($id)
+    public function create($category_id)
     {
-        return view('admin.reference.enterprise.create', compact('id'));
+        return view('admin.reference.enterprise.create', compact('category_id'));
     }
 
     /**
@@ -38,22 +50,22 @@ class ReferenceEnterpriseController extends Controller
     public function store(Request $request)
     {
         $enterprise = new ReferenceEnterprise();
-        $enterprise->category_id = $request->category;
+        $enterprise->category_id = $request->category_id;
         $enterprise->name = $request->name;
         $enterprise->save();
-        return redirect('admin/reference_enterprise/' . $request->category);
+        return redirect('admin/reference_enterprise/' . $request->category_id);
     }
 
     /**
      * Get template for editing
-     * @param Integer $categoryId
+     * @param Integer $category_id
      * @param Integer $id
      * @return Response
      */
-    public function edit($categoryId,$id)
+    public function edit($category_id,$id)
     {
         $enterprise = ReferenceEnterprise::find($id);
-        return view('admin.reference.enterprise.edit', compact('enterprise','categoryId'));
+        return view('admin.reference.enterprise.edit', compact('enterprise','category_id'));
     }
 
     /**
@@ -68,7 +80,7 @@ class ReferenceEnterpriseController extends Controller
         $enterprise->name = $request->name;
         $enterprise->save();
 
-        return redirect('admin/reference_enterprise/' . $request->category);
+        return redirect('admin/reference_enterprise/' . $request->category_id);
     }
 
     /**
@@ -82,6 +94,6 @@ class ReferenceEnterpriseController extends Controller
         $enterprise = ReferenceEnterprise::find($enterpriseId);
         $enterprise->delete();
 
-        return redirect('admin/reference_enterprise/' . $request->category);
+        return redirect('admin/reference_enterprise/' . $request->category_id);
     }
 }

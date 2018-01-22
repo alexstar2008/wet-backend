@@ -8,12 +8,11 @@
                     <a class="waves-effect waves-light btn red back-btn" href="/admin">Назад</a>
                 </div>
             </div>
-            <h2 class="center-align">Референс</h2>
-            <h4 class="center-align">Список категорий</h4>
+            <h4 class="center-align">Список PDF файлов</h4>
             <div class="row">
                 <div class="col s12 center-align">
-                    <a class="waves-effect waves-light btn green" href="/admin/reference_category/create">
-                        Добавить новую категорию
+                    <a class="waves-effect waves-light btn green" href="/admin/library/create">
+                        Добавить PDF в библотеку
                     </a>
                 </div>
             </div>
@@ -25,25 +24,24 @@
                             <th>Название</th>
                             <th></th>
                             <th></th>
-                            <th></th>
                         </tr>
                         </thead>
                         <tbody>
-                        @foreach($categories as $category)
+                        @foreach($files as $file)
                             <tr>
-                                <td>{{$category->name}}</td>
+                                <td>{{$file->name}}</td>
                                 <td>
-                                    <a class="waves-effect waves-light btn blue lighten-2"
-                                       href="/admin/reference_enterprise/{{$category->id}}/">
-                                        Предприятия категории
-                                    </a>
+                                    {{$file->doc}}
+                                    {{--<iframe src="/pdf/sample-3pp.pdf#page=2" width="100%" height="100%">--}}
+                                        {{--This browser does not support PDFs. Please download the PDF to view it: <a href="/pdf/sample-3pp.pdf">Download PDF</a>--}}
+                                    {{--</iframe>--}}
                                 </td>
                                 <td>
                                     <a class="waves-effect waves-light btn blue lighten-2"
-                                       href="/admin/reference_category/{{$category->id}}/edit">Редактировать</a>
+                                       href="/admin/library/{{$file->id}}/edit">Редактировать</a>
                                 </td>
                                 <td>
-                                    {{ Form::open(['url'=>'/admin/reference_category/'.$category->id,'method'=>'delete']) }}
+                                    {{ Form::open(['url'=>'/admin/library/'.$file->id,'method'=>'delete']) }}
                                     <button class="btn waves-effect waves-light red" type="submit" name="action">
                                         Удалить
                                     </button>

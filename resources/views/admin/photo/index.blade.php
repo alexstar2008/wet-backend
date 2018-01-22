@@ -3,6 +3,11 @@
 @section('content')
     <div class="container">
         <div class="card">
+            <div class="row">
+                <div class="col s12 m10 offset-m2 ">
+                    <a class="waves-effect waves-light btn red back-btn" href="/admin">Назад</a>
+                </div>
+            </div>
             <h4 class="center-align">Список обьектов</h4>
             <div class="row">
                 <div class="col s12 center-align">

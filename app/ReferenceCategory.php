@@ -12,7 +12,7 @@ class ReferenceCategory extends Model
 //        return $this->hasMany('ReferenceEquipment','reference_categories');
 //    }
 
-    public function enterprise(){
-        return $this->hasMany('ReferenceEnterprise','reference_enterprises');
+    public function enterprises(){
+        return $this->hasMany('App\ReferenceEnterprise','category_id');
     }
 }

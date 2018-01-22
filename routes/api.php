@@ -1,6 +1,11 @@
 <?php
 
 use Illuminate\Http\Request;
+use App\ReferenceEnterprise;
+use App\ReferenceCategory;
+use App\ReferenceEquipment;
+use \App\Photography;
+use \App\PDF;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +18,15 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
+//Route::middleware('auth:api')->get('/user', function (Request $request) {
+//    return $request->user();
+//});
+Route::get('/reference', function () {
+    return ReferenceCategory::with(['enterprises.equipment'])->get();
+});
+Route::get('/photos', function () {
+    return Photography::all();
+});
+Route::get('/library', function () {
+    return PDF::all();
 });

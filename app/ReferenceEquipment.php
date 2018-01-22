@@ -8,7 +8,7 @@ class ReferenceEquipment extends Model
 {
     protected $table = 'reference_equipment';
 
-    public function category(){
-        return $this->belongsTo('ReferenceCategory','reference_categories');
+    public function enterprise(){
+        return $this->belongsTo('App\ReferenceEnterprise','enterprise_id');
     }
 }

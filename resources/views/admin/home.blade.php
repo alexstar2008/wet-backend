@@ -11,6 +11,7 @@
                 <div class="card-action">
                     <a href="/admin/photos">Фото обьектов</a>
                     <a href="/admin/reference_category">Референс</a>
+                    <a href="/admin/library">Библиотека</a>
                 </div>
             </div>
         </div>

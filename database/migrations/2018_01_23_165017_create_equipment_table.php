@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateLibraryTable extends Migration
+class CreateEquipmentTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,12 @@ class CreateLibraryTable extends Migration
      */
     public function up()
     {
-        Schema::create('library', function (Blueprint $table) {
+        Schema::create('equipment', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name',150);
-            $table->string('doc',100);
+            $table->string('name');
+            $table->string('doc');
+            $table->integer('category_id')->unsigned();
+            $table->foreign('category_id')->references('id')->on('equipment_category');
             $table->timestamps();
         });
     }
@@ -28,6 +30,6 @@ class CreateLibraryTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('library');
+        Schema::dropIfExists('equipment');
     }
 }

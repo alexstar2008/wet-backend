@@ -43,7 +43,7 @@ Route::prefix('admin/reference_enterprise/')->group(function () {
     Route::post('/', 'ReferenceEnterpriseController@store');
     Route::delete('{enterpriseId}', 'ReferenceEnterpriseController@destroy');
 });
-//Equipment
+//Enterprise Equipment
 Route::prefix('admin/reference_equipment/')->group(function () {
     Route::get('{enterprise_id}', 'ReferenceEquipmentController@index');
     Route::get('{id}/create', 'ReferenceEquipmentController@create');
@@ -53,4 +53,16 @@ Route::prefix('admin/reference_equipment/')->group(function () {
 
     Route::post('/', 'ReferenceEquipmentController@store');
     Route::delete('{enterpriseId}', 'ReferenceEquipmentController@destroy');
+});
+//--Equipment
+//CCategory
+Route::resource('admin/category', 'EquipmentCategoryController');
+Route::prefix('admin/category')->group(function () {
+    Route::get('/{category_id}/equipment', 'EquipmentController@index');
+    Route::get('/{category_id}/equipment/create', 'EquipmentController@create');
+    Route::get('/{categoryId}/equipment/{id}/edit', 'EquipmentController@edit');
+
+    Route::put('/equipment/{id}', 'EquipmentController@update');
+    Route::post('/equipment', 'EquipmentController@store');
+    Route::delete('/{category_id}/equipment/{id}', 'EquipmentController@destroy');
 });

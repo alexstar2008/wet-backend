@@ -26,6 +26,7 @@
                 <li><a href="/admin/photos">Фото обьектов</a></li>
                 <li><a href="/admin/reference_category">Референс</a></li>
                 <li><a href="/admin/library">Библиотека</a></li>
+                <li><a href="/admin/category">Оборудование</a></li>
             </ul>
         </div>
     </div>

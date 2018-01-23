@@ -12,6 +12,7 @@
                     <a href="/admin/photos">Фото обьектов</a>
                     <a href="/admin/reference_category">Референс</a>
                     <a href="/admin/library">Библиотека</a>
+                    <a href="/admin/category">Оборудование</a>
                 </div>
             </div>
         </div>

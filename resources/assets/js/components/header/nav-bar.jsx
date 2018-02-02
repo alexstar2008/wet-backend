@@ -15,7 +15,7 @@ class NavBar extends React.Component{
               {title:"референс",href:"/reference"},
               {title:"фотогалерея",href:"/photo-gallery"},
             ]},
-            {title:"технологии",href:"/about-us"},
+            {title:"технологии",href:"/technologies"},
             {title:"оборудование",href:"/#"},
             {title:"монтаж и сервис",href:"/assembling-service"},
             {title:"библиотека",href:"#"},

@@ -28,5 +28,8 @@
     "react-scrollchor": "^4.0.0",
     "react-slick": "^0.15.4",
     "slick-carousel": "^1.8.1"
+  },
+  "dependencies": {
+    "react-sliding-pane": "^2.0.2"
   }
 }

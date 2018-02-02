@@ -181,6 +181,9 @@ body{
 .unordered-list li:before {
     content: "-";
 }
+.list-without-order li:before {
+    content: "" !important;
+}
 
 /* fuck */
 .margin_bottom_50{

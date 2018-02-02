@@ -19,6 +19,8 @@ Route::get('/about-us', 'HomeController');
 Route::get('/we-offer', 'HomeController');
 Route::get('/photo-gallery', 'HomeController');
 Route::get('/reference', 'HomeController');
+Route::get('/technologies', 'HomeController');
+Route::get('/technologies-content', 'HomeController');
 
 
 //--Admin

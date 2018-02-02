@@ -1,0 +1,33 @@
+.gallery-item{
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+.gallery-photo{
+    text-align: center;
+}
+.gallery-photo img{
+    max-width: 100%;
+    border: 1px solid #2f87a5;
+}
+.gallery-title{
+    color: #0f4c65;
+    font-family: Verdana,Geneva,Tahoma,sans-serif;
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 1.15em;
+    padding-top: 20px;
+    padding-bottom: 24px;
+    text-align: center;
+    max-width: 302px;
+    margin: 0 auto;
+}
+.gallery-item .gallery-title{
+    background-color: inherit;
+    color:#0f4c65;
+    transition: background-color .5s ease-in,color .5s ease-in;
+}
+.gallery-item:hover .gallery-title{
+    background-color: #207ca1;
+    color:#fff;
+    transition: color .5s ease-in,background-color 1s ease-in;
+}

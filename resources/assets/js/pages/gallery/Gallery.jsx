@@ -2,12 +2,9 @@ import React, {Component} from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
 import "animate.css/animate.min.css";
 
-
 import Footer from '../../components/footer/footer.module';
 import Paragraph from '../../components/titles/paragraph';
 import CategoryTitle from '../../components/titles/categoryTitle';
-import ContentBox from '../../components/content-box/content-box';
-import ContentBoxPicture from '../../components/content-box/content-box-picture';
 
 import '../../Shared.css';
 import './gallery.css';

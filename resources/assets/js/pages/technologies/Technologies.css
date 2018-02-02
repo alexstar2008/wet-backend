@@ -1,0 +1,96 @@
+.technologies{
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
+
+.tech_category_title{
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.table-wrapper{
+    overflow-x: scroll;
+    max-width: 100%; 
+}
+.tech-table{
+    margin-top: 20px;
+}
+.tech-table td,th{
+    padding: 5px 15px;
+    border: 1px solid #abb4b4;
+    color: #0f4c65;
+    font-size: 1.15em;
+}
+.tech-table td {
+    text-transform: uppercase;
+}
+
+
+/* Sliding pane */
+.tech-sliding-pane{
+    margin-top: 122px;
+    height: 500px;
+}
+.tech-sliding-pane .slide-pane__header{
+    flex: 0 0 35px;
+}
+.tech-sliding-pane .tech-nav{
+    width: 100%;
+    left: 0;
+    top:35px;
+
+}
+.tech-sliding-pane .tech-nav-item{
+    border-left: none;
+    border-right: none;
+}
+.tech-sliding-pane .tech-nav-item:first-child{
+    border-top: none;
+}
+
+/* Navigations */
+.tech-arrow{
+    z-index: 1000;
+    position: fixed;
+    top: 25%;
+    left: 0;
+    padding-top: 16px;
+    width: 32px;
+    height: 62px;
+    background-color: rgba(15, 76, 101, 0.5);
+    /* border-radius: 50%; */
+    color: #fff;
+    text-align: center;
+    transition: background-color .5s;
+}
+.tech-nav{
+    position: fixed;
+    max-width: 280px;
+}
+.tech-nav a{
+    text-decoration: none !important;
+}
+.tech-nav-item{
+    cursor: pointer;
+    border: 1px solid #167198;
+    border-top: none;
+    font-size: 1.15em;
+    color: #167198;
+    text-align: center;
+    padding: 10px 15px;
+}
+.tech-nav-item:first-child{
+    border-top: 1px solid #167198;
+}
+.tech-nav-item:hover{
+    color:#fff;
+    background-color: #66bee4;
+}
+/* .tech-nav-item-active{
+    color:#fff;
+    background-color: #66bee4;
+} */

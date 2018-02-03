@@ -33,7 +33,7 @@
 /* Sliding pane */
 .tech-sliding-pane{
     margin-top: 122px;
-    height: 500px;
+    height: 550px;
 }
 .tech-sliding-pane .slide-pane__header{
     flex: 0 0 35px;
@@ -69,6 +69,7 @@
 }
 .tech-nav{
     position: fixed;
+    width: 25%;
     max-width: 280px;
 }
 .tech-nav a{
@@ -94,3 +95,18 @@
     color:#fff;
     background-color: #66bee4;
 } */
+
+.technologies-section{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+@media screen and (max-width:767px){
+    .technologies-section{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+.technologies-section:nth-child(2n){
+  background-color: #edf6f6;  
+}

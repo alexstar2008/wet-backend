@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
+import { HashLink as Link } from 'react-router-hash-link';
 import "animate.css/animate.min.css";
-import {
-    Link
-} from 'react-router-dom';
+// import {
+//     Link
+// } from 'react-router-dom';
 
 import '../../Shared.css';
 
@@ -16,15 +17,15 @@ class Technologies extends Component {
     constructor(props) {
         super(props);
         this.items = [
-            { name: "Осветление воды", img: "./imgs/lipetsk.png", desc: "1Desc" },
-            { name: "Механическая фильтрация", img: "./imgs/lipetsk.png", desc: "2Desc" },
-            { name: "Удаление железа / марганца на фильтрах WET- FE", img: "./imgs/lipetsk.png", desc: "3Desc" },
-            { name: "Сорбция - фильтры с активированным углем WET-AC", img: "./imgs/lipetsk.png", desc: "4Desc" },
-            { name: "Умягчение (Na – катионирование)", img: "./imgs/lipetsk.png", desc: "5Desc" },
-            { name: "Декарбонизация (Н – катионирование)", img: "./imgs/lipetsk.png", desc: "6Desc" },
-            { name: "Обратный осмосё", img: "./imgs/lipetsk.png", desc: "6Desc" },
-            { name: "Ультрафильтрация", img: "./imgs/lipetsk.png", desc: "6Desc" },
-            { name: "Комплекс оборудования водоподготовки", img: "./imgs/lipetsk.png", desc: "6Desc" },
+            { name: "Осветление воды", img: "./imgs/technologies/menu/menu_1.png", desc: "1Desc", link: "technologies-content#clarification" },
+            { name: "Механическая фильтрация", img: "./imgs/technologies/menu/menu_2.png", desc: "2Desc", link: "technologies-content#filtration" },
+            { name: "Удаление железа / марганца на фильтрах WET- FE", img: "./imgs/technologies/menu/menu_3.png", desc: "3Desc", link: "technologies-content#ferum-remove" },
+            { name: "Сорбция - фильтры с активированным углем WET-AC", img: "./imgs/technologies/menu/menu_4.png", desc: "4Desc", link: "technologies-content#sorbtion" },
+            { name: "Умягчение (Na – катионирование)", img: "./imgs/technologies/menu/menu_5.png", desc: "5Desc", link: "technologies-content#softening" },
+            { name: "Декарбонизация (Н – катионирование)", img: "./imgs/technologies/menu/menu_6.png", desc: "6Desc", link: "technologies-content#decarbonization" },
+            { name: "Обратный осмосё", img: "./imgs/technologies/menu/menu_7.png", desc: "6Desc", link: "technologies-content#reverse-osmos" },
+            { name: "Ультрафильтрация", img: "./imgs/technologies/menu/menu_8.png", desc: "6Desc", link: "technologies-content#ultrafiltration" },
+            { name: "Комплекс оборудования водоподготовки", img: "./imgs/technologies/menu/menu_9.png", desc: "6Desc", link: "technologies-content#complex-water-equipment" },
         ];
 
     }
@@ -32,7 +33,7 @@ class Technologies extends Component {
     render() {
         const itemsRendered = this.items.map((item, index) => {
             return (
-                <Link to="technologies-content">
+                <Link to={item.link}>
                     <CardBoxPicture item={item} />
                 </Link>
             );

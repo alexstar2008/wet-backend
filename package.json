@@ -30,6 +30,7 @@
     "slick-carousel": "^1.8.1"
   },
   "dependencies": {
+    "react-router-hash-link": "^1.1.1",
     "react-sliding-pane": "^2.0.2"
   }
 }

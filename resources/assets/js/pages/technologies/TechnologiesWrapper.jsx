@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import path from 'path';
 import SlidingPane from 'react-sliding-pane';
 import 'react-sliding-pane/dist/react-sliding-pane.css';
 
@@ -10,8 +11,57 @@ import Scrollchor from 'react-scrollchor';
 class TechnologiesWrapper extends Component {
     constructor(props) {
         super(props);
-        this.state = { isPaneOpenLeft: false };
+        this.state = { isPaneOpenLeft: false, activeNav: 0 };
         this.toggleNavBar = this.toggleNavBar.bind(this);
+        this.handleScroll = this.handleScroll.bind(this);
+
+        document.onscroll = this.handleScroll;
+
+    }
+    // componentDidUpdate(){
+    //     document.onscroll = this.handleScroll;
+    // }
+    handleScroll(){
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop ;
+            scrollTop += window.innerHeight/2;
+
+            const techNavsLinks = document.querySelectorAll('.tech-nav a');
+            if(techNavsLinks.length==0)
+                return;
+            techNavsLinks[this.state.activeNav].firstElementChild.classList.remove('active');
+    
+            const sections = {
+                clarification: document.getElementById('clarification').offsetTop,
+                filtration: document.getElementById('filtration').offsetTop,
+                ferumRemove: document.getElementById('ferum-remove').offsetTop,
+                sorbtion: document.getElementById('sorbtion').offsetTop,
+                softening: document.getElementById('softening').offsetTop,
+                decarbonization: document.getElementById('decarbonization').offsetTop,
+                reverseOsmos: document.getElementById('reverse-osmos').offsetTop,
+                ultrafiltration: document.getElementById('ultrafiltration').offsetTop,
+                complexWaterEquipment: document.getElementById('complex-water-equipment').offsetTop
+            };
+           
+            let activeNavLink = 0;
+            switch(true){
+                case (scrollTop<sections.clarification) : activeNavLink = 0; break;
+                case (scrollTop>sections.clarification && scrollTop<sections.filtration) : activeNavLink = 0;  break;
+                case (scrollTop>sections.filtration && scrollTop<sections.ferumRemove) : activeNavLink = 1;  break;
+                case (scrollTop>sections.ferumRemove && scrollTop<sections.sorbtion) : activeNavLink = 2;  break;
+                case (scrollTop>sections.sorbtion && scrollTop<sections.softening) : activeNavLink = 3;  break;
+                case (scrollTop>sections.softening && scrollTop<sections.decarbonization) : activeNavLink = 4;  break;
+                case (scrollTop>sections.decarbonization && scrollTop<sections.reverseOsmos) : activeNavLink = 5;  break;
+                case (scrollTop>sections.reverseOsmos && scrollTop<sections.ultrafiltration) : activeNavLink = 6;  break;
+                case (scrollTop>sections.ultrafiltration && scrollTop<sections.complexWaterEquipment) : activeNavLink = 7;  break;
+                case (scrollTop>sections.complexWaterEquipment ) : activeNavLink = 8;  break;
+            }
+    
+            techNavsLinks[activeNavLink].firstElementChild.classList.add('active');
+            this.setState({
+                activeNav: activeNavLink
+            });
+    
+            console.log(activeNavLink);
     }
 
     toggleNavBar() {
@@ -156,16 +206,24 @@ class TechnologiesWrapper extends Component {
                                     4) в бессточных схемах осветления воды
                                 </li>
                             </ul>
-                            <div className="unordered-list-header">
-                                ООО «Вотер Эко Тех» предлагает осветлители разработки ОВИ<sup>ТМ</sup>
+                            <div className="row">
+                                <div className="col-sm-9 col-xs-7 vcenter">
+                                    <div className="unordered-list-header">
+                                        ООО «Вотер Эко Тех» предлагает осветлители разработки ОВИ<sup>ТМ</sup>
+                                    </div>
+                                    <p className="paragraph-text blue">
+                                        Осветлитель ОВИТМ импульсного типа, секционный.
+                                        Материал – усиленный полипропилен.
+                                        Для удобства обслуживания внутренние конструкции выполнены легко-разборными.
+                                        Требуемая производительность набирается путем подбора
+                                        необходимого количества секций.
+                                    </p>
+                                </div>
+                                <div className="col-sm-3 col-xs-5 vcenter">
+                                    <img src={path.join(__dirname,'./imgs/technologies/ligtening1.png')} className="img-responsive" />
+                                </div>
                             </div>
-                            <p className="paragraph-text blue">
-                                Осветлитель ОВИТМ импульсного типа, секционный.
-                                Материал – усиленный полипропилен.
-                                Для удобства обслуживания внутренние конструкции выполнены легко-разборными.
-                                Требуемая производительность набирается путем подбора
-                                необходимого количества секций.
-                            </p>
+
                             <div className="unordered-list-header">
                                 Производительность и габариты 1 секции осветлителя:
                             </div>
@@ -256,30 +314,47 @@ class TechnologiesWrapper extends Component {
                             <div className="unordered-list-header">
                                 Сетчатые фильтры Yamit
                             </div>
-                            <p className="paragraph-text blue">
-                                Автоматические самопромывающиеся фильтры
-                                с гидравлическим либо электрическим
-                                приводом, в которых в качестве фильтрующего элемента
-                                используется сетка с размером ячеек от 50 до 1000мкм
-                                (выбирается в зависимости от степени загрязнения воды).
-                            </p>
+                            <div className="row">
+                                <div className="col-sm-3 col-xs-5 vcenter">
+                                    <img src={path.join(__dirname,'./imgs/technologies/filtration_yamit.png')} className="img-responsive" />
+                                </div>
+                                <div className="col-sm-9 col-xs-7 vcenter">
+                                    <p className="paragraph-text blue">
+                                        Автоматические самопромывающиеся фильтры
+                                        с гидравлическим либо электрическим
+                                        приводом, в которых в качестве фильтрующего элемента
+                                        используется сетка с размером ячеек от 50 до 1000мкм
+                                        (выбирается в зависимости от степени загрязнения воды).
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="technologies_iframe">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/4jIVefOPQJw" frameBorder="0" allowFullScreen=""></iframe>
+                            </div>
                             <div className="unordered-list-header">
                                 Дисковые фильтры Azud
                             </div>
-                            <p className="paragraph-text blue">
-                                Автоматические самопромывающиеся фильтры, где
-                                фильтрующим элементом является пакет специальных дисков,
-                                изготовленных из прочных полимерных материалов, на обеих
-                                поверхностях которых по диагонали нанесены канавки
-                                определенной глубины и ширины, обеспечивающие высокую
-                                тонкость и точность фильтрации. При сжатии двух соседних
-                                дисков между ними образуется объемная сетчатая структура,
-                                являющаяся рабочим фильтрующим элементом. Тонкость очистки
-                                таких фильтров колеблется от 10 до 500 мкм в зависимости от
-                                выбора дисков.
-                                Благодаря модульной конструкции, может быть подобрана любая
-                                производительность фильтрационной системы.
-                            </p>
+                            <div className="row">
+                                <div className="col-sm-9 col-xs-7 vcenter">
+                                    <p className="paragraph-text blue">
+                                        Автоматические самопромывающиеся фильтры, где
+                                        фильтрующим элементом является пакет специальных дисков,
+                                        изготовленных из прочных полимерных материалов, на обеих
+                                        поверхностях которых по диагонали нанесены канавки
+                                        определенной глубины и ширины, обеспечивающие высокую
+                                        тонкость и точность фильтрации. При сжатии двух соседних
+                                        дисков между ними образуется объемная сетчатая структура,
+                                        являющаяся рабочим фильтрующим элементом. Тонкость очистки
+                                        таких фильтров колеблется от 10 до 500 мкм в зависимости от
+                                        выбора дисков.
+                                        Благодаря модульной конструкции, может быть подобрана любая
+                                        производительность фильтрационной системы.
+                                    </p>
+                                </div>
+                                <div className="col-sm-3 col-xs-5 vcenter">
+                                    <img src={path.join(__dirname,'./imgs/technologies/filtration_azud.png')} className="img-responsive" />
+                                </div>
+                            </div>
                             <div className="unordered-list-header">
                                 ПРЕИМУЩЕСТВА ДИСКОВЫХ ФИЛЬТРОВ:
                             </div>
@@ -314,17 +389,27 @@ class TechnologiesWrapper extends Component {
                                     фильтрации, производительность и т.д.)
                                 </li>
                             </ul>
+                            <div className="technologies_iframe">
+                                <iframe width="560" height="315"src="https://www.youtube.com/embed/ejVupHlQj5o" frameBorder="0" allowFullScreen=""></iframe>
+                            </div>
                             <div className="unordered-list-header">
                                 Напорная фильтрация WET-F
                             </div>
-                            <p className="paragraph-text blue">
-                                Серия механических фильтров WET-F – это напорные
-                                механические фильтры, в которых в качестве фильтрующей
-                                загрузки используется кварцевый песок и/или антрацит.
-                            </p>
-                            <p className="paragraph-text blue">
-                                Производительность 1 фильтра от 1 до 200 м<sup>3</sup>/ч
-                            </p>
+                            <div className="row">
+                                <div className="col-sm-9 col-xs-7 vcenter">
+                                    <p className="paragraph-text blue">
+                                        Серия механических фильтров WET-F – это напорные
+                                        механические фильтры, в которых в качестве фильтрующей
+                                        загрузки используется кварцевый песок и/или антрацит.
+                                    </p>
+                                    <p className="paragraph-text blue">
+                                        Производительность 1 фильтра от 1 до 200 м<sup>3</sup>/ч
+                                    </p>
+                                </div>
+                                <div className="col-sm-3 col-xs-5 vcenter">
+                                    <img src={path.join(__dirname,'./imgs/technologies/filtration_wet-f.png')} className="img-responsive" />
+                                </div>
+                            </div>
                             <p className="paragraph-text blue">
                                 Корпуса фильтров:
                             </p>
@@ -385,17 +470,24 @@ class TechnologiesWrapper extends Component {
                             <p className="paragraph-text blue">
                                 Производительность 1 фильтра от 1 до 200 м<sup>3</sup>/ч
                             </p>
-                            <div className="unordered-list-header">
-                                Корпуса фильтров:
+                            <div className="row">
+                                <div className="col-sm-9 col-xs-7 vcenter">
+                                    <div className="unordered-list-header">
+                                    Корпуса фильтров:
+                                    </div>
+                                    <ul className="unordered-list">
+                                        <li>
+                                            Композитные, D 200 – 1600 мм, P<sub>раб</sub> до 10 кг/см<sup>2</sup>
+                                        </li>
+                                        <li>
+                                            Металлические с антикоррозионным покрытием, D 1800 – 5000 мм, P<sub>раб</sub> до 16 кг/см<sup>2</sup>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div className="col-sm-3 col-xs-5 vcenter">
+                                    <img src={path.join(__dirname,'./imgs/technologies/ferum_1.png')} className="img-responsive" />
+                                </div>
                             </div>
-                            <ul className="unordered-list">
-                                <li>
-                                    Композитные, D 200 – 1600 мм, P<sub>раб</sub> до 10 кг/см<sup>2</sup>
-                                </li>
-                                <li>
-                                    Металлические с антикоррозионным покрытием, D 1800 – 5000 мм, P<sub>раб</sub> до 16 кг/см<sup>2</sup>
-                                </li>
-                            </ul>
                             <div className="unordered-list-header">
                                 Виды исполнения по автоматизации :
                             </div>
@@ -410,29 +502,36 @@ class TechnologiesWrapper extends Component {
                                     автоматическое, с использованием системы управленияна базе промышленного контроллера Siemens либо аналогов.
                                 </li>
                             </ul>
-                            <div className="unordered-list-header">
-                                Применяются:
+                            <div className="row">
+                                <div className="col-sm-9 col-xs-7 vcenter">
+                                    <div className="unordered-list-header">
+                                        Применяются:
+                                    </div>
+                                    <ul className="unordered-list">
+                                        <li>
+                                            в любых системах водоподготовки для защиты
+                                            последующих ступеней (ионного обмена, осмоса
+                                            и т.д.) от негативного влияния железа
+                                        </li>
+                                        <li>
+                                            для технологий, где требуется полное отсутствие железа
+                                            в воде: в пищевой промышленности
+                                            (приготовление пива, напитков и пр.),в
+                                            текстильной промышленности и др.
+                                        </li>
+                                        <li>
+                                            в подготовке воды для котла
+                                        </li>
+                                        <li>
+                                            для подготовки воды питьевого и хозбытового
+                                            назначения
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div className="col-sm-3 col-xs-5 vcenter">
+                                    <img src={path.join(__dirname,'./imgs/technologies/ferum_2.png')} className="img-responsive" />
+                                </div>
                             </div>
-                            <ul className="unordered-list">
-                                <li>
-                                    в любых системах водоподготовки для защиты
-                                    последующих ступеней (ионного обмена, осмоса
-                                    и т.д.) от негативного влияния железа
-                                </li>
-                                <li>
-                                    для технологий, где требуется полное отсутствие железа
-                                    в воде: в пищевой промышленности
-                                    (приготовление пива, напитков и пр.),в
-                                    текстильной промышленности и др.
-                                </li>
-                                <li>
-                                    в подготовке воды для котла
-                                </li>
-                                <li>
-                                    для подготовки воды питьевого и хозбытового
-                                    назначения
-                                </li>
-                            </ul>
                             <div className="unordered-list-header">
                                 ПРЕИМУЩЕСТВА:
                             </div>
@@ -454,23 +553,30 @@ class TechnologiesWrapper extends Component {
                         </div>
                         <div id="sorbtion" className="technologies-section">
                             <h2 className="tech_category_title">Сорбция - фильтры с активированным углем WET-AC</h2>
-                            <div className="unordered-list-header">
-                                Фильтрацию на активированном угле применяют для:
+                            <div className="row">
+                                <div className="col-sm-3 col-xs-5 vcenter">
+                                    <img src={path.join(__dirname,'./imgs/technologies/sorbtion_1.png')} className="img-responsive" />
+                                </div>
+                                <div className="col-sm-9 col-xs-7 vcenter">
+                                    <div className="unordered-list-header">
+                                    Фильтрацию на активированном угле применяют для:
+                                    </div>
+                                    <ul className="unordered-list">
+                                        <li>
+                                            удаления органики. Особенно эффективен для этого
+                                            кокосовый активированный уголь, благодаря своей пористости
+                                            обладающий большой поверхностью адсорбции.
+                                        </li>
+                                        <li>
+                                            Удаления свободного хлора (обычно в связке с системой
+                                            обеззараживания хлорсодержащими веществами).
+                                        </li>
+                                    </ul>
+                                    <p className="paragraph-text blue">
+                                        Производительность одного фильтра от 1 до 100 м<sup>3</sup>/ч
+                                    </p>
+                                </div>
                             </div>
-                            <ul className="unordered-list">
-                                <li>
-                                    даления органики. Особенно эффективен для этого
-                                    кокосовый активированный уголь, благодаря своей пористости
-                                    обладающий большой поверхностью адсорбции.
-                                </li>
-                                <li>
-                                    Удаления свободного хлора (обычно в связке с системой
-                                    обеззараживания хлорсодержащими веществами).
-                                </li>
-                            </ul>
-                            <p className="paragraph-text blue">
-                                Производительность одного фильтра от 1 до 100 м<sup>3</sup>/ч
-                            </p>
                             <div className="unordered-list-header">
                                 Корпуса фильтров:
                             </div>
@@ -512,24 +618,31 @@ class TechnologiesWrapper extends Component {
                         </div>
                         <div id="softening" className="technologies-section">
                             <h2 className="tech_category_title">Умягчение (Na – катионирование)</h2>
-                            <p className="paragraph-text blue">
-                                Серия фильтров WET-NA предназначена для умягчения воды
-                                – удаления ионов кальция и магния путем ионного обмена.
-                            </p>
-                            <p className="paragraph-text blue">
-                                Производительность одного фильтра от 1 до 250 м3/ч
-                            </p>
-                            <div className="unordered-list-header">
-                                Корпуса фильтров:
+                            <div className="row">
+                                <div className="col-sm-9 col-xs-7 vcenter">
+                                    <p className="paragraph-text blue">
+                                        Серия фильтров WET-NA предназначена для умягчения воды
+                                        – удаления ионов кальция и магния путем ионного обмена.
+                                    </p>
+                                    <p className="paragraph-text blue">
+                                        Производительность одного фильтра от 1 до 250 м3/ч
+                                    </p>
+                                    <div className="unordered-list-header">
+                                        Корпуса фильтров:
+                                    </div>
+                                    <ul className="unordered-list">
+                                        <li>
+                                            Композитные, D 200 – 1600 мм, P<sub>раб</sub> до 10 кг/см<sup>2</sup>
+                                        </li>
+                                        <li>
+                                            Металлические с антикоррозионным  покрытием, D 1800 – 3600 мм, P<sub>раб</sub> до 16 кг/см<sup>2</sup>
+                                        </li>
+                                    </ul>  
+                                </div>
+                                <div className="col-sm-3 col-xs-5 vcenter">
+                                    <img src={path.join(__dirname,'./imgs/technologies/softening_1.png')} className="img-responsive" />
+                                </div>
                             </div>
-                            <ul className="unordered-list">
-                                <li>
-                                    Композитные, D 200 – 1600 мм, P<sub>раб</sub> до 10 кг/см<sup>2</sup>
-                                </li>
-                                <li>
-                                Металлические с антикоррозионным  покрытием, D 1800 – 3600 мм, P<sub>раб</sub> до 16 кг/см<sup>2</sup>
-                                </li>
-                            </ul>
                             <div className="unordered-list-header">
                                 Виды исполнения по автоматизации :
                             </div>
@@ -588,17 +701,24 @@ class TechnologiesWrapper extends Component {
                         </div>
                         <div id="decarbonization" className="technologies-section">
                             <h2 className="tech_category_title">Декарбонизация (Н – катионирование)</h2>
-                            <p className="paragraph-text blue">
-                                В данном случае декарбонизация – это комплексный
-                                процесс удаления из воды щелочности (разложение на
-                                углекислоту СО2 и воду), временной жесткости и затем
-                                отдув углекислоты на дегазаторе.
-                            </p>
-                            <p className="paragraph-text blue">
-                                Для этого мы предлагаем напорные фильтры серии WET-H,
-                                засыпанные высококачественным слабокислотным
-                                катионитом.
-                            </p>
+                            <div className="row">
+                                <div className="col-sm-3 col-xs-5 vcenter">
+                                    <img src={path.join(__dirname,'./imgs/technologies/decarbonization_1.png')} className="img-responsive" />
+                                </div>
+                                <div className="col-sm-9 col-xs-7 vcenter">
+                                    <p className="paragraph-text blue">
+                                        В данном случае декарбонизация – это комплексный
+                                        процесс удаления из воды щелочности (разложение на
+                                        углекислоту СО2 и воду), временной жесткости и затем
+                                        отдув углекислоты на дегазаторе.
+                                    </p>
+                                    <p className="paragraph-text blue">
+                                        Для этого мы предлагаем напорные фильтры серии WET-H,
+                                        засыпанные высококачественным слабокислотным
+                                        катионитом.
+                                    </p>
+                                </div>
+                            </div>
                             <p className="paragraph-text blue">
                                 Т.к. регенерация осуществляется раствором соляной либо серной кислоты,
                                 то мы используем устойчивые к кислоте композитные корпуса.
@@ -629,6 +749,34 @@ class TechnologiesWrapper extends Component {
                                     промышленного контроллера Siemens либо аналогов.
                                 </li>
                             </ul>
+                            <div className="row">
+                                <div className="col-sm-9 col-xs-7 vcenter">
+                                    <div className="unordered-list-header">
+                                        Применяются:
+                                    </div>
+                                    <ul className="unordered-list">
+                                        <li>
+                                            в процессах, где требуется удаление щелочности и частичное
+                                            умягчение воды:
+                                        </li>
+                                        <li>
+                                            пивоварение;
+                                        </li>
+                                        <li>
+                                            производство алкогольных, с/а и б/а напитков;
+                                        </li>
+                                        <li>
+                                            в подготовке воды для котла
+                                        </li>
+                                        <li>
+                                            для подготовки питьевой воды
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div className="col-sm-3 col-xs-5 vcenter">
+                                    <img src={path.join(__dirname,'./imgs/technologies/decarbonization_2.png')} className="img-responsive" />
+                                </div>
+                            </div>
                             <div className="unordered-list-header">
                                 Применяются:
                             </div>
@@ -676,17 +824,24 @@ class TechnologiesWrapper extends Component {
                         </div>
                         <div id="reverse-osmos" className="technologies-section">
                             <h2 className="tech_category_title">Обратный осмос</h2>
-                            <p className="paragraph-text blue">
-                                Системы WET-RO позволяют получить обессоленную
-                                воду с помощью мембранной технологии обратного. осмоса.
-                            </p>
-                            <p className="paragraph-text blue">
-                                В качестве фильтрующих элементов используются
-                                мембраны ведущих мировых производителей.
-                            </p>
-                            <p className="paragraph-text blue">
-                                Производительность одного модуля от 1 до 100 м3/ч
-                            </p>
+                            <div className="row">
+                                <div className="col-sm-9 col-xs-7 vcenter">
+                                    <p className="paragraph-text blue">
+                                        Системы WET-RO позволяют получить обессоленную
+                                        воду с помощью мембранной технологии обратного. осмоса.
+                                    </p>
+                                    <p className="paragraph-text blue">
+                                        В качестве фильтрующих элементов используются
+                                        мембраны ведущих мировых производителей.
+                                    </p>
+                                    <p className="paragraph-text blue">
+                                        Производительность одного модуля от 1 до 100 м3/ч
+                                    </p>
+                                </div>
+                                <div className="col-sm-3 col-xs-5 vcenter">
+                                    <img src={path.join(__dirname,'./imgs/technologies/osmos_1.png')} className="img-responsive" />
+                                </div>
+                            </div>
                             <div className="unordered-list-header">
                                 Корпуса:
                             </div>
@@ -755,15 +910,22 @@ class TechnologiesWrapper extends Component {
                         </div>
                         <div id="ultrafiltration" className="technologies-section">
                             <h2 className="tech_category_title">Ультрафильтрация</h2>
-                            <p className="paragraph-text blue">
-                                Системы <strong>WET-UF</strong> предназначены для очистки воды от
-                                тонкодисперсных и коллоидных примесей, одноклеточных
-                                микроорганизмов, вирусов и бактерий, органических
-                                соединений. Ультрафильтрация – мембранный процесс,
-                                занимающий по своим селективным характеристикам
-                                промежуточное положение между нанофильтрацией и
-                                микрофильтрацией.
-                            </p>
+                            <div className="row">
+                                <div className="col-sm-9 col-xs-7 vcenter">
+                                    <p className="paragraph-text blue">
+                                        Системы <strong>WET-UF</strong> предназначены для очистки воды от
+                                        тонкодисперсных и коллоидных примесей, одноклеточных
+                                        микроорганизмов, вирусов и бактерий, органических
+                                        соединений. Ультрафильтрация – мембранный процесс,
+                                        занимающий по своим селективным характеристикам
+                                        промежуточное положение между нанофильтрацией и
+                                        микрофильтрацией.
+                                    </p>
+                                </div>
+                                <div className="col-sm-3 col-xs-5 vcenter">
+                                    <img src={path.join(__dirname,'./imgs/technologies/ultrafiltration_1.png')} className="img-responsive" />
+                                </div>
+                            </div>
                             <p className="paragraph-text blue">
                                 В качестве фильтрующих элементов используются мембраны ведущих мировых
                                 производителей. (Inge, Torаy и др.) В промышленных и муниципальных установках
@@ -833,19 +995,26 @@ class TechnologiesWrapper extends Component {
                                 наличия места и прочих условий, наши инженера предложат оптимальную схему
                                 водоподготовки на базе технологий WET.
                             </p>
-                            <p className="paragraph-text blue">
-                                В случае, если вы не знаете какое качество воды
-                                необходимо для решения вашей задачи, мы можем дать
-                                рекомендации, опираясь на свой 14-летний опыт работы
-                                в сфере водоподготовки.
-                            </p>
-                            <p className="paragraph-text blue">
-                                Мы можем разработать комплекс водоподготовки с
-                                получением воды различного качества для
-                                одновременного решения сразу нескольких ваших задач,
-                                тем самым сокращая капитальные затраты и экономя
-                                площадь.
-                            </p>
+                            <div className="row">
+                                <div className="col-sm-9 col-xs-7 vcenter">
+                                    <p className="paragraph-text blue">
+                                        В случае, если вы не знаете какое качество воды
+                                        необходимо для решения вашей задачи, мы можем дать
+                                        рекомендации, опираясь на свой 14-летний опыт работы
+                                        в сфере водоподготовки.
+                                    </p>
+                                    <p className="paragraph-text blue">
+                                        Мы можем разработать комплекс водоподготовки с
+                                        получением воды различного качества для
+                                        одновременного решения сразу нескольких ваших задач,
+                                        тем самым сокращая капитальные затраты и экономя
+                                        площадь.
+                                    </p>
+                                </div>
+                                <div className="col-sm-3 col-xs-5 vcenter">
+                                    <img src={path.join(__dirname,'./imgs/technologies/preparation_1.png')} className="img-responsive" />
+                                </div>
+                            </div>
                             <div className="unordered-list-header">
                                 ПРЕИМУЩЕСТВА РАБОТЫ С ООО «ВОТЕР ЭКО ТЕХ»:
                             </div>

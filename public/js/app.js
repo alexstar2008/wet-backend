@@ -68284,13 +68284,106 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var Reference = function (_Component) {
     _inherits(Reference, _Component);
 
-    function Reference() {
+    function Reference(props) {
         _classCallCheck(this, Reference);
 
-        return _possibleConstructorReturn(this, (Reference.__proto__ || Object.getPrototypeOf(Reference)).apply(this, arguments));
+        var _this = _possibleConstructorReturn(this, (Reference.__proto__ || Object.getPrototypeOf(Reference)).call(this, props));
+
+        _this.state = {
+            table: __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'div',
+                null,
+                'Loading...'
+            )
+        };
+        _this.getReference = _this.getReference.bind(_this);
+        _this.generateTable = _this.generateTable.bind(_this);
+
+        _this.getReference();
+        return _this;
     }
 
     _createClass(Reference, [{
+        key: 'getReference',
+        value: function getReference() {
+            var _this2 = this;
+
+            fetch('/api/reference').then(function (response) {
+                return response.json();
+            }).then(function (data) {
+                return _this2.generateTable(data);
+            }).catch(function (err) {
+                return console.log(err);
+            });
+        }
+    }, {
+        key: 'generateTable',
+        value: function generateTable(data) {
+            console.log(data);
+            var template = data.map(function (category) {
+                return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'div',
+                    null,
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'tr',
+                        null,
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            'td',
+                            { colSpan: '3', className: 'references_section_header' },
+                            category.name
+                        )
+                    ),
+                    category.enterprises.map(function (enterprise, enterpriseIndex) {
+                        if (enterprise.equipment.length === 0) return '';
+
+                        return (
+                            // Test
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                'div',
+                                null,
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'tr',
+                                    { className: "references_row " + (enterpriseIndex % 2 !== 0 ? "references_row_colored" : " ") },
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'td',
+                                        { rowSpan: enterprise.equipment.length },
+                                        enterprise.name
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'td',
+                                        null,
+                                        enterprise.equipment[0].equipment
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'td',
+                                        null,
+                                        enterprise.equipment[0].mission
+                                    )
+                                ),
+                                enterprise.equipment.slice(1).map(function (equipment) {
+                                    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'tr',
+                                        { className: 'references_row' },
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                            'td',
+                                            null,
+                                            equipment.equipment
+                                        ),
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                            'td',
+                                            null,
+                                            equipment.mission
+                                        )
+                                    );
+                                })
+                            )
+                        );
+                    })
+                );
+            });
+            this.setState({ table: template });
+        }
+    }, {
         key: 'render',
         value: function render() {
             return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -68326,473 +68419,110 @@ var Reference = function (_Component) {
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                 'div',
                                 { className: 'col-xs-12 references_table_wrapper' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'table',
-                                    { className: 'references_table' },
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        'thead',
-                                        null,
-                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                            'tr',
-                                            null,
-                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                'th',
-                                                null,
-                                                '\u041D\u0430\u0437\u0432\u0430\u043D\u0438\u0435 \u043F\u0440\u0435\u0434\u043F\u0440\u0438\u044F\u0442\u0438\u044F'
-                                            ),
-                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                'th',
-                                                null,
-                                                '\u041F\u0440\u0435\u0434\u043D\u0430\u0437\u043D\u0430\u0447\u0435\u043D\u0438\u044F'
-                                            ),
-                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                'th',
-                                                null,
-                                                '\u041E\u0431\u043E\u0440\u0443\u0434\u043E\u0432\u0430\u043D\u0438\u0435/\u0440\u0430\u0431\u043E\u0442\u044B'
-                                            )
-                                        )
-                                    ),
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        'tbody',
-                                        null,
-                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                            'tr',
-                                            null,
-                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                'td',
-                                                { colSpan: '3', className: 'references_section_header' },
-                                                '\u041C\u0415\u0422\u0410\u041B\u041B\u0423\u0420\u0413\u0418\u0427\u0415\u0421\u041A\u0410\u042F \u041F\u0420\u041E\u041C\u044C\u0456\u0428\u041B\u0415\u041D\u041D\u041E\u0421\u0422\u042C'
-                                            )
-                                        ),
-                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                            'tr',
-                                            { className: 'references_row references_row_colored' },
-                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                'td',
-                                                null,
-                                                '\u0414\u043D\u0435\u043F\u0440\u043E\u043A\u043E\u043A\u0441'
-                                            ),
-                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                'td',
-                                                null,
-                                                '\u0422\u042D\u0426, \u043F\u043E\u0434\u043F\u0438\u0442\u043A\u0430 \u043A\u043E\u0442\u043B\u043E\u0432'
-                                            ),
-                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                'td',
-                                                null,
-                                                '\u0444\u0438\u043B\u044C\u0442\u0440\u0430\u0446\u0438\u044F 160 \u043C',
-                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                    'sup',
-                                                    null,
-                                                    '3'
-                                                ),
-                                                '/\u0447',
-                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
-                                                ' \u0443\u043C\u044F\u0433\u0447\u0435\u043D\u0438\u0435 2 \u0441\u0442\u0443\u043F\u0435\u043D\u0438 150 \u043C',
-                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                    'sup',
-                                                    null,
-                                                    '3'
-                                                ),
-                                                '/\u0447'
-                                            )
-                                        ),
-                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                            'tr',
-                                            { className: 'references_row' },
-                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                'td',
-                                                null,
-                                                '\u0418\u0421\u0414, \u0410\u043B\u0447\u0435\u0432\u0441\u043A\u0438\u0439 \u041C\u041A'
-                                            ),
-                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                'td',
-                                                null,
-                                                '\u0413\u0422\u0421 \u041A\u0426'
-                                            ),
-                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                'td',
-                                                null,
-                                                '\u041E\u0431\u043E\u0440\u0443\u0434\u043E\u0432\u0430\u043D\u0438\u0435 \u0434\u043B\u044F \u0441\u0442\u0430\u043D\u0446\u0438\u0438 \u043E\u0447\u0438\u0441\u0442\u043A\u0438 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0441\u0442\u0432\u0435\u043D\u043D\u043E-\u0434\u043E\u0436\u0434\u0435\u0432\u044B\u0445 \u0441\u0442\u043E\u043A\u043E\u0432'
-                                            )
-                                        ),
-                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                            'tr',
-                                            { className: 'references_row references_row_colored' },
-                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                'td',
-                                                null,
-                                                '\u0418\u0421\u0414, \u0410\u043B\u0447\u0435\u0432\u0441\u043A\u043A\u043E\u043A\u0441'
-                                            ),
-                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                'td',
-                                                null,
-                                                '\u0421\u0435\u0440\u0432\u0438\u0441\u043D\u044B\u0435 \u0440\u0430\u0431\u043E\u0442\u044B'
-                                            ),
-                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                'td',
-                                                null,
-                                                '\u0417\u0430\u043C\u0435\u043D\u0430 \u043C\u0435\u043C\u0431\u0440\u0430\u043D \u0443\u0441\u0442\u0430\u043D\u043E\u0432\u043E\u043A \u043E\u0431\u0440\u0430\u0442\u043D\u043E\u0433\u043E \u043E\u0441\u043C\u043E\u0441\u0430'
-                                            )
-                                        ),
-                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                            'tr',
-                                            { className: 'references_row' },
-                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                'td',
-                                                { rowSpan: '3', className: 'references_cell_colored' },
-                                                '\u041C\u0435\u0442\u0438\u043D\u0432\u0435\u0441\u0442, \u041C\u041A\u0410\u0437\u043E\u0432\u0441\u0442\u0430\u043B\u044C'
-                                            ),
-                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                'td',
-                                                null,
-                                                '\u042D\u043D\u0435\u0440\u0433\u043E\u0431\u043B\u043E\u043A \u041A\u041A\u0426, \u043F\u043E\u0434\u043F\u0438\u0442\u043A\u0430 \u043A\u043E\u0442\u043B\u043E\u0432'
-                                            ),
-                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                'td',
-                                                null,
-                                                '\u0444\u0438\u043B\u044C\u0442\u0440\u0430\u0446\u0438\u044F 240 \u043C',
-                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                    'sup',
-                                                    null,
-                                                    '3'
-                                                ),
-                                                '/\u0447 ',
-                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
-                                                '\u0443\u043B\u044C\u0442\u0440\u0430\u0444\u0438\u043B\u044C\u0442\u0440\u0430\u0446\u0438\u044F 220 \u043C',
-                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                    'sup',
-                                                    null,
-                                                    '3'
-                                                ),
-                                                '/\u0447',
-                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
-                                                '\u043E\u0431\u0440\u0430\u0442\u043D\u044B\u0439 \u043E\u0441\u043C\u043E\u0441 160 \u043C',
-                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                    'sup',
-                                                    null,
-                                                    '3'
-                                                ),
-                                                '/\u0447',
-                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
-                                                '\u0443\u043C\u044F\u0433\u0447\u0435\u043D\u0438\u0435 130 \u043C',
-                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                    'sup',
-                                                    null,
-                                                    '3'
-                                                ),
-                                                '/\u0447'
-                                            )
-                                        ),
-                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                            'tr',
-                                            { className: 'references_row references_row_colored' },
-                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                'td',
-                                                null,
-                                                '\u0422\u041B\u0426, \u043E\u0431\u043E\u0440\u043E\u0442\u043D\u044B\u0439 \u0446\u0438\u043A\u043B'
-                                            ),
-                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                'td',
-                                                null,
-                                                '\u0444\u0438\u043B\u044C\u0442\u0440\u0430\u0446\u0438\u044F 2800 \u043C',
-                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                    'sup',
-                                                    null,
-                                                    '3'
-                                                ),
-                                                '/\u0447 (5 \u0444\u0438\u043B\u044C\u0442\u0440\u043E\u0432 D=5000\u043C\u043C)'
-                                            )
-                                        ),
-                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                            'tr',
-                                            { className: 'references_row' },
-                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                'td',
-                                                null,
-                                                '\u0411\u041E\u0421-2'
-                                            ),
-                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                'td',
-                                                null,
-                                                '\u0444\u0438\u043B\u044C\u0442\u0440\u0430\u0446\u0438\u044F 750 \u043C',
-                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                    'sup',
-                                                    null,
-                                                    '3'
-                                                ),
-                                                '/\u0447',
-                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
-                                                '\u0443\u043B\u044C\u0442\u0440\u0430\u0444\u0438\u043B\u044C\u0442\u0440\u0430\u0446\u0438\u044F 675 \u043C',
-                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                    'sup',
-                                                    null,
-                                                    '3'
-                                                ),
-                                                '/\u0447',
-                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
-                                                '\u043E\u0431\u0440\u0430\u0442\u043D\u044B\u0439 \u043E\u0441\u043C\u043E\u0441 600 \u043C',
-                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                    'sup',
-                                                    null,
-                                                    '3'
-                                                ),
-                                                '/\u0447'
-                                            )
-                                        ),
-                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                            'tr',
-                                            null,
-                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                'td',
-                                                { colSpan: '3', className: 'references_section_header' },
-                                                '\u042D\u041D\u0415\u0420\u0413\u0415\u0422\u0418\u041A\u0410'
-                                            )
-                                        ),
-                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                            'tr',
-                                            { className: 'references_row' },
-                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                'td',
-                                                null,
-                                                '\u0411\u0438\u043E\u0433\u0430\u0437\u044D\u043D\u0435\u0440\u0433\u043E'
-                                            ),
-                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                'td',
-                                                null,
-                                                '\u0422\u042D\u0421 \u043D\u0430 \u0431\u0438\u043E\u0442\u043E\u043F\u043B\u0438\u0432\u0435, \u041F\u043E\u0434\u043F\u0438\u0442\u043A\u0430 \u043A\u043E\u0442\u043B\u043E\u0432'
-                                            ),
-                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                'td',
-                                                null,
-                                                '\u0424\u0438\u043B\u044C\u0442\u0440\u0430\u0446\u0438\u044F, \u041D-Na\u043A\u0430\u0442\u0438\u043E\u043D\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435 15 \u043C',
-                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                    'sup',
-                                                    null,
-                                                    '3'
-                                                ),
-                                                '/\u0447'
-                                            )
-                                        ),
-                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                            'tr',
-                                            { className: 'references_row references_row_colored' },
-                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                'td',
-                                                null,
-                                                '\u0414\u043E\u043D\u0431\u0430\u0441\u0441\u044D\u043D\u0435\u0440\u0433\u043E, \u0421\u0442\u0430\u0440\u043E\u0431\u0435\u0448\u0435\u0432\u0441\u043A\u0430\u044F \u0422\u042D\u0421'
-                                            ),
-                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                'td',
-                                                null,
-                                                '\u0421\u0442\u0440\u043E\u0438\u0442\u0435\u043B\u044C\u0441\u0442\u0432\u043E \u0441\u0442\u0430\u043D\u0446\u0438\u0438 \u043F\u0438\u0442\u044C\u0435\u0432\u043E\u0433\u043E \u0432\u043E\u0434\u043E\u0441\u043D\u0430\u0431\u0436\u0435\u043D\u0438\u044F \xAB\u043F\u043E\u0434 \u043A\u043B\u044E\u0447\xBB'
-                                            ),
-                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                'td',
-                                                null,
-                                                '\u0424\u0438\u043B\u044C\u0442\u0440\u0430\u0446\u0438\u044F, \u043E\u0431\u0440\u0430\u0442\u043D\u044B\u0439 \u043E\u0441\u043C\u043E\u0441 100 \u043C',
-                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                    'sup',
-                                                    null,
-                                                    '3'
-                                                ),
-                                                '/\u0441\u0443\u0442\u043A\u0438'
-                                            )
-                                        ),
-                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                            'tr',
-                                            { className: 'references_row' },
-                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                'td',
-                                                null,
-                                                '\u041A\u0440\u0435\u043C\u0435\u043D\u0447\u0443\u0433\u0441\u043A\u0430\u044F \u0422\u042D\u0426'
-                                            ),
-                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                'td',
-                                                null,
-                                                '\u041F\u043E\u0434\u0433\u043E\u0442\u043E\u0432\u043A\u0430 \u0432\u043E\u0434\u044B \u0434\u043B\u044F \u043A\u043E\u0442\u043B\u043E\u0432'
-                                            ),
-                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                'td',
-                                                null,
-                                                '\u0420\u0435\u043A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0446\u0438\u044F \u043E\u0441\u0432\u0435\u0442\u043B\u0438\u0442\u0435\u043B\u0435\u0439 \u0438 \u041D-\u043A\u0430\u0442\u0438\u043E\u043D\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044FII\u0441\u0442, 300 \u043C',
-                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                    'sup',
-                                                    null,
-                                                    '3'
-                                                ),
-                                                '/\u0447'
-                                            )
-                                        ),
-                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                            'tr',
-                                            { className: 'references_row references_row_colored' },
-                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                'td',
-                                                null,
-                                                '\u0428\u043E\u0441\u0442\u043A\u0438\u043D\u0441\u043A\u0430\u044F \u0422\u042D\u0426'
-                                            ),
-                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                'td',
-                                                null,
-                                                '\u041F\u043E\u0434\u043F\u0438\u0442\u043A\u0430 \u043A\u043E\u0442\u043B\u043E\u0432 \u0432\u044B\u0441\u043E\u043A\u043E\u0433\u043E \u0434\u0430\u0432\u043B\u0435\u043D\u0438\u044F, \u0423\u043D\u0438\u043A\u0430\u043B\u044C\u043D\u043E\u0435 \u0440\u0435\u0448\u0435\u043D\u0438\u0435 \u043F\u043E \u0443\u0442\u0438\u043B\u0438\u0437\u0430\u0446\u0438\u0438 \u0441\u0442\u043E\u043A\u043E\u0432'
-                                            ),
-                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                'td',
-                                                null,
-                                                '\u0444\u0438\u043B\u044C\u0442\u0440\u0430\u0446\u0438\u044F 110 \u043C',
-                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                    'sup',
-                                                    null,
-                                                    '3'
-                                                ),
-                                                '/\u0447,',
-                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
-                                                '\u0443\u043B\u044C\u0442\u0440\u0430\u0444\u0438\u043B\u044C\u0442\u0440\u0430\u0446\u0438\u044F 90 \u043C',
-                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                    'sup',
-                                                    null,
-                                                    '3'
-                                                ),
-                                                '/\u0447,',
-                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
-                                                '\u0443\u043C\u044F\u0433\u0447\u0435\u043D\u0438\u0435 85 \u043C',
-                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                    'sup',
-                                                    null,
-                                                    '3'
-                                                ),
-                                                '/\u0447, ',
-                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
-                                                '\u043E\u0431\u0440\u0430\u0442\u043D\u044B\u0439 \u043E\u0441\u043C\u043E\u0441 41 \u043C',
-                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                    'sup',
-                                                    null,
-                                                    '3'
-                                                ),
-                                                '/\u0447 + 36 \u043C',
-                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                    'sup',
-                                                    null,
-                                                    '3'
-                                                ),
-                                                '/\u0447'
-                                            )
-                                        ),
-                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                            'tr',
-                                            { className: 'references_row' },
-                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                'td',
-                                                null,
-                                                'VKG ENERGIJA OU \u042D\u0441\u0442\u043E\u043D\u0438\u044F'
-                                            ),
-                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                'td',
-                                                null,
-                                                'VKG ENERGIJA OU \u042D\u0441\u0442\u043E\u043D\u0438\u044F \u041A\u043E\u043C\u043F\u043B\u0435\u043A\u0441 \u0432\u043E\u0434\u043E\u043F\u043E\u0434\u0433\u043E\u0442\u043E\u0432\u043A\u0438 \u043F\u043E\u0434\u043F\u0438\u0442\u043A\u0438 \u043A\u043E\u0442\u043B\u043E\u0432: \u041A\u043E\u043D\u0434\u0435\u0441\u0430\u0442\u043E\u043E\u0447\u0438\u0441\u0442\u043A\u0430 80 \u043C',
-                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                    'sup',
-                                                    null,
-                                                    '3'
-                                                ),
-                                                '/\u0447',
-                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
-                                                '\u0414\u0435\u043C\u0438\u043D\u0435\u0440\u0430\u043B\u0438\u0437\u043E\u0432\u0430\u043D\u043D\u0430\u044F \u0432\u043E\u0434\u0430 40 \u043C',
-                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                    'sup',
-                                                    null,
-                                                    '3'
-                                                ),
-                                                '/\u0447',
-                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
-                                                '\u0414\u043B\u044F \u043A\u043E\u043D\u0434\u0435\u043D\u0441\u0430\u0442\u043E\u043E\u0447\u0438\u0441\u0442\u043A\u0438 80 \u043C',
-                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                    'sup',
-                                                    null,
-                                                    '3'
-                                                ),
-                                                '/\u0447',
-                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
-                                                '\u0441\u043E\u0440\u0431\u0446\u0438\u043E\u043D\u043D\u044B\u0435 \u0444\u0438\u043B\u044C\u0442\u0440\u044B 80 \u043C',
-                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                    'sup',
-                                                    null,
-                                                    '3'
-                                                ),
-                                                '/\u0447',
-                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
-                                                '\u0443\u0441\u0442\u0430\u043D\u043E\u0432\u043A\u0430 \u0424\u0421\u0414 80 \u043C',
-                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                    'sup',
-                                                    null,
-                                                    '3'
-                                                ),
-                                                '/\u0447',
-                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null)
-                                            ),
-                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                'td',
-                                                null,
-                                                '\u0414\u043B\u044F \u043A\u043E\u043D\u0434\u0435\u043D\u0441\u0430\u0442\u043E\u043E\u0447\u0438\u0441\u0442\u043A\u0438 80 \u043C',
-                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                    'sup',
-                                                    null,
-                                                    '3'
-                                                ),
-                                                '/\u0447',
-                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
-                                                '\u0441\u043E\u0440\u0431\u0446\u0438\u043E\u043D\u043D\u044B\u0435 \u0444\u0438\u043B\u044C\u0442\u0440\u044B 80 \u043C',
-                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                    'sup',
-                                                    null,
-                                                    '3'
-                                                ),
-                                                '/\u0447',
-                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
-                                                '\u0443\u0441\u0442\u0430\u043D\u043E\u0432\u043A\u0430 \u0424\u0421\u0414 80 \u043C',
-                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                    'sup',
-                                                    null,
-                                                    '3'
-                                                ),
-                                                '/\u0447',
-                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
-                                                '\u0414\u0435\u043C\u0438\u043D\u0435\u0440\u0430\u043B\u0438\u0437\u0430\u0446\u0438\u044F 40 \u043C',
-                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                    'sup',
-                                                    null,
-                                                    '3'
-                                                ),
-                                                '/\u0447',
-                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
-                                                '\u0443\u043B\u044C\u0442\u0440\u0430\u0444\u0438\u043B\u044C\u0442\u0440\u0430\u0446\u0438\u044F 55 \u043C',
-                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                    'sup',
-                                                    null,
-                                                    '3'
-                                                ),
-                                                '/\u0447',
-                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
-                                                '\u043E\u0431\u0440\u0430\u0442\u043D\u044B\u0439 \u043E\u0441\u043C\u043E\u0441 47 \u043C',
-                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                    'sup',
-                                                    null,
-                                                    '3'
-                                                ),
-                                                '/\u0447',
-                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
-                                                '\u0443\u0441\u0442\u0430\u043D\u043E\u0432\u043A\u0430 \u042D\u0414\u0418 40 \u043C',
-                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                    'sup',
-                                                    null,
-                                                    '3'
-                                                ),
-                                                '/\u0447'
-                                            )
-                                        )
-                                    )
-                                )
+                                this.state.table
+                                /* <table className="references_table">
+                                    <thead>
+                                    <tr>
+                                        <th>Название предприятия</th>
+                                        <th>Предназначения</th>
+                                        <th>Оборудование/работы</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td colSpan="3" className="references_section_header">МЕТАЛЛУРГИЧЕСКАЯ
+                                            ПРОМьіШЛЕННОСТЬ
+                                        </td>
+                                    </tr>
+                                    <tr className="references_row references_row_colored">
+                                        <td>Днепрококс</td>
+                                        <td>ТЭЦ, подпитка котлов</td>
+                                        <td>фильтрация 160 м<sup>3</sup>/ч<br/> умягчение 2 ступени 150 м<sup>3</sup>/ч
+                                        </td>
+                                    </tr>
+                                    <tr className="references_row">
+                                        <td>ИСД, Алчевский МК</td>
+                                        <td>ГТС КЦ</td>
+                                        <td>Оборудование для станции очистки производственно-дождевых стоков</td>
+                                    </tr>
+                                    <tr className="references_row references_row_colored">
+                                        <td>ИСД, Алчевсккокс</td>
+                                        <td>Сервисные работы</td>
+                                        <td>Замена мембран установок обратного осмоса</td>
+                                    </tr>
+                                    <tr className="references_row">
+                                        <td rowSpan="3" className="references_cell_colored">Метинвест, МКАзовсталь</td>
+                                        <td>Энергоблок ККЦ, подпитка котлов</td>
+                                        <td>фильтрация 240 м<sup>3</sup>/ч <br/>
+                                            ультрафильтрация 220 м<sup>3</sup>/ч<br/>
+                                            обратный осмос 160 м<sup>3</sup>/ч<br/>
+                                            умягчение 130 м<sup>3</sup>/ч
+                                        </td>
+                                    </tr>
+                                    <tr className="references_row references_row_colored">
+                                        <td>ТЛЦ, оборотный цикл</td>
+                                        <td>фильтрация 2800 м<sup>3</sup>/ч (5 фильтров D=5000мм)</td>
+                                    </tr>
+                                    <tr className="references_row">
+                                        <td>БОС-2</td>
+                                        <td>
+                                            фильтрация 750 м<sup>3</sup>/ч<br/>
+                                            ультрафильтрация 675 м<sup>3</sup>/ч<br/>
+                                            обратный осмос 600 м<sup>3</sup>/ч
+                                        </td>
+                                    </tr>
+                                     <tr>
+                                        <td colSpan="3" className="references_section_header">ЭНЕРГЕТИКА</td>
+                                    </tr>
+                                    <tr className="references_row">
+                                        <td>Биогазэнерго</td>
+                                        <td>ТЭС на биотопливе, Подпитка котлов</td>
+                                        <td>Фильтрация, Н-Naкатионирование 15 м<sup>3</sup>/ч</td>
+                                    </tr>
+                                    <tr className="references_row references_row_colored">
+                                        <td>Донбассэнерго, Старобешевская ТЭС</td>
+                                        <td>Строительство станции питьевого водоснабжения «под ключ»</td>
+                                        <td>Фильтрация, обратный осмос 100 м<sup>3</sup>/сутки</td>
+                                    </tr>
+                                    <tr className="references_row">
+                                        <td>Кременчугская ТЭЦ</td>
+                                        <td>Подготовка воды для котлов</td>
+                                        <td>Реконструкция осветлителей и Н-катионированияIIст, 300 м<sup>3</sup>/ч</td>
+                                    </tr>
+                                    <tr className="references_row references_row_colored">
+                                        <td>Шосткинская ТЭЦ</td>
+                                        <td>Подпитка котлов высокого давления, Уникальное решение по утилизации стоков
+                                        </td>
+                                        <td>
+                                            фильтрация 110 м<sup>3</sup>/ч,<br/>
+                                            ультрафильтрация 90 м<sup>3</sup>/ч,<br/>
+                                            умягчение 85 м<sup>3</sup>/ч, <br/>
+                                            обратный осмос 41 м<sup>3</sup>/ч + 36 м<sup>3</sup>/ч
+                                        </td>
+                                    </tr>
+                                    <tr className="references_row">
+                                        <td>VKG ENERGIJA OU Эстония</td>
+                                        <td>
+                                            VKG ENERGIJA OU Эстония Комплекс водоподготовки подпитки котлов:
+                                            Кондесатоочистка 80 м<sup>3</sup>/ч<br/>
+                                            Деминерализованная вода 40 м<sup>3</sup>/ч<br/>
+                                            Для конденсатоочистки 80 м<sup>3</sup>/ч<br/>
+                                            сорбционные фильтры 80 м<sup>3</sup>/ч<br/>
+                                            установка ФСД 80 м<sup>3</sup>/ч<br/>
+                                        </td>
+                                        <td>
+                                            Для конденсатоочистки 80 м<sup>3</sup>/ч<br/>
+                                            сорбционные фильтры 80 м<sup>3</sup>/ч<br/>
+                                            установка ФСД 80 м<sup>3</sup>/ч<br/>
+                                            Деминерализация 40 м<sup>3</sup>/ч<br/>
+                                            ультрафильтрация 55 м<sup>3</sup>/ч<br/>
+                                            обратный осмос 47 м<sup>3</sup>/ч<br/>
+                                            установка ЭДИ 40 м<sup>3</sup>/ч
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table> */
+
                             )
                         )
                     ),
@@ -70122,10 +69852,13 @@ var Gallery = function (_Component) {
         var _this = _possibleConstructorReturn(this, (Gallery.__proto__ || Object.getPrototypeOf(Gallery)).call(this, props));
 
         _this.state = {
-            current: 3,
-            sliderOpened: false
+            current: 0,
+            sliderOpened: false,
+            items: []
         };
-        _this.items = [{ name: "1", img: "./imgs/lipetsk.png", desc: "1Desc" }, { name: "2", img: "./imgs/lipetsk.png", desc: "2Desc" }, { name: "3", img: "./imgs/lipetsk.png", desc: "3Desc" }, { name: "4", img: "./imgs/lipetsk.png", desc: "4Desc" }, { name: "5", img: "./imgs/lipetsk.png", desc: "5Desc" }, { name: "6", img: "./imgs/lipetsk.png", desc: "6Desc" }];
+        _this.getPhotos = _this.getPhotos.bind(_this);
+        _this.getPhotos();
+
         _this.toggleSlider = _this.toggleSlider.bind(_this);
         _this.prevSlide = _this.prevSlide.bind(_this);
         _this.nextSlide = _this.nextSlide.bind(_this);
@@ -70133,6 +69866,20 @@ var Gallery = function (_Component) {
     }
 
     _createClass(Gallery, [{
+        key: 'getPhotos',
+        value: function getPhotos() {
+            var _this2 = this;
+
+            fetch('/api/photos').then(function (response) {
+                return response.json();
+            }).then(function (data) {
+                _this2.setState({ items: data });
+                console.log(data);
+            }).catch(function (err) {
+                return console.log(err);
+            });
+        }
+    }, {
         key: 'toggleSlider',
         value: function toggleSlider(currentSlider) {
             this.setState(function (prevState) {
@@ -70145,31 +69892,39 @@ var Gallery = function (_Component) {
     }, {
         key: 'nextSlide',
         value: function nextSlide() {
-            var _this2 = this;
+            var _this3 = this;
 
             this.setState(function (prevState) {
                 return {
-                    current: prevState.current >= _this2.items.length - 1 ? 0 : prevState.current + 1
+                    current: prevState.current >= _this3.state.items.length - 1 ? 0 : prevState.current + 1
                 };
             });
         }
     }, {
         key: 'prevSlide',
         value: function prevSlide() {
-            var _this3 = this;
+            var _this4 = this;
 
             this.setState(function (prevState) {
                 return {
-                    current: prevState.current <= 0 ? _this3.items.length - 1 : prevState.current - 1
+                    current: prevState.current <= 0 ? _this4.state.items.length - 1 : prevState.current - 1
                 };
             });
         }
     }, {
         key: 'render',
         value: function render() {
-            var _this4 = this;
+            var _this5 = this;
 
-            var sliderItem = this.items[this.state.current];
+            if (this.state.items.length === 0) {
+                return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'div',
+                    null,
+                    'Loading ...'
+                );
+            }
+            var sliderItem = this.state.items[this.state.current];
+
             var sliderTemplate = __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 'div',
                 { className: this.state.sliderOpened ? "slider-template" : "slider-hidden" },
@@ -70181,12 +69936,12 @@ var Gallery = function (_Component) {
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     'div',
                     { className: 'slider-photo' },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: sliderItem.img })
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: '/photos/' + sliderItem.img })
                 ),
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     'div',
                     { className: 'slider-close', onClick: function onClick() {
-                            return _this4.toggleSlider();
+                            return _this5.toggleSlider();
                         } },
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fa fa-lg fa-times', 'aria-hidden': 'true' })
                 ),
@@ -70208,19 +69963,19 @@ var Gallery = function (_Component) {
                 )
             );
 
-            var itemsRendered = this.items.map(function (item, index) {
+            var itemsRendered = this.state.items.map(function (item, index) {
                 return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     'div',
                     { className: 'col-xs-12 col-sm-6 col-md-4' },
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                         'div',
                         { className: 'gallery-item', onClick: function onClick() {
-                                _this4.toggleSlider(index);
+                                _this5.toggleSlider(index);
                             } },
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                             'div',
                             { className: 'gallery-photo' },
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: item.img, alt: item.name })
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: '/photos/' + item.img, alt: item.name })
                         ),
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                             'h3',

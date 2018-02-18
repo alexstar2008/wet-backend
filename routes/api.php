@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Http\Request;
+use App\EquipmentCategory;
+use App\Equipment;
 use App\ReferenceEnterprise;
 use App\ReferenceCategory;
 use App\ReferenceEquipment;
@@ -26,6 +28,12 @@ Route::get('/reference', function () {
 });
 Route::get('/photos', function () {
     return Photography::all();
+});
+Route::get('/equipment',function(){
+    return EquipmentCategory::with('equipments')->get();
+});
+Route::get('/equipment/{id}' ,function($id){
+    return Equipment::where('category_id',$id)->get();
 });
 Route::get('/library', function () {
     return PDF::all();

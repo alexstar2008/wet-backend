@@ -21,7 +21,7 @@ Route::get('/photo-gallery', 'HomeController');
 Route::get('/reference', 'HomeController');
 Route::get('/technologies', 'HomeController');
 Route::get('/technologies-content', 'HomeController');
-
+Route::get('/library','HomeController');
 
 //--Admin
 Route::get('/admin', function () {
@@ -68,3 +68,5 @@ Route::prefix('admin/category')->group(function () {
     Route::post('/equipment', 'EquipmentController@store');
     Route::delete('/{category_id}/equipment/{id}', 'EquipmentController@destroy');
 });
+
+Route::get('/{any}', 'HomeController')->where('any', '.*');

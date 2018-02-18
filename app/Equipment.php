@@ -10,6 +10,6 @@ class Equipment extends Model
 
     public function category()
     {
-        $this->belongsTo('App\EquipmentCategory', 'category_id');
+        return $this->belongsTo('App\EquipmentCategory', 'category_id');
     }
 }

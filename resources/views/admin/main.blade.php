@@ -24,11 +24,12 @@
         <div class="container">
             <a href="/" class="brand-logo left">WET</a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li class="#1565c0 blue darken-3" style="padding-left:10px;padding-right:10px"> Привет, {{Auth::user()->name}}! </li>
                 <li><a href="/admin/photos">Фото обьектов</a></li>
                 <li><a href="/admin/reference_category">Референс</a></li>
                 <li><a href="/admin/library">Библиотека</a></li>
                 <li><a href="/admin/category">Оборудование</a></li>
-                <li><a href="{{ URL::to('logout') }}">Выход</a></li>
+                <li class="#e57373 red lighten-2"><a href="{{ URL::to('logout') }}">Выход</a></li>
             </ul>
         </div>
     </div>

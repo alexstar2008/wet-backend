@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="{{asset('/css/admin.css')}}"/>
 </head>
 <body>
+@auth
 <nav>
     <div class="nav-wrapper blue">
         <div class="container">
@@ -32,6 +33,28 @@
     </div>
 </nav>
 @yield('content')
+@endauth
+@guest
+    {{ Form::open(array('url' => 'login')) }}
+    <h1>Login</h1>
+    <p>
+        {{ $errors->first('email') }}
+        {{ $errors->first('password') }}
+    </p>
+
+    <p>
+        {{ Form::label('email', 'Email') }}
+        {{ Form::text('email', Input::old('email'), array('placeholder' => 'awesome@awesome.com')) }}
+    </p>
+
+    <p>
+        {{ Form::label('password', 'Пароль') }}
+        {{ Form::password('password') }}
+    </p>
+
+    <p>{{ Form::submit('Вход') }}</p>
+    {{ Form::close() }}
+@endguest
 <!-- Compiled and minified JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 

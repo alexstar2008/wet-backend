@@ -24,6 +24,7 @@ Route::get('/technologies-content', 'HomeController');
 Route::get('/library','HomeController');
 
 //--Admin
+Route::post('login', array('uses' => 'HomeController@login'));
 Route::get('/admin', function () {
     return view('admin.home');
 });

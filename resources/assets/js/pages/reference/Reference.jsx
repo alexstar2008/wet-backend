@@ -29,7 +29,7 @@ class Reference extends Component {
 
     generateTable(data) {
         console.log(data);
-        const template = data.map((category,categoryIndex) => {
+        const template = data.map((category, categoryIndex) => {
             return (
                 <Fragment key={categoryIndex}>
                     <tr>
@@ -47,9 +47,9 @@ class Reference extends Component {
                                         <td className='space-test'>{enterprise.equipment[0].equipment}</td>
                                     </tr>
                                     {
-                                        enterprise.equipment.slice(1).map((equipment) => {
+                                        enterprise.equipment.slice(1).map((equipment, equipmentIndex) => {
                                             return (
-                                                <tr className="references_row">
+                                                <tr className={"references_row" + (equipmentIndex % 2 === 0 ? " references_row_colored" : "")}>
                                                     <td>{equipment.mission}</td>
                                                     <td className='space-test' >{equipment.equipment}</td>
                                                 </tr>

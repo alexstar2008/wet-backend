@@ -67313,10 +67313,10 @@ var Reference = function (_Component) {
                                     enterprise.equipment[0].equipment
                                 )
                             ),
-                            enterprise.equipment.slice(1).map(function (equipment) {
+                            enterprise.equipment.slice(1).map(function (equipment, equipmentIndex) {
                                 return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                     'tr',
-                                    { className: 'references_row' },
+                                    { className: "references_row" + (equipmentIndex % 2 === 0 ? " references_row_colored" : "") },
                                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                         'td',
                                         null,

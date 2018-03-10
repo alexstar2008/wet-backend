@@ -43,11 +43,11 @@ class NavBar extends React.Component {
     ];
     const linksLayout = links.map((item, index) => {
       if (item.submenu) {
-        return <li className="dropdown">
+        return <li className="dropdown" key={index}>
           <a className="dropdown-toggle nav-item" data-toggle="dropdown" href="#">{item.title}
             <span className="caret"></span></a>
           <ul className="dropdown-menu">
-            {item.submenu.map((subitem) => <li><Link to={subitem.href} className="nav-sub-item">{subitem.title}</Link></li>)}
+            {item.submenu.map((subitem, index) => <li key={index}><Link to={subitem.href} className="nav-sub-item">{subitem.title}</Link></li>)}
           </ul>
         </li>
       }
@@ -57,7 +57,7 @@ class NavBar extends React.Component {
       <nav className="navbar">
         <div className="container-fluid">
           <div className="navbar-header">
-            <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <button type="button" className="navbar-toggle" data-toggle="collapse" data-target=".collapse">
               <span className="icon-bar"></span>
               <span className="icon-bar"></span>
               <span className="icon-bar"></span>

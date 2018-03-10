@@ -2344,7 +2344,8 @@ var Footer = function (_React$Component) {
     _createClass(Footer, [{
         key: 'render',
         value: function render() {
-            var rightsSection = 'Copyrights &copy; 2017 WET Все права защищены';
+            var year = new Date().getFullYear();
+            var rightsSection = 'Copyrights \xA9 ' + year + ' WET \u0412\u0441\u0435 \u043F\u0440\u0430\u0432\u0430 \u0437\u0430\u0449\u0438\u0449\u0435\u043D\u044B';
             return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 'footer',
                 { className: 'clearfix' },
@@ -60862,7 +60863,7 @@ var AppWrapper = function (_React$Component) {
                 return resp.json();
             }).then(function (categories) {
                 var categoriesLinks = categories.map(function (category) {
-                    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_router_dom__["Route"], { path: '/' + category.name + '-' + category.id, component: __WEBPACK_IMPORTED_MODULE_4__pages_equipment_Equipment__["a" /* default */] });
+                    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_router_dom__["Route"], { key: category.id, path: '/' + category.name + '-' + category.id, component: __WEBPACK_IMPORTED_MODULE_4__pages_equipment_Equipment__["a" /* default */] });
                 });
                 _this2.setState({ equipmentCategories: categoriesLinks });
             }).catch(function (err) {
@@ -64170,7 +64171,7 @@ var NavBar = function (_React$Component) {
         if (item.submenu) {
           return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'li',
-            { className: 'dropdown' },
+            { className: 'dropdown', key: index },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
               'a',
               { className: 'dropdown-toggle nav-item', 'data-toggle': 'dropdown', href: '#' },
@@ -64180,10 +64181,10 @@ var NavBar = function (_React$Component) {
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
               'ul',
               { className: 'dropdown-menu' },
-              item.submenu.map(function (subitem) {
+              item.submenu.map(function (subitem, index) {
                 return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                   'li',
-                  null,
+                  { key: index },
                   __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     __WEBPACK_IMPORTED_MODULE_1_react_router_dom__["Link"],
                     { to: subitem.href, className: 'nav-sub-item' },
@@ -64215,7 +64216,7 @@ var NavBar = function (_React$Component) {
             { className: 'navbar-header' },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
               'button',
-              { type: 'button', className: 'navbar-toggle', 'data-toggle': 'collapse', 'data-target': '#myNavbar' },
+              { type: 'button', className: 'navbar-toggle', 'data-toggle': 'collapse', 'data-target': '.collapse' },
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('span', { className: 'icon-bar' }),
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('span', { className: 'icon-bar' }),
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('span', { className: 'icon-bar' })

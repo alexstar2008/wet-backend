@@ -33,7 +33,7 @@ class AppWrapper extends React.Component {
             .then(resp => resp.json())
             .then(categories => {
                 const categoriesLinks = categories.map(category => {
-                    return (<Route path={'/' + category.name + '-' + category.id} component={Equipment} />);
+                    return (<Route key={category.id} path={'/' + category.name + '-' + category.id} component={Equipment} />);
                 });
                 this.setState({ equipmentCategories: categoriesLinks });
             })

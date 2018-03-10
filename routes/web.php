@@ -25,6 +25,7 @@ Route::get('/library','HomeController');
 
 //--Admin
 Route::post('login', array('uses' => 'HomeController@login'));
+Route::get('logout', array('uses' => 'HomeController@logout'));
 Route::get('/admin', function () {
     return view('admin.home');
 });

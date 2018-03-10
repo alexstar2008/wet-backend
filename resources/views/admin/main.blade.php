@@ -28,32 +28,40 @@
                 <li><a href="/admin/reference_category">Референс</a></li>
                 <li><a href="/admin/library">Библиотека</a></li>
                 <li><a href="/admin/category">Оборудование</a></li>
+                <li><a href="{{ URL::to('logout') }}">Выход</a></li>
             </ul>
         </div>
     </div>
 </nav>
+
 @yield('content')
 @endauth
 @guest
-    {{ Form::open(array('url' => 'login')) }}
-    <h1>Login</h1>
-    <p>
-        {{ $errors->first('email') }}
-        {{ $errors->first('password') }}
-    </p>
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m6 offset-m3 center-align card ">
+                {{ Form::open(array('url' => 'login')) }}
+                    <h1>Вход в админку</h1>
+                    <p>
+                        {{ $errors->first('email') }}
+                        {{ $errors->first('password') }}
+                    </p>
 
-    <p>
-        {{ Form::label('email', 'Email') }}
-        {{ Form::text('email', Input::old('email'), array('placeholder' => 'awesome@awesome.com')) }}
-    </p>
+                    <p>
+                        {{ Form::label('email', 'Email') }}
+                        {{ Form::text('email', Input::old('email'), array('placeholder' => 'awesome@awesome.com')) }}
+                    </p>
 
-    <p>
-        {{ Form::label('password', 'Пароль') }}
-        {{ Form::password('password') }}
-    </p>
+                    <p>
+                        {{ Form::label('password', 'Пароль') }}
+                        {{ Form::password('password') }}
+                    </p>
 
-    <p>{{ Form::submit('Вход') }}</p>
-    {{ Form::close() }}
+                    <p class="center-align">{{ Form::submit('Вход') }}</p>
+                {{ Form::close() }}  
+            </div>
+        </div>
+    </div>
 @endguest
 <!-- Compiled and minified JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>

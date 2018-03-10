@@ -14,7 +14,7 @@ class HomeController extends Controller
     {
         return view('index');
     }
-    public function login(){
+    public function login(){    
         // validate the info, create rules for the inputs
         $rules = array(
             'email'    => 'required|email',
@@ -36,11 +36,12 @@ class HomeController extends Controller
                 'email'     => Input::get('email'),
                 'password'  => Input::get('password')
             );
-            if(Auth::attempt($userdata)){
-                return Redirect::to('/admin');
-            }
-            var_dump($userdata) ;
-
+            Auth::attempt($userdata);
+            return Redirect::to('/admin');
         }
+    }
+    public function logout(){
+        Auth::logout(); // log the user out of our application
+        return Redirect::to('/');
     }
 }

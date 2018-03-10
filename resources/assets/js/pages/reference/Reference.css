@@ -12,7 +12,7 @@
 }
 .references_table{
     border: 1px solid #abb4b4;
-    /* margin: 0 auto; */
+    margin: 0 auto;
 }
 .references_table th{
     background-color: #fff;
@@ -39,6 +39,9 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
     letter-spacing: 1px;
 }
+.space-test{
+    white-space: pre-line;
+}
 /* row */
 .references_table tr{
     border-bottom:1px solid #abb4b4;
@@ -51,6 +54,7 @@
     background-color: #fff;
     padding: 10px 0 14px 0;
     border-right: 1px solid #abb4b4;
+    white-space: pre-line;
 }
 .references_row_colored td{
     background-color: #e8f4f4;

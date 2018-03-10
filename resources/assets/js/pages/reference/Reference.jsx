@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component, Fragment } from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
 import "animate.css/animate.min.css";
 
@@ -9,10 +9,10 @@ import '../../Shared.css';
 import './Reference.css';
 
 class Reference extends Component {
-    constructor(props){
+    constructor(props) {
         super(props);
         this.state = {
-            table : <div>Loading...</div>
+            table: <div>Loading...</div>
         }
         this.getReference = this.getReference.bind(this);
         this.generateTable = this.generateTable.bind(this);
@@ -20,53 +20,50 @@ class Reference extends Component {
         this.getReference();
     }
 
-    getReference(){
+    getReference() {
         fetch('/api/reference')
-        .then(response => response.json())
-        .then(data => this.generateTable(data))
-        .catch(err => console.log(err));
+            .then(response => response.json())
+            .then(data => this.generateTable(data))
+            .catch(err => console.log(err));
     }
 
-    generateTable(data){
+    generateTable(data) {
         console.log(data);
-        const template = data.map((category)=>{
-            return (<div>   
-                <tr>
-                    <td colSpan="3" className="references_section_header">
-                        {category.name}
-                    </td>
-                </tr>
-                {
-                    category.enterprises.map((enterprise,enterpriseIndex)=>{
-                        if(enterprise.equipment.length===0)
-                            return '';
+        const template = data.map((category,categoryIndex) => {
+            return (
+                <Fragment key={categoryIndex}>
+                    <tr>
+                        <td colSpan="3" className="references_section_header">
+                            {category.name}
+                        </td>
+                    </tr>
+                    {
+                        category.enterprises.filter(enterprise => enterprise.equipment.length !== 0).map((enterprise, enterpriseIndex) => {
+                            return (
+                                <Fragment key={enterpriseIndex}>
+                                    <tr className={"references_row" + (enterpriseIndex % 2 === 0 ? " references_row_colored" : "")}>
+                                        <td rowSpan={enterprise.equipment.length}>{enterprise.name}</td>
+                                        <td>{enterprise.equipment[0].mission}</td>
+                                        <td className='space-test'>{enterprise.equipment[0].equipment}</td>
+                                    </tr>
+                                    {
+                                        enterprise.equipment.slice(1).map((equipment) => {
+                                            return (
+                                                <tr className="references_row">
+                                                    <td>{equipment.mission}</td>
+                                                    <td className='space-test' >{equipment.equipment}</td>
+                                                </tr>
+                                            );
+                                        })
+                                    }
+                                </Fragment>
+                            );
+                        })
+                    }
 
-                        return(
-                            // Test
-                            <div>
-                                <tr className={"references_row"+ (enterpriseIndex%2===0 ? " references_row_colored" : "")}>
-                                    <td rowSpan={enterprise.equipment.length}>{enterprise.name}</td>
-                                    <td>{enterprise.equipment[0].equipment}</td>
-                                    <td>{enterprise.equipment[0].mission}</td>
-                                </tr>
-                                {
-                                    enterprise.equipment.slice(1).map((equipment)=>{
-                                        return(
-                                            <tr className="references_row">
-                                                <td>{equipment.equipment}</td>
-                                                <td>{equipment.mission}</td>
-                                            </tr> 
-                                        );
-                                    })
-                                }
-                            </div>
-                        );
-                    })
-                }
-               
-            </div>);
+                </Fragment>);
         });
-        this.setState({table: template});
+        this.setState({ table: template });
     }
 
     render() {
@@ -74,7 +71,7 @@ class Reference extends Component {
             <div className="body-test">
                 <div className="references container">
                     <div className="row">
-                        <CategoryTitle title="референс"/>
+                        <CategoryTitle title="референс" />
                     </div>
                     <div className="row">
                         <div className="col-xs-12">
@@ -87,112 +84,20 @@ class Reference extends Component {
                     <ScrollAnimation animateOnce={true} animateIn="fadeInUp" duration={2}>
                         <div className="row">
                             <div className="col-xs-12 references_table_wrapper">
-                                {
-                                this.state.table
-                                /* <table className="references_table">
+                                <table className="references_table">
                                     <thead>
-                                    <tr>
-                                        <th>Название предприятия</th>
-                                        <th>Предназначения</th>
-                                        <th>Оборудование/работы</th>
-                                    </tr>
+                                        <tr>
+                                            <th>Название предприятия</th>
+                                            <th>Предназначения</th>
+                                            <th>Оборудование/работы</th>
+                                        </tr>
                                     </thead>
                                     <tbody>
-                                    <tr>
-                                        <td colSpan="3" className="references_section_header">МЕТАЛЛУРГИЧЕСКАЯ
-                                            ПРОМьіШЛЕННОСТЬ
-                                        </td>
-                                    </tr>
-                                    <tr className="references_row references_row_colored">
-                                        <td>Днепрококс</td>
-                                        <td>ТЭЦ, подпитка котлов</td>
-                                        <td>фильтрация 160 м<sup>3</sup>/ч<br/> умягчение 2 ступени 150 м<sup>3</sup>/ч
-                                        </td>
-                                    </tr>
-                                    <tr className="references_row">
-                                        <td>ИСД, Алчевский МК</td>
-                                        <td>ГТС КЦ</td>
-                                        <td>Оборудование для станции очистки производственно-дождевых стоков</td>
-                                    </tr>
-                                    <tr className="references_row references_row_colored">
-                                        <td>ИСД, Алчевсккокс</td>
-                                        <td>Сервисные работы</td>
-                                        <td>Замена мембран установок обратного осмоса</td>
-                                    </tr>
-                                    <tr className="references_row">
-                                        <td rowSpan="3" className="references_cell_colored">Метинвест, МКАзовсталь</td>
-                                        <td>Энергоблок ККЦ, подпитка котлов</td>
-                                        <td>фильтрация 240 м<sup>3</sup>/ч <br/>
-                                            ультрафильтрация 220 м<sup>3</sup>/ч<br/>
-                                            обратный осмос 160 м<sup>3</sup>/ч<br/>
-                                            умягчение 130 м<sup>3</sup>/ч
-                                        </td>
-                                    </tr>
-                                    <tr className="references_row references_row_colored">
-                                        <td>ТЛЦ, оборотный цикл</td>
-                                        <td>фильтрация 2800 м<sup>3</sup>/ч (5 фильтров D=5000мм)</td>
-                                    </tr>
-                                    <tr className="references_row">
-                                        <td>БОС-2</td>
-                                        <td>
-                                            фильтрация 750 м<sup>3</sup>/ч<br/>
-                                            ультрафильтрация 675 м<sup>3</sup>/ч<br/>
-                                            обратный осмос 600 м<sup>3</sup>/ч
-                                        </td>
-                                    </tr>
-
-                                    <tr>
-                                        <td colSpan="3" className="references_section_header">ЭНЕРГЕТИКА</td>
-                                    </tr>
-                                    <tr className="references_row">
-                                        <td>Биогазэнерго</td>
-                                        <td>ТЭС на биотопливе, Подпитка котлов</td>
-                                        <td>Фильтрация, Н-Naкатионирование 15 м<sup>3</sup>/ч</td>
-                                    </tr>
-                                    <tr className="references_row references_row_colored">
-                                        <td>Донбассэнерго, Старобешевская ТЭС</td>
-                                        <td>Строительство станции питьевого водоснабжения «под ключ»</td>
-                                        <td>Фильтрация, обратный осмос 100 м<sup>3</sup>/сутки</td>
-                                    </tr>
-                                    <tr className="references_row">
-                                        <td>Кременчугская ТЭЦ</td>
-                                        <td>Подготовка воды для котлов</td>
-                                        <td>Реконструкция осветлителей и Н-катионированияIIст, 300 м<sup>3</sup>/ч</td>
-                                    </tr>
-                                    <tr className="references_row references_row_colored">
-                                        <td>Шосткинская ТЭЦ</td>
-                                        <td>Подпитка котлов высокого давления, Уникальное решение по утилизации стоков
-                                        </td>
-                                        <td>
-                                            фильтрация 110 м<sup>3</sup>/ч,<br/>
-                                            ультрафильтрация 90 м<sup>3</sup>/ч,<br/>
-                                            умягчение 85 м<sup>3</sup>/ч, <br/>
-                                            обратный осмос 41 м<sup>3</sup>/ч + 36 м<sup>3</sup>/ч
-                                        </td>
-                                    </tr>
-                                    <tr className="references_row">
-                                        <td>VKG ENERGIJA OU Эстония</td>
-                                        <td>
-                                            VKG ENERGIJA OU Эстония Комплекс водоподготовки подпитки котлов:
-                                            Кондесатоочистка 80 м<sup>3</sup>/ч<br/>
-                                            Деминерализованная вода 40 м<sup>3</sup>/ч<br/>
-                                            Для конденсатоочистки 80 м<sup>3</sup>/ч<br/>
-                                            сорбционные фильтры 80 м<sup>3</sup>/ч<br/>
-                                            установка ФСД 80 м<sup>3</sup>/ч<br/>
-                                        </td>
-                                        <td>
-                                            Для конденсатоочистки 80 м<sup>3</sup>/ч<br/>
-                                            сорбционные фильтры 80 м<sup>3</sup>/ч<br/>
-                                            установка ФСД 80 м<sup>3</sup>/ч<br/>
-                                            Деминерализация 40 м<sup>3</sup>/ч<br/>
-                                            ультрафильтрация 55 м<sup>3</sup>/ч<br/>
-                                            обратный осмос 47 м<sup>3</sup>/ч<br/>
-                                            установка ЭДИ 40 м<sup>3</sup>/ч
-                                        </td>
-                                    </tr>
+                                        {
+                                            this.state.table
+                                        }
                                     </tbody>
-                                </table> */
-                                }
+                                </table >
                             </div>
                         </div>
                     </ScrollAnimation>
@@ -232,7 +137,7 @@ class Reference extends Component {
                         </div>
                     </div>
                 </div>
-                <Footer/>
+                <Footer />
             </div>
         );
     }

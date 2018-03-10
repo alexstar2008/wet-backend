@@ -11,15 +11,13 @@
         <input type="hidden" name="enterprise_id" value="{{$enterprise_id}}" />
         <div class="row">
             <div class="input-field col s12 m6 offset-m2">
-                <input name="mission" id="name" type="text" class="validate"
-                       maxlength="200">
+                <textarea id="name" name="mission" class="materialize-textarea" maxlength="200"></textarea>
                 <label for="name">Предназначение</label>
             </div>
         </div>
         <div class="row">
             <div class="input-field col s12 m8 offset-m2">
-                        <textarea id="desc" name="equipment" class="materialize-textarea" maxlength="350">
-                        </textarea>
+                        <textarea id="desc" name="equipment" class="materialize-textarea" maxlength="350"></textarea>
                 <label for="desc">Оборудование</label>
             </div>
         </div>

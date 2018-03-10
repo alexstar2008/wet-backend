@@ -11,7 +11,7 @@
         <input type="hidden" value="{{$category_id}}" name="category_id" />
         <div class="row">
             <div class="input-field col s12 m6 offset-m2">
-                <input name="name" id="name" type="text" class="validate" maxlength="200">
+                <textarea id="name" name="name" class="materialize-textarea" maxlength="300"></textarea>
                 <label for="name">Название</label>
             </div>
         </div>

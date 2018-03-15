@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import path from 'path';
+import Modal from 'react-modal';
 import SlidingPane from 'react-sliding-pane';
 import 'react-sliding-pane/dist/react-sliding-pane.css';
 
@@ -17,6 +18,9 @@ class TechnologiesWrapper extends Component {
 
         document.onscroll = this.handleScroll;
 
+    }
+    componentDidMount() {
+        Modal.setAppElement(this.el);
     }
     // componentDidUpdate(){
     //     document.onscroll = this.handleScroll;
@@ -60,8 +64,6 @@ class TechnologiesWrapper extends Component {
             this.setState({
                 activeNav: activeNavLink
             });
-    
-            console.log(activeNavLink);
     }
 
     toggleNavBar() {
@@ -69,7 +71,7 @@ class TechnologiesWrapper extends Component {
     }
     render() {
         return (
-            <div className="container technologies">
+            <div className="container technologies" ref={ref => this.el = ref}>
                 <div className="row">
                     <div className="col-sm-3">
                         {
@@ -86,48 +88,48 @@ class TechnologiesWrapper extends Component {
                             width='200px'
                             onRequestClose={() => this.setState({ isPaneOpenLeft: false })}>
                             <div className="tech-nav">
-                                <Scrollchor to="clarification" animate={{ duration: 700 }}>
+                                <Scrollchor to="clarification" animate={{ duration: 700 }} afterAnimate={() => this.setState({ isPaneOpenLeft: false })}>
                                     <div className="tech-nav-item">
                                         Осветление воды
                                     </div>
                                 </Scrollchor>
-                                <Scrollchor to="filtration" animate={{ duration: 700 }}>
+                                <Scrollchor to="filtration" animate={{ duration: 700 }} afterAnimate={() => this.setState({ isPaneOpenLeft: false })}>
                                     <div className="tech-nav-item">
                                         Механическая фильтрация
                                     </div>
                                 </Scrollchor>
-                                <Scrollchor to="ferum-remove" animate={{ duration: 700 }}>
+                                <Scrollchor to="ferum-remove" animate={{ duration: 700 }}  afterAnimate={() => this.setState({ isPaneOpenLeft: false })}>
                                     <div className="tech-nav-item">
                                         Удаление железа / марганца<br/>
                                         на фильтрах WET- FE
                                     </div>
                                 </Scrollchor>
-                                <Scrollchor to="sorbtion" animate={{ duration: 700 }}>
+                                <Scrollchor to="sorbtion" animate={{ duration: 700 }}  afterAnimate={() => this.setState({ isPaneOpenLeft: false })}>
                                     <div className="tech-nav-item">
                                         Сорбция - фильтры с активированным углем WET-AC                                
                                     </div>
                                 </Scrollchor>
-                                <Scrollchor to="softening" animate={{ duration: 700 }}>
+                                <Scrollchor to="softening" animate={{ duration: 700 }}  afterAnimate={() => this.setState({ isPaneOpenLeft: false })}>
                                     <div className="tech-nav-item">
                                         Умягчение<br/> (Na – катионирование)
                                     </div>
                                 </Scrollchor>
-                                <Scrollchor to="decarbonization" animate={{ duration: 700 }}>
+                                <Scrollchor to="decarbonization" animate={{ duration: 700 }}  afterAnimate={() => this.setState({ isPaneOpenLeft: false })}>
                                     <div className="tech-nav-item">
                                         Декарбонизация<br/> (Н – катионирование)
                                     </div>
                                 </Scrollchor>
-                                <Scrollchor to="reverse-osmos" animate={{ duration: 700 }}>
+                                <Scrollchor to="reverse-osmos" animate={{ duration: 700 }}  afterAnimate={() => this.setState({ isPaneOpenLeft: false })}>
                                     <div className="tech-nav-item">
                                         Обратный осмос
                                     </div>
                                 </Scrollchor>
-                                <Scrollchor to="ultrafiltration" animate={{ duration: 700 }}>
+                                <Scrollchor to="ultrafiltration" animate={{ duration: 700 }}  afterAnimate={() => this.setState({ isPaneOpenLeft: false })}>
                                     <div className="tech-nav-item">
                                         Ультрафильтрация
                                     </div>
                                 </Scrollchor>
-                                <Scrollchor to="complex-water-equipment" animate={{ duration: 700 }}>
+                                <Scrollchor to="complex-water-equipment" animate={{ duration: 700 }}  afterAnimate={() => this.setState({ isPaneOpenLeft: false })}>
                                     <div className="tech-nav-item">
                                         Комплекс оборудования водоподготовки
                                     </div>

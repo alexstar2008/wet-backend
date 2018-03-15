@@ -60656,6 +60656,7 @@ var NavBar = function (_React$Component) {
       equipmentCategories: []
     };
     _this.getEquipment.call(_this);
+
     return _this;
   }
 
@@ -60673,6 +60674,13 @@ var NavBar = function (_React$Component) {
         _this2.setState({ equipmentCategories: equipmentCategories });
       }).catch(function (err) {
         return console.log(err);
+      });
+    }
+  }, {
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      $(".navbar-nav li .sub").click(function (event) {
+        $(".navbar-collapse").collapse('hide');
       });
     }
   }, {
@@ -60701,7 +60709,7 @@ var NavBar = function (_React$Component) {
                   { key: index },
                   __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     __WEBPACK_IMPORTED_MODULE_1_react_router_dom__["Link"],
-                    { to: subitem.href, className: 'nav-sub-item' },
+                    { to: subitem.href, className: 'nav-sub-item sub' },
                     subitem.title
                   )
                 );
@@ -60714,7 +60722,7 @@ var NavBar = function (_React$Component) {
           { key: index },
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             __WEBPACK_IMPORTED_MODULE_1_react_router_dom__["Link"],
-            { to: item.href, className: 'nav-item' },
+            { to: item.href, className: 'nav-item sub' },
             item.title
           )
         );

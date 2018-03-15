@@ -13,6 +13,7 @@ class NavBar extends React.Component {
       equipmentCategories: []
     };
     this.getEquipment.call(this);
+
   }
   getEquipment() {
     fetch('/api/equipment')
@@ -24,6 +25,11 @@ class NavBar extends React.Component {
         this.setState({ equipmentCategories });
       })
       .catch(err => console.log(err));
+  }
+  componentDidMount() {
+    $(".navbar-nav li .sub").click(function (event) {
+      $(".navbar-collapse").collapse('hide');
+    });
   }
   render() {
     const links = [
@@ -47,11 +53,11 @@ class NavBar extends React.Component {
           <a className="dropdown-toggle nav-item" data-toggle="dropdown" href="#">{item.title}
             <span className="caret"></span></a>
           <ul className="dropdown-menu">
-            {item.submenu.map((subitem, index) => <li key={index}><Link to={subitem.href} className="nav-sub-item">{subitem.title}</Link></li>)}
+            {item.submenu.map((subitem, index) => <li key={index}><Link to={subitem.href} className="nav-sub-item sub" >{subitem.title}</Link></li>)}
           </ul>
         </li>
       }
-      return <li key={index}><Link to={item.href} className="nav-item">{item.title}</Link></li>
+      return <li key={index}><Link to={item.href} className="nav-item sub">{item.title}</Link></li>
     });
     return (
       <nav className="navbar">

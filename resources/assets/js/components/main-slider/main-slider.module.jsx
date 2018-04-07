@@ -23,42 +23,49 @@ class MainSlider extends React.Component{
                 <Slider {...settings}>
                     <div>
                         <div  className="main-slider-img-wrapper">
-                            <img src='./imgs/main.png' alt="main" className="main-slider-img" />
+                            <img src='./imgs/main-slider/main.png' alt="main" className="main-slider-img" />
                         </div>
                         <div className="container main-slider-content-wrapper">
                             <div className="row">
                                 <div className="main-slider-content">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                                when an unknown printer took a galley of type and scrambled it to make a type 
+                                ОАО «Мироновский Хлебопродукт»,
+                                Птицефабрика «Винницкий Бройлер»
+                                г. Ладыжин<br/><br/>
+                                ВОДОПОДГОТОВИТЕЛЬНАЯ СТАНЦИЯ 684 м<sup>3</sup>/ч
+                                Установка безнапорной фильтрации DynaSand
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div>
                         <div  className="main-slider-img-wrapper">
-                            <img src='./imgs/main.png' alt="main" className="main-slider-img" />
+                            <img src='./imgs/main-slider/slider_cola.png' alt="main" className="main-slider-img" />
                         </div>
                         <div className="container main-slider-content-wrapper">
                             <div className="row">
                                 <div className="main-slider-content">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                                when an unknown printer took a galley of type and scrambled it to make a type 
+                                    «Контур Глобал» (Кока-кола) 
+                                    пгт. Б. Дымерка, Киевская обл.<br/><br/>
+                                    Комплекс ХВО 24 м<sup>3</sup>/ч обессоленной воды для
+                                    парогенератора и подпитки охладительных
+                                    оборотных циклов
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div>
                         <div  className="main-slider-img-wrapper">
-                            <img src='./imgs/main.png' alt="main" className="main-slider-img" />
+                            <img src='./imgs/main-slider/slider_miron.png' alt="main" className="main-slider-img" />
                         </div>
                         <div className="container main-slider-content-wrapper">
                             <div className="row">
                                 <div className="main-slider-content">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                                when an unknown printer took a galley of type and scrambled it to make a type 
+                                    ОАО «Мироновский Хлебопродукт»,
+                                    Птицефабрика «Винницкий Бройлер»
+                                    г. Ладыжин<br></br>
+                                    ВОДОПОДГОТОВИТЕЛЬНАЯ СТАНЦИЯ 684 м<sup>3</sup>/ч
+                                    4-х секционные осветлители с пульсирующим
+                                    режимом работы
                                 </div>
                             </div>
                         </div>

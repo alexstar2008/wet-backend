@@ -28,7 +28,6 @@ class Reference extends Component {
     }
 
     generateTable(data) {
-        console.log(data);
         const template = data.map((category, categoryIndex) => {
             return (
                 <Fragment key={categoryIndex}>
@@ -44,14 +43,14 @@ class Reference extends Component {
                                     <tr className={"references_row" + (enterpriseIndex % 2 === 0 ? " references_row_colored" : "")}>
                                         <td rowSpan={enterprise.equipment.length}>{enterprise.name}</td>
                                         <td>{enterprise.equipment[0].mission}</td>
-                                        <td className='space-test'>{enterprise.equipment[0].equipment}</td>
+                                        <td className='space-test' dangerouslySetInnerHTML={{__html: enterprise.equipment[0].equipment.replace(/м3/g,'м<sup>3</sup>')}}></td>
                                     </tr>
                                     {
                                         enterprise.equipment.slice(1).map((equipment, equipmentIndex) => {
                                             return (
                                                 <tr className={"references_row" + (equipmentIndex % 2 === 0 ? " references_row_colored" : "")}>
                                                     <td>{equipment.mission}</td>
-                                                    <td className='space-test' >{equipment.equipment}</td>
+                                                    <td className='space-test' dangerouslySetInnerHTML={{__html: equipment.equipment.replace(/м3/g,'м<sup>3</sup>')}}></td>
                                                 </tr>
                                             );
                                         })

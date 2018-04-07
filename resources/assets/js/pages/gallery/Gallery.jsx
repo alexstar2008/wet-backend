@@ -30,7 +30,6 @@ class Gallery extends Component {
             .then(response => response.json())
             .then(data=>{
                 this.setState({items : data});
-                console.log(data);
             })
             .catch(err=>console.log(err));
     }
@@ -102,7 +101,9 @@ class Gallery extends Component {
         return (
             <div>
                 <div className="gallery container">
-                    {sliderTemplate}
+                    <div className="sliderWrapper">
+                        {sliderTemplate}
+                    </div>
                     <div className="row margin_bottom_50">
                         <div className="col-xs-12">
                             <CategoryTitle title="галерея"/>

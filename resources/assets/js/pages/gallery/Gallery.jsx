@@ -62,7 +62,24 @@ class Gallery extends Component {
 
     render() {
         if(this.state.items.length===0){
-            return <div>Loading ...</div>;
+            return (
+                <div>
+                    <div className="gallery container">
+                        <div className="sliderWrapper">
+                            {sliderTemplate}
+                        </div>
+                        <div className="row margin_bottom_50">
+                            <div className="col-xs-12">
+                                <CategoryTitle title="галерея"/>
+                            </div>
+                        </div>
+                        <div className="row">
+                        <img src="./imgs/Loading.svg"/>
+                        </div>
+                    </div>
+                    <Footer/>
+                </div>
+            );
         }
         const sliderItem = this.state.items[this.state.current];
 

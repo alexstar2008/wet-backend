@@ -8,9 +8,27 @@ class ClientsSlider extends React.Component{
         super(props);
         this.state={
             clients : [
+                // {name:'Carlsberg Group',src:'./imgs/clients/',alt:'client'},
+                // {name:'Перша Приватна Броварня',src:'./imgs/clients/',alt:'client'},
+                // {name:'Оболонь',src:'./imgs/clients/',alt:'client'},
+
+                {name:'МХП',src:'./imgs/clients/МХП.png',alt:'client'},
+                
+                // {name:'Перечинский ЛХК',src:'./imgs/clients/',alt:'client'},
+                
                 {name:'Нидан-Фудс Берегово',src:'./imgs/nidan-juices.png',alt:'client'},
-                {name:'Нидан-Фудс Берегово',src:'./imgs/nidan-juices.png',alt:'client'},
-                {name:'Нидан-Фудс Берегово',src:'./imgs/nidan-juices.png',alt:'client'},
+
+                //  {name:'CarlsbergGroup ПЗ Славутич',src:'./imgs/clients/',alt:'client'},
+
+                {name:'Rusnac - MoldAqua',src:'./imgs/clients/Rusnac – MoldAqua.png',alt:'client'},
+                {name:'Донбасэнерго, Старобешевская ТЭС',src:'./imgs/clients/Донбассэнерго.png',alt:'client'},
+                {name:'Камелия-PR',src:'./imgs/clients/Камелия-PR.png',alt:'client'},
+                {name:'Луцьк Фудз',src:'./imgs/clients/Луцьк Фудз.png',alt:'client'},
+                {name:'ИСД',src:'./imgs/clients/ИСД.png',alt:'client'},
+                {name:'Инкерман, Крым',src:'./imgs/clients/Инкерман.png',alt:'client'},
+                {name:'ПрАТ "Вентс',src:'./imgs/clients/ПрАТ «Вентс».png',alt:'client'},
+                {name:'ООО НПП "Гетьман"',src:'./imgs/clients/ООО НПП «Гетьман».png',alt:'client'},
+                {name:'Биогазэнерго',src:'./imgs/clients/Биогазэнерго.png',alt:'client'},
             ]
         }
     }

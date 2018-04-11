@@ -16,8 +16,8 @@ class Equipment extends Component {
     constructor(props) {
         super(props);
         const url = props.location.pathname;
-        const categoryId = url.slice(url.lastIndexOf('#'));
-        const category = url.slice(1, url.lastIndexOf('#') - 1);
+        const categoryId = url.slice(url.lastIndexOf('#') - 1);
+        const category = url.slice(1, url.lastIndexOf('#') - 2);
         this.getEquipment.call(this, categoryId);
 
         this.state = {

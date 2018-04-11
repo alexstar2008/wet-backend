@@ -1077,6 +1077,66 @@ if(false) {
 
 /***/ }),
 /* 9 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__footer_css__ = __webpack_require__(204);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__footer_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__footer_css__);
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
+
+
+
+var Footer = function (_React$Component) {
+    _inherits(Footer, _React$Component);
+
+    function Footer() {
+        _classCallCheck(this, Footer);
+
+        return _possibleConstructorReturn(this, (Footer.__proto__ || Object.getPrototypeOf(Footer)).apply(this, arguments));
+    }
+
+    _createClass(Footer, [{
+        key: 'render',
+        value: function render() {
+            var year = new Date().getFullYear();
+            var rightsSection = 'Copyrights \xA9 ' + year + ' WET \u0412\u0441\u0435 \u043F\u0440\u0430\u0432\u0430 \u0437\u0430\u0449\u0438\u0449\u0435\u043D\u044B';
+            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'footer',
+                { className: 'clearfix' },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'div',
+                    { className: 'container' },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'div',
+                        { className: 'row' },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            'div',
+                            { className: 'footer-text' },
+                            rightsSection
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return Footer;
+}(__WEBPACK_IMPORTED_MODULE_0_react___default.a.Component);
+
+/* harmony default export */ __webpack_exports__["a"] = (Footer);
+
+/***/ }),
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1171,66 +1231,6 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 	return to;
 };
 
-
-/***/ }),
-/* 10 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__footer_css__ = __webpack_require__(204);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__footer_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__footer_css__);
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-
-
-
-
-var Footer = function (_React$Component) {
-    _inherits(Footer, _React$Component);
-
-    function Footer() {
-        _classCallCheck(this, Footer);
-
-        return _possibleConstructorReturn(this, (Footer.__proto__ || Object.getPrototypeOf(Footer)).apply(this, arguments));
-    }
-
-    _createClass(Footer, [{
-        key: 'render',
-        value: function render() {
-            var year = new Date().getFullYear();
-            var rightsSection = 'Copyrights \xA9 ' + year + ' WET \u0412\u0441\u0435 \u043F\u0440\u0430\u0432\u0430 \u0437\u0430\u0449\u0438\u0449\u0435\u043D\u044B';
-            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'footer',
-                { className: 'clearfix' },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'div',
-                    { className: 'container' },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'div',
-                        { className: 'row' },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'div',
-                            { className: 'footer-text' },
-                            rightsSection
-                        )
-                    )
-                )
-            );
-        }
-    }]);
-
-    return Footer;
-}(__WEBPACK_IMPORTED_MODULE_0_react___default.a.Component);
-
-/* harmony default export */ __webpack_exports__["a"] = (Footer);
 
 /***/ }),
 /* 11 */
@@ -3157,7 +3157,7 @@ var _reactDom2 = _interopRequireDefault(_reactDom);
 
 var _trackHelper = __webpack_require__(58);
 
-var _objectAssign = __webpack_require__(9);
+var _objectAssign = __webpack_require__(10);
 
 var _objectAssign2 = _interopRequireDefault(_objectAssign);
 
@@ -7281,7 +7281,7 @@ var _reactDom = __webpack_require__(15);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _objectAssign = __webpack_require__(9);
+var _objectAssign = __webpack_require__(10);
 
 var _objectAssign2 = _interopRequireDefault(_objectAssign);
 
@@ -7906,11 +7906,7 @@ var ContentBoxPicture = function (_Component) {
         key: 'render',
         value: function render() {
             var listItem = this.props.list.map(function (item, index) {
-                return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'li',
-                    { key: index },
-                    item
-                );
+                return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('li', { key: index, dangerouslySetInnerHTML: { __html: item } });
             });
             var animatedList = null;
             // if(this.state.showList){
@@ -39497,7 +39493,7 @@ if (true) {
   (function() {
 'use strict';
 
-var _assign = __webpack_require__(9);
+var _assign = __webpack_require__(10);
 var emptyObject = __webpack_require__(27);
 var invariant = __webpack_require__(17);
 var warning = __webpack_require__(14);
@@ -40865,7 +40861,7 @@ var React = __webpack_require__(0);
 var invariant = __webpack_require__(17);
 var warning = __webpack_require__(14);
 var ExecutionEnvironment = __webpack_require__(101);
-var _assign = __webpack_require__(9);
+var _assign = __webpack_require__(10);
 var emptyFunction = __webpack_require__(18);
 var EventListener = __webpack_require__(102);
 var getActiveElement = __webpack_require__(103);
@@ -56958,7 +56954,7 @@ BrowserRouter.propTypes = {
 var emptyFunction = __webpack_require__(18);
 var invariant = __webpack_require__(17);
 var warning = __webpack_require__(14);
-var assign = __webpack_require__(9);
+var assign = __webpack_require__(10);
 
 var ReactPropTypesSecret = __webpack_require__(44);
 var checkPropTypes = __webpack_require__(28);
@@ -60803,7 +60799,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "/* Navigation */\n.navbar-toggle{\n    border: 1px solid #fff;\n  }\n  .navbar{\n    border-radius: 0;\n    background-color: #2d7fa2;\n    border: none;\n  }\n  .navbar .navbar-nav {\n    display: inline-block;\n    float: none;\n    vertical-align: top;\n  }\n  .navbar .navbar-collapse {\n    text-align: center;\n  }\n  .navbar-toggle .icon-bar{\n    background-color:#fff;\n  }\n.nav-item{\n    text-transform: uppercase;\n    letter-spacing: 1px;\n    font-family: Verdana, Geneva, Tahoma, sans-serif;\n    color:#fff;\n    font-weight: bold;\n    font-size: 0.9em;\n    text-shadow: 1px #2d7fa2;\n    background-color: #2d7fa2 ;\n    padding: 20px 35px !important;\n    transition: background-color .5s;\n}\n.nav-item:hover,.nav-item:active,.nav-item:focus{\n    transition: background-color 1s;\n    background-color: #fff !important;\n    color:#0f4c65 !important;\n}\n.open > a{\n  background-color: #fff !important;\n  color:#0f4c65 !important;\n}\n  @media screen and (max-width:1185px) and (min-width:768px) {\n    .nav-item{\n      padding: 20px 10px !important;\n    }\n    .phone-list-item{\n      font-size: 1em;\n    }\n    .header-title{\n      margin-top: 10px;\n      font-size: 1.3em;\n    }\n  }\n  @media screen and (max-width:767px){\n    .nav-item{\n      font-size: 1.15em;\n    }\n  }\n  \n  \n   .navbar{\n     margin-bottom: 0 !important;\n   }\n   ul.dropdown-menu{\n       padding: 0;\n   }\n   ul.dropdown-menu .nav-sub-item{\n       color:#fff;\n   }\n    a.nav-sub-item{\n    box-sizing: border-box;\n    text-transform: uppercase;\n    letter-spacing: 1px;\n    font-family: Verdana, Geneva, Tahoma, sans-serif;\n    color:#fff;\n    font-weight: bold !important;\n    font-size: 0.9em !important;\n    background-color: #2d7fa2;\n    padding: 10px 24px !important;\n    transition: background-color .5s;\n}\n@media screen and (max-width:1185px){\n    a.nav-sub-item{\n       padding: 10px 14px !important;\n    }\n}\n@media screen and (max-width:767px){\n    a.nav-sub-item{\n        text-align: left;\n    }\n}\n.nav-sub-item:hover,.nav-sub-item:active,.nav-sub-item:focus{\n  transition: background-color 1s;\n  background-color: #fff !important;\n  color:#0f4c65 !important;\n}\n\n\n.logo{\n  padding: 10px 0;\n  text-align: center;\n}\n.logo img{\n  width: 100%;\n  max-width: 150px;\n  height: auto;\n}\n.header-title{\n  text-transform: uppercase;\n  font-family: 'Philosopher', sans-serif;\n  color:#207ca1;\n  font-size: 1.5em;\n  text-shadow: 2px #207ca1;\n  letter-spacing: 1px;\n  margin-top: 25px;\n}\n\n\n.phone-list-wrapper{\n  border-left: 1px solid #207ca1;\n}\n.phone-list{\n  list-style-type: none;\n  padding: 7px 0;\n  padding-left: 30px;\n  border-left: 1px solid #b8cfd8;\n  margin:5px 0;\n  padding-top: 0;\n  padding-bottom: 0;\n}\n.phone-list-item{\n  font-family: Verdana, Geneva, Tahoma, sans-serif;\n  color:#207ca1;\n  font-size: 1.15em;\n  text-shadow: 1px #207ca1;\n}\n.phone-list-item-title{\n  display: inline-block;\n  width: 90px;\n  vertical-align: top;\n  font-family: Georgia, 'Times New Roman', Times, serif;\n}\nheader .phone-list-item-content{\n  vertical-align: top;\n  display: inline-block;\n  text-align: right;\n  width: 170px;\n}\n@media screen and (max-width:767px){\n  .header-title{\n    margin-top: 0;\n  }\n  .phone-list{\n    text-align: center;\n    border-top: 1px solid #b8cfd8;\n    border-left:none;\n    font-size: 12px;\n    padding: 20px 0;\n    margin-top: 0;\n  }\n  .phone-list-wrapper{\n    border-top: 1px solid #207ca1;\n    border-left:none;\n  }\n  .phone-list-item{\n    font-size: 1.3em;\n  }\n}\n@media screen and (min-width:767px) and (max-width:1199px){\n  .phone-list-item-title{\n    width: 75px;\n  }\n  header .phone-list-item-content{\n    width: 140px;\n  }\n}\n\n\n\n/* Arrow up */\n.arrow-up{\n  position: fixed;\n  bottom: 10%;\n  right:5%;\n  padding-top: 4px;\n  width: 52px;\n  height: 52px;\n  background-color: rgba(15, 76, 101, 0.5);\n  border-radius: 50%;\n  color:#fff;\n  text-align: center;\n  transition: background-color .5s;\n}\n.arrow-up:hover{\n  background-color: rgba(15, 76, 101, 1);\n  transition: background-color .5s;\n}\n@media screen and (max-width:767px){\n  .arrow-up{\n    width: 42px;\n    height: 42px;\n  }\n  .arrow-up i{\n    font-size: 2em !important;\n    padding-top: 5px;\n  }\n}\n@media screen and (min-width: 1200px) {\n  .arrow-up{\n    left: calc(100%/2 + 585px);\n  }\n  \n}", ""]);
+exports.push([module.i, "/* Navigation */\n.navbar-toggle{\n    border: 1px solid #fff;\n  }\n  .navbar{\n    border-radius: 0;\n    background-color: #2d7fa2;\n    border: none;\n  }\n  .navbar .navbar-nav {\n    display: inline-block;\n    float: none;\n    vertical-align: top;\n  }\n  .navbar .navbar-collapse {\n    text-align: center;\n  }\n  .navbar-toggle .icon-bar{\n    background-color:#fff;\n  }\n.nav-item{\n    text-transform: uppercase;\n    letter-spacing: 1px;\n    font-family: Verdana, Geneva, Tahoma, sans-serif;\n    color:#fff;\n    font-weight: bold;\n    font-size: 0.9em;\n    text-shadow: 1px #2d7fa2;\n    background-color: #2d7fa2 ;\n    padding: 20px 35px !important;\n    transition: background-color .5s;\n}\n.nav-item:hover,.nav-item:active,.nav-item:focus{\n    transition: background-color 1s;\n    background-color: #fff !important;\n    color:#0f4c65 !important;\n}\n.open > a{\n  background-color: #fff !important;\n  color:#0f4c65 !important;\n}\n  @media screen and (max-width:1185px) and (min-width:768px) {\n    .nav-item{\n      padding: 20px 10px !important;\n    }\n    .phone-list-item{\n      font-size: 1em;\n    }\n    .header-title{\n      margin-top: 10px;\n      font-size: 1.3em;\n    }\n  }\n  @media screen and (max-width:767px){\n    .nav-item{\n      font-size: 1.15em;\n    }\n  }\n  \n  \n   .navbar{\n     margin-bottom: 0 !important;\n   }\n   ul.dropdown-menu{\n       padding: 0;\n   }\n   ul.dropdown-menu .nav-sub-item{\n       color:#fff;\n   }\n    a.nav-sub-item{\n    box-sizing: border-box;\n    text-transform: uppercase;\n    letter-spacing: 1px;\n    font-family: Verdana, Geneva, Tahoma, sans-serif;\n    color:#fff;\n    font-weight: bold !important;\n    font-size: 0.9em !important;\n    background-color: #2d7fa2;\n    padding: 10px 24px !important;\n    transition: background-color .5s;\n}\n@media screen and (max-width:1185px){\n    a.nav-sub-item{\n       padding: 10px 14px !important;\n    }\n}\n@media screen and (max-width:767px){\n    a.nav-sub-item{\n        text-align: left;\n    }\n}\n.nav-sub-item:hover,.nav-sub-item:active,.nav-sub-item:focus{\n  transition: background-color 1s;\n  background-color: #fff !important;\n  color:#0f4c65 !important;\n}\n\n\n.logo{\n  padding: 10px 0;\n  text-align: center;\n}\n.logo img{\n  width: 100%;\n  max-width: 150px;\n  height: auto;\n}\n.header-title{\n  text-transform: uppercase;\n  font-family: 'Philosopher', sans-serif;\n  color:#207ca1;\n  font-size: 1.5em;\n  text-shadow: 2px #207ca1;\n  letter-spacing: 1px;\n  margin-top: 25px;\n}\n\n\n.phone-list-wrapper{\n  border-left: 1px solid #207ca1;\n}\n.phone-list{\n  list-style-type: none;\n  padding: 7px 0;\n  padding-left: 30px;\n  border-left: 1px solid #b8cfd8;\n  margin:5px 0;\n  padding-top: 0;\n  padding-bottom: 0;\n}\n.phone-list-item{\n  font-family: Verdana, Geneva, Tahoma, sans-serif;\n  color:#207ca1;\n  font-size: 1.15em;\n  text-shadow: 1px #207ca1;\n}\n.phone-list-item-title{\n  display: inline-block;\n  width: 90px;\n  vertical-align: top;\n  font-family: Georgia, 'Times New Roman', Times, serif;\n}\nheader .phone-list-item-content{\n  vertical-align: top;\n  display: inline-block;\n  text-align: right;\n  width: 170px;\n}\n@media screen and (max-width:767px){\n  .header-title{\n    margin-top: 0;\n  }\n  .phone-list{\n    text-align: center;\n    border-top: 1px solid #b8cfd8;\n    border-left:none;\n    font-size: 12px;\n    padding: 20px 0;\n    margin-top: 0;\n  }\n  .phone-list-wrapper{\n    border-top: 1px solid #207ca1;\n    border-left:none;\n  }\n  .phone-list-item{\n    font-size: 1.3em;\n  }\n}\n@media screen and (min-width:767px) and (max-width:1199px){\n  .phone-list-item-title{\n    width: 75px;\n  }\n  header .phone-list-item-content{\n    width: 140px;\n  }\n}\n\n\n\n/* Arrow up */\n.arrow-up{\n  position: fixed;\n  bottom: 10%;\n  right:5%;\n  padding-top: 10px;\n  width: 52px;\n  height: 52px;\n  background-color: rgba(15, 76, 101, 0.5);\n  border-radius: 50%;\n  color:#fff;\n  text-align: center;\n  transition: background-color .5s;\n}\n.arrow-up:hover{\n  background-color: rgba(15, 76, 101, 1);\n  transition: background-color .5s;\n}\n@media screen and (max-width:767px){\n  .arrow-up{\n    width: 42px;\n    height: 42px;\n  }\n  .arrow-up i{\n    font-size: 2em !important;\n    padding-top: 5px;\n  }\n}\n@media screen and (min-width: 1200px) {\n  .arrow-up{\n    left: calc(100%/2 + 585px);\n  }\n  \n}", ""]);
 
 // exports
 
@@ -60923,7 +60919,7 @@ function ArrowUp() {
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'div',
             { className: 'arrow-up' },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fa fa-3x fa-arrow-up', 'aria-hidden': 'true' })
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fa fa-2x fa-arrow-up', 'aria-hidden': 'true' })
         )
     );
 }
@@ -61282,7 +61278,7 @@ module.exports.polyfill = function(object) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_about_about_module__ = __webpack_require__(183);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_contacts_contacts_module__ = __webpack_require__(188);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_clients_clients_module__ = __webpack_require__(193);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_footer_footer_module__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_footer_footer_module__ = __webpack_require__(9);
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -61496,7 +61492,9 @@ var MainSlider = function (_React$Component) {
                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                     'div',
                                     { className: 'main-slider-content' },
-                                    '\xAB\u041A\u043E\u043D\u0442\u0443\u0440 \u0413\u043B\u043E\u0431\u0430\u043B\xBB (\u041A\u043E\u043A\u0430-\u043A\u043E\u043B\u0430) \u043F\u0433\u0442. \u0411. \u0414\u044B\u043C\u0435\u0440\u043A\u0430, \u041A\u0438\u0435\u0432\u0441\u043A\u0430\u044F \u043E\u0431\u043B.',
+                                    '\xAB\u041A\u043E\u043D\u0442\u0443\u0440 \u0413\u043B\u043E\u0431\u0430\u043B\xBB (\u041A\u043E\u043A\u0430-\u043A\u043E\u043B\u0430)',
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
+                                    '\u043F\u0433\u0442. \u0411. \u0414\u044B\u043C\u0435\u0440\u043A\u0430, \u041A\u0438\u0435\u0432\u0441\u043A\u0430\u044F \u043E\u0431\u043B.',
                                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
                                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
                                     '\u041A\u043E\u043C\u043F\u043B\u0435\u043A\u0441 \u0425\u0412\u041E 24 \u043C',
@@ -61528,6 +61526,7 @@ var MainSlider = function (_React$Component) {
                                     'div',
                                     { className: 'main-slider-content' },
                                     '\u041E\u0410\u041E \xAB\u041C\u0438\u0440\u043E\u043D\u043E\u0432\u0441\u043A\u0438\u0439 \u0425\u043B\u0435\u0431\u043E\u043F\u0440\u043E\u0434\u0443\u043A\u0442\xBB, \u041F\u0442\u0438\u0446\u0435\u0444\u0430\u0431\u0440\u0438\u043A\u0430 \xAB\u0412\u0438\u043D\u043D\u0438\u0446\u043A\u0438\u0439 \u0411\u0440\u043E\u0439\u043B\u0435\u0440\xBB \u0433. \u041B\u0430\u0434\u044B\u0436\u0438\u043D',
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
                                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
                                     '\u0412\u041E\u0414\u041E\u041F\u041E\u0414\u0413\u041E\u0422\u041E\u0412\u0418\u0422\u0415\u041B\u042C\u041D\u0410\u042F \u0421\u0422\u0410\u041D\u0426\u0418\u042F 684 \u043C',
                                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -61576,7 +61575,7 @@ var _react2 = _interopRequireDefault(_react);
 
 var _innerSlider = __webpack_require__(162);
 
-var _objectAssign = __webpack_require__(9);
+var _objectAssign = __webpack_require__(10);
 
 var _objectAssign2 = _interopRequireDefault(_objectAssign);
 
@@ -61762,7 +61761,7 @@ var _classnames = __webpack_require__(23);
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
-var _objectAssign = __webpack_require__(9);
+var _objectAssign = __webpack_require__(10);
 
 var _objectAssign2 = _interopRequireDefault(_objectAssign);
 
@@ -62025,7 +62024,7 @@ var _helpers = __webpack_require__(35);
 
 var _helpers2 = _interopRequireDefault(_helpers);
 
-var _objectAssign = __webpack_require__(9);
+var _objectAssign = __webpack_require__(10);
 
 var _objectAssign2 = _interopRequireDefault(_objectAssign);
 
@@ -62484,7 +62483,7 @@ module.exports = factory(
 
 
 
-var _assign = __webpack_require__(9);
+var _assign = __webpack_require__(10);
 
 var emptyObject = __webpack_require__(27);
 var _invariant = __webpack_require__(17);
@@ -63416,7 +63415,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _objectAssign = __webpack_require__(9);
+var _objectAssign = __webpack_require__(10);
 
 var _objectAssign2 = _interopRequireDefault(_objectAssign);
 
@@ -64211,7 +64210,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "/* Main Slider */\n.main-slider-wrapper{\n    max-height: 500px;\n  } \n  .main-slider-wrapper .slick-list,.main-slider-wrapper .slick-slide {\n    max-height: 500px !important;\n  }\n  .main-slider-img-wrapper{\n    max-height: 500px;\n    overflow-y: hidden;\n  }\n  .main-slider-img{\n    height: auto;\n    width: 100%;\n  }\n  .main-slider-content{\n    font-weight: 1em;\n    font-family: Verdana, Geneva, Tahoma, sans-serif;\n    color:#d3d3d3;\n    padding-top: 50px;\n    padding-left: 10px;\n    padding-right: 10px;\n    height: 200px;\n    background-color: rgba(27, 94, 126,0.75);\n    max-width: 450px;\n    position: relative;\n    top:-230px;\n    left: 0;\n    text-align: center;\n    margin-left: 30px;\n  }\n  .scroll-btn{\n    width: 36px;\n    height: 36px;\n    background-color: #fff;\n    color:#217ca1;\n    border-radius: 50%;\n    text-align: center;\n    font-size: 16px;\n    vertical-align: middle;\n    padding-top: 7px;\n    position: relative;\n    left: calc(50% - 18px);\n    top:-18px;\n    cursor: pointer;\n  \n    transform: scale(1); \n    transition: transform .5s;\n    text-align: center;\n    \n    -webkit-box-shadow: 10px 10px 82px 7px rgba(201,224,232,1);\n    -moz-box-shadow: 10px 10px 82px 7px rgba(201,224,232,1);\n    box-shadow: 10px 10px 82px 7px rgba(201,224,232,1);\n  }\n  .scroll-btn:hover{\n    transform: scale(1.2);\n    transition: transform .5s;\n  }\n  \n  @media screen and (max-width:1365px){\n    .main-slider-wrapper{\n      max-height: 400px;\n    } \n    .main-slider-wrapper .slick-list,.main-slider-wrapper .slick-slide {\n      max-height: 400px !important;\n    }\n    .main-slider-img-wrapper{\n      max-height: 400px;\n    }\n  }\n  @media screen and (max-width:1065px){\n    .main-slider-wrapper{\n      max-height: 350px;\n    } \n    .main-slider-wrapper .slick-list,.main-slider-wrapper .slick-slide {\n      max-height: 350px !important;\n    }\n    .main-slider-img-wrapper{\n      max-height: 350px;\n    }\n  }\n  @media screen and (max-width:935px){\n    .main-slider-wrapper{\n      max-height: 300px;\n    } \n    .main-slider-wrapper .slick-list,.main-slider-wrapper .slick-slide {\n      max-height: 300px !important;\n    }\n    .main-slider-img-wrapper{\n      max-height: 300px;\n    }\n  }\n  @media screen and (max-width:807px){\n    .main-slider-wrapper{\n      max-height: 500px;\n    } \n    .main-slider-wrapper .slick-list,.main-slider-wrapper .slick-slide {\n      max-height: 500px !important;\n    }\n    .main-slider-img-wrapper{\n      max-height: 500px;\n      overflow-x: hidden;\n      overflow-y: visible;\n      direction: rtl;\n    }\n    .main-slider-img{\n      height: 300px;\n      width: auto;\n    }\n    .main-slider-content-wrapper{\n      margin: 0 !important;\n      padding: 0 !important;\n    }\n    .main-slider-content{\n      top:0;\n      background-color: rgb(27, 94, 126);\n      padding-top: 20px;\n      padding-left: 20px;\n      padding-right: 20px;\n      height: 200px;\n      font-size: 1.15em;\n      max-width: 100%;\n      margin-left: 0;\n    }\n  }", ""]);
+exports.push([module.i, "/* Main Slider */\n.main-slider-wrapper{\n    max-height: 500px;\n  } \n  .main-slider-wrapper .slick-list,.main-slider-wrapper .slick-slide {\n    max-height: 500px !important;\n  }\n  .main-slider-img-wrapper{\n    max-height: 500px;\n    overflow-y: hidden;\n  }\n  .main-slider-img{\n    height: auto;\n    width: 100%;\n  }\n  .main-slider-content{\n    font-weight: 1em;\n    font-family: Verdana, Geneva, Tahoma, sans-serif;\n    color:#d3d3d3;\n    padding-top: 50px;\n    padding-left: 10px;\n    padding-right: 10px;\n    height: 200px;\n    background-color: rgba(27, 94, 126,0.75);\n    max-width: 450px;\n    position: relative;\n    top:-230px;\n    left: 0;\n    text-align: center;\n    margin-left: 30px;\n  }\n  .scroll-btn{\n    width: 36px;\n    height: 36px;\n    background-color: #fff;\n    color:#217ca1;\n    border-radius: 50%;\n    text-align: center;\n    font-size: 16px;\n    vertical-align: middle;\n    padding-top: 7px;\n    position: relative;\n    left: calc(50% - 18px);\n    top:-18px;\n    cursor: pointer;\n  \n    transform: scale(1); \n    transition: transform .5s;\n    text-align: center;\n    \n  }\n  .scroll-btn:hover{\n    transform: scale(1.2);\n    transition: transform .5s;\n  }\n  \n  @media screen and (max-width:1365px){\n    .main-slider-wrapper{\n      max-height: 400px;\n    } \n    .main-slider-wrapper .slick-list,.main-slider-wrapper .slick-slide {\n      max-height: 400px !important;\n    }\n    .main-slider-img-wrapper{\n      max-height: 400px;\n    }\n  }\n  @media screen and (max-width:1065px){\n    .main-slider-wrapper{\n      max-height: 350px;\n    } \n    .main-slider-wrapper .slick-list,.main-slider-wrapper .slick-slide {\n      max-height: 350px !important;\n    }\n    .main-slider-img-wrapper{\n      max-height: 350px;\n    }\n  }\n  @media screen and (max-width:935px){\n    .main-slider-wrapper{\n      max-height: 300px;\n    } \n    .main-slider-wrapper .slick-list,.main-slider-wrapper .slick-slide {\n      max-height: 300px !important;\n    }\n    .main-slider-img-wrapper{\n      max-height: 300px;\n    }\n  }\n  @media screen and (max-width:807px){\n    .main-slider-wrapper{\n      max-height: 500px;\n    } \n    .main-slider-wrapper .slick-list,.main-slider-wrapper .slick-slide {\n      max-height: 500px !important;\n    }\n    .main-slider-img-wrapper{\n      max-height: 500px;\n      overflow-x: hidden;\n      overflow-y: visible;\n      direction: rtl;\n    }\n    .main-slider-img{\n      height: 300px;\n      width: auto;\n    }\n    .main-slider-content-wrapper{\n      margin: 0 !important;\n      padding: 0 !important;\n    }\n    .main-slider-content{\n      top:0;\n      background-color: rgb(27, 94, 126);\n      padding-top: 20px;\n      padding-left: 20px;\n      padding-right: 20px;\n      height: 200px;\n      font-size: 1.15em;\n      max-width: 100%;\n      margin-left: 0;\n    }\n  }", ""]);
 
 // exports
 
@@ -65396,7 +65395,20 @@ var ClientsSlider = function (_React$Component) {
         var _this = _possibleConstructorReturn(this, (ClientsSlider.__proto__ || Object.getPrototypeOf(ClientsSlider)).call(this, props));
 
         _this.state = {
-            clients: [{ name: 'Нидан-Фудс Берегово', src: './imgs/nidan-juices.png', alt: 'client' }, { name: 'Нидан-Фудс Берегово', src: './imgs/nidan-juices.png', alt: 'client' }, { name: 'Нидан-Фудс Берегово', src: './imgs/nidan-juices.png', alt: 'client' }]
+            clients: [
+            // {name:'Carlsberg Group',src:'./imgs/clients/',alt:'client'},
+            // {name:'Перша Приватна Броварня',src:'./imgs/clients/',alt:'client'},
+            // {name:'Оболонь',src:'./imgs/clients/',alt:'client'},
+
+            { name: 'МХП', src: './imgs/clients/МХП.png', alt: 'client' },
+
+            // {name:'Перечинский ЛХК',src:'./imgs/clients/',alt:'client'},
+
+            { name: 'Нидан-Фудс Берегово', src: './imgs/nidan-juices.png', alt: 'client' },
+
+            //  {name:'CarlsbergGroup ПЗ Славутич',src:'./imgs/clients/',alt:'client'},
+
+            { name: 'Rusnac - MoldAqua', src: './imgs/clients/Rusnac – MoldAqua.png', alt: 'client' }, { name: 'Донбасэнерго, Старобешевская ТЭС', src: './imgs/clients/Донбассэнерго.png', alt: 'client' }, { name: 'Камелия-PR', src: './imgs/clients/Камелия-PR.png', alt: 'client' }, { name: 'Луцьк Фудз', src: './imgs/clients/Луцьк Фудз.png', alt: 'client' }, { name: 'ИСД', src: './imgs/clients/ИСД.png', alt: 'client' }, { name: 'Инкерман, Крым', src: './imgs/clients/Инкерман.png', alt: 'client' }, { name: 'ПрАТ "Вентс', src: './imgs/clients/ПрАТ «Вентс».png', alt: 'client' }, { name: 'ООО НПП "Гетьман"', src: './imgs/clients/ООО НПП «Гетьман».png', alt: 'client' }, { name: 'Биогазэнерго', src: './imgs/clients/Биогазэнерго.png', alt: 'client' }]
         };
         return _this;
     }
@@ -65632,7 +65644,7 @@ exports.push([module.i, "/* Footer */\nfooter{\n    height: 50px;\n    backgroun
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_sliding_pane___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_react_sliding_pane__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_react_sliding_pane_dist_react_sliding_pane_css__ = __webpack_require__(37);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_react_sliding_pane_dist_react_sliding_pane_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_react_sliding_pane_dist_react_sliding_pane_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_footer_footer_module__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_footer_footer_module__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_titles_paragraph__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_titles_categoryTitle__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__Shared_css__ = __webpack_require__(8);
@@ -65672,8 +65684,8 @@ var Equipment = function (_Component) {
         var _this = _possibleConstructorReturn(this, (Equipment.__proto__ || Object.getPrototypeOf(Equipment)).call(this, props));
 
         var url = props.location.pathname;
-        var categoryId = url.slice(url.lastIndexOf('#'));
-        var category = url.slice(1, url.lastIndexOf('#') - 1);
+        var categoryId = url.slice(url.lastIndexOf('#') - 1);
+        var category = url.slice(1, url.lastIndexOf('#') - 2);
         _this.getEquipment.call(_this, categoryId);
 
         _this.state = {
@@ -66755,7 +66767,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, ".img-responsive {\n    margin: 0 auto;\n}\n.vcenter {\n    display: inline-block;\n    vertical-align: middle;\n    float: none;\n}\n\n.technologies{\n    margin-top: 20px;\n    margin-bottom: 15px;\n}\n\n.tech_category_title{\n    text-align: left;\n    text-transform: uppercase;\n    letter-spacing: 2px;\n    font-family: Georgia, 'Times New Roman', Times, serif;\n    font-weight: bold;\n    font-size: 1.5em;\n}\n@media screen and (min-width:768px) and (max-width:821px){\n    .technologies{\n        margin-top: 120px;\n    }\n}\n@media screen and (max-width:767px) {\n    .tech_category_title{\n       text-align: center;\n    }\n}\n.table-wrapper{\n    overflow-x: scroll;\n    max-width: 100%; \n}\n.tech-table{\n    margin-top: 20px;\n}\n.tech-table td,th{\n    padding: 5px 15px;\n    border: 1px solid #abb4b4;\n    color: #0f4c65;\n    font-size: 1.15em;\n}\n.tech-table td {\n    text-transform: uppercase;\n}\n\n\n/* Sliding pane */\n.tech-sliding-pane{\n    margin-top: 122px;\n    height: 540px;\n}\n.tech-sliding-pane .slide-pane__header{\n    flex: 0 0 35px;\n}\n.tech-sliding-pane .tech-nav{\n    width: 100%;\n    left: 0;\n    top:35px;\n\n}\n.tech-sliding-pane .tech-nav-item{\n    border-left: none;\n    border-right: none;\n}\n.tech-sliding-pane .tech-nav-item:first-child{\n    border-top: none;\n}\n\n/* Navigations */\n.tech-arrow{\n    z-index: 1000;\n    position: fixed;\n    top: 25%;\n    left: 0;\n    padding-top: 16px;\n    width: 32px;\n    height: 62px;\n    background-color: rgba(15, 76, 101, 0.5);\n    /* border-radius: 50%; */\n    color: #fff;\n    text-align: center;\n    transition: background-color .5s;\n}\n.tech-nav{\n    position: fixed;\n    width: 25%;\n    max-width: 280px;\n}\n.tech-nav a{\n    text-decoration: none !important;\n}\n.tech-nav-item{\n    cursor: pointer;\n    border: 1px solid #167198;\n    border-top: none;\n    font-size: 1.15em;\n    color: #167198;\n    text-align: center;\n    padding: 10px 15px;\n}\n.tech-nav-item:first-child{\n    border-top: 1px solid #167198;\n}\n.tech-nav-item:hover{\n    color:#fff;\n    background-color: #66bee4;\n}\n\n.active{\n    color:#fff;\n    background-color: rgb(22, 113, 152);\n}\n\n.technologies-section{\n    padding-top: 40px;\n    padding-bottom: 40px;\n}\n@media screen and (max-width:767px){\n    .technologies-section{\n        padding-top: 25px;\n        padding-bottom: 25px;\n    }\n}\n\n.technologies_iframe{\n    margin: 50px auto;\n    text-align: center;\n}\n.technologies_iframe iframe{\n    max-width: 100%;\n}\n/* .technologies-section:nth-child(2n){\n  background-color: #edf6f6;  \n} */", ""]);
+exports.push([module.i, ".img-responsive {\n    margin: 0 auto;\n}\n.vcenter {\n    display: inline-block;\n    vertical-align: middle;\n    float: none;\n}\n\n.technologies{\n    margin-top: 20px;\n    margin-bottom: 15px;\n}\n\n.tech_category_title{\n    text-align: left;\n    text-transform: uppercase;\n    letter-spacing: 2px;\n    font-family: Georgia, 'Times New Roman', Times, serif;\n    font-weight: bold;\n    font-size: 1.5em;\n}\n@media screen and (min-width:768px) and (max-width:821px){\n    .technologies{\n        margin-top: 120px;\n    }\n}\n@media screen and (max-width:767px) {\n    .tech_category_title{\n       text-align: center;\n    }\n}\n.table-wrapper{\n    overflow-x: scroll;\n    max-width: 100%; \n}\n.tech-table{\n    margin-top: 20px;\n}\n.tech-table td,th{\n    padding: 5px 15px;\n    border: 1px solid #abb4b4;\n    color: #0f4c65;\n    font-size: 1.15em;\n}\n.tech-table td {\n    text-transform: uppercase;\n}\n\n\n/* Sliding pane */\n.tech-sliding-pane{\n    margin-top: 122px;\n    height: 540px;\n}\n.slide-pane__overlay{\n    overflow-y: scroll !important;\n}\n.tech-sliding-pane .slide-pane__header{\n    flex: 0 0 35px;\n}\n.tech-sliding-pane .tech-nav{\n    width: 100%;\n    left: 0;\n    top:35px;\n\n}\n.tech-sliding-pane .tech-nav-item{\n    border-left: none;\n    border-right: none;\n}\n.tech-sliding-pane .tech-nav-item:first-child{\n    border-top: none;\n}\n\n/* Navigations */\n.tech-arrow{\n    z-index: 1000;\n    position: fixed;\n    top: 25%;\n    left: 0;\n    padding-top: 16px;\n    width: 32px;\n    height: 62px;\n    background-color: rgba(15, 76, 101, 0.5);\n    /* border-radius: 50%; */\n    color: #fff;\n    text-align: center;\n    transition: background-color .5s;\n}\n.tech-nav{\n    position: fixed;\n    width: 25%;\n    max-width: 280px;\n}\n.tech-nav a{\n    text-decoration: none !important;\n}\n.tech-nav-item{\n    cursor: pointer;\n    border: 1px solid #167198;\n    border-top: none;\n    font-size: 1.15em;\n    color: #167198;\n    text-align: center;\n    padding: 10px 15px;\n}\n.tech-nav-item:first-child{\n    border-top: 1px solid #167198;\n}\n.tech-nav-item:hover{\n    color:#fff;\n    background-color: #66bee4;\n}\n\n.active{\n    color:#fff;\n    background-color: rgb(22, 113, 152);\n}\n\n.technologies-section{\n    padding-top: 40px;\n    padding-bottom: 40px;\n}\n@media screen and (max-width:767px){\n    .technologies-section{\n        padding-top: 25px;\n        padding-bottom: 25px;\n    }\n}\n\n.technologies_iframe{\n    margin: 50px auto;\n    text-align: center;\n}\n.technologies_iframe iframe{\n    max-width: 100%;\n}\n/* .technologies-section:nth-child(2n){\n  background-color: #edf6f6;  \n} */", ""]);
 
 // exports
 
@@ -66820,7 +66832,7 @@ exports.push([module.i, "", ""]);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Shared_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__Shared_css__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Contacts_css__ = __webpack_require__(218);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Contacts_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__Contacts_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_footer_footer_module__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_footer_footer_module__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_titles_categoryTitle__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_titles_paragraph__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_shared_address__ = __webpack_require__(220);
@@ -67246,7 +67258,7 @@ exports.push([module.i, "/* Map */\n.map-title{\n    letter-spacing: 1px;\n    c
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_animate_on_scroll___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react_animate_on_scroll__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_animate_css_animate_min_css__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_animate_css_animate_min_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_animate_css_animate_min_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_footer_footer_module__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_footer_footer_module__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_titles_categoryTitle__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Shared_css__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Shared_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__Shared_css__);
@@ -67279,11 +67291,7 @@ var Reference = function (_Component) {
         var _this = _possibleConstructorReturn(this, (Reference.__proto__ || Object.getPrototypeOf(Reference)).call(this, props));
 
         _this.state = {
-            table: __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'div',
-                null,
-                'Loading...'
-            )
+            table: __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: './imgs/Loading.svg' })
         };
         _this.getReference = _this.getReference.bind(_this);
         _this.generateTable = _this.generateTable.bind(_this);
@@ -67565,7 +67573,7 @@ exports.push([module.i, ".references{\n    margin-top: 55px;\n    margin-bottom:
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_animate_on_scroll___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react_animate_on_scroll__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_animate_css_animate_min_css__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_animate_css_animate_min_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_animate_css_animate_min_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_footer_footer_module__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_footer_footer_module__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_titles_paragraph__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_titles_categoryTitle__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_content_box_content_box__ = __webpack_require__(67);
@@ -68661,7 +68669,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, ".cbp-wrapper{\n    background-color: #fff;\n    max-width: 425px;\n    margin: 0 auto;\n    margin-top: 40px;\n    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);\n    transition: box-shadow 1s;\n    /* cursor: pointer; */\n}\n.cbp-wrapper:hover{\n    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);\n    transition: box-shadow 1s;\n}\n.cbp-img img{\n    width: 100%;\n    max-height: 175px;\n    overflow-y: hidden;\n}\n.cbp-title{\n    text-align: center;\n    font-family: Verdana,Geneva,Tahoma,sans-serif;\n    margin-top: 15px;\n    font-weight: bold;\n    color: #0f4c65;\n    font-size: 1.15em;\n}\n\n.cbp-list{\n    display: block;\n    margin-top: 25px;\n    padding-left: 25px;\n\n    opacity: 1;\n    height: 350px;\n    transition: height 1s, opacity .5s ease-in 1s;\n}\n.cbp-list-hidden{\n    margin-top: 25px;\n    padding-left: 25px;\n\n    opacity: 0;\n    height: 0;\n    transition: opacity .3s ease-out, height 1s ease-out .5s;\n}\n/* .cbp-list-anim-leave{\n    opacity: 1;\n}\n.cbp-list-anim-leave-active{\n    opacity: 0;\n    transition: opacity 1000ms ease-out;\n} */\n.cbp-wrapper li{\n    list-style-type: none;\n    font-family: Verdana,Geneva,Tahoma,sans-serif;    \n    color:#0f4c65;\n    font-size:1.15em;\n    line-height: 22px;\n}\n.cbp-wrapper li:before {\n    content: \"-\";\n}\n\n/* btn show */\n.show-more-btn{\n    width: 36px;\n    height: 36px;\n    background-color: #fff;\n    color:#217ca1;\n    border-radius: 50%;\n    text-align: center;\n    font-size: 16px;\n    vertical-align: middle;\n    padding-top: 7px;\n    position: relative;\n    left: calc(50% - 18px);\n    top:-18px;\n    cursor: pointer;\n  \n    transform: scale(1); \n    transition: transform .5s;\n    text-align: center;\n  \n    -webkit-box-shadow: 0 0 124px 4px rgba(201,224,232,1);\n    -moz-box-shadow: 0 0 124px 4px rgba(201,224,232,1);\n    box-shadow: 0 0 124px 4px rgba(201,224,232,1);\n  }", ""]);
+exports.push([module.i, ".cbp-wrapper{\n    background-color: #fff;\n    max-width: 425px;\n    margin: 0 auto;\n    margin-top: 40px;\n    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);\n    transition: box-shadow 1s;\n    /* cursor: pointer; */\n}\n.cbp-wrapper:hover{\n    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);\n    transition: box-shadow 1s;\n}\n.cbp-img{\n    text-align: center;\n    padding-top: 30px;\n    padding-bottom: 10px;\n}\n.cbp-img img{\n    max-width: 80px;\n    width: 100%;\n    max-height: 175px;\n    overflow-y: hidden;\n}\n.cbp-title{\n    text-align: center;\n    font-family: Verdana,Geneva,Tahoma,sans-serif;\n    margin-top: 15px;\n    font-weight: bold;\n    color: #0f4c65;\n    font-size: 1.15em;\n}\n\n.cbp-list{\n    display: block;\n    margin-top: 25px;\n    padding-left: 25px;\n\n    opacity: 1;\n    height: 350px;\n    transition: height 1s, opacity .5s ease-in 1s;\n}\n.cbp-list-hidden{\n    margin-top: 25px;\n    padding-left: 25px;\n\n    opacity: 0;\n    height: 0;\n    transition: opacity .3s ease-out, height 1s ease-out .5s;\n}\n/* .cbp-list-anim-leave{\n    opacity: 1;\n}\n.cbp-list-anim-leave-active{\n    opacity: 0;\n    transition: opacity 1000ms ease-out;\n} */\n.cbp-wrapper li{\n    list-style-type: none;\n    font-family: Verdana,Geneva,Tahoma,sans-serif;    \n    color:#0f4c65;\n    font-size:1.15em;\n    line-height: 22px;\n}\n.cbp-wrapper li:before {\n    content: \"-\";\n}\n\n/* btn show */\n.show-more-btn{\n    width: 36px;\n    height: 36px;\n    background-color: #fff;\n    color:#217ca1;\n    border-radius: 50%;\n    text-align: center;\n    font-size: 16px;\n    vertical-align: middle;\n    padding-top: 7px;\n    position: relative;\n    left: calc(50% - 18px);\n    top:-18px;\n    cursor: pointer;\n  \n    transform: scale(1); \n    transition: transform .5s;\n    text-align: center;\n  \n    -webkit-box-shadow: 0 0 124px 4px rgba(201,224,232,1);\n    -moz-box-shadow: 0 0 124px 4px rgba(201,224,232,1);\n    box-shadow: 0 0 124px 4px rgba(201,224,232,1);\n  }", ""]);
 
 // exports
 
@@ -68722,7 +68730,7 @@ exports.push([module.i, ".assembling-service{\n    /* overflow: hidden; */\n    
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_animate_on_scroll___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react_animate_on_scroll__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_animate_css_animate_min_css__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_animate_css_animate_min_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_animate_css_animate_min_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_footer_footer_module__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_footer_footer_module__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_titles_paragraph__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_titles_categoryTitle__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Shared_css__ = __webpack_require__(8);
@@ -68824,7 +68832,30 @@ var Gallery = function (_Component) {
                 return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     'div',
                     null,
-                    'Loading ...'
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'div',
+                        { className: 'gallery container' },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            'div',
+                            { className: 'sliderWrapper' },
+                            sliderTemplate
+                        ),
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            'div',
+                            { className: 'row margin_bottom_50' },
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                'div',
+                                { className: 'col-xs-12' },
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5__components_titles_categoryTitle__["a" /* default */], { title: '\u0433\u0430\u043B\u0435\u0440\u0435\u044F' })
+                            )
+                        ),
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            'div',
+                            { className: 'row' },
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: './imgs/Loading.svg' })
+                        )
+                    ),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__components_footer_footer_module__["a" /* default */], null)
                 );
             }
             var sliderItem = this.state.items[this.state.current];
@@ -68966,7 +68997,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, ".gallery{\n    margin-top: 70px;\n    margin-bottom: 15px;\n}\n.gallery-item{\n    cursor: pointer;\n    margin-bottom: 50px;\n}\n.gallery-photo{\n    text-align: center;\n}\n.gallery-photo img{\n    max-width: 100%;\n    border: 1px solid #2f87a5;\n}\n.gallery-title{\n    color: #0f4c65;\n    font-family: Verdana,Geneva,Tahoma,sans-serif;\n    margin-top: 30px;\n    font-weight: bold;\n    font-size: 1.15em;\n    padding-top: 20px;\n    padding-bottom: 24px;\n    text-align: center;\n    max-width: 302px;\n    margin: 0 auto;\n}\n.gallery-item .gallery-title{\n    background-color: inherit;\n    color:#0f4c65;\n    transition: background-color .5s ease-in,color .5s ease-in;\n}\n.gallery-item:hover .gallery-title{\n    background-color: #207ca1;\n    color:#fff;\n    transition: color .5s ease-in,background-color 1s ease-in;\n}\n\n\n\n.slider-template{\n    background-color: #fff;\n    z-index: 1001;\n    cursor: pointer;\n    position: absolute;\n    margin-left: auto;\n    margin-right: auto;\n    left: 0;\n    right: 0;\n    max-width: 800px;\n    width: 80%;   \n    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);\n    \n    opacity: 1;\n    transition: box-shadow .7s, opacity 1s;\n}\n.slider-hidden{\n    cursor: pointer;\n    position: absolute;\n    margin-left: auto;\n    margin-right: auto;\n    left: 0;\n    right: 0;\n    max-width: 800px;\n    width: 80%;   \n    \n    z-index: 0;\n    opacity: 0;\n    transition: opacity 1s;\n}\n\n.slider-template:hover{\n    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);\n    transition: box-shadow .7s;\n}\n.slider-photo img{\n    width: 100%;\n}\n.slider-close{\n    cursor: pointer;\n    box-sizing: border-box;\n    position: absolute;\n    right: 5px;\n    top:5px;\n    text-align: center; \n    padding-top: 4px;\n    width: 30px;\n    height: 30px;\n    font-size: 14px;\n    border-radius: 7px;\n    color: #98b5c1;\n    background-color: #e8f4f4;\n    transition:  background-color .5s;\n}\n.slider-close:hover{\n    background-color: #186584;\n    color:#fff;\n    transition:  background-color .5s;\n}\n.slider-arrow{\n    z-index: 1000;\n    position: absolute;\n    width: 32px;\n    height: 32px;\n    left: 5px;\n    border-radius: 50%;\n    background-color: #e8f4f4;\n    color:inherit;\n    text-align: center;\n    top:calc(50% - 25px);\n    font-size: 22px;\n    cursor: pointer;\n    transition:  background-color .5s;\n}\n.slider-arrow:hover{\n    background-color: #186584;\n    color:#fff;\n    transition:  background-color .5s;\n}\n.right{\n    right:10px;\n    left: auto;\n}\n.slider-desc{\n    padding-left: 15%;\n    padding-right: 15%;\n    font-family: Verdana,Geneva,Tahoma,sans-serif;\n    font-size: 1.15em;\n    padding-top: 20px;\n    padding-bottom: 24px;\n    text-align: center;\n    margin: 0 auto;\n    background-color: #186584;\n    color:#fff;\n    line-height: 20px;\n}\n@media screen and (min-width:768px){\n    .slider-template{\n        height: 60%;\n        width: 50%;\n    }\n    .slider-photo img{\n        max-width: 100%;\n        max-height:80%;\n        position: absolute;\n\n        width: auto;\n        margin-left: auto;\n        margin-right: auto;\n        left: 0;\n        right: 0;\n    }\n    .slider-desc{\n        position: absolute;\n        height: 20%;\n        width: 100%;\n        bottom: 0;\n    }\n}\n@media screen and (max-width:767px) {\n    .slider-desc{\n        padding-left: 1%;\n        padding-right: 1%;\n    }\n}\n", ""]);
+exports.push([module.i, ".gallery{\n    margin-top: 70px;\n    margin-bottom: 15px;\n}\n.gallery-item{\n    cursor: pointer;\n    margin-bottom: 50px;\n}\n.gallery-photo{\n    text-align: center;\n}\n.gallery-photo img{\n    max-width: 100%;\n    border: 1px solid #2f87a5;\n}\n.gallery-title{\n    color: #0f4c65;\n    font-family: Verdana,Geneva,Tahoma,sans-serif;\n    margin-top: 30px;\n    font-weight: bold;\n    font-size: 1.15em;\n    padding-top: 20px;\n    padding-bottom: 24px;\n    text-align: center;\n    max-width: 302px;\n    margin: 0 auto;\n}\n.gallery-item .gallery-title{\n    background-color: inherit;\n    color:#0f4c65;\n    transition: background-color .5s ease-in,color .5s ease-in;\n}\n.gallery-item:hover .gallery-title{\n    background-color: #207ca1;\n    color:#fff;\n    transition: color .5s ease-in,background-color 1s ease-in;\n}\n\n\n\n.slider-template{\n    position: fixed;\n    background-color: #fff;\n    z-index: 1001;\n    cursor: pointer;\n    margin-left: auto;\n    margin-right: auto;\n    left: 0;\n    right: 0;\n    max-width: 800px;\n    width: 80%;   \n    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);\n    \n    opacity: 1;\n    transition: box-shadow .7s, opacity 1s;\n}\n.slider-hidden{\n    cursor: pointer;\n    position: absolute;\n    margin-left: auto;\n    margin-right: auto;\n    left: 0;\n    right: 0;\n    max-width: 800px;\n    width: 80%;   \n    \n    z-index: 0;\n    opacity: 0;\n    transition: opacity 1s;\n}\n.slider-hidden .slider-desc{\n    opacity: 0;\n}\n.slider-hidden .slider-arrow{\n    opacity: 0;\n}\n.slider-hidden .slider-close{\n    opacity: 0;\n}\n\n.slider-template:hover{\n    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);\n    transition: box-shadow .7s;\n}\n.slider-photo img{\n    width: 100%;\n}\n.slider-close{\n    cursor: pointer;\n    box-sizing: border-box;\n    position: absolute;\n    right: 5px;\n    top:5px;\n    text-align: center; \n    padding-top: 4px;\n    width: 30px;\n    height: 30px;\n    font-size: 14px;\n    border-radius: 7px;\n    color: #98b5c1;\n    background-color: #e8f4f4;\n    transition:  background-color .5s;\n}\n.slider-close:hover{\n    background-color: #186584;\n    color:#fff;\n    transition:  background-color .5s;\n}\n.slider-arrow{\n    z-index: 1000;\n    position: absolute;\n    width: 32px;\n    height: 32px;\n    left: 5px;\n    border-radius: 50%;\n    background-color: #e8f4f4;\n    color:inherit;\n    text-align: center;\n    top:calc(50% - 25px);\n    font-size: 22px;\n    cursor: pointer;\n    transition:  background-color .5s;\n}\n.slider-arrow:hover{\n    background-color: #186584;\n    color:#fff;\n    transition:  background-color .5s;\n}\n.right{\n    right:10px;\n    left: auto;\n}\n.slider-desc{\n    padding-left: 15%;\n    padding-right: 15%;\n    font-family: Verdana,Geneva,Tahoma,sans-serif;\n    font-size: 1.15em;\n    padding-top: 20px;\n    padding-bottom: 24px;\n    text-align: center;\n    margin: 0 auto;\n    background-color: #186584;\n    color:#fff;\n    line-height: 20px;\n}\n@media screen and (min-width:768px){\n    .slider-template{\n        height: 60%;\n        width: 50%;\n    }\n    .slider-photo img{\n        max-width: 100%;\n        max-height:80%;\n        position: absolute;\n\n        width: auto;\n        margin-left: auto;\n        margin-right: auto;\n        left: 0;\n        right: 0;\n    }\n    .slider-desc{\n        position: absolute;\n        height: 20%;\n        width: 100%;\n        bottom: 0;\n    }\n}\n@media screen and (max-width:767px) {\n    .slider-desc{\n        padding-left: 1%;\n        padding-right: 1%;\n    }\n}\n", ""]);
 
 // exports
 
@@ -68982,7 +69013,7 @@ exports.push([module.i, ".gallery{\n    margin-top: 70px;\n    margin-bottom: 15
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_animate_on_scroll___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react_animate_on_scroll__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_animate_css_animate_min_css__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_animate_css_animate_min_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_animate_css_animate_min_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_footer_footer_module__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_footer_footer_module__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_titles_paragraph__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_titles_categoryTitle__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_content_box_content_box__ = __webpack_require__(67);
@@ -69165,7 +69196,7 @@ exports.push([module.i, ".about-us{\n    margin-top: 55px;\n    margin-bottom: 1
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_titles_categoryTitle__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_titles_paragraph__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_footer_footer_module__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_footer_footer_module__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_content_box_content_box_picture__ = __webpack_require__(68);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Shared_css__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Shared_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__Shared_css__);
@@ -69201,7 +69232,7 @@ var WeOffer = function (_Component) {
     _createClass(WeOffer, [{
         key: 'render',
         value: function render() {
-            var services = [{ title: 'Инжиниринг', img: './imgs/offer.png', list: [' подбор и проектирование оборудования под индивидуальный запрос клиента;', ' полный спектр технологий подготовки воды, в т.ч.: ' + ' ● осветление, напорную/ безнапорную фильтрацию, удаление железа и марганца;' + ' ● умягчение, удаление нитратов,декарбонизацию, обессоливание воды;' + ' ● мембранные технологии ультрафильтрации и обратного осмоса;', ' поставку расходных материалов;'] }, { title: 'Монтажные / сервисные работы:', img: './imgs/offer.png', list: [' монтажные и пусконаладочные работы (технология, электромонтаж,КИПиА, отладка программного обеспечения);', ' шефмонтаж, подбор и работа с подрядными организациями, сопровождение проекта, корректировка проектной документации;', ' обследование, реконструкция, модернизация, автоматизация существующего оборудования с целью уменьшения эксплуатационных затрат;', ' сервис: послепродажный, послегарантийный, периодичный, существующего оборудования, замену фильтрующих загрузок и мембран.'] }, { title: 'Химическая обработка воды: ', img: './imgs/offer.png', list: [' анализ воднохимического режима оборудования (паровые котлы, открытые и закрытыe охладительные циклы, системы обратного осмоса)', ' подбор и расчет программхимической обработки воды реагентами EPCTM(борьба с коррозией, накипеобразованием, биообрастанием, отмывка существующих отложений и пр.);', ' подбор, установку и обслуживание дозирующего оборудования;', ' обучение персонала, обеспечение средствами'] }, { title: 'Комплектующие и расходные материалы:', img: './imgs/offer.png', list: [' корпуса фильтров (пластик, металлические с покрытием, нержавейка) и дренажные системы к ним;', ' управляющие клапана (RX, Clack, Fleck, ручные/автомат)', ' мембраны для систем обратного осмоса Toray, Dow, General Electric', ' ионообменные смолы Purolite, Dowex, Lewatit, Watex, Hydrolite.', ' активированный уголь, антрацит, кварцевый песок, гравий, загрузки для удаления железа', ' насосное и дозирующее оборудование.'] }];
+            var services = [{ title: 'Инжиниринг', img: './imgs/icons/Engineering.png', list: [' подбор и проектирование оборудования под индивидуальный запрос клиента;', ' полный спектр технологий подготовки воды, в т.ч.: ' + '<br/>&nbsp;&nbsp;&nbsp; ● осветление, напорную/ безнапорную фильтрацию, удаление железа и марганца;' + '<br/>&nbsp;&nbsp;&nbsp; ● умягчение, удаление нитратов,декарбонизацию, обессоливание воды;' + '<br/>&nbsp;&nbsp;&nbsp; ● мембранные технологии ультрафильтрации и обратного осмоса;', ' поставку расходных материалов;'] }, { title: 'Монтажные / сервисные работы:', img: './imgs/icons/Montazh&Service.png', list: [' монтажные и пусконаладочные работы (технология, электромонтаж,КИПиА, отладка программного обеспечения);', ' шефмонтаж, подбор и работа с подрядными организациями, сопровождение проекта, корректировка проектной документации;', ' обследование, реконструкция, модернизация, автоматизация существующего оборудования с целью уменьшения эксплуатационных затрат;', ' сервис: послепродажный, послегарантийный, периодичный, существующего оборудования, замену фильтрующих загрузок и мембран.'] }, { title: 'Химическая обработка воды: ', img: './imgs/icons/Chemical.png', list: [' анализ воднохимического режима оборудования (паровые котлы, открытые и закрытыe охладительные циклы, системы обратного осмоса)', ' подбор и расчет программхимической обработки воды реагентами EPC<sup>TM</sup>(борьба с коррозией, накипеобразованием, биообрастанием, отмывка существующих отложений и пр.);', ' подбор, установку и обслуживание дозирующего оборудования;', ' обучение персонала, обеспечение средствами'] }, { title: 'Комплектующие и расходные материалы:', img: './imgs/icons/Complect.png', list: [' корпуса фильтров (пластик, металлические с покрытием, нержавейка) и дренажные системы к ним;', ' управляющие клапана (RX, Clack, Fleck, ручные/автомат)', ' мембраны для систем обратного осмоса Toray, Dow, General Electric', ' ионообменные смолы Purolite, Dowex, Lewatit, Watex, Hydrolite.', ' активированный уголь, антрацит, кварцевый песок, гравий, загрузки для удаления железа', ' насосное и дозирующее оборудование.'] }];
             var servicesLayout = [];
             for (var i = 0; i <= services.length / 2; i += 2) {
                 var serviceFirst = services[i];
@@ -69454,7 +69485,7 @@ exports.push([module.i, ".we-offer{\n    margin-top: 55px;\n    margin-bottom: 1
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_animate_css_animate_min_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_animate_css_animate_min_css__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Shared_css__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Shared_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__Shared_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_footer_footer_module__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_footer_footer_module__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_titles_paragraph__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_titles_categoryTitle__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_content_box_card_box_picture__ = __webpack_require__(251);
@@ -69470,9 +69501,6 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 
 
-// import {
-//     Link
-// } from 'react-router-dom';
 
 
 
@@ -69684,8 +69712,9 @@ function CardBoxPucture(_ref) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Shared_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__Shared_css__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Technologies_css__ = __webpack_require__(38);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Technologies_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__Technologies_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_react_scrollchor__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_react_scrollchor___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_react_scrollchor__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_footer_footer_module__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_react_scrollchor__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_react_scrollchor___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_react_scrollchor__);
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -69693,6 +69722,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
 
 
 
@@ -69727,10 +69757,6 @@ var TechnologiesWrapper = function (_Component) {
         value: function componentDidMount() {
             __WEBPACK_IMPORTED_MODULE_2_react_modal___default.a.setAppElement(this.el);
         }
-        // componentDidUpdate(){
-        //     document.onscroll = this.handleScroll;
-        // }
-
     }, {
         key: 'handleScroll',
         value: function handleScroll() {
@@ -69794,39 +69820,150 @@ var TechnologiesWrapper = function (_Component) {
 
             return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 'div',
-                { className: 'container technologies', ref: function ref(_ref) {
-                        return _this2.el = _ref;
-                    } },
+                null,
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     'div',
-                    { className: 'row' },
+                    { className: 'container technologies', ref: function ref(_ref) {
+                            return _this2.el = _ref;
+                        } },
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                         'div',
-                        { className: 'col-sm-3' },
-                        !this.state.isPaneOpenLeft && __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'div',
-                            { className: 'visible-xs tech-arrow', onClick: this.toggleNavBar },
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fa fa-2x fa-arrow-right', 'aria-hidden': 'true' })
-                        ),
+                        { className: 'row' },
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            __WEBPACK_IMPORTED_MODULE_3_react_sliding_pane___default.a,
-                            {
-                                className: 'tech-sliding-pane',
-                                isOpen: this.state.isPaneOpenLeft,
-                                title: '',
-                                from: 'left',
-                                width: '200px',
-                                onRequestClose: function onRequestClose() {
-                                    return _this2.setState({ isPaneOpenLeft: false });
-                                } },
+                            'div',
+                            { className: 'col-sm-3' },
+                            !this.state.isPaneOpenLeft && __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                'div',
+                                { className: 'visible-xs tech-arrow', onClick: this.toggleNavBar },
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fa fa-2x fa-arrow-right', 'aria-hidden': 'true' })
+                            ),
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                __WEBPACK_IMPORTED_MODULE_3_react_sliding_pane___default.a,
+                                {
+                                    className: 'tech-sliding-pane',
+                                    isOpen: this.state.isPaneOpenLeft,
+                                    title: '',
+                                    from: 'left',
+                                    width: '200px',
+                                    onRequestClose: function onRequestClose() {
+                                        return _this2.setState({ isPaneOpenLeft: false });
+                                    } },
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'div',
+                                    { className: 'tech-nav' },
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        __WEBPACK_IMPORTED_MODULE_8_react_scrollchor___default.a,
+                                        { to: 'clarification', animate: { duration: 700 }, afterAnimate: function afterAnimate() {
+                                                return _this2.setState({ isPaneOpenLeft: false });
+                                            } },
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                            'div',
+                                            { className: 'tech-nav-item' },
+                                            '\u041E\u0441\u0432\u0435\u0442\u043B\u0435\u043D\u0438\u0435 \u0432\u043E\u0434\u044B'
+                                        )
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        __WEBPACK_IMPORTED_MODULE_8_react_scrollchor___default.a,
+                                        { to: 'filtration', animate: { duration: 700 }, afterAnimate: function afterAnimate() {
+                                                return _this2.setState({ isPaneOpenLeft: false });
+                                            } },
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                            'div',
+                                            { className: 'tech-nav-item' },
+                                            '\u041C\u0435\u0445\u0430\u043D\u0438\u0447\u0435\u0441\u043A\u0430\u044F \u0444\u0438\u043B\u044C\u0442\u0440\u0430\u0446\u0438\u044F'
+                                        )
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        __WEBPACK_IMPORTED_MODULE_8_react_scrollchor___default.a,
+                                        { to: 'ferum-remove', animate: { duration: 700 }, afterAnimate: function afterAnimate() {
+                                                return _this2.setState({ isPaneOpenLeft: false });
+                                            } },
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                            'div',
+                                            { className: 'tech-nav-item' },
+                                            '\u0423\u0434\u0430\u043B\u0435\u043D\u0438\u0435 \u0436\u0435\u043B\u0435\u0437\u0430 / \u043C\u0430\u0440\u0433\u0430\u043D\u0446\u0430',
+                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
+                                            '\u043D\u0430 \u0444\u0438\u043B\u044C\u0442\u0440\u0430\u0445 WET- FE'
+                                        )
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        __WEBPACK_IMPORTED_MODULE_8_react_scrollchor___default.a,
+                                        { to: 'sorbtion', animate: { duration: 700 }, afterAnimate: function afterAnimate() {
+                                                return _this2.setState({ isPaneOpenLeft: false });
+                                            } },
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                            'div',
+                                            { className: 'tech-nav-item' },
+                                            '\u0421\u043E\u0440\u0431\u0446\u0438\u044F - \u0444\u0438\u043B\u044C\u0442\u0440\u044B \u0441 \u0430\u043A\u0442\u0438\u0432\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u044B\u043C \u0443\u0433\u043B\u0435\u043C WET-AC'
+                                        )
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        __WEBPACK_IMPORTED_MODULE_8_react_scrollchor___default.a,
+                                        { to: 'softening', animate: { duration: 700 }, afterAnimate: function afterAnimate() {
+                                                return _this2.setState({ isPaneOpenLeft: false });
+                                            } },
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                            'div',
+                                            { className: 'tech-nav-item' },
+                                            '\u0423\u043C\u044F\u0433\u0447\u0435\u043D\u0438\u0435',
+                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
+                                            ' (Na \u2013 \u043A\u0430\u0442\u0438\u043E\u043D\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435)'
+                                        )
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        __WEBPACK_IMPORTED_MODULE_8_react_scrollchor___default.a,
+                                        { to: 'decarbonization', animate: { duration: 700 }, afterAnimate: function afterAnimate() {
+                                                return _this2.setState({ isPaneOpenLeft: false });
+                                            } },
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                            'div',
+                                            { className: 'tech-nav-item' },
+                                            '\u0414\u0435\u043A\u0430\u0440\u0431\u043E\u043D\u0438\u0437\u0430\u0446\u0438\u044F',
+                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
+                                            ' (\u041D \u2013 \u043A\u0430\u0442\u0438\u043E\u043D\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435)'
+                                        )
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        __WEBPACK_IMPORTED_MODULE_8_react_scrollchor___default.a,
+                                        { to: 'reverse-osmos', animate: { duration: 700 }, afterAnimate: function afterAnimate() {
+                                                return _this2.setState({ isPaneOpenLeft: false });
+                                            } },
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                            'div',
+                                            { className: 'tech-nav-item' },
+                                            '\u041E\u0431\u0440\u0430\u0442\u043D\u044B\u0439 \u043E\u0441\u043C\u043E\u0441'
+                                        )
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        __WEBPACK_IMPORTED_MODULE_8_react_scrollchor___default.a,
+                                        { to: 'ultrafiltration', animate: { duration: 700 }, afterAnimate: function afterAnimate() {
+                                                return _this2.setState({ isPaneOpenLeft: false });
+                                            } },
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                            'div',
+                                            { className: 'tech-nav-item' },
+                                            '\u0423\u043B\u044C\u0442\u0440\u0430\u0444\u0438\u043B\u044C\u0442\u0440\u0430\u0446\u0438\u044F'
+                                        )
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        __WEBPACK_IMPORTED_MODULE_8_react_scrollchor___default.a,
+                                        { to: 'complex-water-equipment', animate: { duration: 700 }, afterAnimate: function afterAnimate() {
+                                                return _this2.setState({ isPaneOpenLeft: false });
+                                            } },
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                            'div',
+                                            { className: 'tech-nav-item' },
+                                            '\u041A\u043E\u043C\u043F\u043B\u0435\u043A\u0441 \u043E\u0431\u043E\u0440\u0443\u0434\u043E\u0432\u0430\u043D\u0438\u044F \u0432\u043E\u0434\u043E\u043F\u043E\u0434\u0433\u043E\u0442\u043E\u0432\u043A\u0438'
+                                        )
+                                    )
+                                )
+                            ),
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                 'div',
-                                { className: 'tech-nav' },
+                                { className: 'tech-nav hidden-xs' },
                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    __WEBPACK_IMPORTED_MODULE_7_react_scrollchor___default.a,
-                                    { to: 'clarification', animate: { duration: 700 }, afterAnimate: function afterAnimate() {
-                                            return _this2.setState({ isPaneOpenLeft: false });
-                                        } },
+                                    __WEBPACK_IMPORTED_MODULE_8_react_scrollchor___default.a,
+                                    { to: 'clarification', animate: { duration: 700 } },
                                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                         'div',
                                         { className: 'tech-nav-item' },
@@ -69834,10 +69971,8 @@ var TechnologiesWrapper = function (_Component) {
                                     )
                                 ),
                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    __WEBPACK_IMPORTED_MODULE_7_react_scrollchor___default.a,
-                                    { to: 'filtration', animate: { duration: 700 }, afterAnimate: function afterAnimate() {
-                                            return _this2.setState({ isPaneOpenLeft: false });
-                                        } },
+                                    __WEBPACK_IMPORTED_MODULE_8_react_scrollchor___default.a,
+                                    { to: 'filtration', animate: { duration: 700 } },
                                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                         'div',
                                         { className: 'tech-nav-item' },
@@ -69845,10 +69980,8 @@ var TechnologiesWrapper = function (_Component) {
                                     )
                                 ),
                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    __WEBPACK_IMPORTED_MODULE_7_react_scrollchor___default.a,
-                                    { to: 'ferum-remove', animate: { duration: 700 }, afterAnimate: function afterAnimate() {
-                                            return _this2.setState({ isPaneOpenLeft: false });
-                                        } },
+                                    __WEBPACK_IMPORTED_MODULE_8_react_scrollchor___default.a,
+                                    { to: 'ferum-remove', animate: { duration: 700 } },
                                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                         'div',
                                         { className: 'tech-nav-item' },
@@ -69858,10 +69991,8 @@ var TechnologiesWrapper = function (_Component) {
                                     )
                                 ),
                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    __WEBPACK_IMPORTED_MODULE_7_react_scrollchor___default.a,
-                                    { to: 'sorbtion', animate: { duration: 700 }, afterAnimate: function afterAnimate() {
-                                            return _this2.setState({ isPaneOpenLeft: false });
-                                        } },
+                                    __WEBPACK_IMPORTED_MODULE_8_react_scrollchor___default.a,
+                                    { to: 'sorbtion', animate: { duration: 700 } },
                                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                         'div',
                                         { className: 'tech-nav-item' },
@@ -69869,10 +70000,8 @@ var TechnologiesWrapper = function (_Component) {
                                     )
                                 ),
                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    __WEBPACK_IMPORTED_MODULE_7_react_scrollchor___default.a,
-                                    { to: 'softening', animate: { duration: 700 }, afterAnimate: function afterAnimate() {
-                                            return _this2.setState({ isPaneOpenLeft: false });
-                                        } },
+                                    __WEBPACK_IMPORTED_MODULE_8_react_scrollchor___default.a,
+                                    { to: 'softening', animate: { duration: 700 } },
                                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                         'div',
                                         { className: 'tech-nav-item' },
@@ -69882,10 +70011,8 @@ var TechnologiesWrapper = function (_Component) {
                                     )
                                 ),
                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    __WEBPACK_IMPORTED_MODULE_7_react_scrollchor___default.a,
-                                    { to: 'decarbonization', animate: { duration: 700 }, afterAnimate: function afterAnimate() {
-                                            return _this2.setState({ isPaneOpenLeft: false });
-                                        } },
+                                    __WEBPACK_IMPORTED_MODULE_8_react_scrollchor___default.a,
+                                    { to: 'decarbonization', animate: { duration: 700 } },
                                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                         'div',
                                         { className: 'tech-nav-item' },
@@ -69895,10 +70022,8 @@ var TechnologiesWrapper = function (_Component) {
                                     )
                                 ),
                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    __WEBPACK_IMPORTED_MODULE_7_react_scrollchor___default.a,
-                                    { to: 'reverse-osmos', animate: { duration: 700 }, afterAnimate: function afterAnimate() {
-                                            return _this2.setState({ isPaneOpenLeft: false });
-                                        } },
+                                    __WEBPACK_IMPORTED_MODULE_8_react_scrollchor___default.a,
+                                    { to: 'reverse-osmos', animate: { duration: 700 } },
                                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                         'div',
                                         { className: 'tech-nav-item' },
@@ -69906,10 +70031,8 @@ var TechnologiesWrapper = function (_Component) {
                                     )
                                 ),
                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    __WEBPACK_IMPORTED_MODULE_7_react_scrollchor___default.a,
-                                    { to: 'ultrafiltration', animate: { duration: 700 }, afterAnimate: function afterAnimate() {
-                                            return _this2.setState({ isPaneOpenLeft: false });
-                                        } },
+                                    __WEBPACK_IMPORTED_MODULE_8_react_scrollchor___default.a,
+                                    { to: 'ultrafiltration', animate: { duration: 700 } },
                                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                         'div',
                                         { className: 'tech-nav-item' },
@@ -69917,10 +70040,8 @@ var TechnologiesWrapper = function (_Component) {
                                     )
                                 ),
                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    __WEBPACK_IMPORTED_MODULE_7_react_scrollchor___default.a,
-                                    { to: 'complex-water-equipment', animate: { duration: 700 }, afterAnimate: function afterAnimate() {
-                                            return _this2.setState({ isPaneOpenLeft: false });
-                                        } },
+                                    __WEBPACK_IMPORTED_MODULE_8_react_scrollchor___default.a,
+                                    { to: 'complex-water-equipment', animate: { duration: 700 } },
                                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                         'div',
                                         { className: 'tech-nav-item' },
@@ -69931,1667 +70052,1601 @@ var TechnologiesWrapper = function (_Component) {
                         ),
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                             'div',
-                            { className: 'tech-nav hidden-xs' },
+                            { className: 'col-sm-8 col-sm-offset-1' },
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                __WEBPACK_IMPORTED_MODULE_7_react_scrollchor___default.a,
-                                { to: 'clarification', animate: { duration: 700 } },
+                                'div',
+                                { id: 'clarification', className: 'technologies-section' },
                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'div',
-                                    { className: 'tech-nav-item' },
+                                    'h2',
+                                    { className: 'tech_category_title' },
                                     '\u041E\u0441\u0432\u0435\u0442\u043B\u0435\u043D\u0438\u0435 \u0432\u043E\u0434\u044B'
-                                )
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                __WEBPACK_IMPORTED_MODULE_7_react_scrollchor___default.a,
-                                { to: 'filtration', animate: { duration: 700 } },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'div',
-                                    { className: 'tech-nav-item' },
-                                    '\u041C\u0435\u0445\u0430\u043D\u0438\u0447\u0435\u0441\u043A\u0430\u044F \u0444\u0438\u043B\u044C\u0442\u0440\u0430\u0446\u0438\u044F'
-                                )
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                __WEBPACK_IMPORTED_MODULE_7_react_scrollchor___default.a,
-                                { to: 'ferum-remove', animate: { duration: 700 } },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'div',
-                                    { className: 'tech-nav-item' },
-                                    '\u0423\u0434\u0430\u043B\u0435\u043D\u0438\u0435 \u0436\u0435\u043B\u0435\u0437\u0430 / \u043C\u0430\u0440\u0433\u0430\u043D\u0446\u0430',
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
-                                    '\u043D\u0430 \u0444\u0438\u043B\u044C\u0442\u0440\u0430\u0445 WET- FE'
-                                )
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                __WEBPACK_IMPORTED_MODULE_7_react_scrollchor___default.a,
-                                { to: 'sorbtion', animate: { duration: 700 } },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'div',
-                                    { className: 'tech-nav-item' },
-                                    '\u0421\u043E\u0440\u0431\u0446\u0438\u044F - \u0444\u0438\u043B\u044C\u0442\u0440\u044B \u0441 \u0430\u043A\u0442\u0438\u0432\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u044B\u043C \u0443\u0433\u043B\u0435\u043C WET-AC'
-                                )
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                __WEBPACK_IMPORTED_MODULE_7_react_scrollchor___default.a,
-                                { to: 'softening', animate: { duration: 700 } },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'div',
-                                    { className: 'tech-nav-item' },
-                                    '\u0423\u043C\u044F\u0433\u0447\u0435\u043D\u0438\u0435',
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
-                                    ' (Na \u2013 \u043A\u0430\u0442\u0438\u043E\u043D\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435)'
-                                )
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                __WEBPACK_IMPORTED_MODULE_7_react_scrollchor___default.a,
-                                { to: 'decarbonization', animate: { duration: 700 } },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'div',
-                                    { className: 'tech-nav-item' },
-                                    '\u0414\u0435\u043A\u0430\u0440\u0431\u043E\u043D\u0438\u0437\u0430\u0446\u0438\u044F',
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
-                                    ' (\u041D \u2013 \u043A\u0430\u0442\u0438\u043E\u043D\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435)'
-                                )
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                __WEBPACK_IMPORTED_MODULE_7_react_scrollchor___default.a,
-                                { to: 'reverse-osmos', animate: { duration: 700 } },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'div',
-                                    { className: 'tech-nav-item' },
-                                    '\u041E\u0431\u0440\u0430\u0442\u043D\u044B\u0439 \u043E\u0441\u043C\u043E\u0441'
-                                )
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                __WEBPACK_IMPORTED_MODULE_7_react_scrollchor___default.a,
-                                { to: 'ultrafiltration', animate: { duration: 700 } },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'div',
-                                    { className: 'tech-nav-item' },
-                                    '\u0423\u043B\u044C\u0442\u0440\u0430\u0444\u0438\u043B\u044C\u0442\u0440\u0430\u0446\u0438\u044F'
-                                )
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                __WEBPACK_IMPORTED_MODULE_7_react_scrollchor___default.a,
-                                { to: 'complex-water-equipment', animate: { duration: 700 } },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'div',
-                                    { className: 'tech-nav-item' },
-                                    '\u041A\u043E\u043C\u043F\u043B\u0435\u043A\u0441 \u043E\u0431\u043E\u0440\u0443\u0434\u043E\u0432\u0430\u043D\u0438\u044F \u0432\u043E\u0434\u043E\u043F\u043E\u0434\u0433\u043E\u0442\u043E\u0432\u043A\u0438'
-                                )
-                            )
-                        )
-                    ),
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'div',
-                        { className: 'col-sm-8 col-sm-offset-1' },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'div',
-                            { id: 'clarification', className: 'technologies-section' },
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'h2',
-                                { className: 'tech_category_title' },
-                                '\u041E\u0441\u0432\u0435\u0442\u043B\u0435\u043D\u0438\u0435 \u0432\u043E\u0434\u044B'
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'p',
-                                { className: 'paragraph-text blue' },
-                                '\u041E\u0441\u0432\u0435\u0442\u043B\u0438\u0442\u0435\u043B\u0438 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u044E\u0442\u0441\u044F \u0434\u043B\u044F \u043E\u0447\u0438\u0441\u0442\u043A\u0438 \u0432\u043E\u0434 \u0441 \u0432\u044B\u0441\u043E\u043A\u0438\u043C \u0441\u043E\u0434\u0435\u0440\u0436\u0430\u043D\u0438\u0435\u043C \u0432\u0437\u0432\u0435\u0448\u0435\u043D\u043D\u044B\u0445 \u0438 \u043E\u0440\u0433\u0430\u043D\u0438\u0447\u0435\u0441\u043A\u0438\u0445 \u0432\u0435\u0449\u0435\u0441\u0442\u0432.'
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { className: 'unordered-list-header' },
-                                '\u041F\u0440\u0438\u043C\u0435\u043D\u044F\u044E\u0442\u0441\u044F:'
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'ul',
-                                { className: 'unordered-list list-without-order' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '1) \u0434\u043B\u044F \u043E\u0447\u0438\u0441\u0442\u043A\u0438\u043F\u043E\u0432\u0435\u0440\u0445\u043D\u043E\u0441\u0442\u043D\u044B\u0445 \u0432\u043E\u0434 (\u0440\u0435\u043A\u0438, \u043E\u0437\u0435\u0440\u0430), \u043A\u0430\u043A \u043F\u0435\u0440\u0432\u044B\u0439 \u044D\u0442\u0430\u043F \u043E\u0447\u0438\u0441\u0442\u043A\u0438   \u0432\u043E\u0434\u044B \u0432 \u0441\u0438\u0441\u0442\u0435\u043C\u0430\u0445 \u0432\u043E\u0434\u043E\u043F\u043E\u0434\u0433\u043E\u0442\u043E\u0432\u043A\u0438'
                                 ),
                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '2) \u0434\u043B\u044F \u043F\u043E\u0434\u0433\u043E\u0442\u043E\u0432\u043A\u0438 \u0432\u043E\u0434\u044B \u043F\u0438\u0442\u044C\u0435\u0432\u043E\u0433\u043E \u0438 \u0445\u043E\u0437\u0431\u044B\u0442\u043E\u0432\u043E\u0433\u043E \u043D\u0430\u0437\u043D\u0430\u0447\u0435\u043D\u0438\u044F'
+                                    'p',
+                                    { className: 'paragraph-text blue' },
+                                    '\u041E\u0441\u0432\u0435\u0442\u043B\u0438\u0442\u0435\u043B\u0438 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u044E\u0442\u0441\u044F \u0434\u043B\u044F \u043E\u0447\u0438\u0441\u0442\u043A\u0438 \u0432\u043E\u0434 \u0441 \u0432\u044B\u0441\u043E\u043A\u0438\u043C \u0441\u043E\u0434\u0435\u0440\u0436\u0430\u043D\u0438\u0435\u043C \u0432\u0437\u0432\u0435\u0448\u0435\u043D\u043D\u044B\u0445 \u0438 \u043E\u0440\u0433\u0430\u043D\u0438\u0447\u0435\u0441\u043A\u0438\u0445 \u0432\u0435\u0449\u0435\u0441\u0442\u0432.'
                                 ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '3) \u043A\u0430\u043A \u0430\u043B\u044C\u0442\u0435\u0440\u043D\u0430\u0442\u0438\u0432\u0430 \u043E\u0442\u0441\u0442\u043E\u0439\u043D\u0438\u043A\u0430\u043C, \u0432 \u0442.\u0447. \u0432 \u0441\u0438\u0441\u0442\u0435\u043C\u0430\u0445 \u043E\u0447\u0438\u0441\u0442\u043A\u0438 \u043E\u0431\u043E\u0440\u043E\u0442\u043D\u043E\u0439    \u0432\u043E\u0434\u044B \u0433\u0440\u044F\u0437\u043D\u044B\u0445 \u0446\u0438\u043A\u043B\u043E\u0432'
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '4) \u0432 \u0431\u0435\u0441\u0441\u0442\u043E\u0447\u043D\u044B\u0445 \u0441\u0445\u0435\u043C\u0430\u0445 \u043E\u0441\u0432\u0435\u0442\u043B\u0435\u043D\u0438\u044F \u0432\u043E\u0434\u044B'
-                                )
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { className: 'row' },
                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                     'div',
-                                    { className: 'col-sm-9 col-xs-7 vcenter' },
+                                    { className: 'unordered-list-header' },
+                                    '\u041F\u0440\u0438\u043C\u0435\u043D\u044F\u044E\u0442\u0441\u044F:'
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'ul',
+                                    { className: 'unordered-list list-without-order' },
                                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        'div',
-                                        { className: 'unordered-list-header' },
-                                        '\u041E\u041E\u041E \xAB\u0412\u043E\u0442\u0435\u0440 \u042D\u043A\u043E \u0422\u0435\u0445\xBB \u043F\u0440\u0435\u0434\u043B\u0430\u0433\u0430\u0435\u0442 \u043E\u0441\u0432\u0435\u0442\u043B\u0438\u0442\u0435\u043B\u0438 \u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0438 \u041E\u0412\u0418',
-                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                            'sup',
-                                            null,
-                                            '\u0422\u041C'
-                                        )
+                                        'li',
+                                        null,
+                                        '1) \u0434\u043B\u044F \u043E\u0447\u0438\u0441\u0442\u043A\u0438\u043F\u043E\u0432\u0435\u0440\u0445\u043D\u043E\u0441\u0442\u043D\u044B\u0445 \u0432\u043E\u0434 (\u0440\u0435\u043A\u0438, \u043E\u0437\u0435\u0440\u0430), \u043A\u0430\u043A \u043F\u0435\u0440\u0432\u044B\u0439 \u044D\u0442\u0430\u043F \u043E\u0447\u0438\u0441\u0442\u043A\u0438   \u0432\u043E\u0434\u044B \u0432 \u0441\u0438\u0441\u0442\u0435\u043C\u0430\u0445 \u0432\u043E\u0434\u043E\u043F\u043E\u0434\u0433\u043E\u0442\u043E\u0432\u043A\u0438'
                                     ),
                                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        'p',
-                                        { className: 'paragraph-text blue' },
-                                        '\u041E\u0441\u0432\u0435\u0442\u043B\u0438\u0442\u0435\u043B\u044C \u041E\u0412\u0418\u0422\u041C \u0438\u043C\u043F\u0443\u043B\u044C\u0441\u043D\u043E\u0433\u043E \u0442\u0438\u043F\u0430, \u0441\u0435\u043A\u0446\u0438\u043E\u043D\u043D\u044B\u0439. \u041C\u0430\u0442\u0435\u0440\u0438\u0430\u043B \u2013 \u0443\u0441\u0438\u043B\u0435\u043D\u043D\u044B\u0439 \u043F\u043E\u043B\u0438\u043F\u0440\u043E\u043F\u0438\u043B\u0435\u043D. \u0414\u043B\u044F \u0443\u0434\u043E\u0431\u0441\u0442\u0432\u0430 \u043E\u0431\u0441\u043B\u0443\u0436\u0438\u0432\u0430\u043D\u0438\u044F \u0432\u043D\u0443\u0442\u0440\u0435\u043D\u043D\u0438\u0435 \u043A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0446\u0438\u0438 \u0432\u044B\u043F\u043E\u043B\u043D\u0435\u043D\u044B \u043B\u0435\u0433\u043A\u043E-\u0440\u0430\u0437\u0431\u043E\u0440\u043D\u044B\u043C\u0438. \u0422\u0440\u0435\u0431\u0443\u0435\u043C\u0430\u044F \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0438\u0442\u0435\u043B\u044C\u043D\u043E\u0441\u0442\u044C \u043D\u0430\u0431\u0438\u0440\u0430\u0435\u0442\u0441\u044F \u043F\u0443\u0442\u0435\u043C \u043F\u043E\u0434\u0431\u043E\u0440\u0430 \u043D\u0435\u043E\u0431\u0445\u043E\u0434\u0438\u043C\u043E\u0433\u043E \u043A\u043E\u043B\u0438\u0447\u0435\u0441\u0442\u0432\u0430 \u0441\u0435\u043A\u0446\u0438\u0439.'
+                                        'li',
+                                        null,
+                                        '2) \u0434\u043B\u044F \u043F\u043E\u0434\u0433\u043E\u0442\u043E\u0432\u043A\u0438 \u0432\u043E\u0434\u044B \u043F\u0438\u0442\u044C\u0435\u0432\u043E\u0433\u043E \u0438 \u0445\u043E\u0437\u0431\u044B\u0442\u043E\u0432\u043E\u0433\u043E \u043D\u0430\u0437\u043D\u0430\u0447\u0435\u043D\u0438\u044F'
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'li',
+                                        null,
+                                        '3) \u043A\u0430\u043A \u0430\u043B\u044C\u0442\u0435\u0440\u043D\u0430\u0442\u0438\u0432\u0430 \u043E\u0442\u0441\u0442\u043E\u0439\u043D\u0438\u043A\u0430\u043C, \u0432 \u0442.\u0447. \u0432 \u0441\u0438\u0441\u0442\u0435\u043C\u0430\u0445 \u043E\u0447\u0438\u0441\u0442\u043A\u0438 \u043E\u0431\u043E\u0440\u043E\u0442\u043D\u043E\u0439    \u0432\u043E\u0434\u044B \u0433\u0440\u044F\u0437\u043D\u044B\u0445 \u0446\u0438\u043A\u043B\u043E\u0432'
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'li',
+                                        null,
+                                        '4) \u0432 \u0431\u0435\u0441\u0441\u0442\u043E\u0447\u043D\u044B\u0445 \u0441\u0445\u0435\u043C\u0430\u0445 \u043E\u0441\u0432\u0435\u0442\u043B\u0435\u043D\u0438\u044F \u0432\u043E\u0434\u044B'
                                     )
                                 ),
                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                     'div',
-                                    { className: 'col-sm-3 col-xs-5 vcenter' },
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_1_path___default.a.join(__dirname, './imgs/technologies/ligtening1.png'), className: 'img-responsive' })
+                                    { className: 'row' },
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'div',
+                                        { className: 'col-sm-9 col-xs-7 vcenter' },
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                            'div',
+                                            { className: 'unordered-list-header' },
+                                            '\u041E\u041E\u041E \xAB\u0412\u043E\u0442\u0435\u0440 \u042D\u043A\u043E \u0422\u0435\u0445\xBB \u043F\u0440\u0435\u0434\u043B\u0430\u0433\u0430\u0435\u0442 \u043E\u0441\u0432\u0435\u0442\u043B\u0438\u0442\u0435\u043B\u0438 \u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0438 \u041E\u0412\u0418',
+                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                'sup',
+                                                null,
+                                                '\u0422\u041C'
+                                            )
+                                        ),
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                            'p',
+                                            { className: 'paragraph-text blue' },
+                                            '\u041E\u0441\u0432\u0435\u0442\u043B\u0438\u0442\u0435\u043B\u044C \u041E\u0412\u0418',
+                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                'sup',
+                                                null,
+                                                '\u0422\u041C'
+                                            ),
+                                            ' \u0438\u043C\u043F\u0443\u043B\u044C\u0441\u043D\u043E\u0433\u043E \u0442\u0438\u043F\u0430, \u0441\u0435\u043A\u0446\u0438\u043E\u043D\u043D\u044B\u0439. \u041C\u0430\u0442\u0435\u0440\u0438\u0430\u043B \u2013 \u0443\u0441\u0438\u043B\u0435\u043D\u043D\u044B\u0439 \u043F\u043E\u043B\u0438\u043F\u0440\u043E\u043F\u0438\u043B\u0435\u043D. \u0414\u043B\u044F \u0443\u0434\u043E\u0431\u0441\u0442\u0432\u0430 \u043E\u0431\u0441\u043B\u0443\u0436\u0438\u0432\u0430\u043D\u0438\u044F \u0432\u043D\u0443\u0442\u0440\u0435\u043D\u043D\u0438\u0435 \u043A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0446\u0438\u0438 \u0432\u044B\u043F\u043E\u043B\u043D\u0435\u043D\u044B \u043B\u0435\u0433\u043A\u043E-\u0440\u0430\u0437\u0431\u043E\u0440\u043D\u044B\u043C\u0438. \u0422\u0440\u0435\u0431\u0443\u0435\u043C\u0430\u044F \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0438\u0442\u0435\u043B\u044C\u043D\u043E\u0441\u0442\u044C \u043D\u0430\u0431\u0438\u0440\u0430\u0435\u0442\u0441\u044F \u043F\u0443\u0442\u0435\u043C \u043F\u043E\u0434\u0431\u043E\u0440\u0430 \u043D\u0435\u043E\u0431\u0445\u043E\u0434\u0438\u043C\u043E\u0433\u043E \u043A\u043E\u043B\u0438\u0447\u0435\u0441\u0442\u0432\u0430 \u0441\u0435\u043A\u0446\u0438\u0439.'
+                                        )
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'div',
+                                        { className: 'col-sm-3 col-xs-5 vcenter' },
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_1_path___default.a.join(__dirname, './imgs/technologies/ligtening1.png'), className: 'img-responsive' })
+                                    )
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'div',
+                                    { className: 'unordered-list-header' },
+                                    '\u041F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0438\u0442\u0435\u043B\u044C\u043D\u043E\u0441\u0442\u044C \u0438 \u0433\u0430\u0431\u0430\u0440\u0438\u0442\u044B 1 \u0441\u0435\u043A\u0446\u0438\u0438 \u043E\u0441\u0432\u0435\u0442\u043B\u0438\u0442\u0435\u043B\u044F:'
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'div',
+                                    { className: 'table-wrapper' },
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'table',
+                                        { className: 'tech-table' },
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                            'thead',
+                                            null,
+                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                'tr',
+                                                null,
+                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                    'th',
+                                                    null,
+                                                    '\u0422\u0438\u043F \u043E\u0441\u0432\u0435\u0442\u043B\u0438\u0442\u0435\u043B\u044F'
+                                                ),
+                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                    'th',
+                                                    null,
+                                                    '\u041F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0438\u0442\u0435\u043B\u044C\u043D\u043E\u0441\u0442\u044C \u0441\u0435\u043A\u0446\u0438\u0438, \u043C',
+                                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                        'sup',
+                                                        null,
+                                                        '3'
+                                                    ),
+                                                    '/\u0447\u0430\u0441'
+                                                ),
+                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                    'th',
+                                                    null,
+                                                    '\u0412\u044B\u0441\u043E\u0442\u0430, \u043C\u043C'
+                                                ),
+                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                    'th',
+                                                    null,
+                                                    '\u0428\u0438\u0440\u0438\u043D\u0430, \u043C\u043C'
+                                                ),
+                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                    'th',
+                                                    null,
+                                                    '\u0413\u043B\u0443\u0431\u0438\u043D\u0430, \u043C\u043C'
+                                                )
+                                            )
+                                        ),
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                            'tbody',
+                                            null,
+                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                'tr',
+                                                null,
+                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                    'td',
+                                                    null,
+                                                    '\u041E\u0412\u0418-20-\u041F\u041F-1'
+                                                ),
+                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                    'td',
+                                                    null,
+                                                    '20'
+                                                ),
+                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                    'td',
+                                                    null,
+                                                    '4 470'
+                                                ),
+                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                    'td',
+                                                    null,
+                                                    '1 900'
+                                                ),
+                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                    'td',
+                                                    null,
+                                                    '1 900'
+                                                )
+                                            ),
+                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                'tr',
+                                                null,
+                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                    'td',
+                                                    null,
+                                                    '\u041E\u0412\u0418-30-\u041F\u041F-1'
+                                                ),
+                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                    'td',
+                                                    null,
+                                                    '30'
+                                                ),
+                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                    'td',
+                                                    null,
+                                                    '4 810'
+                                                ),
+                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                    'td',
+                                                    null,
+                                                    '2 300'
+                                                ),
+                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                    'td',
+                                                    null,
+                                                    '2 300'
+                                                )
+                                            ),
+                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                'tr',
+                                                null,
+                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                    'td',
+                                                    null,
+                                                    '\u041E\u0412\u0418-50-\u041F\u041F-1'
+                                                ),
+                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                    'td',
+                                                    null,
+                                                    '50'
+                                                ),
+                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                    'td',
+                                                    null,
+                                                    '5 200'
+                                                ),
+                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                    'td',
+                                                    null,
+                                                    '2 900'
+                                                ),
+                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                    'td',
+                                                    null,
+                                                    '2 900'
+                                                )
+                                            )
+                                        )
+                                    )
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'div',
+                                    { className: 'unordered-list-header' },
+                                    '\u041F\u0420\u0415\u0418\u041C\u0423\u0429\u0415\u0421\u0422\u0412\u0410:'
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'ul',
+                                    { className: 'unordered-list' },
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'li',
+                                        null,
+                                        '\u0432\u044B\u0441\u043E\u043A\u0430\u044F \u0441\u043A\u043E\u0440\u043E\u0441\u0442\u044C \u043E\u0441\u0430\u0436\u0434\u0435\u043D\u0438\u044F \u0448\u043B\u0430\u043C\u0430, \u043A\u0430\u043A \u0441\u043B\u0435\u0434\u0441\u0442\u0432\u0438\u0435 \u2013 \u043A\u043E\u043C\u043F\u0430\u043A\u0442\u043D\u044B\u0435 \u0440\u0430\u0437\u043C\u0435\u0440\u044B \u043F\u043E \u0441\u0440\u0430\u0432\u043D\u0435\u043D\u0438\u044E \u0441 \u0442\u0440\u0430\u0434\u0438\u0446\u0438\u043E\u043D\u043D\u044B\u043C\u0438 \u043E\u0441\u0432\u0435\u0442\u043B\u0438\u0442\u0435\u043B\u044F\u043C\u0438, \u0438 \u0442\u0435\u043C \u0431\u043E\u043B\u0435\u0435 \u0432 \u0441\u0440\u0430\u0432\u043D\u0435\u043D\u0438\u0438 \u0441 \u043E\u0442\u0441\u0442\u043E\u0439\u043D\u0438\u043A\u0430\u043C\u0438'
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'li',
+                                        null,
+                                        '\u043C\u0430\u043B\u044B\u0439 \u0432\u0435\u0441 \u043A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0446\u0438\u0438, \u0447\u0442\u043E \u0432\u043C\u0435\u0441\u0442\u0435 \u0441 \u043A\u043E\u043C\u043F\u0430\u043A\u0442\u043D\u044B\u043C\u0438 \u0440\u0430\u0437\u043C\u0435\u0440\u0430\u043C\u0438 \u0441\u0443\u0449\u0435\u0441\u0442\u0432\u0435\u043D\u043D\u043E \u0441\u043D\u0438\u0436\u0430\u044E\u0442 \u0441\u0442\u043E\u0438\u043C\u043E\u0441\u0442\u044C \u043A\u0430\u043F\u0438\u0442\u0430\u043B\u044C\u043D\u044B\u0445 \u0437\u0430\u0442\u0440\u0430\u0442 \u043F\u0440\u0438 \u0441\u0442\u0440\u043E\u0438\u0442\u0435\u043B\u044C\u0441\u0442\u0432\u0435 \u0437\u0434\u0430\u043D\u0438\u044F'
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'li',
+                                        null,
+                                        '\u0432\u044B\u0441\u043E\u043A\u043E\u0435 \u043A\u0430\u0447\u0435\u0441\u0442\u0432\u043E \u043E\u0447\u0438\u0441\u0442\u043A\u0438 \u0432\u043E\u0434\u044B \u043F\u0440\u0438 \u043C\u0438\u043D\u0438\u043C\u0430\u043B\u044C\u043D\u044B\u0445 \u044D\u043A\u0441\u043F\u043B\u0443\u0430\u0442\u0430\u0446\u0438\u043E\u043D\u043D\u044B\u0445    \u0437\u0430\u0442\u0440\u0430\u0442\u0430\u0445'
+                                    )
                                 )
                             ),
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                 'div',
-                                { className: 'unordered-list-header' },
-                                '\u041F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0438\u0442\u0435\u043B\u044C\u043D\u043E\u0441\u0442\u044C \u0438 \u0433\u0430\u0431\u0430\u0440\u0438\u0442\u044B 1 \u0441\u0435\u043A\u0446\u0438\u0438 \u043E\u0441\u0432\u0435\u0442\u043B\u0438\u0442\u0435\u043B\u044F:'
+                                { id: 'filtration', className: 'technologies-section' },
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'h2',
+                                    { className: 'tech_category_title' },
+                                    '\u041C\u0435\u0445\u0430\u043D\u0438\u0447\u0435\u0441\u043A\u0430\u044F \u0444\u0438\u043B\u044C\u0442\u0440\u0430\u0446\u0438\u044F'
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'p',
+                                    { className: 'paragraph-text blue' },
+                                    '\u041E\u0431\u0435\u0441\u043F\u0435\u0447\u0438\u0432\u0430\u0435\u0442 \u0443\u0434\u0430\u043B\u0435\u043D\u0438\u0435 \u0438\u0437 \u0432\u043E\u0434\u044B \u043C\u0435\u0445\u0430\u043D\u0438\u0447\u0435\u0441\u043A\u0438\u0445 \u043F\u0440\u0438\u043C\u0435\u0441\u0435\u0439 (\u043F\u0435\u0441\u043E\u043A, \u0440\u0436\u0430\u0432\u0447\u0438\u043D\u0430, \u043E\u043A\u0430\u043B\u0438\u043D\u0430 \u0438 \u043F\u0440.)'
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'div',
+                                    { className: 'unordered-list-header' },
+                                    '\u041F\u0440\u0438\u043C\u0435\u043D\u044F\u044E\u0442\u0441\u044F:'
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'ul',
+                                    { className: 'unordered-list list-without-order' },
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'li',
+                                        null,
+                                        '1) \u043A\u0430\u043A \u043F\u0435\u0440\u0432\u044B\u0439 \u044D\u0442\u0430\u043F \u043E\u0447\u0438\u0441\u0442\u043A\u0438 \u0432\u043E\u0434\u044B \u0432 \u0441\u0438\u0441\u0442\u0435\u043C\u0430\u0445 \u0432\u043E\u0434\u043E\u043F\u043E\u0434\u0433\u043E\u0442\u043E\u0432\u043A\u0438      (\u043F\u0440\u0435\u0434\u043E\u0447\u0438\u0441\u0442\u043A\u0430)'
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'li',
+                                        null,
+                                        '2) \u0434\u043B\u044F \u043E\u0447\u0438\u0441\u0442\u043A\u0438 \u0432\u043E\u0434\u044B \u043E\u0431\u043E\u0440\u043E\u0442\u043D\u044B\u0445 \u0446\u0438\u043A\u043B\u043E\u0432 \u043C\u0435\u0442\u0430\u043B\u043B\u0443\u0440\u0433\u0438\u0447\u0435\u0441\u043A\u0438\u0445, \u0445\u0438\u043C\u0438\u0447\u0435\u0441\u043A\u0438\u0445 \u043F\u0440\u0435\u0434\u043F\u0440\u0438\u044F\u0442\u0438\u0439, \u043F\u0440\u0435\u0434\u043F\u0440\u0438\u044F\u0442\u0438\u0439 \u044D\u043D\u0435\u0440\u0433\u0435\u0442\u0438\u043A\u0438 \u0438 \u043F\u0440.:',
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
+                                        '- \u043E\u0447\u0438\u0441\u0442\u043A\u0430 \u0432\u043E\u0434\u044B \u043E\u0431\u043E\u0440\u043E\u0442\u043D\u044B\u0445 \u0446\u0438\u043A\u043B\u043E\u0432 \u0434\u043E \u0438 \u043F\u043E\u0441\u043B\u0435 \u0433\u0440\u0430\u0434\u0438\u0440\u0435\u043D',
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
+                                        '- \u043E\u0447\u0438\u0441\u0442\u043A\u0430 \u0432\u043E\u0434\u044B \u043E\u0431\u043E\u0440\u043E\u0442\u043D\u044B\u0445 \u0446\u0438\u043A\u043B\u043E\u0432 \u043F\u0435\u0440\u0435\u0434 \u0442\u0435\u043F\u043B\u043E\u043E\u0431\u043C\u0435\u043D\u043D\u0438\u043A\u0430\u043C\u0438',
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
+                                        '- \u043E\u0447\u0438\u0441\u0442\u043A\u0430 \u0432\u043E\u0434\u044B \u043E\u0431\u043E\u0440\u043E\u0442\u043D\u044B\u0445 \u0446\u0438\u043A\u043B\u043E\u0432 \u043F\u0440\u043E\u043A\u0430\u0442\u043D\u044B\u0445 \u0441\u0442\u0430\u043D\u043E\u0432, \u043E\u0445\u043B\u0430\u0436\u0434\u0435\u043D\u0438\u044F \u0434\u043E\u043C\u0435\u043D\u043D\u044B\u0445 \u043F\u0435\u0447\u0435\u0439, \u041C\u041D\u041B\u0417 \u0438 \u043F\u0440.',
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
+                                        '- \u043E\u0447\u0438\u0441\u0442\u043A\u0430 \u0432\u043E\u0434\u044B \u043F\u043E\u0441\u043B\u0435 \u043C\u043E\u043A\u0440\u043E\u0439 \u0433\u0430\u0437\u043E\u043E\u0447\u0438\u0441\u0442\u043A\u0438'
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'li',
+                                        null,
+                                        '\u0434\u043B\u044F \u043E\u0447\u0438\u0441\u0442\u043A\u0438 \u0432\u043E\u0434\u044B \u043D\u0430 \u0432\u043E\u0434\u043E\u0437\u0430\u0431\u043E\u0440\u0430\u0445'
+                                    )
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'div',
+                                    { className: 'unordered-list-header' },
+                                    '\u041E\u041E\u041E \xAB\u0412\u043E\u0442\u0435\u0440 \u042D\u043A\u043E \u0422\u0435\u0445\xBB \u043F\u0440\u0435\u0434\u043B\u0430\u0433\u0430\u0435\u0442 \u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0438\u0435 \u043C\u0435\u0445\u0430\u043D\u0438\u0447\u0435\u0441\u043A\u0438\u0435 \u0444\u0438\u043B\u044C\u0442\u0440\u044B:'
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'div',
+                                    { className: 'unordered-list-header' },
+                                    '\u041A\u0430\u0440\u0442\u0440\u0438\u0434\u0436\u043D\u044B\u0435 \u0444\u0438\u043B\u044C\u0442\u0440\u044B \u0440\u0430\u0437\u043B\u0438\u0447\u043D\u044B\u0445 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0438\u0442\u0435\u043B\u0435\u0439'
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'div',
+                                    { className: 'unordered-list-header' },
+                                    '\u0421\u0435\u0442\u0447\u0430\u0442\u044B\u0435 \u0444\u0438\u043B\u044C\u0442\u0440\u044B Yamit'
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'div',
+                                    { className: 'row' },
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'div',
+                                        { className: 'col-sm-3 col-xs-5 vcenter' },
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_1_path___default.a.join(__dirname, './imgs/technologies/filtration_yamit.png'), className: 'img-responsive' })
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'div',
+                                        { className: 'col-sm-9 col-xs-7 vcenter' },
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                            'p',
+                                            { className: 'paragraph-text blue' },
+                                            '\u0410\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0447\u0435\u0441\u043A\u0438\u0435 \u0441\u0430\u043C\u043E\u043F\u0440\u043E\u043C\u044B\u0432\u0430\u044E\u0449\u0438\u0435\u0441\u044F \u0444\u0438\u043B\u044C\u0442\u0440\u044B \u0441 \u0433\u0438\u0434\u0440\u0430\u0432\u043B\u0438\u0447\u0435\u0441\u043A\u0438\u043C \u043B\u0438\u0431\u043E \u044D\u043B\u0435\u043A\u0442\u0440\u0438\u0447\u0435\u0441\u043A\u0438\u043C \u043F\u0440\u0438\u0432\u043E\u0434\u043E\u043C, \u0432 \u043A\u043E\u0442\u043E\u0440\u044B\u0445 \u0432 \u043A\u0430\u0447\u0435\u0441\u0442\u0432\u0435 \u0444\u0438\u043B\u044C\u0442\u0440\u0443\u044E\u0449\u0435\u0433\u043E \u044D\u043B\u0435\u043C\u0435\u043D\u0442\u0430 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0435\u0442\u0441\u044F \u0441\u0435\u0442\u043A\u0430 \u0441 \u0440\u0430\u0437\u043C\u0435\u0440\u043E\u043C \u044F\u0447\u0435\u0435\u043A \u043E\u0442 50 \u0434\u043E 1000\u043C\u043A\u043C (\u0432\u044B\u0431\u0438\u0440\u0430\u0435\u0442\u0441\u044F \u0432 \u0437\u0430\u0432\u0438\u0441\u0438\u043C\u043E\u0441\u0442\u0438 \u043E\u0442 \u0441\u0442\u0435\u043F\u0435\u043D\u0438 \u0437\u0430\u0433\u0440\u044F\u0437\u043D\u0435\u043D\u0438\u044F \u0432\u043E\u0434\u044B).'
+                                        )
+                                    )
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'div',
+                                    { className: 'technologies_iframe' },
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('iframe', { width: '560', height: '315', src: 'https://www.youtube.com/embed/4jIVefOPQJw', frameBorder: '0', allowFullScreen: '' })
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'div',
+                                    { className: 'unordered-list-header' },
+                                    '\u0414\u0438\u0441\u043A\u043E\u0432\u044B\u0435 \u0444\u0438\u043B\u044C\u0442\u0440\u044B Azud'
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'div',
+                                    { className: 'row' },
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'div',
+                                        { className: 'col-sm-9 col-xs-7 vcenter' },
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                            'p',
+                                            { className: 'paragraph-text blue' },
+                                            '\u0410\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0447\u0435\u0441\u043A\u0438\u0435 \u0441\u0430\u043C\u043E\u043F\u0440\u043E\u043C\u044B\u0432\u0430\u044E\u0449\u0438\u0435\u0441\u044F \u0444\u0438\u043B\u044C\u0442\u0440\u044B, \u0433\u0434\u0435 \u0444\u0438\u043B\u044C\u0442\u0440\u0443\u044E\u0449\u0438\u043C \u044D\u043B\u0435\u043C\u0435\u043D\u0442\u043E\u043C \u044F\u0432\u043B\u044F\u0435\u0442\u0441\u044F \u043F\u0430\u043A\u0435\u0442 \u0441\u043F\u0435\u0446\u0438\u0430\u043B\u044C\u043D\u044B\u0445 \u0434\u0438\u0441\u043A\u043E\u0432, \u0438\u0437\u0433\u043E\u0442\u043E\u0432\u043B\u0435\u043D\u043D\u044B\u0445 \u0438\u0437 \u043F\u0440\u043E\u0447\u043D\u044B\u0445 \u043F\u043E\u043B\u0438\u043C\u0435\u0440\u043D\u044B\u0445 \u043C\u0430\u0442\u0435\u0440\u0438\u0430\u043B\u043E\u0432, \u043D\u0430 \u043E\u0431\u0435\u0438\u0445 \u043F\u043E\u0432\u0435\u0440\u0445\u043D\u043E\u0441\u0442\u044F\u0445 \u043A\u043E\u0442\u043E\u0440\u044B\u0445 \u043F\u043E \u0434\u0438\u0430\u0433\u043E\u043D\u0430\u043B\u0438 \u043D\u0430\u043D\u0435\u0441\u0435\u043D\u044B \u043A\u0430\u043D\u0430\u0432\u043A\u0438 \u043E\u043F\u0440\u0435\u0434\u0435\u043B\u0435\u043D\u043D\u043E\u0439 \u0433\u043B\u0443\u0431\u0438\u043D\u044B \u0438 \u0448\u0438\u0440\u0438\u043D\u044B, \u043E\u0431\u0435\u0441\u043F\u0435\u0447\u0438\u0432\u0430\u044E\u0449\u0438\u0435 \u0432\u044B\u0441\u043E\u043A\u0443\u044E \u0442\u043E\u043D\u043A\u043E\u0441\u0442\u044C \u0438 \u0442\u043E\u0447\u043D\u043E\u0441\u0442\u044C \u0444\u0438\u043B\u044C\u0442\u0440\u0430\u0446\u0438\u0438. \u041F\u0440\u0438 \u0441\u0436\u0430\u0442\u0438\u0438 \u0434\u0432\u0443\u0445 \u0441\u043E\u0441\u0435\u0434\u043D\u0438\u0445 \u0434\u0438\u0441\u043A\u043E\u0432 \u043C\u0435\u0436\u0434\u0443 \u043D\u0438\u043C\u0438 \u043E\u0431\u0440\u0430\u0437\u0443\u0435\u0442\u0441\u044F \u043E\u0431\u044A\u0435\u043C\u043D\u0430\u044F \u0441\u0435\u0442\u0447\u0430\u0442\u0430\u044F \u0441\u0442\u0440\u0443\u043A\u0442\u0443\u0440\u0430, \u044F\u0432\u043B\u044F\u044E\u0449\u0430\u044F\u0441\u044F \u0440\u0430\u0431\u043E\u0447\u0438\u043C \u0444\u0438\u043B\u044C\u0442\u0440\u0443\u044E\u0449\u0438\u043C \u044D\u043B\u0435\u043C\u0435\u043D\u0442\u043E\u043C. \u0422\u043E\u043D\u043A\u043E\u0441\u0442\u044C \u043E\u0447\u0438\u0441\u0442\u043A\u0438 \u0442\u0430\u043A\u0438\u0445 \u0444\u0438\u043B\u044C\u0442\u0440\u043E\u0432 \u043A\u043E\u043B\u0435\u0431\u043B\u0435\u0442\u0441\u044F \u043E\u0442 10 \u0434\u043E 500 \u043C\u043A\u043C \u0432 \u0437\u0430\u0432\u0438\u0441\u0438\u043C\u043E\u0441\u0442\u0438 \u043E\u0442 \u0432\u044B\u0431\u043E\u0440\u0430 \u0434\u0438\u0441\u043A\u043E\u0432. \u0411\u043B\u0430\u0433\u043E\u0434\u0430\u0440\u044F \u043C\u043E\u0434\u0443\u043B\u044C\u043D\u043E\u0439 \u043A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0446\u0438\u0438, \u043C\u043E\u0436\u0435\u0442 \u0431\u044B\u0442\u044C \u043F\u043E\u0434\u043E\u0431\u0440\u0430\u043D\u0430 \u043B\u044E\u0431\u0430\u044F \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0438\u0442\u0435\u043B\u044C\u043D\u043E\u0441\u0442\u044C \u0444\u0438\u043B\u044C\u0442\u0440\u0430\u0446\u0438\u043E\u043D\u043D\u043E\u0439 \u0441\u0438\u0441\u0442\u0435\u043C\u044B.'
+                                        )
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'div',
+                                        { className: 'col-sm-3 col-xs-5 vcenter' },
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_1_path___default.a.join(__dirname, './imgs/technologies/filtration_azud.png'), className: 'img-responsive' })
+                                    )
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'div',
+                                    { className: 'unordered-list-header' },
+                                    '\u041F\u0420\u0415\u0418\u041C\u0423\u0429\u0415\u0421\u0422\u0412\u0410 \u0414\u0418\u0421\u041A\u041E\u0412\u042B\u0425 \u0424\u0418\u041B\u042C\u0422\u0420\u041E\u0412:'
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'ul',
+                                    { className: 'unordered-list' },
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'li',
+                                        null,
+                                        '\u0432\u044B\u0441\u043E\u043A\u0430\u044F \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0438\u0442\u0435\u043B\u044C\u043D\u043E\u0441\u0442\u044C \u0438 \u0433\u0440\u044F\u0437\u0435\u0451\u043C\u043A\u043E\u0441\u0442\u044C'
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'li',
+                                        null,
+                                        '\u043F\u0440\u043E\u0441\u0442\u0430\u044F \u0438 \u0443\u0434\u043E\u0431\u043D\u0430\u044F \u043F\u0440\u043E\u043C\u044B\u0432\u043A\u0430, \u043A\u043E\u0442\u043E\u0440\u0430\u044F \u043E\u0441\u0443\u0449\u0435\u0441\u0442\u0432\u043B\u044F\u0435\u0442\u0441\u044F \xAB\u0438\u0437\u043D\u0443\u0442\u0440\u0438 \u2013 \u043D\u0430\u0440\u0443\u0436\u0443\xBB \u0444\u0438\u043B\u044C\u0442\u0440\u0443\u044E\u0449\u0435\u0433\u043E \u044D\u043B\u0435\u043C\u0435\u043D\u0442\u0430;'
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'li',
+                                        null,
+                                        '\u0434\u043B\u044F \u043F\u0440\u043E\u043C\u044B\u0432\u043A\u0438 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0435\u0442\u0441\u044F \u043E\u0447\u0438\u0449\u0435\u043D\u043D\u0430\u044F \u0432\u043E\u0434\u0430, \u043F\u043E\u043B\u0443\u0447\u0430\u0435\u043C\u0430\u044F \u043E\u0442 \u0434\u0440\u0443\u0433\u0438\u0445, \u0440\u0430\u0431\u043E\u0442\u0430\u044E\u0449\u0438\u0445 \u0432 \u0448\u0442\u0430\u0442\u043D\u043E\u043C \u0440\u0435\u0436\u0438\u043C\u0435 \u0444\u0438\u043B\u044C\u0442\u0440\u043E\u0432;'
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'li',
+                                        null,
+                                        '\u043D\u0438\u0437\u043A\u0438\u0439 \u0440\u0430\u0441\u0445\u043E\u0434 \u0432\u043E\u0434\u044B \u043F\u0440\u0438 \u043F\u0440\u043E\u043C\u044B\u0432\u043A\u0435. \u0418\u0437 \u0440\u0430\u0441\u0447\u0435\u0442\u0430 \u043D\u0430 \u043E\u0434\u0438\u043D \u0444\u0438\u043B\u044C\u0442\u0440\u043E\u044D\u043B\u0435\u043C\u0435\u043D\u0442, \u0440\u0430\u0441\u0445\u043E\u0434 \u0432\u043E\u0434\u044B \u043D\u0430 \u0441\u043E\u0431\u0441\u0442\u0432\u0435\u043D\u043D\u044B\u0435 \u043D\u0443\u0436\u0434\u044B \u0441\u043E\u0441\u0442\u0430\u0432\u043B\u044F\u0435\u0442 \u043F\u043E\u0440\u044F\u0434\u043A\u0430 0,05 \u2013 0,2 %. \u043D\u0438\u0437\u043A\u043E\u0435 \u044D\u043D\u0435\u0440\u0433\u043E\u043F\u043E\u0442\u0440\u0435\u0431\u043B\u0435\u043D\u0438\u0435: \u043F\u043E 1 \u044D\u043B\u0435\u043A\u0442\u0440\u043E\u043C\u0430\u0433\u043D\u0438\u0442\u043D\u043E\u043C\u0443 \u043A\u043B\u0430\u043F\u0430\u043D\u0443 \u043D\u0430 \u043A\u0430\u0436\u0434\u044B\u0439 \u0444\u0438\u043B\u044C\u0442\u0440 (\u043F\u043E\u0442\u0440\u0435\u0431\u043B\u044F\u0435\u043C\u0430\u044F \u043C\u043E\u0449\u043D\u043E\u0441\u0442\u044C \u043D\u0435 \u0431\u043E\u043B\u0435\u0435 10\u0412\u0442) \u0438 \u0443\u043F\u0440\u0430\u0432\u043B\u044F\u044E\u0449\u0438\u0439 \u043A\u043E\u043D\u0442\u0440\u043E\u043B\u043B\u0435\u0440 (\u043C\u0435\u043D\u0435\u0435 100 \u0412\u0442)'
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'li',
+                                        null,
+                                        '\u0432\u044B\u0441\u043E\u043A\u043E\u0435 \u043A\u0430\u0447\u0435\u0441\u0442\u0432\u043E \u0444\u0438\u043B\u044C\u0442\u0440\u0430\u0446\u0438\u0438 \u0432 \u0442\u0435\u0447\u0435\u043D\u0438\u0435 \u0432\u0441\u0435\u0433\u043E \u0441\u0440\u043E\u043A\u0430 \u0441\u043B\u0443\u0436\u0431\u044B \u0438\u0437-\u0437\u0430 \u0443\u0441\u0442\u043E\u0439\u0447\u0438\u0432\u043E\u0441\u0442\u0438 \u043A \u0437\u0430\u043B\u0438\u0432\u0430\u043D\u0438\u044E'
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'li',
+                                        null,
+                                        '\u0432\u044B\u0441\u043E\u043A\u0430\u044F \u043D\u0430\u0434\u0435\u0436\u043D\u043E\u0441\u0442\u044C: \u0434\u0438\u0441\u043A\u043E\u0432\u044B\u0435 \u0444\u0438\u043B\u044C\u0442\u0440\u044B \u0437\u0430\u0449\u0438\u0449\u0435\u043D\u044B \u0441\u043F\u0435\u0446\u0438\u0430\u043B\u044C\u043D\u044B\u043C \u043A\u043E\u0436\u0443\u0445\u043E\u043C, \u043A\u043E\u0442\u043E\u0440\u044B\u0439 \u043D\u0435 \u043F\u043E\u0434\u0432\u0435\u0440\u0436\u0435\u043D \u043A\u043E\u0440\u0440\u043E\u0437\u0438\u0438 \u0438 \u043D\u0435 \u0440\u0430\u0437\u0440\u0443\u0448\u0430\u0435\u0442\u0441\u044F \u043F\u043E\u0434 \u0434\u0435\u0439\u0441\u0442\u0432\u0438\u0435\u043C \u0432\u044B\u0441\u043E\u043A\u043E\u0433\u043E \u0434\u0430\u0432\u043B\u0435\u043D\u0438\u044F'
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'li',
+                                        null,
+                                        '\u0431\u043E\u043B\u044C\u0448\u043E\u0435 \u043A\u043E\u043B\u0438\u0447\u0435\u0441\u0442\u0432\u043E \u0432\u043E\u0437\u043C\u043E\u0436\u043D\u044B\u0445 \u0432\u0430\u0440\u0438\u0430\u043D\u0442\u043E\u0432 \u0443\u0441\u0442\u0430\u043D\u043E\u0432\u043A\u0438 \u0438 \u044D\u043A\u0441\u043F\u043B\u0443\u0430\u0442\u0430\u0446\u0438\u0438 (\u0441\u043E\u0435\u0434\u0438\u043D\u0435\u043D\u0438\u0435, \u0441\u0442\u0435\u043F\u0435\u043D\u044C \u0444\u0438\u043B\u044C\u0442\u0440\u0430\u0446\u0438\u0438, \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0438\u0442\u0435\u043B\u044C\u043D\u043E\u0441\u0442\u044C \u0438 \u0442.\u0434.)'
+                                    )
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'div',
+                                    { className: 'technologies_iframe' },
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('iframe', { width: '560', height: '315', src: 'https://www.youtube.com/embed/ejVupHlQj5o', frameBorder: '0', allowFullScreen: '' })
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'div',
+                                    { className: 'unordered-list-header' },
+                                    '\u041D\u0430\u043F\u043E\u0440\u043D\u0430\u044F \u0444\u0438\u043B\u044C\u0442\u0440\u0430\u0446\u0438\u044F WET-F'
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'div',
+                                    { className: 'row' },
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'div',
+                                        { className: 'col-sm-9 col-xs-7 vcenter' },
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                            'p',
+                                            { className: 'paragraph-text blue' },
+                                            '\u0421\u0435\u0440\u0438\u044F \u043C\u0435\u0445\u0430\u043D\u0438\u0447\u0435\u0441\u043A\u0438\u0445 \u0444\u0438\u043B\u044C\u0442\u0440\u043E\u0432 WET-F \u2013 \u044D\u0442\u043E \u043D\u0430\u043F\u043E\u0440\u043D\u044B\u0435 \u043C\u0435\u0445\u0430\u043D\u0438\u0447\u0435\u0441\u043A\u0438\u0435 \u0444\u0438\u043B\u044C\u0442\u0440\u044B, \u0432 \u043A\u043E\u0442\u043E\u0440\u044B\u0445 \u0432 \u043A\u0430\u0447\u0435\u0441\u0442\u0432\u0435 \u0444\u0438\u043B\u044C\u0442\u0440\u0443\u044E\u0449\u0435\u0439 \u0437\u0430\u0433\u0440\u0443\u0437\u043A\u0438 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0435\u0442\u0441\u044F \u043A\u0432\u0430\u0440\u0446\u0435\u0432\u044B\u0439 \u043F\u0435\u0441\u043E\u043A \u0438/\u0438\u043B\u0438 \u0430\u043D\u0442\u0440\u0430\u0446\u0438\u0442.'
+                                        ),
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                            'p',
+                                            { className: 'paragraph-text blue' },
+                                            '\u041F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0438\u0442\u0435\u043B\u044C\u043D\u043E\u0441\u0442\u044C 1 \u0444\u0438\u043B\u044C\u0442\u0440\u0430 \u043E\u0442 1 \u0434\u043E 200 \u043C',
+                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                'sup',
+                                                null,
+                                                '3'
+                                            ),
+                                            '/\u0447'
+                                        )
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'div',
+                                        { className: 'col-sm-3 col-xs-5 vcenter' },
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_1_path___default.a.join(__dirname, './imgs/technologies/filtration_wet-f.png'), className: 'img-responsive' })
+                                    )
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'p',
+                                    { className: 'paragraph-text blue' },
+                                    '\u041A\u043E\u0440\u043F\u0443\u0441\u0430 \u0444\u0438\u043B\u044C\u0442\u0440\u043E\u0432:'
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'ul',
+                                    { className: 'unordered-list' },
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'li',
+                                        null,
+                                        '\u041A\u043E\u043C\u043F\u043E\u0437\u0438\u0442\u043D\u044B\u0435, D 200 \u2013 1600 \u043C\u043C, P',
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                            'sub',
+                                            null,
+                                            '\u0440\u0430\u0431'
+                                        ),
+                                        ' \u0434\u043E 10 \u043A\u0433/\u0441\u043C',
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                            'sup',
+                                            null,
+                                            '2'
+                                        )
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'li',
+                                        null,
+                                        '\u041C\u0435\u0442\u0430\u043B\u043B\u0438\u0447\u0435\u0441\u043A\u0438\u0435 \u0441 \u0430\u043D\u0442\u0438\u043A\u043E\u0440\u0440\u043E\u0437\u0438\u043E\u043D\u043D\u044B\u043C \u043F\u043E\u043A\u0440\u044B\u0442\u0438\u0435\u043C, D 1800 \u2013 5000 \u043C\u043C, P',
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                            'sub',
+                                            null,
+                                            '\u0440\u0430\u0431'
+                                        ),
+                                        ' \u0434\u043E 16 \u043A\u0433/\u0441\u043C',
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                            'sup',
+                                            null,
+                                            '2'
+                                        )
+                                    )
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'p',
+                                    { className: 'paragraph-text blue' },
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'u',
+                                        null,
+                                        '\u0412\u0438\u0434\u044B \u0438\u0441\u043F\u043E\u043B\u043D\u0435\u043D\u0438\u044F \u043F\u043E \u0430\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0437\u0430\u0446\u0438\u0438 :'
+                                    )
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'ul',
+                                    { className: 'unordered-list' },
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'li',
+                                        null,
+                                        '\u0440\u0443\u0447\u043D\u043E\u0435'
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'li',
+                                        null,
+                                        '\u0430\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0447\u0435\u0441\u043A\u043E\u0435, \u0441 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u0435\u043C \u0443\u043D\u0438\u0432\u0435\u0440\u0441\u0430\u043B\u044C\u043D\u044B\u0445 \u0443\u043F\u0440\u0430\u0432\u043B\u044F\u044E\u0449\u0438\u0445 \u043A\u043B\u0430\u043F\u0430\u043D\u043E\u0432 \u0442\u0438\u043F\u0430 Clack, Fleck, RX \u0438 \u043F\u0440.'
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'li',
+                                        null,
+                                        '\u0430\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0447\u0435\u0441\u043A\u043E\u0435, \u0441 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u0435\u043C \u0441\u0438\u0441\u0442\u0435\u043C\u044B \u0443\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u044F\u043D\u0430 \u0431\u0430\u0437\u0435 \u043F\u0440\u043E\u043C\u044B\u0448\u043B\u0435\u043D\u043D\u043E\u0433\u043E \u043A\u043E\u043D\u0442\u0440\u043E\u043B\u043B\u0435\u0440\u0430 Siemens \u043B\u0438\u0431\u043E \u0430\u043D\u0430\u043B\u043E\u0433\u043E\u0432.'
+                                    )
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'div',
+                                    { className: 'unordered-list-header' },
+                                    '\u041F\u0420\u0415\u0418\u041C\u0423\u0429\u0415\u0421\u0422\u0412\u0410:'
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'ul',
+                                    { className: 'unordered-list' },
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'li',
+                                        null,
+                                        '\u0432\u044B\u0441\u043E\u043A\u0430\u044F \u0433\u0440\u044F\u0437\u0435\u0435\u043C\u043A\u043E\u0441\u0442\u044C'
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'li',
+                                        null,
+                                        '\u043D\u0430\u0434\u0435\u0436\u043D\u043E\u0441\u0442\u044C \u0438 \u0434\u043E\u043B\u0433\u043E\u0432\u0435\u0447\u043D\u043E\u0441\u0442\u044C'
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'li',
+                                        null,
+                                        '\u043F\u0440\u043E\u0441\u0442\u043E\u0442\u0430 \u0443\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u044F \u0438 \u043E\u0431\u0441\u043B\u0443\u0436\u0438\u0432\u0430\u043D\u0438\u044F'
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'li',
+                                        null,
+                                        '\u0432\u043E\u0437\u043C\u043E\u0436\u043D\u043E\u0441\u0442\u044C \u0432\u044B\u0431\u043E\u0440\u0430 \u043B\u044E\u0431\u043E\u0439 \u043A\u043E\u043D\u0444\u0438\u0433\u0443\u0440\u0430\u0446\u0438\u0438 \u0438 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0438\u0442\u0435\u043B\u044C\u043D\u043E\u0441\u0442\u0438'
+                                    )
+                                )
                             ),
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                 'div',
-                                { className: 'table-wrapper' },
+                                { id: 'ferum-remove', className: 'technologies-section' },
                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'table',
-                                    { className: 'tech-table' },
+                                    'h2',
+                                    { className: 'tech_category_title' },
+                                    '\u0423\u0434\u0430\u043B\u0435\u043D\u0438\u0435 \u0436\u0435\u043B\u0435\u0437\u0430/\u043C\u0430\u0440\u0433\u0430\u043D\u0446\u0430 \u043D\u0430 \u0444\u0438\u043B\u044C\u0442\u0440\u0430\u0445 WET- FE'
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'p',
+                                    { className: 'paragraph-text blue' },
+                                    '\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u044F \u0443\u0434\u0430\u043B\u0435\u043D\u0438\u044F \u0438\u0437\u0432\u043E\u0434\u044B\u0436\u0435\u043B\u0435\u0437\u0430/ \u043C\u0430\u0440\u0433\u0430\u043D\u0446\u0430 \u0441\u0432\u043E\u0434\u0438\u0442\u0441\u044F \u043A \u0438\u0445 \u043E\u043A\u0438\u0441\u043B\u0435\u043D\u0438\u044E (\u0432\u043E\u0437\u0434\u0443\u0445\u043E\u043C, \u0433\u0438\u043F\u043E\u0445\u043B\u043E\u0440\u0438\u0442\u043E\u043C \u0438 \u043F\u0440.) \u0438 \u043F\u043E\u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0435\u0439 \u0444\u0438\u043B\u044C\u0442\u0440\u0430\u0446\u0438\u0435\u0439 \u043D\u0430 \u043D\u0430\u043F\u043E\u0440\u043D\u044B\u0445 \u043C\u0435\u0445\u0430\u043D\u0438\u0447\u0435\u0441\u043A\u0438\u0445 \u0444\u0438\u043B\u044C\u0442\u0440\u0430\u0445. \u0414\u043B\u044F \u0443\u0441\u043A\u043E\u0440\u0435\u043D\u0438\u044F \u043F\u0440\u043E\u0446\u0435\u0441\u0441\u0430 \u043E\u043A\u0438\u0441\u043B\u0435\u043D\u0438\u044F \u0432 \u0437\u0430\u0433\u0440\u0443\u0437\u043A\u0443 \u0444\u0438\u043B\u044C\u0442\u0440\u0430 \u0434\u043E\u0431\u0430\u0432\u043B\u044F\u044E\u0442 \u0440\u0430\u0437\u043B\u0438\u0447\u043D\u044B\u0435 \u043C\u0430\u0442\u0435\u0440\u0438\u0430\u043B\u044B \u0442\u0438\u043F\u0430 Birm, Aqua-Mandix. \u0414\u043B\u044F \u0434\u043E\u0441\u0442\u0438\u0436\u0435\u043D\u0438\u044F \u043F\u0440\u0435\u0434\u0435\u043B\u044C\u043D\u043E \u043D\u0438\u0437\u043A\u0438\u0445 \u043A\u043E\u043D\u0446\u0435\u043D\u0442\u0440\u0430\u0446\u0438\u0439 \u0436\u0435\u043B\u0435\u0437\u0430 \u0438 \u043C\u0430\u0440\u0433\u0430\u043D\u0446\u0430 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u044E\u0442 \u0444\u0438\u043B\u044C\u0442\u0440\u0443\u044E\u0449\u0438\u0435 \u0437\u0430\u0433\u0440\u0443\u0437\u043A\u0438 \u0441 \u0440\u0435\u0433\u0435\u043D\u0435\u0440\u0430\u0446\u0438\u0435\u0439 \u0440\u0430\u0441\u0442\u0432\u043E\u0440\u043E\u043C \u043C\u0430\u0440\u0433\u0430\u043D\u0446\u043E\u0432\u043A\u0438 \u2013 Greensand, MTM \u0438 \u0434\u0440.'
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'p',
+                                    { className: 'paragraph-text blue' },
+                                    '\u041F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0438\u0442\u0435\u043B\u044C\u043D\u043E\u0441\u0442\u044C 1 \u0444\u0438\u043B\u044C\u0442\u0440\u0430 \u043E\u0442 1 \u0434\u043E 200 \u043C',
                                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        'thead',
+                                        'sup',
                                         null,
+                                        '3'
+                                    ),
+                                    '/\u0447'
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'div',
+                                    { className: 'row' },
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'div',
+                                        { className: 'col-sm-9 col-xs-7 vcenter' },
                                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                            'tr',
-                                            null,
+                                            'div',
+                                            { className: 'unordered-list-header' },
+                                            '\u041A\u043E\u0440\u043F\u0443\u0441\u0430 \u0444\u0438\u043B\u044C\u0442\u0440\u043E\u0432:'
+                                        ),
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                            'ul',
+                                            { className: 'unordered-list' },
                                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                'th',
+                                                'li',
                                                 null,
-                                                '\u0422\u0438\u043F \u043E\u0441\u0432\u0435\u0442\u043B\u0438\u0442\u0435\u043B\u044F'
-                                            ),
-                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                'th',
-                                                null,
-                                                '\u041F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0438\u0442\u0435\u043B\u044C\u043D\u043E\u0441\u0442\u044C \u0441\u0435\u043A\u0446\u0438\u0438, \u043C',
+                                                '\u041A\u043E\u043C\u043F\u043E\u0437\u0438\u0442\u043D\u044B\u0435, D 200 \u2013 1600 \u043C\u043C, P',
+                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                    'sub',
+                                                    null,
+                                                    '\u0440\u0430\u0431'
+                                                ),
+                                                ' \u0434\u043E 10 \u043A\u0433/\u0441\u043C',
                                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                                     'sup',
                                                     null,
-                                                    '3'
+                                                    '2'
+                                                )
+                                            ),
+                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                'li',
+                                                null,
+                                                '\u041C\u0435\u0442\u0430\u043B\u043B\u0438\u0447\u0435\u0441\u043A\u0438\u0435 \u0441 \u0430\u043D\u0442\u0438\u043A\u043E\u0440\u0440\u043E\u0437\u0438\u043E\u043D\u043D\u044B\u043C \u043F\u043E\u043A\u0440\u044B\u0442\u0438\u0435\u043C, D 1800 \u2013 5000 \u043C\u043C, P',
+                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                    'sub',
+                                                    null,
+                                                    '\u0440\u0430\u0431'
                                                 ),
-                                                '/\u0447\u0430\u0441'
-                                            ),
-                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                'th',
-                                                null,
-                                                '\u0412\u044B\u0441\u043E\u0442\u0430, \u043C\u043C'
-                                            ),
-                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                'th',
-                                                null,
-                                                '\u0428\u0438\u0440\u0438\u043D\u0430, \u043C\u043C'
-                                            ),
-                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                'th',
-                                                null,
-                                                '\u0413\u043B\u0443\u0431\u0438\u043D\u0430, \u043C\u043C'
+                                                ' \u0434\u043E 16 \u043A\u0433/\u0441\u043C',
+                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                    'sup',
+                                                    null,
+                                                    '2'
+                                                )
                                             )
                                         )
                                     ),
                                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        'tbody',
-                                        null,
-                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                            'tr',
-                                            null,
-                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                'td',
-                                                null,
-                                                '\u041E\u0412\u0418-20-\u041F\u041F-1'
-                                            ),
-                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                'td',
-                                                null,
-                                                '20'
-                                            ),
-                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                'td',
-                                                null,
-                                                '4 470'
-                                            ),
-                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                'td',
-                                                null,
-                                                '1 900'
-                                            ),
-                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                'td',
-                                                null,
-                                                '1 900'
-                                            )
-                                        ),
-                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                            'tr',
-                                            null,
-                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                'td',
-                                                null,
-                                                '\u041E\u0412\u0418-30-\u041F\u041F-1'
-                                            ),
-                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                'td',
-                                                null,
-                                                '30'
-                                            ),
-                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                'td',
-                                                null,
-                                                '4 810'
-                                            ),
-                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                'td',
-                                                null,
-                                                '2 300'
-                                            ),
-                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                'td',
-                                                null,
-                                                '2 300'
-                                            )
-                                        ),
-                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                            'tr',
-                                            null,
-                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                'td',
-                                                null,
-                                                '\u041E\u0412\u0418-50-\u041F\u041F-1'
-                                            ),
-                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                'td',
-                                                null,
-                                                '50'
-                                            ),
-                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                'td',
-                                                null,
-                                                '5 200'
-                                            ),
-                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                'td',
-                                                null,
-                                                '2 900'
-                                            ),
-                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                'td',
-                                                null,
-                                                '2 900'
-                                            )
-                                        )
-                                    )
-                                )
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { className: 'unordered-list-header' },
-                                '\u041F\u0420\u0415\u0418\u041C\u0423\u0429\u0415\u0421\u0422\u0412\u0410:'
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'ul',
-                                { className: 'unordered-list' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u0432\u044B\u0441\u043E\u043A\u0430\u044F \u0441\u043A\u043E\u0440\u043E\u0441\u0442\u044C \u043E\u0441\u0430\u0436\u0434\u0435\u043D\u0438\u044F \u0448\u043B\u0430\u043C\u0430, \u043A\u0430\u043A \u0441\u043B\u0435\u0434\u0441\u0442\u0432\u0438\u0435 \u2013 \u043A\u043E\u043C\u043F\u0430\u043A\u0442\u043D\u044B\u0435 \u0440\u0430\u0437\u043C\u0435\u0440\u044B \u043F\u043E \u0441\u0440\u0430\u0432\u043D\u0435\u043D\u0438\u044E \u0441 \u0442\u0440\u0430\u0434\u0438\u0446\u0438\u043E\u043D\u043D\u044B\u043C\u0438 \u043E\u0441\u0432\u0435\u0442\u043B\u0438\u0442\u0435\u043B\u044F\u043C\u0438, \u0438 \u0442\u0435\u043C \u0431\u043E\u043B\u0435\u0435 \u0432 \u0441\u0440\u0430\u0432\u043D\u0435\u043D\u0438\u0438 \u0441 \u043E\u0442\u0441\u0442\u043E\u0439\u043D\u0438\u043A\u0430\u043C\u0438'
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u043C\u0430\u043B\u044B\u0439 \u0432\u0435\u0441 \u043A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0446\u0438\u0438, \u0447\u0442\u043E \u0432\u043C\u0435\u0441\u0442\u0435 \u0441 \u043A\u043E\u043C\u043F\u0430\u043A\u0442\u043D\u044B\u043C\u0438 \u0440\u0430\u0437\u043C\u0435\u0440\u0430\u043C\u0438 \u0441\u0443\u0449\u0435\u0441\u0442\u0432\u0435\u043D\u043D\u043E \u0441\u043D\u0438\u0436\u0430\u044E\u0442 \u0441\u0442\u043E\u0438\u043C\u043E\u0441\u0442\u044C \u043A\u0430\u043F\u0438\u0442\u0430\u043B\u044C\u043D\u044B\u0445 \u0437\u0430\u0442\u0440\u0430\u0442 \u043F\u0440\u0438 \u0441\u0442\u0440\u043E\u0438\u0442\u0435\u043B\u044C\u0441\u0442\u0432\u0435 \u0437\u0434\u0430\u043D\u0438\u044F'
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u0432\u044B\u0441\u043E\u043A\u043E\u0435 \u043A\u0430\u0447\u0435\u0441\u0442\u0432\u043E \u043E\u0447\u0438\u0441\u0442\u043A\u0438 \u0432\u043E\u0434\u044B \u043F\u0440\u0438 \u043C\u0438\u043D\u0438\u043C\u0430\u043B\u044C\u043D\u044B\u0445 \u044D\u043A\u0441\u043F\u043B\u0443\u0430\u0442\u0430\u0446\u0438\u043E\u043D\u043D\u044B\u0445    \u0437\u0430\u0442\u0440\u0430\u0442\u0430\u0445'
-                                )
-                            )
-                        ),
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'div',
-                            { id: 'filtration', className: 'technologies-section' },
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'h2',
-                                { className: 'tech_category_title' },
-                                '\u041C\u0435\u0445\u0430\u043D\u0438\u0447\u0435\u0441\u043A\u0430\u044F \u0444\u0438\u043B\u044C\u0442\u0440\u0430\u0446\u0438\u044F'
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'p',
-                                { className: 'paragraph-text blue' },
-                                '\u041E\u0431\u0435\u0441\u043F\u0435\u0447\u0438\u0432\u0430\u0435\u0442 \u0443\u0434\u0430\u043B\u0435\u043D\u0438\u0435 \u0438\u0437 \u0432\u043E\u0434\u044B \u043C\u0435\u0445\u0430\u043D\u0438\u0447\u0435\u0441\u043A\u0438\u0445 \u043F\u0440\u0438\u043C\u0435\u0441\u0435\u0439 (\u043F\u0435\u0441\u043E\u043A, \u0440\u0436\u0430\u0432\u0447\u0438\u043D\u0430, \u043E\u043A\u0430\u043B\u0438\u043D\u0430 \u0438 \u043F\u0440.)'
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { className: 'unordered-list-header' },
-                                '\u041F\u0440\u0438\u043C\u0435\u043D\u044F\u044E\u0442\u0441\u044F:'
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'ul',
-                                { className: 'unordered-list list-without-order' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '1) \u043A\u0430\u043A \u043F\u0435\u0440\u0432\u044B\u0439 \u044D\u0442\u0430\u043F \u043E\u0447\u0438\u0441\u0442\u043A\u0438 \u0432\u043E\u0434\u044B \u0432 \u0441\u0438\u0441\u0442\u0435\u043C\u0430\u0445 \u0432\u043E\u0434\u043E\u043F\u043E\u0434\u0433\u043E\u0442\u043E\u0432\u043A\u0438      (\u043F\u0440\u0435\u0434\u043E\u0447\u0438\u0441\u0442\u043A\u0430)'
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '2) \u0434\u043B\u044F \u043E\u0447\u0438\u0441\u0442\u043A\u0438 \u0432\u043E\u0434\u044B \u043E\u0431\u043E\u0440\u043E\u0442\u043D\u044B\u0445 \u0446\u0438\u043A\u043B\u043E\u0432 \u043C\u0435\u0442\u0430\u043B\u043B\u0443\u0440\u0433\u0438\u0447\u0435\u0441\u043A\u0438\u0445, \u0445\u0438\u043C\u0438\u0447\u0435\u0441\u043A\u0438\u0445 \u043F\u0440\u0435\u0434\u043F\u0440\u0438\u044F\u0442\u0438\u0439, \u043F\u0440\u0435\u0434\u043F\u0440\u0438\u044F\u0442\u0438\u0439 \u044D\u043D\u0435\u0440\u0433\u0435\u0442\u0438\u043A\u0438 \u0438 \u043F\u0440.:',
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
-                                    '- \u043E\u0447\u0438\u0441\u0442\u043A\u0430 \u0432\u043E\u0434\u044B \u043E\u0431\u043E\u0440\u043E\u0442\u043D\u044B\u0445 \u0446\u0438\u043A\u043B\u043E\u0432 \u0434\u043E \u0438 \u043F\u043E\u0441\u043B\u0435 \u0433\u0440\u0430\u0434\u0438\u0440\u0435\u043D',
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
-                                    '- \u043E\u0447\u0438\u0441\u0442\u043A\u0430 \u0432\u043E\u0434\u044B \u043E\u0431\u043E\u0440\u043E\u0442\u043D\u044B\u0445 \u0446\u0438\u043A\u043B\u043E\u0432 \u043F\u0435\u0440\u0435\u0434 \u0442\u0435\u043F\u043B\u043E\u043E\u0431\u043C\u0435\u043D\u043D\u0438\u043A\u0430\u043C\u0438',
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
-                                    '- \u043E\u0447\u0438\u0441\u0442\u043A\u0430 \u0432\u043E\u0434\u044B \u043E\u0431\u043E\u0440\u043E\u0442\u043D\u044B\u0445 \u0446\u0438\u043A\u043B\u043E\u0432 \u043F\u0440\u043E\u043A\u0430\u0442\u043D\u044B\u0445 \u0441\u0442\u0430\u043D\u043E\u0432, \u043E\u0445\u043B\u0430\u0436\u0434\u0435\u043D\u0438\u044F \u0434\u043E\u043C\u0435\u043D\u043D\u044B\u0445 \u043F\u0435\u0447\u0435\u0439, \u041C\u041D\u041B\u0417 \u0438 \u043F\u0440.',
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
-                                    '- \u043E\u0447\u0438\u0441\u0442\u043A\u0430 \u0432\u043E\u0434\u044B \u043F\u043E\u0441\u043B\u0435 \u043C\u043E\u043A\u0440\u043E\u0439 \u0433\u0430\u0437\u043E\u043E\u0447\u0438\u0441\u0442\u043A\u0438'
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u0434\u043B\u044F \u043E\u0447\u0438\u0441\u0442\u043A\u0438 \u0432\u043E\u0434\u044B \u043D\u0430 \u0432\u043E\u0434\u043E\u0437\u0430\u0431\u043E\u0440\u0430\u0445'
-                                )
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { className: 'unordered-list-header' },
-                                '\u041E\u041E\u041E \xAB\u0412\u043E\u0442\u0435\u0440 \u042D\u043A\u043E \u0422\u0435\u0445\xBB \u043F\u0440\u0435\u0434\u043B\u0430\u0433\u0430\u0435\u0442 \u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0438\u0435 \u043C\u0435\u0445\u0430\u043D\u0438\u0447\u0435\u0441\u043A\u0438\u0435 \u0444\u0438\u043B\u044C\u0442\u0440\u044B:'
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { className: 'unordered-list-header' },
-                                '\u041A\u0430\u0440\u0442\u0440\u0438\u0434\u0436\u043D\u044B\u0435 \u0444\u0438\u043B\u044C\u0442\u0440\u044B \u0440\u0430\u0437\u043B\u0438\u0447\u043D\u044B\u0445 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0438\u0442\u0435\u043B\u0435\u0439'
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { className: 'unordered-list-header' },
-                                '\u0421\u0435\u0442\u0447\u0430\u0442\u044B\u0435 \u0444\u0438\u043B\u044C\u0442\u0440\u044B Yamit'
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { className: 'row' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'div',
-                                    { className: 'col-sm-3 col-xs-5 vcenter' },
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_1_path___default.a.join(__dirname, './imgs/technologies/filtration_yamit.png'), className: 'img-responsive' })
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'div',
-                                    { className: 'col-sm-9 col-xs-7 vcenter' },
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        'p',
-                                        { className: 'paragraph-text blue' },
-                                        '\u0410\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0447\u0435\u0441\u043A\u0438\u0435 \u0441\u0430\u043C\u043E\u043F\u0440\u043E\u043C\u044B\u0432\u0430\u044E\u0449\u0438\u0435\u0441\u044F \u0444\u0438\u043B\u044C\u0442\u0440\u044B \u0441 \u0433\u0438\u0434\u0440\u0430\u0432\u043B\u0438\u0447\u0435\u0441\u043A\u0438\u043C \u043B\u0438\u0431\u043E \u044D\u043B\u0435\u043A\u0442\u0440\u0438\u0447\u0435\u0441\u043A\u0438\u043C \u043F\u0440\u0438\u0432\u043E\u0434\u043E\u043C, \u0432 \u043A\u043E\u0442\u043E\u0440\u044B\u0445 \u0432 \u043A\u0430\u0447\u0435\u0441\u0442\u0432\u0435 \u0444\u0438\u043B\u044C\u0442\u0440\u0443\u044E\u0449\u0435\u0433\u043E \u044D\u043B\u0435\u043C\u0435\u043D\u0442\u0430 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0435\u0442\u0441\u044F \u0441\u0435\u0442\u043A\u0430 \u0441 \u0440\u0430\u0437\u043C\u0435\u0440\u043E\u043C \u044F\u0447\u0435\u0435\u043A \u043E\u0442 50 \u0434\u043E 1000\u043C\u043A\u043C (\u0432\u044B\u0431\u0438\u0440\u0430\u0435\u0442\u0441\u044F \u0432 \u0437\u0430\u0432\u0438\u0441\u0438\u043C\u043E\u0441\u0442\u0438 \u043E\u0442 \u0441\u0442\u0435\u043F\u0435\u043D\u0438 \u0437\u0430\u0433\u0440\u044F\u0437\u043D\u0435\u043D\u0438\u044F \u0432\u043E\u0434\u044B).'
-                                    )
-                                )
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { className: 'technologies_iframe' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('iframe', { width: '560', height: '315', src: 'https://www.youtube.com/embed/4jIVefOPQJw', frameBorder: '0', allowFullScreen: '' })
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { className: 'unordered-list-header' },
-                                '\u0414\u0438\u0441\u043A\u043E\u0432\u044B\u0435 \u0444\u0438\u043B\u044C\u0442\u0440\u044B Azud'
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { className: 'row' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'div',
-                                    { className: 'col-sm-9 col-xs-7 vcenter' },
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        'p',
-                                        { className: 'paragraph-text blue' },
-                                        '\u0410\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0447\u0435\u0441\u043A\u0438\u0435 \u0441\u0430\u043C\u043E\u043F\u0440\u043E\u043C\u044B\u0432\u0430\u044E\u0449\u0438\u0435\u0441\u044F \u0444\u0438\u043B\u044C\u0442\u0440\u044B, \u0433\u0434\u0435 \u0444\u0438\u043B\u044C\u0442\u0440\u0443\u044E\u0449\u0438\u043C \u044D\u043B\u0435\u043C\u0435\u043D\u0442\u043E\u043C \u044F\u0432\u043B\u044F\u0435\u0442\u0441\u044F \u043F\u0430\u043A\u0435\u0442 \u0441\u043F\u0435\u0446\u0438\u0430\u043B\u044C\u043D\u044B\u0445 \u0434\u0438\u0441\u043A\u043E\u0432, \u0438\u0437\u0433\u043E\u0442\u043E\u0432\u043B\u0435\u043D\u043D\u044B\u0445 \u0438\u0437 \u043F\u0440\u043E\u0447\u043D\u044B\u0445 \u043F\u043E\u043B\u0438\u043C\u0435\u0440\u043D\u044B\u0445 \u043C\u0430\u0442\u0435\u0440\u0438\u0430\u043B\u043E\u0432, \u043D\u0430 \u043E\u0431\u0435\u0438\u0445 \u043F\u043E\u0432\u0435\u0440\u0445\u043D\u043E\u0441\u0442\u044F\u0445 \u043A\u043E\u0442\u043E\u0440\u044B\u0445 \u043F\u043E \u0434\u0438\u0430\u0433\u043E\u043D\u0430\u043B\u0438 \u043D\u0430\u043D\u0435\u0441\u0435\u043D\u044B \u043A\u0430\u043D\u0430\u0432\u043A\u0438 \u043E\u043F\u0440\u0435\u0434\u0435\u043B\u0435\u043D\u043D\u043E\u0439 \u0433\u043B\u0443\u0431\u0438\u043D\u044B \u0438 \u0448\u0438\u0440\u0438\u043D\u044B, \u043E\u0431\u0435\u0441\u043F\u0435\u0447\u0438\u0432\u0430\u044E\u0449\u0438\u0435 \u0432\u044B\u0441\u043E\u043A\u0443\u044E \u0442\u043E\u043D\u043A\u043E\u0441\u0442\u044C \u0438 \u0442\u043E\u0447\u043D\u043E\u0441\u0442\u044C \u0444\u0438\u043B\u044C\u0442\u0440\u0430\u0446\u0438\u0438. \u041F\u0440\u0438 \u0441\u0436\u0430\u0442\u0438\u0438 \u0434\u0432\u0443\u0445 \u0441\u043E\u0441\u0435\u0434\u043D\u0438\u0445 \u0434\u0438\u0441\u043A\u043E\u0432 \u043C\u0435\u0436\u0434\u0443 \u043D\u0438\u043C\u0438 \u043E\u0431\u0440\u0430\u0437\u0443\u0435\u0442\u0441\u044F \u043E\u0431\u044A\u0435\u043C\u043D\u0430\u044F \u0441\u0435\u0442\u0447\u0430\u0442\u0430\u044F \u0441\u0442\u0440\u0443\u043A\u0442\u0443\u0440\u0430, \u044F\u0432\u043B\u044F\u044E\u0449\u0430\u044F\u0441\u044F \u0440\u0430\u0431\u043E\u0447\u0438\u043C \u0444\u0438\u043B\u044C\u0442\u0440\u0443\u044E\u0449\u0438\u043C \u044D\u043B\u0435\u043C\u0435\u043D\u0442\u043E\u043C. \u0422\u043E\u043D\u043A\u043E\u0441\u0442\u044C \u043E\u0447\u0438\u0441\u0442\u043A\u0438 \u0442\u0430\u043A\u0438\u0445 \u0444\u0438\u043B\u044C\u0442\u0440\u043E\u0432 \u043A\u043E\u043B\u0435\u0431\u043B\u0435\u0442\u0441\u044F \u043E\u0442 10 \u0434\u043E 500 \u043C\u043A\u043C \u0432 \u0437\u0430\u0432\u0438\u0441\u0438\u043C\u043E\u0441\u0442\u0438 \u043E\u0442 \u0432\u044B\u0431\u043E\u0440\u0430 \u0434\u0438\u0441\u043A\u043E\u0432. \u0411\u043B\u0430\u0433\u043E\u0434\u0430\u0440\u044F \u043C\u043E\u0434\u0443\u043B\u044C\u043D\u043E\u0439 \u043A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0446\u0438\u0438, \u043C\u043E\u0436\u0435\u0442 \u0431\u044B\u0442\u044C \u043F\u043E\u0434\u043E\u0431\u0440\u0430\u043D\u0430 \u043B\u044E\u0431\u0430\u044F \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0438\u0442\u0435\u043B\u044C\u043D\u043E\u0441\u0442\u044C \u0444\u0438\u043B\u044C\u0442\u0440\u0430\u0446\u0438\u043E\u043D\u043D\u043E\u0439 \u0441\u0438\u0441\u0442\u0435\u043C\u044B.'
+                                        'div',
+                                        { className: 'col-sm-3 col-xs-5 vcenter' },
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_1_path___default.a.join(__dirname, './imgs/technologies/ferum_1.png'), className: 'img-responsive' })
                                     )
                                 ),
                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                     'div',
-                                    { className: 'col-sm-3 col-xs-5 vcenter' },
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_1_path___default.a.join(__dirname, './imgs/technologies/filtration_azud.png'), className: 'img-responsive' })
-                                )
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { className: 'unordered-list-header' },
-                                '\u041F\u0420\u0415\u0418\u041C\u0423\u0429\u0415\u0421\u0422\u0412\u0410 \u0414\u0418\u0421\u041A\u041E\u0412\u042B\u0425 \u0424\u0418\u041B\u042C\u0422\u0420\u041E\u0412:'
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'ul',
-                                { className: 'unordered-list' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u0432\u044B\u0441\u043E\u043A\u0430\u044F \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0438\u0442\u0435\u043B\u044C\u043D\u043E\u0441\u0442\u044C \u0438 \u0433\u0440\u044F\u0437\u0435\u0451\u043C\u043A\u043E\u0441\u0442\u044C'
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u043F\u0440\u043E\u0441\u0442\u0430\u044F \u0438 \u0443\u0434\u043E\u0431\u043D\u0430\u044F \u043F\u0440\u043E\u043C\u044B\u0432\u043A\u0430, \u043A\u043E\u0442\u043E\u0440\u0430\u044F \u043E\u0441\u0443\u0449\u0435\u0441\u0442\u0432\u043B\u044F\u0435\u0442\u0441\u044F \xAB\u0438\u0437\u043D\u0443\u0442\u0440\u0438 \u2013 \u043D\u0430\u0440\u0443\u0436\u0443\xBB \u0444\u0438\u043B\u044C\u0442\u0440\u0443\u044E\u0449\u0435\u0433\u043E \u044D\u043B\u0435\u043C\u0435\u043D\u0442\u0430;'
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u0434\u043B\u044F \u043F\u0440\u043E\u043C\u044B\u0432\u043A\u0438 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0435\u0442\u0441\u044F \u043E\u0447\u0438\u0449\u0435\u043D\u043D\u0430\u044F \u0432\u043E\u0434\u0430, \u043F\u043E\u043B\u0443\u0447\u0430\u0435\u043C\u0430\u044F \u043E\u0442 \u0434\u0440\u0443\u0433\u0438\u0445, \u0440\u0430\u0431\u043E\u0442\u0430\u044E\u0449\u0438\u0445 \u0432 \u0448\u0442\u0430\u0442\u043D\u043E\u043C \u0440\u0435\u0436\u0438\u043C\u0435 \u0444\u0438\u043B\u044C\u0442\u0440\u043E\u0432;'
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u043D\u0438\u0437\u043A\u0438\u0439 \u0440\u0430\u0441\u0445\u043E\u0434 \u0432\u043E\u0434\u044B \u043F\u0440\u0438 \u043F\u0440\u043E\u043C\u044B\u0432\u043A\u0435. \u0418\u0437 \u0440\u0430\u0441\u0447\u0435\u0442\u0430 \u043D\u0430 \u043E\u0434\u0438\u043D \u0444\u0438\u043B\u044C\u0442\u0440\u043E\u044D\u043B\u0435\u043C\u0435\u043D\u0442, \u0440\u0430\u0441\u0445\u043E\u0434 \u0432\u043E\u0434\u044B \u043D\u0430 \u0441\u043E\u0431\u0441\u0442\u0432\u0435\u043D\u043D\u044B\u0435 \u043D\u0443\u0436\u0434\u044B \u0441\u043E\u0441\u0442\u0430\u0432\u043B\u044F\u0435\u0442 \u043F\u043E\u0440\u044F\u0434\u043A\u0430 0,05 \u2013 0,2 %. \u043D\u0438\u0437\u043A\u043E\u0435 \u044D\u043D\u0435\u0440\u0433\u043E\u043F\u043E\u0442\u0440\u0435\u0431\u043B\u0435\u043D\u0438\u0435: \u043F\u043E 1 \u044D\u043B\u0435\u043A\u0442\u0440\u043E\u043C\u0430\u0433\u043D\u0438\u0442\u043D\u043E\u043C\u0443 \u043A\u043B\u0430\u043F\u0430\u043D\u0443 \u043D\u0430 \u043A\u0430\u0436\u0434\u044B\u0439 \u0444\u0438\u043B\u044C\u0442\u0440 (\u043F\u043E\u0442\u0440\u0435\u0431\u043B\u044F\u0435\u043C\u0430\u044F \u043C\u043E\u0449\u043D\u043E\u0441\u0442\u044C \u043D\u0435 \u0431\u043E\u043B\u0435\u0435 10\u0412\u0442) \u0438 \u0443\u043F\u0440\u0430\u0432\u043B\u044F\u044E\u0449\u0438\u0439 \u043A\u043E\u043D\u0442\u0440\u043E\u043B\u043B\u0435\u0440 (\u043C\u0435\u043D\u0435\u0435 100 \u0412\u0442)'
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u0432\u044B\u0441\u043E\u043A\u043E\u0435 \u043A\u0430\u0447\u0435\u0441\u0442\u0432\u043E \u0444\u0438\u043B\u044C\u0442\u0440\u0430\u0446\u0438\u0438 \u0432 \u0442\u0435\u0447\u0435\u043D\u0438\u0435 \u0432\u0441\u0435\u0433\u043E \u0441\u0440\u043E\u043A\u0430 \u0441\u043B\u0443\u0436\u0431\u044B \u0438\u0437-\u0437\u0430 \u0443\u0441\u0442\u043E\u0439\u0447\u0438\u0432\u043E\u0441\u0442\u0438 \u043A \u0437\u0430\u043B\u0438\u0432\u0430\u043D\u0438\u044E'
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u0432\u044B\u0441\u043E\u043A\u0430\u044F \u043D\u0430\u0434\u0435\u0436\u043D\u043E\u0441\u0442\u044C: \u0434\u0438\u0441\u043A\u043E\u0432\u044B\u0435 \u0444\u0438\u043B\u044C\u0442\u0440\u044B \u0437\u0430\u0449\u0438\u0449\u0435\u043D\u044B \u0441\u043F\u0435\u0446\u0438\u0430\u043B\u044C\u043D\u044B\u043C \u043A\u043E\u0436\u0443\u0445\u043E\u043C, \u043A\u043E\u0442\u043E\u0440\u044B\u0439 \u043D\u0435 \u043F\u043E\u0434\u0432\u0435\u0440\u0436\u0435\u043D \u043A\u043E\u0440\u0440\u043E\u0437\u0438\u0438 \u0438 \u043D\u0435 \u0440\u0430\u0437\u0440\u0443\u0448\u0430\u0435\u0442\u0441\u044F \u043F\u043E\u0434 \u0434\u0435\u0439\u0441\u0442\u0432\u0438\u0435\u043C \u0432\u044B\u0441\u043E\u043A\u043E\u0433\u043E \u0434\u0430\u0432\u043B\u0435\u043D\u0438\u044F'
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u0431\u043E\u043B\u044C\u0448\u043E\u0435 \u043A\u043E\u043B\u0438\u0447\u0435\u0441\u0442\u0432\u043E \u0432\u043E\u0437\u043C\u043E\u0436\u043D\u044B\u0445 \u0432\u0430\u0440\u0438\u0430\u043D\u0442\u043E\u0432 \u0443\u0441\u0442\u0430\u043D\u043E\u0432\u043A\u0438 \u0438 \u044D\u043A\u0441\u043F\u043B\u0443\u0430\u0442\u0430\u0446\u0438\u0438 (\u0441\u043E\u0435\u0434\u0438\u043D\u0435\u043D\u0438\u0435, \u0441\u0442\u0435\u043F\u0435\u043D\u044C \u0444\u0438\u043B\u044C\u0442\u0440\u0430\u0446\u0438\u0438, \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0438\u0442\u0435\u043B\u044C\u043D\u043E\u0441\u0442\u044C \u0438 \u0442.\u0434.)'
-                                )
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { className: 'technologies_iframe' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('iframe', { width: '560', height: '315', src: 'https://www.youtube.com/embed/ejVupHlQj5o', frameBorder: '0', allowFullScreen: '' })
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { className: 'unordered-list-header' },
-                                '\u041D\u0430\u043F\u043E\u0440\u043D\u0430\u044F \u0444\u0438\u043B\u044C\u0442\u0440\u0430\u0446\u0438\u044F WET-F'
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { className: 'row' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'div',
-                                    { className: 'col-sm-9 col-xs-7 vcenter' },
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        'p',
-                                        { className: 'paragraph-text blue' },
-                                        '\u0421\u0435\u0440\u0438\u044F \u043C\u0435\u0445\u0430\u043D\u0438\u0447\u0435\u0441\u043A\u0438\u0445 \u0444\u0438\u043B\u044C\u0442\u0440\u043E\u0432 WET-F \u2013 \u044D\u0442\u043E \u043D\u0430\u043F\u043E\u0440\u043D\u044B\u0435 \u043C\u0435\u0445\u0430\u043D\u0438\u0447\u0435\u0441\u043A\u0438\u0435 \u0444\u0438\u043B\u044C\u0442\u0440\u044B, \u0432 \u043A\u043E\u0442\u043E\u0440\u044B\u0445 \u0432 \u043A\u0430\u0447\u0435\u0441\u0442\u0432\u0435 \u0444\u0438\u043B\u044C\u0442\u0440\u0443\u044E\u0449\u0435\u0439 \u0437\u0430\u0433\u0440\u0443\u0437\u043A\u0438 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0435\u0442\u0441\u044F \u043A\u0432\u0430\u0440\u0446\u0435\u0432\u044B\u0439 \u043F\u0435\u0441\u043E\u043A \u0438/\u0438\u043B\u0438 \u0430\u043D\u0442\u0440\u0430\u0446\u0438\u0442.'
-                                    ),
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        'p',
-                                        { className: 'paragraph-text blue' },
-                                        '\u041F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0438\u0442\u0435\u043B\u044C\u043D\u043E\u0441\u0442\u044C 1 \u0444\u0438\u043B\u044C\u0442\u0440\u0430 \u043E\u0442 1 \u0434\u043E 200 \u043C',
-                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                            'sup',
-                                            null,
-                                            '3'
-                                        ),
-                                        '/\u0447'
-                                    )
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'div',
-                                    { className: 'col-sm-3 col-xs-5 vcenter' },
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_1_path___default.a.join(__dirname, './imgs/technologies/filtration_wet-f.png'), className: 'img-responsive' })
-                                )
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'p',
-                                { className: 'paragraph-text blue' },
-                                '\u041A\u043E\u0440\u043F\u0443\u0441\u0430 \u0444\u0438\u043B\u044C\u0442\u0440\u043E\u0432:'
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'ul',
-                                { className: 'unordered-list' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u041A\u043E\u043C\u043F\u043E\u0437\u0438\u0442\u043D\u044B\u0435, D 200 \u2013 1600 \u043C\u043C, P',
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        'sub',
-                                        null,
-                                        '\u0440\u0430\u0431'
-                                    ),
-                                    ' \u0434\u043E 10 \u043A\u0433/\u0441\u043C',
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        'sup',
-                                        null,
-                                        '2'
-                                    )
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u041C\u0435\u0442\u0430\u043B\u043B\u0438\u0447\u0435\u0441\u043A\u0438\u0435 \u0441 \u0430\u043D\u0442\u0438\u043A\u043E\u0440\u0440\u043E\u0437\u0438\u043E\u043D\u043D\u044B\u043C \u043F\u043E\u043A\u0440\u044B\u0442\u0438\u0435\u043C, D 1800 \u2013 5000 \u043C\u043C, P',
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        'sub',
-                                        null,
-                                        '\u0440\u0430\u0431'
-                                    ),
-                                    ' \u0434\u043E 16 \u043A\u0433/\u0441\u043C',
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        'sup',
-                                        null,
-                                        '2'
-                                    )
-                                )
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'p',
-                                { className: 'paragraph-text blue' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'u',
-                                    null,
+                                    { className: 'unordered-list-header' },
                                     '\u0412\u0438\u0434\u044B \u0438\u0441\u043F\u043E\u043B\u043D\u0435\u043D\u0438\u044F \u043F\u043E \u0430\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0437\u0430\u0446\u0438\u0438 :'
-                                )
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'ul',
-                                { className: 'unordered-list' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u0440\u0443\u0447\u043D\u043E\u0435'
                                 ),
                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u0430\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0447\u0435\u0441\u043A\u043E\u0435, \u0441 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u0435\u043C \u0443\u043D\u0438\u0432\u0435\u0440\u0441\u0430\u043B\u044C\u043D\u044B\u0445 \u0443\u043F\u0440\u0430\u0432\u043B\u044F\u044E\u0449\u0438\u0445 \u043A\u043B\u0430\u043F\u0430\u043D\u043E\u0432 \u0442\u0438\u043F\u0430 Clack, Fleck, RX \u0438 \u043F\u0440.'
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u0430\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0447\u0435\u0441\u043A\u043E\u0435, \u0441 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u0435\u043C \u0441\u0438\u0441\u0442\u0435\u043C\u044B \u0443\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u044F\u043D\u0430 \u0431\u0430\u0437\u0435 \u043F\u0440\u043E\u043C\u044B\u0448\u043B\u0435\u043D\u043D\u043E\u0433\u043E \u043A\u043E\u043D\u0442\u0440\u043E\u043B\u043B\u0435\u0440\u0430 Siemens \u043B\u0438\u0431\u043E \u0430\u043D\u0430\u043B\u043E\u0433\u043E\u0432.'
-                                )
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { className: 'unordered-list-header' },
-                                '\u041F\u0420\u0415\u0418\u041C\u0423\u0429\u0415\u0421\u0422\u0412\u0410:'
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'ul',
-                                { className: 'unordered-list' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u0432\u044B\u0441\u043E\u043A\u0430\u044F \u0433\u0440\u044F\u0437\u0435\u0435\u043C\u043A\u043E\u0441\u0442\u044C'
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u043D\u0430\u0434\u0435\u0436\u043D\u043E\u0441\u0442\u044C \u0438 \u0434\u043E\u043B\u0433\u043E\u0432\u0435\u0447\u043D\u043E\u0441\u0442\u044C'
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u043F\u0440\u043E\u0441\u0442\u043E\u0442\u0430 \u0443\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u044F \u0438 \u043E\u0431\u0441\u043B\u0443\u0436\u0438\u0432\u0430\u043D\u0438\u044F'
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u0432\u043E\u0437\u043C\u043E\u0436\u043D\u043E\u0441\u0442\u044C \u0432\u044B\u0431\u043E\u0440\u0430 \u043B\u044E\u0431\u043E\u0439 \u043A\u043E\u043D\u0444\u0438\u0433\u0443\u0440\u0430\u0446\u0438\u0438 \u0438 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0438\u0442\u0435\u043B\u044C\u043D\u043E\u0441\u0442\u0438'
-                                )
-                            )
-                        ),
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'div',
-                            { id: 'ferum-remove', className: 'technologies-section' },
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'h2',
-                                { className: 'tech_category_title' },
-                                '\u0423\u0434\u0430\u043B\u0435\u043D\u0438\u0435 \u0436\u0435\u043B\u0435\u0437\u0430/\u043C\u0430\u0440\u0433\u0430\u043D\u0446\u0430 \u043D\u0430 \u0444\u0438\u043B\u044C\u0442\u0440\u0430\u0445 WET- FE'
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'p',
-                                { className: 'paragraph-text blue' },
-                                '\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u044F \u0443\u0434\u0430\u043B\u0435\u043D\u0438\u044F \u0438\u0437\u0432\u043E\u0434\u044B\u0436\u0435\u043B\u0435\u0437\u0430/ \u043C\u0430\u0440\u0433\u0430\u043D\u0446\u0430 \u0441\u0432\u043E\u0434\u0438\u0442\u0441\u044F \u043A \u0438\u0445 \u043E\u043A\u0438\u0441\u043B\u0435\u043D\u0438\u044E (\u0432\u043E\u0437\u0434\u0443\u0445\u043E\u043C, \u0433\u0438\u043F\u043E\u0445\u043B\u043E\u0440\u0438\u0442\u043E\u043C \u0438 \u043F\u0440.) \u0438 \u043F\u043E\u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0435\u0439 \u0444\u0438\u043B\u044C\u0442\u0440\u0430\u0446\u0438\u0435\u0439 \u043D\u0430 \u043D\u0430\u043F\u043E\u0440\u043D\u044B\u0445 \u043C\u0435\u0445\u0430\u043D\u0438\u0447\u0435\u0441\u043A\u0438\u0445 \u0444\u0438\u043B\u044C\u0442\u0440\u0430\u0445. \u0414\u043B\u044F \u0443\u0441\u043A\u043E\u0440\u0435\u043D\u0438\u044F \u043F\u0440\u043E\u0446\u0435\u0441\u0441\u0430 \u043E\u043A\u0438\u0441\u043B\u0435\u043D\u0438\u044F \u0432 \u0437\u0430\u0433\u0440\u0443\u0437\u043A\u0443 \u0444\u0438\u043B\u044C\u0442\u0440\u0430 \u0434\u043E\u0431\u0430\u0432\u043B\u044F\u044E\u0442 \u0440\u0430\u0437\u043B\u0438\u0447\u043D\u044B\u0435 \u043C\u0430\u0442\u0435\u0440\u0438\u0430\u043B\u044B \u0442\u0438\u043F\u0430 Birm, Aqua-Mandix. \u0414\u043B\u044F \u0434\u043E\u0441\u0442\u0438\u0436\u0435\u043D\u0438\u044F \u043F\u0440\u0435\u0434\u0435\u043B\u044C\u043D\u043E \u043D\u0438\u0437\u043A\u0438\u0445 \u043A\u043E\u043D\u0446\u0435\u043D\u0442\u0440\u0430\u0446\u0438\u0439 \u0436\u0435\u043B\u0435\u0437\u0430 \u0438 \u043C\u0430\u0440\u0433\u0430\u043D\u0446\u0430 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u044E\u0442 \u0444\u0438\u043B\u044C\u0442\u0440\u0443\u044E\u0449\u0438\u0435 \u0437\u0430\u0433\u0440\u0443\u0437\u043A\u0438 \u0441 \u0440\u0435\u0433\u0435\u043D\u0435\u0440\u0430\u0446\u0438\u0435\u0439 \u0440\u0430\u0441\u0442\u0432\u043E\u0440\u043E\u043C \u043C\u0430\u0440\u0433\u0430\u043D\u0446\u043E\u0432\u043A\u0438 \u2013 Greensand, MTM \u0438 \u0434\u0440.'
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'p',
-                                { className: 'paragraph-text blue' },
-                                '\u041F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0438\u0442\u0435\u043B\u044C\u043D\u043E\u0441\u0442\u044C 1 \u0444\u0438\u043B\u044C\u0442\u0440\u0430 \u043E\u0442 1 \u0434\u043E 200 \u043C',
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'sup',
-                                    null,
-                                    '3'
-                                ),
-                                '/\u0447'
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { className: 'row' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'div',
-                                    { className: 'col-sm-9 col-xs-7 vcenter' },
+                                    'ul',
+                                    { className: 'unordered-list' },
                                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        'div',
-                                        { className: 'unordered-list-header' },
-                                        '\u041A\u043E\u0440\u043F\u0443\u0441\u0430 \u0444\u0438\u043B\u044C\u0442\u0440\u043E\u0432:'
+                                        'li',
+                                        null,
+                                        '\u0440\u0443\u0447\u043D\u043E\u0435'
                                     ),
                                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        'ul',
-                                        { className: 'unordered-list' },
+                                        'li',
+                                        null,
+                                        '\u0430\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0447\u0435\u0441\u043A\u043E\u0435, \u0441 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u0435\u043C \u0443\u043D\u0438\u0432\u0435\u0440\u0441\u0430\u043B\u044C\u043D\u044B\u0445 \u0443\u043F\u0440\u0430\u0432\u043B\u044F\u044E\u0449\u0438\u0445 \u043A\u043B\u0430\u043F\u0430\u043D\u043E\u0432 \u0442\u0438\u043F\u0430 Clack, Fleck, RX \u0438 \u043F\u0440.'
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'li',
+                                        null,
+                                        '\u0430\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0447\u0435\u0441\u043A\u043E\u0435, \u0441 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u0435\u043C \u0441\u0438\u0441\u0442\u0435\u043C\u044B \u0443\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u044F\u043D\u0430 \u0431\u0430\u0437\u0435 \u043F\u0440\u043E\u043C\u044B\u0448\u043B\u0435\u043D\u043D\u043E\u0433\u043E \u043A\u043E\u043D\u0442\u0440\u043E\u043B\u043B\u0435\u0440\u0430 Siemens \u043B\u0438\u0431\u043E \u0430\u043D\u0430\u043B\u043E\u0433\u043E\u0432.'
+                                    )
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'div',
+                                    { className: 'row' },
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'div',
+                                        { className: 'col-sm-9 col-xs-7 vcenter' },
                                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                            'li',
-                                            null,
-                                            '\u041A\u043E\u043C\u043F\u043E\u0437\u0438\u0442\u043D\u044B\u0435, D 200 \u2013 1600 \u043C\u043C, P',
+                                            'div',
+                                            { className: 'unordered-list-header' },
+                                            '\u041F\u0440\u0438\u043C\u0435\u043D\u044F\u044E\u0442\u0441\u044F:'
+                                        ),
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                            'ul',
+                                            { className: 'unordered-list' },
                                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                'sub',
+                                                'li',
                                                 null,
-                                                '\u0440\u0430\u0431'
+                                                '\u0432 \u043B\u044E\u0431\u044B\u0445 \u0441\u0438\u0441\u0442\u0435\u043C\u0430\u0445 \u0432\u043E\u0434\u043E\u043F\u043E\u0434\u0433\u043E\u0442\u043E\u0432\u043A\u0438 \u0434\u043B\u044F \u0437\u0430\u0449\u0438\u0442\u044B \u043F\u043E\u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0438\u0445 \u0441\u0442\u0443\u043F\u0435\u043D\u0435\u0439 (\u0438\u043E\u043D\u043D\u043E\u0433\u043E \u043E\u0431\u043C\u0435\u043D\u0430, \u043E\u0441\u043C\u043E\u0441\u0430 \u0438 \u0442.\u0434.) \u043E\u0442 \u043D\u0435\u0433\u0430\u0442\u0438\u0432\u043D\u043E\u0433\u043E \u0432\u043B\u0438\u044F\u043D\u0438\u044F \u0436\u0435\u043B\u0435\u0437\u0430'
                                             ),
-                                            ' \u0434\u043E 10 \u043A\u0433/\u0441\u043C',
                                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                'sup',
+                                                'li',
                                                 null,
-                                                '2'
+                                                '\u0434\u043B\u044F \u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0439, \u0433\u0434\u0435 \u0442\u0440\u0435\u0431\u0443\u0435\u0442\u0441\u044F \u043F\u043E\u043B\u043D\u043E\u0435 \u043E\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0438\u0435 \u0436\u0435\u043B\u0435\u0437\u0430 \u0432 \u0432\u043E\u0434\u0435: \u0432 \u043F\u0438\u0449\u0435\u0432\u043E\u0439 \u043F\u0440\u043E\u043C\u044B\u0448\u043B\u0435\u043D\u043D\u043E\u0441\u0442\u0438 (\u043F\u0440\u0438\u0433\u043E\u0442\u043E\u0432\u043B\u0435\u043D\u0438\u0435 \u043F\u0438\u0432\u0430, \u043D\u0430\u043F\u0438\u0442\u043A\u043E\u0432 \u0438 \u043F\u0440.),\u0432 \u0442\u0435\u043A\u0441\u0442\u0438\u043B\u044C\u043D\u043E\u0439 \u043F\u0440\u043E\u043C\u044B\u0448\u043B\u0435\u043D\u043D\u043E\u0441\u0442\u0438 \u0438 \u0434\u0440.'
+                                            ),
+                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                'li',
+                                                null,
+                                                '\u0432 \u043F\u043E\u0434\u0433\u043E\u0442\u043E\u0432\u043A\u0435 \u0432\u043E\u0434\u044B \u0434\u043B\u044F \u043A\u043E\u0442\u043B\u0430'
+                                            ),
+                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                'li',
+                                                null,
+                                                '\u0434\u043B\u044F \u043F\u043E\u0434\u0433\u043E\u0442\u043E\u0432\u043A\u0438 \u0432\u043E\u0434\u044B \u043F\u0438\u0442\u044C\u0435\u0432\u043E\u0433\u043E \u0438 \u0445\u043E\u0437\u0431\u044B\u0442\u043E\u0432\u043E\u0433\u043E \u043D\u0430\u0437\u043D\u0430\u0447\u0435\u043D\u0438\u044F'
+                                            )
+                                        )
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'div',
+                                        { className: 'col-sm-3 col-xs-5 vcenter' },
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_1_path___default.a.join(__dirname, './imgs/technologies/ferum_2.png'), className: 'img-responsive' })
+                                    )
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'div',
+                                    { className: 'unordered-list-header' },
+                                    '\u041F\u0420\u0415\u0418\u041C\u0423\u0429\u0415\u0421\u0422\u0412\u0410:'
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'ul',
+                                    { className: 'unordered-list' },
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'li',
+                                        null,
+                                        '\u0432\u043E\u0437\u043C\u043E\u0436\u043D\u043E\u0441\u0442\u044C \u0432\u044B\u0431\u043E\u0440\u0430 \u043A\u043E\u043D\u0444\u0438\u0433\u0443\u0440\u0430\u0446\u0438\u0438 \u043B\u044E\u0431\u043E\u0439 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0438\u0442\u0435\u043B\u044C\u043D\u043E\u0441\u0442\u0438, \u043F\u043E\u0434 \u043B\u044E\u0431\u043E\u0435 \u0441\u043E\u0434\u0435\u0440\u0436\u0430\u043D\u0438\u0435 \u0436\u0435\u043B\u0435\u0437\u0430 \u0438 \u043C\u0430\u0440\u0433\u0430\u043D\u0446\u0430 \u0432 \u0438\u0441\u0445\u043E\u0434\u043D\u043E\u0439 \u0432\u043E\u0434\u0435, \u043F\u043E\u0434 \u043B\u044E\u0431\u044B\u0435 \u0442\u0440\u0435\u0431\u043E\u0432\u0430\u043D\u0438\u044F \u043A \u043E\u0447\u0438\u0449\u0435\u043D\u043D\u043E\u0439 \u0432\u043E\u0434\u0435'
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'li',
+                                        null,
+                                        '\u0432\u044B\u0441\u043E\u043A\u0430\u044F \u0435\u043C\u043A\u043E\u0441\u0442\u044C'
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'li',
+                                        null,
+                                        '\u043D\u0430\u0434\u0435\u0436\u043D\u043E\u0441\u0442\u044C \u0438 \u0434\u043E\u043B\u0433\u043E\u0432\u0435\u0447\u043D\u043E\u0441\u0442\u044C'
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'li',
+                                        null,
+                                        '\u043F\u0440\u043E\u0441\u0442\u043E\u0442\u0430 \u0443\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u044F \u0438 \u043E\u0431\u0441\u043B\u0443\u0436\u0438\u0432\u0430\u043D\u0438\u044F'
+                                    )
+                                )
+                            ),
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                'div',
+                                { id: 'sorbtion', className: 'technologies-section' },
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'h2',
+                                    { className: 'tech_category_title' },
+                                    '\u0421\u043E\u0440\u0431\u0446\u0438\u044F - \u0444\u0438\u043B\u044C\u0442\u0440\u044B \u0441 \u0430\u043A\u0442\u0438\u0432\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u044B\u043C \u0443\u0433\u043B\u0435\u043C WET-AC'
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'div',
+                                    { className: 'row' },
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'div',
+                                        { className: 'col-sm-3 col-xs-5 vcenter' },
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_1_path___default.a.join(__dirname, './imgs/technologies/sorbtion_1.png'), className: 'img-responsive' })
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'div',
+                                        { className: 'col-sm-9 col-xs-7 vcenter' },
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                            'div',
+                                            { className: 'unordered-list-header' },
+                                            '\u0424\u0438\u043B\u044C\u0442\u0440\u0430\u0446\u0438\u044E \u043D\u0430 \u0430\u043A\u0442\u0438\u0432\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u043E\u043C \u0443\u0433\u043B\u0435 \u043F\u0440\u0438\u043C\u0435\u043D\u044F\u044E\u0442 \u0434\u043B\u044F:'
+                                        ),
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                            'ul',
+                                            { className: 'unordered-list' },
+                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                'li',
+                                                null,
+                                                '\u0443\u0434\u0430\u043B\u0435\u043D\u0438\u044F \u043E\u0440\u0433\u0430\u043D\u0438\u043A\u0438. \u041E\u0441\u043E\u0431\u0435\u043D\u043D\u043E \u044D\u0444\u0444\u0435\u043A\u0442\u0438\u0432\u0435\u043D \u0434\u043B\u044F \u044D\u0442\u043E\u0433\u043E \u043A\u043E\u043A\u043E\u0441\u043E\u0432\u044B\u0439 \u0430\u043A\u0442\u0438\u0432\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u044B\u0439 \u0443\u0433\u043E\u043B\u044C, \u0431\u043B\u0430\u0433\u043E\u0434\u0430\u0440\u044F \u0441\u0432\u043E\u0435\u0439 \u043F\u043E\u0440\u0438\u0441\u0442\u043E\u0441\u0442\u0438 \u043E\u0431\u043B\u0430\u0434\u0430\u044E\u0449\u0438\u0439 \u0431\u043E\u043B\u044C\u0448\u043E\u0439 \u043F\u043E\u0432\u0435\u0440\u0445\u043D\u043E\u0441\u0442\u044C\u044E \u0430\u0434\u0441\u043E\u0440\u0431\u0446\u0438\u0438.'
+                                            ),
+                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                'li',
+                                                null,
+                                                '\u0423\u0434\u0430\u043B\u0435\u043D\u0438\u044F \u0441\u0432\u043E\u0431\u043E\u0434\u043D\u043E\u0433\u043E \u0445\u043B\u043E\u0440\u0430 (\u043E\u0431\u044B\u0447\u043D\u043E \u0432 \u0441\u0432\u044F\u0437\u043A\u0435 \u0441 \u0441\u0438\u0441\u0442\u0435\u043C\u043E\u0439 \u043E\u0431\u0435\u0437\u0437\u0430\u0440\u0430\u0436\u0438\u0432\u0430\u043D\u0438\u044F \u0445\u043B\u043E\u0440\u0441\u043E\u0434\u0435\u0440\u0436\u0430\u0449\u0438\u043C\u0438 \u0432\u0435\u0449\u0435\u0441\u0442\u0432\u0430\u043C\u0438).'
                                             )
                                         ),
                                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                            'li',
-                                            null,
-                                            '\u041C\u0435\u0442\u0430\u043B\u043B\u0438\u0447\u0435\u0441\u043A\u0438\u0435 \u0441 \u0430\u043D\u0442\u0438\u043A\u043E\u0440\u0440\u043E\u0437\u0438\u043E\u043D\u043D\u044B\u043C \u043F\u043E\u043A\u0440\u044B\u0442\u0438\u0435\u043C, D 1800 \u2013 5000 \u043C\u043C, P',
-                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                'sub',
-                                                null,
-                                                '\u0440\u0430\u0431'
-                                            ),
-                                            ' \u0434\u043E 16 \u043A\u0433/\u0441\u043C',
+                                            'p',
+                                            { className: 'paragraph-text blue' },
+                                            '\u041F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0438\u0442\u0435\u043B\u044C\u043D\u043E\u0441\u0442\u044C \u043E\u0434\u043D\u043E\u0433\u043E \u0444\u0438\u043B\u044C\u0442\u0440\u0430 \u043E\u0442 1 \u0434\u043E 100 \u043C',
                                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                                 'sup',
                                                 null,
-                                                '2'
-                                            )
+                                                '3'
+                                            ),
+                                            '/\u0447'
                                         )
                                     )
                                 ),
                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                     'div',
-                                    { className: 'col-sm-3 col-xs-5 vcenter' },
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_1_path___default.a.join(__dirname, './imgs/technologies/ferum_1.png'), className: 'img-responsive' })
-                                )
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { className: 'unordered-list-header' },
-                                '\u0412\u0438\u0434\u044B \u0438\u0441\u043F\u043E\u043B\u043D\u0435\u043D\u0438\u044F \u043F\u043E \u0430\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0437\u0430\u0446\u0438\u0438 :'
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'ul',
-                                { className: 'unordered-list' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u0440\u0443\u0447\u043D\u043E\u0435'
+                                    { className: 'unordered-list-header' },
+                                    '\u041A\u043E\u0440\u043F\u0443\u0441\u0430 \u0444\u0438\u043B\u044C\u0442\u0440\u043E\u0432:'
                                 ),
                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u0430\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0447\u0435\u0441\u043A\u043E\u0435, \u0441 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u0435\u043C \u0443\u043D\u0438\u0432\u0435\u0440\u0441\u0430\u043B\u044C\u043D\u044B\u0445 \u0443\u043F\u0440\u0430\u0432\u043B\u044F\u044E\u0449\u0438\u0445 \u043A\u043B\u0430\u043F\u0430\u043D\u043E\u0432 \u0442\u0438\u043F\u0430 Clack, Fleck, RX \u0438 \u043F\u0440.'
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u0430\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0447\u0435\u0441\u043A\u043E\u0435, \u0441 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u0435\u043C \u0441\u0438\u0441\u0442\u0435\u043C\u044B \u0443\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u044F\u043D\u0430 \u0431\u0430\u0437\u0435 \u043F\u0440\u043E\u043C\u044B\u0448\u043B\u0435\u043D\u043D\u043E\u0433\u043E \u043A\u043E\u043D\u0442\u0440\u043E\u043B\u043B\u0435\u0440\u0430 Siemens \u043B\u0438\u0431\u043E \u0430\u043D\u0430\u043B\u043E\u0433\u043E\u0432.'
-                                )
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { className: 'row' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'div',
-                                    { className: 'col-sm-9 col-xs-7 vcenter' },
+                                    'ul',
+                                    { className: 'unordered-list' },
                                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        'div',
-                                        { className: 'unordered-list-header' },
-                                        '\u041F\u0440\u0438\u043C\u0435\u043D\u044F\u044E\u0442\u0441\u044F:'
-                                    ),
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        'ul',
-                                        { className: 'unordered-list' },
+                                        'li',
+                                        null,
+                                        '\u041A\u043E\u043C\u043F\u043E\u0437\u0438\u0442\u043D\u044B\u0435, D 200 \u2013 1600 \u043C\u043C, P',
                                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                            'li',
+                                            'sub',
                                             null,
-                                            '\u0432 \u043B\u044E\u0431\u044B\u0445 \u0441\u0438\u0441\u0442\u0435\u043C\u0430\u0445 \u0432\u043E\u0434\u043E\u043F\u043E\u0434\u0433\u043E\u0442\u043E\u0432\u043A\u0438 \u0434\u043B\u044F \u0437\u0430\u0449\u0438\u0442\u044B \u043F\u043E\u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0438\u0445 \u0441\u0442\u0443\u043F\u0435\u043D\u0435\u0439 (\u0438\u043E\u043D\u043D\u043E\u0433\u043E \u043E\u0431\u043C\u0435\u043D\u0430, \u043E\u0441\u043C\u043E\u0441\u0430 \u0438 \u0442.\u0434.) \u043E\u0442 \u043D\u0435\u0433\u0430\u0442\u0438\u0432\u043D\u043E\u0433\u043E \u0432\u043B\u0438\u044F\u043D\u0438\u044F \u0436\u0435\u043B\u0435\u0437\u0430'
+                                            '\u0440\u0430\u0431'
                                         ),
-                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                            'li',
-                                            null,
-                                            '\u0434\u043B\u044F \u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0439, \u0433\u0434\u0435 \u0442\u0440\u0435\u0431\u0443\u0435\u0442\u0441\u044F \u043F\u043E\u043B\u043D\u043E\u0435 \u043E\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0438\u0435 \u0436\u0435\u043B\u0435\u0437\u0430 \u0432 \u0432\u043E\u0434\u0435: \u0432 \u043F\u0438\u0449\u0435\u0432\u043E\u0439 \u043F\u0440\u043E\u043C\u044B\u0448\u043B\u0435\u043D\u043D\u043E\u0441\u0442\u0438 (\u043F\u0440\u0438\u0433\u043E\u0442\u043E\u0432\u043B\u0435\u043D\u0438\u0435 \u043F\u0438\u0432\u0430, \u043D\u0430\u043F\u0438\u0442\u043A\u043E\u0432 \u0438 \u043F\u0440.),\u0432 \u0442\u0435\u043A\u0441\u0442\u0438\u043B\u044C\u043D\u043E\u0439 \u043F\u0440\u043E\u043C\u044B\u0448\u043B\u0435\u043D\u043D\u043E\u0441\u0442\u0438 \u0438 \u0434\u0440.'
-                                        ),
-                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                            'li',
-                                            null,
-                                            '\u0432 \u043F\u043E\u0434\u0433\u043E\u0442\u043E\u0432\u043A\u0435 \u0432\u043E\u0434\u044B \u0434\u043B\u044F \u043A\u043E\u0442\u043B\u0430'
-                                        ),
-                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                            'li',
-                                            null,
-                                            '\u0434\u043B\u044F \u043F\u043E\u0434\u0433\u043E\u0442\u043E\u0432\u043A\u0438 \u0432\u043E\u0434\u044B \u043F\u0438\u0442\u044C\u0435\u0432\u043E\u0433\u043E \u0438 \u0445\u043E\u0437\u0431\u044B\u0442\u043E\u0432\u043E\u0433\u043E \u043D\u0430\u0437\u043D\u0430\u0447\u0435\u043D\u0438\u044F'
-                                        )
-                                    )
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'div',
-                                    { className: 'col-sm-3 col-xs-5 vcenter' },
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_1_path___default.a.join(__dirname, './imgs/technologies/ferum_2.png'), className: 'img-responsive' })
-                                )
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { className: 'unordered-list-header' },
-                                '\u041F\u0420\u0415\u0418\u041C\u0423\u0429\u0415\u0421\u0422\u0412\u0410:'
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'ul',
-                                { className: 'unordered-list' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u0432\u043E\u0437\u043C\u043E\u0436\u043D\u043E\u0441\u0442\u044C \u0432\u044B\u0431\u043E\u0440\u0430 \u043A\u043E\u043D\u0444\u0438\u0433\u0443\u0440\u0430\u0446\u0438\u0438 \u043B\u044E\u0431\u043E\u0439 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0438\u0442\u0435\u043B\u044C\u043D\u043E\u0441\u0442\u0438, \u043F\u043E\u0434 \u043B\u044E\u0431\u043E\u0435 \u0441\u043E\u0434\u0435\u0440\u0436\u0430\u043D\u0438\u0435 \u0436\u0435\u043B\u0435\u0437\u0430 \u0438 \u043C\u0430\u0440\u0433\u0430\u043D\u0446\u0430 \u0432 \u0438\u0441\u0445\u043E\u0434\u043D\u043E\u0439 \u0432\u043E\u0434\u0435, \u043F\u043E\u0434 \u043B\u044E\u0431\u044B\u0435 \u0442\u0440\u0435\u0431\u043E\u0432\u0430\u043D\u0438\u044F \u043A \u043E\u0447\u0438\u0449\u0435\u043D\u043D\u043E\u0439 \u0432\u043E\u0434\u0435'
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u0432\u044B\u0441\u043E\u043A\u0430\u044F \u0435\u043C\u043A\u043E\u0441\u0442\u044C'
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u043D\u0430\u0434\u0435\u0436\u043D\u043E\u0441\u0442\u044C \u0438 \u0434\u043E\u043B\u0433\u043E\u0432\u0435\u0447\u043D\u043E\u0441\u0442\u044C'
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u043F\u0440\u043E\u0441\u0442\u043E\u0442\u0430 \u0443\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u044F \u0438 \u043E\u0431\u0441\u043B\u0443\u0436\u0438\u0432\u0430\u043D\u0438\u044F'
-                                )
-                            )
-                        ),
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'div',
-                            { id: 'sorbtion', className: 'technologies-section' },
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'h2',
-                                { className: 'tech_category_title' },
-                                '\u0421\u043E\u0440\u0431\u0446\u0438\u044F - \u0444\u0438\u043B\u044C\u0442\u0440\u044B \u0441 \u0430\u043A\u0442\u0438\u0432\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u044B\u043C \u0443\u0433\u043B\u0435\u043C WET-AC'
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { className: 'row' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'div',
-                                    { className: 'col-sm-3 col-xs-5 vcenter' },
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_1_path___default.a.join(__dirname, './imgs/technologies/sorbtion_1.png'), className: 'img-responsive' })
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'div',
-                                    { className: 'col-sm-9 col-xs-7 vcenter' },
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        'div',
-                                        { className: 'unordered-list-header' },
-                                        '\u0424\u0438\u043B\u044C\u0442\u0440\u0430\u0446\u0438\u044E \u043D\u0430 \u0430\u043A\u0442\u0438\u0432\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u043E\u043C \u0443\u0433\u043B\u0435 \u043F\u0440\u0438\u043C\u0435\u043D\u044F\u044E\u0442 \u0434\u043B\u044F:'
-                                    ),
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        'ul',
-                                        { className: 'unordered-list' },
-                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                            'li',
-                                            null,
-                                            '\u0443\u0434\u0430\u043B\u0435\u043D\u0438\u044F \u043E\u0440\u0433\u0430\u043D\u0438\u043A\u0438. \u041E\u0441\u043E\u0431\u0435\u043D\u043D\u043E \u044D\u0444\u0444\u0435\u043A\u0442\u0438\u0432\u0435\u043D \u0434\u043B\u044F \u044D\u0442\u043E\u0433\u043E \u043A\u043E\u043A\u043E\u0441\u043E\u0432\u044B\u0439 \u0430\u043A\u0442\u0438\u0432\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u044B\u0439 \u0443\u0433\u043E\u043B\u044C, \u0431\u043B\u0430\u0433\u043E\u0434\u0430\u0440\u044F \u0441\u0432\u043E\u0435\u0439 \u043F\u043E\u0440\u0438\u0441\u0442\u043E\u0441\u0442\u0438 \u043E\u0431\u043B\u0430\u0434\u0430\u044E\u0449\u0438\u0439 \u0431\u043E\u043B\u044C\u0448\u043E\u0439 \u043F\u043E\u0432\u0435\u0440\u0445\u043D\u043E\u0441\u0442\u044C\u044E \u0430\u0434\u0441\u043E\u0440\u0431\u0446\u0438\u0438.'
-                                        ),
-                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                            'li',
-                                            null,
-                                            '\u0423\u0434\u0430\u043B\u0435\u043D\u0438\u044F \u0441\u0432\u043E\u0431\u043E\u0434\u043D\u043E\u0433\u043E \u0445\u043B\u043E\u0440\u0430 (\u043E\u0431\u044B\u0447\u043D\u043E \u0432 \u0441\u0432\u044F\u0437\u043A\u0435 \u0441 \u0441\u0438\u0441\u0442\u0435\u043C\u043E\u0439 \u043E\u0431\u0435\u0437\u0437\u0430\u0440\u0430\u0436\u0438\u0432\u0430\u043D\u0438\u044F \u0445\u043B\u043E\u0440\u0441\u043E\u0434\u0435\u0440\u0436\u0430\u0449\u0438\u043C\u0438 \u0432\u0435\u0449\u0435\u0441\u0442\u0432\u0430\u043C\u0438).'
-                                        )
-                                    ),
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        'p',
-                                        { className: 'paragraph-text blue' },
-                                        '\u041F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0438\u0442\u0435\u043B\u044C\u043D\u043E\u0441\u0442\u044C \u043E\u0434\u043D\u043E\u0433\u043E \u0444\u0438\u043B\u044C\u0442\u0440\u0430 \u043E\u0442 1 \u0434\u043E 100 \u043C',
+                                        ' \u0434\u043E 10 \u043A\u0433/\u0441\u043C',
                                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                             'sup',
                                             null,
-                                            '3'
+                                            '2'
                                         ),
-                                        '/\u0447'
+                                        '\u0422.\u043A. \u043A\u043E\u043C\u043F\u043E\u0437\u0438\u0442\u043D\u044B\u0435 \u0444\u0438\u043B\u044C\u0442\u0440\u044B \u0440\u0430\u0431\u043E\u0442\u0430\u044E\u0442 \u043F\u0440\u0438 \u0442\u0435\u043C\u043F\u0435\u0440\u0430\u0442\u0443\u0440\u0430\u0445 \u0434\u043E 400\u0421, \u0442\u043E \u043F\u0440\u043E\u043F\u0430\u0440\u0438\u0432\u0430\u043D\u0438\u0435 \u0443\u0433\u043B\u044F \u043D\u0435\u0432\u043E\u0437\u043C\u043E\u0436\u043D\u043E. \u0418 \u043F\u0440\u0438 \u043D\u0430\u043B\u0438\u0447\u0438\u0438 \u0432 \u0432\u043E\u0434\u0435 \u0431\u043E\u043B\u044C\u0448\u043E\u0433\u043E \u043A\u043E\u043B\u0438\u0447\u0435\u0441\u0442\u0432\u0430 \u043E\u0440\u0433\u0430\u043D\u0438\u043A\u0438 \u043F\u0440\u0438\u0434\u0435\u0442\u0441\u044F \u0447\u0430\u0441\u0442\u043E \u043C\u0435\u043D\u044F\u0442\u044C \u0443\u0433\u043E\u043B\u044C, \u0447\u0442\u043E \u044D\u043A\u043E\u043D\u043E\u043C\u0438\u0447\u0435\u0441\u043A\u0438 \u043D\u0435\u044D\u0444\u0444\u0435\u043A\u0442\u0438\u0432\u043D\u043E.'
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'li',
+                                        null,
+                                        '\u041D\u0435\u0440\u0436\u0430\u0432\u0435\u044E\u0449\u0438\u0435 D 1800 \u2013 2500 \u043C\u043C, P\u0440\u0430\u0431 \u0434\u043E 16 \u043A\u0433/\u0441\u043C',
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                            'sup',
+                                            null,
+                                            '2'
+                                        ),
+                                        '.'
+                                    )
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'div',
+                                    { className: 'unordered-list-header' },
+                                    '\u0412\u0438\u0434\u044B \u0438\u0441\u043F\u043E\u043B\u043D\u0435\u043D\u0438\u044F \u043F\u043E \u0430\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0437\u0430\u0446\u0438\u0438:'
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'ul',
+                                    { className: 'unordered-list' },
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'li',
+                                        null,
+                                        '\u0430\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0447\u0435\u0441\u043A\u043E\u0435, \u0441 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u0435\u043C \u0443\u043D\u0438\u0432\u0435\u0440\u0441\u0430\u043B\u044C\u043D\u044B\u0445 \u0443\u043F\u0440\u0430\u0432\u043B\u044F\u044E\u0449\u0438\u0445 \u043A\u043B\u0430\u043F\u0430\u043D\u043E\u0432 \u0442\u0438\u043F\u0430 Clack, Fleck, RX \u0438 \u043F\u0440.'
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'li',
+                                        null,
+                                        '\u0430\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0447\u0435\u0441\u043A\u043E\u0435, \u0441 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u0435\u043C \u0441\u0438\u0441\u0442\u0435\u043C\u044B \u0443\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u044F\u043D\u0430 \u0431\u0430\u0437\u0435 \u043F\u0440\u043E\u043C\u044B\u0448\u043B\u0435\u043D\u043D\u043E\u0433\u043E \u043A\u043E\u043D\u0442\u0440\u043E\u043B\u043B\u0435\u0440\u0430 Siemens \u043B\u0438\u0431\u043E \u0430\u043D\u0430\u043B\u043E\u0433\u043E\u0432.'
+                                    )
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'div',
+                                    { className: 'unordered-list-header' },
+                                    '\u041F\u0420\u0415\u0418\u041C\u0423\u0429\u0415\u0421\u0422\u0412\u0410:'
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'ul',
+                                    { className: 'unordered-list' },
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'li',
+                                        null,
+                                        '\u0433\u0438\u0431\u043A\u043E\u0441\u0442\u044C \u043A\u043E\u043D\u0444\u0438\u0433\u0443\u0440\u0430\u0446\u0438\u0438, \u043B\u044E\u0431\u0430\u044F \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0438\u0442\u0435\u043B\u044C\u043D\u043E\u0441\u0442\u044C \u0441\u0438\u0441\u0442\u0435\u043C\u044B \u0444\u0438\u043B\u044C\u0442\u0440\u0430\u0446\u0438\u0438'
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'li',
+                                        null,
+                                        '\u0432\u044B\u0441\u043E\u043A\u0430\u044F \u0435\u043C\u043A\u043E\u0441\u0442\u044C \u0438 \u044D\u0444\u0444\u0435\u043A\u0442\u0438\u0432\u043D\u043E\u0441\u0442\u044C \u043A\u043E\u043A\u043E\u0441\u043E\u0432\u043E\u0433\u043E \u0443\u0433\u043B\u044F'
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'li',
+                                        null,
+                                        '\u043F\u0440\u043E\u0441\u0442\u043E\u0442\u0430, \u043D\u0430\u0434\u0435\u0436\u043D\u043E\u0441\u0442\u044C \u0438 \u0434\u043E\u043B\u0433\u043E\u0432\u0435\u0447\u043D\u043E\u0441\u0442\u044C \u043E\u0431\u043E\u0440\u0443\u0434\u043E\u0432\u0430\u043D\u0438\u044F'
                                     )
                                 )
                             ),
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                 'div',
-                                { className: 'unordered-list-header' },
-                                '\u041A\u043E\u0440\u043F\u0443\u0441\u0430 \u0444\u0438\u043B\u044C\u0442\u0440\u043E\u0432:'
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'ul',
-                                { className: 'unordered-list' },
+                                { id: 'softening', className: 'technologies-section' },
                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u041A\u043E\u043C\u043F\u043E\u0437\u0438\u0442\u043D\u044B\u0435, D 200 \u2013 1600 \u043C\u043C, P',
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        'sub',
-                                        null,
-                                        '\u0440\u0430\u0431'
-                                    ),
-                                    ' \u0434\u043E 10 \u043A\u0433/\u0441\u043C',
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        'sup',
-                                        null,
-                                        '2'
-                                    ),
-                                    '\u0422.\u043A. \u043A\u043E\u043C\u043F\u043E\u0437\u0438\u0442\u043D\u044B\u0435 \u0444\u0438\u043B\u044C\u0442\u0440\u044B \u0440\u0430\u0431\u043E\u0442\u0430\u044E\u0442 \u043F\u0440\u0438 \u0442\u0435\u043C\u043F\u0435\u0440\u0430\u0442\u0443\u0440\u0430\u0445 \u0434\u043E 400\u0421, \u0442\u043E \u043F\u0440\u043E\u043F\u0430\u0440\u0438\u0432\u0430\u043D\u0438\u0435 \u0443\u0433\u043B\u044F \u043D\u0435\u0432\u043E\u0437\u043C\u043E\u0436\u043D\u043E. \u0418 \u043F\u0440\u0438 \u043D\u0430\u043B\u0438\u0447\u0438\u0438 \u0432 \u0432\u043E\u0434\u0435 \u0431\u043E\u043B\u044C\u0448\u043E\u0433\u043E \u043A\u043E\u043B\u0438\u0447\u0435\u0441\u0442\u0432\u0430 \u043E\u0440\u0433\u0430\u043D\u0438\u043A\u0438 \u043F\u0440\u0438\u0434\u0435\u0442\u0441\u044F \u0447\u0430\u0441\u0442\u043E \u043C\u0435\u043D\u044F\u0442\u044C \u0443\u0433\u043E\u043B\u044C, \u0447\u0442\u043E \u044D\u043A\u043E\u043D\u043E\u043C\u0438\u0447\u0435\u0441\u043A\u0438 \u043D\u0435\u044D\u0444\u0444\u0435\u043A\u0442\u0438\u0432\u043D\u043E.'
+                                    'h2',
+                                    { className: 'tech_category_title' },
+                                    '\u0423\u043C\u044F\u0433\u0447\u0435\u043D\u0438\u0435 (Na \u2013 \u043A\u0430\u0442\u0438\u043E\u043D\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435)'
                                 ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u041D\u0435\u0440\u0436\u0430\u0432\u0435\u044E\u0449\u0438\u0435 D 1800 \u2013 2500 \u043C\u043C, P\u0440\u0430\u0431 \u0434\u043E 16 \u043A\u0433/\u0441\u043C',
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        'sup',
-                                        null,
-                                        '2'
-                                    ),
-                                    '.'
-                                )
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { className: 'unordered-list-header' },
-                                '\u0412\u0438\u0434\u044B \u0438\u0441\u043F\u043E\u043B\u043D\u0435\u043D\u0438\u044F \u043F\u043E \u0430\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0437\u0430\u0446\u0438\u0438:'
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'ul',
-                                { className: 'unordered-list' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u0430\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0447\u0435\u0441\u043A\u043E\u0435, \u0441 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u0435\u043C \u0443\u043D\u0438\u0432\u0435\u0440\u0441\u0430\u043B\u044C\u043D\u044B\u0445 \u0443\u043F\u0440\u0430\u0432\u043B\u044F\u044E\u0449\u0438\u0445 \u043A\u043B\u0430\u043F\u0430\u043D\u043E\u0432 \u0442\u0438\u043F\u0430 Clack, Fleck, RX \u0438 \u043F\u0440.'
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u0430\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0447\u0435\u0441\u043A\u043E\u0435, \u0441 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u0435\u043C \u0441\u0438\u0441\u0442\u0435\u043C\u044B \u0443\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u044F\u043D\u0430 \u0431\u0430\u0437\u0435 \u043F\u0440\u043E\u043C\u044B\u0448\u043B\u0435\u043D\u043D\u043E\u0433\u043E \u043A\u043E\u043D\u0442\u0440\u043E\u043B\u043B\u0435\u0440\u0430 Siemens \u043B\u0438\u0431\u043E \u0430\u043D\u0430\u043B\u043E\u0433\u043E\u0432.'
-                                )
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { className: 'unordered-list-header' },
-                                '\u041F\u0420\u0415\u0418\u041C\u0423\u0429\u0415\u0421\u0422\u0412\u0410:'
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'ul',
-                                { className: 'unordered-list' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u0433\u0438\u0431\u043A\u043E\u0441\u0442\u044C \u043A\u043E\u043D\u0444\u0438\u0433\u0443\u0440\u0430\u0446\u0438\u0438, \u043B\u044E\u0431\u0430\u044F \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0438\u0442\u0435\u043B\u044C\u043D\u043E\u0441\u0442\u044C \u0441\u0438\u0441\u0442\u0435\u043C\u044B \u0444\u0438\u043B\u044C\u0442\u0440\u0430\u0446\u0438\u0438'
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u0432\u044B\u0441\u043E\u043A\u0430\u044F \u0435\u043C\u043A\u043E\u0441\u0442\u044C \u0438 \u044D\u0444\u0444\u0435\u043A\u0442\u0438\u0432\u043D\u043E\u0441\u0442\u044C \u043A\u043E\u043A\u043E\u0441\u043E\u0432\u043E\u0433\u043E \u0443\u0433\u043B\u044F'
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u043F\u0440\u043E\u0441\u0442\u043E\u0442\u0430, \u043D\u0430\u0434\u0435\u0436\u043D\u043E\u0441\u0442\u044C \u0438 \u0434\u043E\u043B\u0433\u043E\u0432\u0435\u0447\u043D\u043E\u0441\u0442\u044C \u043E\u0431\u043E\u0440\u0443\u0434\u043E\u0432\u0430\u043D\u0438\u044F'
-                                )
-                            )
-                        ),
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'div',
-                            { id: 'softening', className: 'technologies-section' },
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'h2',
-                                { className: 'tech_category_title' },
-                                '\u0423\u043C\u044F\u0433\u0447\u0435\u043D\u0438\u0435 (Na \u2013 \u043A\u0430\u0442\u0438\u043E\u043D\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435)'
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { className: 'row' },
                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                     'div',
-                                    { className: 'col-sm-9 col-xs-7 vcenter' },
+                                    { className: 'row' },
                                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        'p',
-                                        { className: 'paragraph-text blue' },
-                                        '\u0421\u0435\u0440\u0438\u044F \u0444\u0438\u043B\u044C\u0442\u0440\u043E\u0432 WET-NA \u043F\u0440\u0435\u0434\u043D\u0430\u0437\u043D\u0430\u0447\u0435\u043D\u0430 \u0434\u043B\u044F \u0443\u043C\u044F\u0433\u0447\u0435\u043D\u0438\u044F \u0432\u043E\u0434\u044B \u2013 \u0443\u0434\u0430\u043B\u0435\u043D\u0438\u044F \u0438\u043E\u043D\u043E\u0432 \u043A\u0430\u043B\u044C\u0446\u0438\u044F \u0438 \u043C\u0430\u0433\u043D\u0438\u044F \u043F\u0443\u0442\u0435\u043C \u0438\u043E\u043D\u043D\u043E\u0433\u043E \u043E\u0431\u043C\u0435\u043D\u0430.'
-                                    ),
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        'p',
-                                        { className: 'paragraph-text blue' },
-                                        '\u041F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0438\u0442\u0435\u043B\u044C\u043D\u043E\u0441\u0442\u044C \u043E\u0434\u043D\u043E\u0433\u043E \u0444\u0438\u043B\u044C\u0442\u0440\u0430 \u043E\u0442 1 \u0434\u043E 250 \u043C3/\u0447'
+                                        'div',
+                                        { className: 'col-sm-9 col-xs-7 vcenter' },
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                            'p',
+                                            { className: 'paragraph-text blue' },
+                                            '\u0421\u0435\u0440\u0438\u044F \u0444\u0438\u043B\u044C\u0442\u0440\u043E\u0432 WET-NA \u043F\u0440\u0435\u0434\u043D\u0430\u0437\u043D\u0430\u0447\u0435\u043D\u0430 \u0434\u043B\u044F \u0443\u043C\u044F\u0433\u0447\u0435\u043D\u0438\u044F \u0432\u043E\u0434\u044B \u2013 \u0443\u0434\u0430\u043B\u0435\u043D\u0438\u044F \u0438\u043E\u043D\u043E\u0432 \u043A\u0430\u043B\u044C\u0446\u0438\u044F \u0438 \u043C\u0430\u0433\u043D\u0438\u044F \u043F\u0443\u0442\u0435\u043C \u0438\u043E\u043D\u043D\u043E\u0433\u043E \u043E\u0431\u043C\u0435\u043D\u0430.'
+                                        ),
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                            'p',
+                                            { className: 'paragraph-text blue' },
+                                            '\u041F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0438\u0442\u0435\u043B\u044C\u043D\u043E\u0441\u0442\u044C \u043E\u0434\u043D\u043E\u0433\u043E \u0444\u0438\u043B\u044C\u0442\u0440\u0430 \u043E\u0442 1 \u0434\u043E 250 \u043C',
+                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                'sup',
+                                                null,
+                                                '3'
+                                            ),
+                                            '/\u0447'
+                                        ),
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                            'div',
+                                            { className: 'unordered-list-header' },
+                                            '\u041A\u043E\u0440\u043F\u0443\u0441\u0430 \u0444\u0438\u043B\u044C\u0442\u0440\u043E\u0432:'
+                                        ),
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                            'ul',
+                                            { className: 'unordered-list' },
+                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                'li',
+                                                null,
+                                                '\u041A\u043E\u043C\u043F\u043E\u0437\u0438\u0442\u043D\u044B\u0435, D 200 \u2013 1600 \u043C\u043C, P',
+                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                    'sub',
+                                                    null,
+                                                    '\u0440\u0430\u0431'
+                                                ),
+                                                ' \u0434\u043E 10 \u043A\u0433/\u0441\u043C',
+                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                    'sup',
+                                                    null,
+                                                    '2'
+                                                )
+                                            ),
+                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                'li',
+                                                null,
+                                                '\u041C\u0435\u0442\u0430\u043B\u043B\u0438\u0447\u0435\u0441\u043A\u0438\u0435 \u0441 \u0430\u043D\u0442\u0438\u043A\u043E\u0440\u0440\u043E\u0437\u0438\u043E\u043D\u043D\u044B\u043C  \u043F\u043E\u043A\u0440\u044B\u0442\u0438\u0435\u043C, D 1800 \u2013 3600 \u043C\u043C, P',
+                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                    'sub',
+                                                    null,
+                                                    '\u0440\u0430\u0431'
+                                                ),
+                                                ' \u0434\u043E 16 \u043A\u0433/\u0441\u043C',
+                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                    'sup',
+                                                    null,
+                                                    '2'
+                                                )
+                                            )
+                                        )
                                     ),
                                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                         'div',
-                                        { className: 'unordered-list-header' },
-                                        '\u041A\u043E\u0440\u043F\u0443\u0441\u0430 \u0444\u0438\u043B\u044C\u0442\u0440\u043E\u0432:'
+                                        { className: 'col-sm-3 col-xs-5 vcenter' },
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_1_path___default.a.join(__dirname, './imgs/technologies/softening_1.png'), className: 'img-responsive' })
+                                    )
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'div',
+                                    { className: 'unordered-list-header' },
+                                    '\u0412\u0438\u0434\u044B \u0438\u0441\u043F\u043E\u043B\u043D\u0435\u043D\u0438\u044F \u043F\u043E \u0430\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0437\u0430\u0446\u0438\u0438 :'
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'ul',
+                                    { className: 'unordered-list' },
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'li',
+                                        null,
+                                        '\u0430\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0447\u0435\u0441\u043A\u043E\u0435, \u0441 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u0435\u043C \u0443\u043D\u0438\u0432\u0435\u0440\u0441\u0430\u043B\u044C\u043D\u044B\u0445 \u0443\u043F\u0440\u0430\u0432\u043B\u044F\u044E\u0449\u0438\u0445 \u043A\u043B\u0430\u043F\u0430\u043D\u043E\u0432 \u0442\u0438\u043F\u0430 Clack, Fleck, RX \u0438 \u043F\u0440.'
                                     ),
                                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        'ul',
-                                        { className: 'unordered-list' },
+                                        'li',
+                                        null,
+                                        '\u0430\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0447\u0435\u0441\u043A\u043E\u0435, \u0441 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u0435\u043C \u0441\u0438\u0441\u0442\u0435\u043C\u044B \u0443\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u044F \u043D\u0430 \u0431\u0430\u0437\u0435 \u043F\u0440\u043E\u043C\u044B\u0448\u043B\u0435\u043D\u043D\u043E\u0433\u043E \u043A\u043E\u043D\u0442\u0440\u043E\u043B\u043B\u0435\u0440\u0430 Siemens \u043B\u0438\u0431\u043E \u0430\u043D\u0430\u043B\u043E\u0433\u043E\u0432.'
+                                    )
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'div',
+                                    { className: 'unordered-list-header' },
+                                    '\u041F\u0440\u0438\u043C\u0435\u043D\u044F\u044E\u0442\u0441\u044F:'
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'ul',
+                                    { className: 'unordered-list' },
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'li',
+                                        null,
+                                        '\u0432 \u043F\u043E\u0434\u0433\u043E\u0442\u043E\u0432\u043A\u0435 \u0432\u043E\u0434\u044B \u0434\u043B\u044F \u043A\u043E\u0442\u043B\u0430 (\u043E\u0434\u043D\u043E- \u0438 \u0434\u0432\u0443\u0445\u0441\u0442\u0443\u043F\u0435\u043D\u0447\u0430\u0442\u044B\u0435 \u0441\u0445\u0435\u043C\u044B)'
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'li',
+                                        null,
+                                        '\u0432 \u043F\u043E\u0434\u0433\u043E\u0442\u043E\u0432\u043A\u0435 \u043F\u043E\u0434\u043F\u0438\u0442\u043E\u0447\u043D\u043E\u0439 \u0432\u043E\u0434\u044B \u0434\u043B\u044F \u043E\u0431\u043E\u0440\u043E\u0442\u043D\u044B\u0445 \u043E\u0445\u043B\u0430\u0434\u0438\u0442\u0435\u043B\u044C\u043D\u044B\u0445 \u0441\u0438\u0441\u0442\u0435\u043C'
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'li',
+                                        null,
+                                        '\u043F\u0435\u0440\u0435\u0434 \u0443\u0441\u0442\u0430\u043D\u043E\u0432\u043A\u0430\u043C\u0438 \u043E\u0431\u0440\u0430\u0442\u043D\u043E\u0433\u043E \u043E\u0441\u043C\u043E\u0441\u0430 \u0434\u043B\u044F \u043F\u0440\u043E\u0434\u043B\u0435\u043D\u0438\u044F \u0441\u0440\u043E\u043A\u0430 \u0441\u043B\u0443\u0436\u0431\u044B \u043C\u0435\u043C\u0431\u0440\u0430\u043D'
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'li',
+                                        null,
+                                        '\u0434\u043B\u044F \u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0439, \u0433\u0434\u0435 \u0442\u0440\u0435\u0431\u0443\u0435\u0442\u0441\u044F \u043F\u043E\u043B\u043D\u043E\u0435 \u0438\u043B\u0438 \u0447\u0430\u0441\u0442\u0438\u0447\u043D\u043E\u0435 \u0443\u043C\u044F\u0433\u0447\u0435\u043D\u0438\u0435 \u0432\u043E\u0434\u044B \u043D\u0430\u043F\u0438\u0442\u043A\u0438, \u043F\u0440\u043E\u0434\u0443\u043A\u0442\u044B \u043F\u0438\u0442\u0430\u043D\u0438\u044F, \u043E\u043A\u0440\u0430\u0448\u0438\u0432\u0430\u043D\u0438\u0435 \u0442\u043A\u0430\u043D\u0435\u0439 \u0438 \u043F\u0440.)'
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'li',
+                                        null,
+                                        '\u0434\u043B\u044F \u044D\u043A\u043E\u043D\u043E\u043C\u0438\u0438 \u043C\u043E\u044E\u0449\u0438\u0445 \u0441\u0440\u0435\u0434\u0441\u0442\u0432 (\u0431\u0443\u0442\u044B\u043B\u043E\u043C\u043E\u0439\u043A\u0438, \u0441\u0438\u0441\u0442\u0435\u043C\u044B CIP)'
+                                    )
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'div',
+                                    { className: 'unordered-list-header' },
+                                    '\u041F\u0420\u0415\u0418\u041C\u0423\u0429\u0415\u0421\u0422\u0412\u0410:'
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'ul',
+                                    { className: 'unordered-list' },
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'li',
+                                        null,
+                                        '\u0433\u0438\u0431\u043A\u043E\u0441\u0442\u044C \u043A\u043E\u043D\u0444\u0438\u0433\u0443\u0440\u0430\u0446\u0438\u0438, \u043B\u044E\u0431\u0430\u044F \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0438\u0442\u0435\u043B\u044C\u043D\u043E\u0441\u0442\u044C \u0441\u0438\u0441\u0442\u0435\u043C\u044B \u0443\u043C\u044F\u0433\u0447\u0435\u043D\u0438\u044F'
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'li',
+                                        null,
+                                        '\u0432\u043E\u0437\u043C\u043E\u0436\u043D\u043E\u0441\u0442\u044C \u043F\u043E\u043B\u0443\u0447\u0435\u043D\u0438\u044F \u043B\u044E\u0431\u043E\u0439 \u0436\u0435\u0441\u0442\u043A\u043E\u0441\u0442\u0438 \u0432 \u0434\u0438\u0430\u043F\u0430\u0437\u043E\u043D\u0435 \u043E\u0442 \u0438\u0441\u0445\u043E\u0434\u043D\u043E\u0439 \u0434\u043E 0'
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'li',
+                                        null,
+                                        '\u0432\u044B\u0441\u043E\u043A\u0430\u044F \u044D\u0444\u0444\u0435\u043A\u0442\u0438\u0432\u043D\u043E\u0441\u0442\u044C \u0443\u043C\u044F\u0433\u0447\u0435\u043D\u0438\u044F \u0432\u043E\u0434\u044B \u0437\u0430 \u0441\u0447\u0435\u0442 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u044F \u043A\u0430\u0442\u0438\u043E\u043D\u0438\u0442\u043E\u0432 \u0431\u043E\u043B\u044C\u0448\u043E\u0439 \u0435\u043C\u043A\u043E\u0441\u0442\u0438'
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'li',
+                                        null,
+                                        '\u043F\u043E\u043B\u043D\u0430\u044F \u0430\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0437\u0430\u0446\u0438\u044F \u043D\u0430\u0440\u044F\u0434\u0443 \u0441 \u043F\u0440\u043E\u0441\u0442\u043E\u0442\u043E\u0439 \u0443\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u044F'
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'li',
+                                        null,
+                                        '\u043D\u0438\u0437\u043A\u0438\u0435 \u044D\u043A\u0441\u043F\u043B\u0443\u0430\u0442\u0430\u0446\u0438\u043E\u043D\u043D\u044B\u0435 \u0440\u0430\u0441\u0445\u043E\u0434\u044B'
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'li',
+                                        null,
+                                        '\u043D\u0430\u0434\u0435\u0436\u043D\u043E\u0441\u0442\u044C \u0438 \u0434\u043E\u043B\u0433\u043E\u0432\u0435\u0447\u043D\u043E\u0441\u0442\u044C \u043E\u0431\u043E\u0440\u0443\u0434\u043E\u0432\u0430\u043D\u0438\u044F'
+                                    )
+                                )
+                            ),
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                'div',
+                                { id: 'decarbonization', className: 'technologies-section' },
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'h2',
+                                    { className: 'tech_category_title' },
+                                    '\u0414\u0435\u043A\u0430\u0440\u0431\u043E\u043D\u0438\u0437\u0430\u0446\u0438\u044F (\u041D \u2013 \u043A\u0430\u0442\u0438\u043E\u043D\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435)'
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'div',
+                                    { className: 'row' },
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'div',
+                                        { className: 'col-sm-3 col-xs-5 vcenter' },
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_1_path___default.a.join(__dirname, './imgs/technologies/decarbonization_1.png'), className: 'img-responsive' })
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'div',
+                                        { className: 'col-sm-9 col-xs-7 vcenter' },
                                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                            'li',
-                                            null,
-                                            '\u041A\u043E\u043C\u043F\u043E\u0437\u0438\u0442\u043D\u044B\u0435, D 200 \u2013 1600 \u043C\u043C, P',
-                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                'sub',
-                                                null,
-                                                '\u0440\u0430\u0431'
-                                            ),
-                                            ' \u0434\u043E 10 \u043A\u0433/\u0441\u043C',
-                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                'sup',
-                                                null,
-                                                '2'
-                                            )
+                                            'p',
+                                            { className: 'paragraph-text blue' },
+                                            '\u0412 \u0434\u0430\u043D\u043D\u043E\u043C \u0441\u043B\u0443\u0447\u0430\u0435 \u0434\u0435\u043A\u0430\u0440\u0431\u043E\u043D\u0438\u0437\u0430\u0446\u0438\u044F \u2013 \u044D\u0442\u043E \u043A\u043E\u043C\u043F\u043B\u0435\u043A\u0441\u043D\u044B\u0439 \u043F\u0440\u043E\u0446\u0435\u0441\u0441 \u0443\u0434\u0430\u043B\u0435\u043D\u0438\u044F \u0438\u0437 \u0432\u043E\u0434\u044B \u0449\u0435\u043B\u043E\u0447\u043D\u043E\u0441\u0442\u0438 (\u0440\u0430\u0437\u043B\u043E\u0436\u0435\u043D\u0438\u0435 \u043D\u0430 \u0443\u0433\u043B\u0435\u043A\u0438\u0441\u043B\u043E\u0442\u0443 \u0421\u041E2 \u0438 \u0432\u043E\u0434\u0443), \u0432\u0440\u0435\u043C\u0435\u043D\u043D\u043E\u0439 \u0436\u0435\u0441\u0442\u043A\u043E\u0441\u0442\u0438 \u0438 \u0437\u0430\u0442\u0435\u043C \u043E\u0442\u0434\u0443\u0432 \u0443\u0433\u043B\u0435\u043A\u0438\u0441\u043B\u043E\u0442\u044B \u043D\u0430 \u0434\u0435\u0433\u0430\u0437\u0430\u0442\u043E\u0440\u0435.'
                                         ),
                                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                            'li',
-                                            null,
-                                            '\u041C\u0435\u0442\u0430\u043B\u043B\u0438\u0447\u0435\u0441\u043A\u0438\u0435 \u0441 \u0430\u043D\u0442\u0438\u043A\u043E\u0440\u0440\u043E\u0437\u0438\u043E\u043D\u043D\u044B\u043C  \u043F\u043E\u043A\u0440\u044B\u0442\u0438\u0435\u043C, D 1800 \u2013 3600 \u043C\u043C, P',
-                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                'sub',
-                                                null,
-                                                '\u0440\u0430\u0431'
-                                            ),
-                                            ' \u0434\u043E 16 \u043A\u0433/\u0441\u043C',
-                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                'sup',
-                                                null,
-                                                '2'
-                                            )
+                                            'p',
+                                            { className: 'paragraph-text blue' },
+                                            '\u0414\u043B\u044F \u044D\u0442\u043E\u0433\u043E \u043C\u044B \u043F\u0440\u0435\u0434\u043B\u0430\u0433\u0430\u0435\u043C \u043D\u0430\u043F\u043E\u0440\u043D\u044B\u0435 \u0444\u0438\u043B\u044C\u0442\u0440\u044B \u0441\u0435\u0440\u0438\u0438 WET-H, \u0437\u0430\u0441\u044B\u043F\u0430\u043D\u043D\u044B\u0435 \u0432\u044B\u0441\u043E\u043A\u043E\u043A\u0430\u0447\u0435\u0441\u0442\u0432\u0435\u043D\u043D\u044B\u043C \u0441\u043B\u0430\u0431\u043E\u043A\u0438\u0441\u043B\u043E\u0442\u043D\u044B\u043C \u043A\u0430\u0442\u0438\u043E\u043D\u0438\u0442\u043E\u043C.'
                                         )
                                     )
                                 ),
                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'div',
-                                    { className: 'col-sm-3 col-xs-5 vcenter' },
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_1_path___default.a.join(__dirname, './imgs/technologies/softening_1.png'), className: 'img-responsive' })
-                                )
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { className: 'unordered-list-header' },
-                                '\u0412\u0438\u0434\u044B \u0438\u0441\u043F\u043E\u043B\u043D\u0435\u043D\u0438\u044F \u043F\u043E \u0430\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0437\u0430\u0446\u0438\u0438 :'
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'ul',
-                                { className: 'unordered-list' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u0430\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0447\u0435\u0441\u043A\u043E\u0435, \u0441 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u0435\u043C \u0443\u043D\u0438\u0432\u0435\u0440\u0441\u0430\u043B\u044C\u043D\u044B\u0445 \u0443\u043F\u0440\u0430\u0432\u043B\u044F\u044E\u0449\u0438\u0445 \u043A\u043B\u0430\u043F\u0430\u043D\u043E\u0432 \u0442\u0438\u043F\u0430 Clack, Fleck, RX \u0438 \u043F\u0440.'
+                                    'p',
+                                    { className: 'paragraph-text blue' },
+                                    '\u0422.\u043A. \u0440\u0435\u0433\u0435\u043D\u0435\u0440\u0430\u0446\u0438\u044F \u043E\u0441\u0443\u0449\u0435\u0441\u0442\u0432\u043B\u044F\u0435\u0442\u0441\u044F \u0440\u0430\u0441\u0442\u0432\u043E\u0440\u043E\u043C \u0441\u043E\u043B\u044F\u043D\u043E\u0439 \u043B\u0438\u0431\u043E \u0441\u0435\u0440\u043D\u043E\u0439 \u043A\u0438\u0441\u043B\u043E\u0442\u044B, \u0442\u043E \u043C\u044B \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0435\u043C \u0443\u0441\u0442\u043E\u0439\u0447\u0438\u0432\u044B\u0435 \u043A \u043A\u0438\u0441\u043B\u043E\u0442\u0435 \u043A\u043E\u043C\u043F\u043E\u0437\u0438\u0442\u043D\u044B\u0435 \u043A\u043E\u0440\u043F\u0443\u0441\u0430.'
                                 ),
                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u0430\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0447\u0435\u0441\u043A\u043E\u0435, \u0441 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u0435\u043C \u0441\u0438\u0441\u0442\u0435\u043C\u044B \u0443\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u044F \u043D\u0430 \u0431\u0430\u0437\u0435 \u043F\u0440\u043E\u043C\u044B\u0448\u043B\u0435\u043D\u043D\u043E\u0433\u043E \u043A\u043E\u043D\u0442\u0440\u043E\u043B\u043B\u0435\u0440\u0430 Siemens \u043B\u0438\u0431\u043E \u0430\u043D\u0430\u043B\u043E\u0433\u043E\u0432.'
-                                )
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { className: 'unordered-list-header' },
-                                '\u041F\u0440\u0438\u043C\u0435\u043D\u044F\u044E\u0442\u0441\u044F:'
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'ul',
-                                { className: 'unordered-list' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u0432 \u043F\u043E\u0434\u0433\u043E\u0442\u043E\u0432\u043A\u0435 \u0432\u043E\u0434\u044B \u0434\u043B\u044F \u043A\u043E\u0442\u043B\u0430 (\u043E\u0434\u043D\u043E- \u0438 \u0434\u0432\u0443\u0445\u0441\u0442\u0443\u043F\u0435\u043D\u0447\u0430\u0442\u044B\u0435 \u0441\u0445\u0435\u043C\u044B)'
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u0432 \u043F\u043E\u0434\u0433\u043E\u0442\u043E\u0432\u043A\u0435 \u043F\u043E\u0434\u043F\u0438\u0442\u043E\u0447\u043D\u043E\u0439 \u0432\u043E\u0434\u044B \u0434\u043B\u044F \u043E\u0431\u043E\u0440\u043E\u0442\u043D\u044B\u0445 \u043E\u0445\u043B\u0430\u0434\u0438\u0442\u0435\u043B\u044C\u043D\u044B\u0445 \u0441\u0438\u0441\u0442\u0435\u043C'
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u043F\u0435\u0440\u0435\u0434 \u0443\u0441\u0442\u0430\u043D\u043E\u0432\u043A\u0430\u043C\u0438 \u043E\u0431\u0440\u0430\u0442\u043D\u043E\u0433\u043E \u043E\u0441\u043C\u043E\u0441\u0430 \u0434\u043B\u044F \u043F\u0440\u043E\u0434\u043B\u0435\u043D\u0438\u044F \u0441\u0440\u043E\u043A\u0430 \u0441\u043B\u0443\u0436\u0431\u044B \u043C\u0435\u043C\u0431\u0440\u0430\u043D'
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u0434\u043B\u044F \u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0439, \u0433\u0434\u0435 \u0442\u0440\u0435\u0431\u0443\u0435\u0442\u0441\u044F \u043F\u043E\u043B\u043D\u043E\u0435 \u0438\u043B\u0438 \u0447\u0430\u0441\u0442\u0438\u0447\u043D\u043E\u0435 \u0443\u043C\u044F\u0433\u0447\u0435\u043D\u0438\u0435 \u0432\u043E\u0434\u044B \u043D\u0430\u043F\u0438\u0442\u043A\u0438, \u043F\u0440\u043E\u0434\u0443\u043A\u0442\u044B \u043F\u0438\u0442\u0430\u043D\u0438\u044F, \u043E\u043A\u0440\u0430\u0448\u0438\u0432\u0430\u043D\u0438\u0435 \u0442\u043A\u0430\u043D\u0435\u0439 \u0438 \u043F\u0440.)'
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u0434\u043B\u044F \u044D\u043A\u043E\u043D\u043E\u043C\u0438\u0438 \u043C\u043E\u044E\u0449\u0438\u0445 \u0441\u0440\u0435\u0434\u0441\u0442\u0432 (\u0431\u0443\u0442\u044B\u043B\u043E\u043C\u043E\u0439\u043A\u0438, \u0441\u0438\u0441\u0442\u0435\u043C\u044B CIP)'
-                                )
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { className: 'unordered-list-header' },
-                                '\u041F\u0420\u0415\u0418\u041C\u0423\u0429\u0415\u0421\u0422\u0412\u0410:'
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'ul',
-                                { className: 'unordered-list' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u0433\u0438\u0431\u043A\u043E\u0441\u0442\u044C \u043A\u043E\u043D\u0444\u0438\u0433\u0443\u0440\u0430\u0446\u0438\u0438, \u043B\u044E\u0431\u0430\u044F \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0438\u0442\u0435\u043B\u044C\u043D\u043E\u0441\u0442\u044C \u0441\u0438\u0441\u0442\u0435\u043C\u044B \u0443\u043C\u044F\u0433\u0447\u0435\u043D\u0438\u044F'
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u0432\u043E\u0437\u043C\u043E\u0436\u043D\u043E\u0441\u0442\u044C \u043F\u043E\u043B\u0443\u0447\u0435\u043D\u0438\u044F \u043B\u044E\u0431\u043E\u0439 \u0436\u0435\u0441\u0442\u043A\u043E\u0441\u0442\u0438 \u0432 \u0434\u0438\u0430\u043F\u0430\u0437\u043E\u043D\u0435 \u043E\u0442 \u0438\u0441\u0445\u043E\u0434\u043D\u043E\u0439 \u0434\u043E 0'
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u0432\u044B\u0441\u043E\u043A\u0430\u044F \u044D\u0444\u0444\u0435\u043A\u0442\u0438\u0432\u043D\u043E\u0441\u0442\u044C \u0443\u043C\u044F\u0433\u0447\u0435\u043D\u0438\u044F \u0432\u043E\u0434\u044B \u0437\u0430 \u0441\u0447\u0435\u0442 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u044F \u043A\u0430\u0442\u0438\u043E\u043D\u0438\u0442\u043E\u0432 \u0431\u043E\u043B\u044C\u0448\u043E\u0439 \u0435\u043C\u043A\u043E\u0441\u0442\u0438'
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u043F\u043E\u043B\u043D\u0430\u044F \u0430\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0437\u0430\u0446\u0438\u044F \u043D\u0430\u0440\u044F\u0434\u0443 \u0441 \u043F\u0440\u043E\u0441\u0442\u043E\u0442\u043E\u0439 \u0443\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u044F'
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u043D\u0438\u0437\u043A\u0438\u0435 \u044D\u043A\u0441\u043F\u043B\u0443\u0430\u0442\u0430\u0446\u0438\u043E\u043D\u043D\u044B\u0435 \u0440\u0430\u0441\u0445\u043E\u0434\u044B'
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u043D\u0430\u0434\u0435\u0436\u043D\u043E\u0441\u0442\u044C \u0438 \u0434\u043E\u043B\u0433\u043E\u0432\u0435\u0447\u043D\u043E\u0441\u0442\u044C \u043E\u0431\u043E\u0440\u0443\u0434\u043E\u0432\u0430\u043D\u0438\u044F'
-                                )
-                            )
-                        ),
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'div',
-                            { id: 'decarbonization', className: 'technologies-section' },
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'h2',
-                                { className: 'tech_category_title' },
-                                '\u0414\u0435\u043A\u0430\u0440\u0431\u043E\u043D\u0438\u0437\u0430\u0446\u0438\u044F (\u041D \u2013 \u043A\u0430\u0442\u0438\u043E\u043D\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435)'
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { className: 'row' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'div',
-                                    { className: 'col-sm-3 col-xs-5 vcenter' },
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_1_path___default.a.join(__dirname, './imgs/technologies/decarbonization_1.png'), className: 'img-responsive' })
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'div',
-                                    { className: 'col-sm-9 col-xs-7 vcenter' },
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        'p',
-                                        { className: 'paragraph-text blue' },
-                                        '\u0412 \u0434\u0430\u043D\u043D\u043E\u043C \u0441\u043B\u0443\u0447\u0430\u0435 \u0434\u0435\u043A\u0430\u0440\u0431\u043E\u043D\u0438\u0437\u0430\u0446\u0438\u044F \u2013 \u044D\u0442\u043E \u043A\u043E\u043C\u043F\u043B\u0435\u043A\u0441\u043D\u044B\u0439 \u043F\u0440\u043E\u0446\u0435\u0441\u0441 \u0443\u0434\u0430\u043B\u0435\u043D\u0438\u044F \u0438\u0437 \u0432\u043E\u0434\u044B \u0449\u0435\u043B\u043E\u0447\u043D\u043E\u0441\u0442\u0438 (\u0440\u0430\u0437\u043B\u043E\u0436\u0435\u043D\u0438\u0435 \u043D\u0430 \u0443\u0433\u043B\u0435\u043A\u0438\u0441\u043B\u043E\u0442\u0443 \u0421\u041E2 \u0438 \u0432\u043E\u0434\u0443), \u0432\u0440\u0435\u043C\u0435\u043D\u043D\u043E\u0439 \u0436\u0435\u0441\u0442\u043A\u043E\u0441\u0442\u0438 \u0438 \u0437\u0430\u0442\u0435\u043C \u043E\u0442\u0434\u0443\u0432 \u0443\u0433\u043B\u0435\u043A\u0438\u0441\u043B\u043E\u0442\u044B \u043D\u0430 \u0434\u0435\u0433\u0430\u0437\u0430\u0442\u043E\u0440\u0435.'
-                                    ),
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        'p',
-                                        { className: 'paragraph-text blue' },
-                                        '\u0414\u043B\u044F \u044D\u0442\u043E\u0433\u043E \u043C\u044B \u043F\u0440\u0435\u0434\u043B\u0430\u0433\u0430\u0435\u043C \u043D\u0430\u043F\u043E\u0440\u043D\u044B\u0435 \u0444\u0438\u043B\u044C\u0442\u0440\u044B \u0441\u0435\u0440\u0438\u0438 WET-H, \u0437\u0430\u0441\u044B\u043F\u0430\u043D\u043D\u044B\u0435 \u0432\u044B\u0441\u043E\u043A\u043E\u043A\u0430\u0447\u0435\u0441\u0442\u0432\u0435\u043D\u043D\u044B\u043C \u0441\u043B\u0430\u0431\u043E\u043A\u0438\u0441\u043B\u043E\u0442\u043D\u044B\u043C \u043A\u0430\u0442\u0438\u043E\u043D\u0438\u0442\u043E\u043C.'
-                                    )
-                                )
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'p',
-                                { className: 'paragraph-text blue' },
-                                '\u0422.\u043A. \u0440\u0435\u0433\u0435\u043D\u0435\u0440\u0430\u0446\u0438\u044F \u043E\u0441\u0443\u0449\u0435\u0441\u0442\u0432\u043B\u044F\u0435\u0442\u0441\u044F \u0440\u0430\u0441\u0442\u0432\u043E\u0440\u043E\u043C \u0441\u043E\u043B\u044F\u043D\u043E\u0439 \u043B\u0438\u0431\u043E \u0441\u0435\u0440\u043D\u043E\u0439 \u043A\u0438\u0441\u043B\u043E\u0442\u044B, \u0442\u043E \u043C\u044B \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0435\u043C \u0443\u0441\u0442\u043E\u0439\u0447\u0438\u0432\u044B\u0435 \u043A \u043A\u0438\u0441\u043B\u043E\u0442\u0435 \u043A\u043E\u043C\u043F\u043E\u0437\u0438\u0442\u043D\u044B\u0435 \u043A\u043E\u0440\u043F\u0443\u0441\u0430.'
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'p',
-                                { className: 'paragraph-text blue' },
-                                '\u041F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0438\u0442\u0435\u043B\u044C\u043D\u043E\u0441\u0442\u044C \u043E\u0434\u043D\u043E\u0433\u043E \u0444\u0438\u043B\u044C\u0442\u0440\u0430 \u043E\u0442 1 \u0434\u043E 50 \u043C',
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'sup',
-                                    null,
-                                    '3'
-                                ),
-                                '/\u0447'
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { className: 'unordered-list-header' },
-                                '\u041A\u043E\u0440\u043F\u0443\u0441\u0430 \u0444\u0438\u043B\u044C\u0442\u0440\u043E\u0432:'
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'ul',
-                                { className: 'unordered-list' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u041A\u043E\u043C\u043F\u043E\u0437\u0438\u0442\u043D\u044B\u0435, D 200 \u2013 1600 \u043C\u043C, P',
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        'sub',
-                                        null,
-                                        '\u0440\u0430\u0431'
-                                    ),
-                                    ' \u0434\u043E 10 \u043A\u0433/\u0441\u043C',
+                                    'p',
+                                    { className: 'paragraph-text blue' },
+                                    '\u041F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0438\u0442\u0435\u043B\u044C\u043D\u043E\u0441\u0442\u044C \u043E\u0434\u043D\u043E\u0433\u043E \u0444\u0438\u043B\u044C\u0442\u0440\u0430 \u043E\u0442 1 \u0434\u043E 50 \u043C',
                                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                         'sup',
                                         null,
-                                        '2'
+                                        '3'
+                                    ),
+                                    '/\u0447'
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'div',
+                                    { className: 'unordered-list-header' },
+                                    '\u041A\u043E\u0440\u043F\u0443\u0441\u0430 \u0444\u0438\u043B\u044C\u0442\u0440\u043E\u0432:'
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'ul',
+                                    { className: 'unordered-list' },
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'li',
+                                        null,
+                                        '\u041A\u043E\u043C\u043F\u043E\u0437\u0438\u0442\u043D\u044B\u0435, D 200 \u2013 1600 \u043C\u043C, P',
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                            'sub',
+                                            null,
+                                            '\u0440\u0430\u0431'
+                                        ),
+                                        ' \u0434\u043E 10 \u043A\u0433/\u0441\u043C',
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                            'sup',
+                                            null,
+                                            '2'
+                                        )
+                                    )
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'p',
+                                    { className: 'paragraph-text blue' },
+                                    '\u0414\u0435\u0433\u0430\u0437\u0430\u0442\u043E\u0440 \u2013 \u043F\u043E\u043B\u0438\u043F\u0440\u043E\u043F\u0438\u043B\u0435\u043D, \u043A\u043E\u043B\u044C\u0446\u0430 \u0420\u0430\u0448\u0438\u0433\u0430 \u2013 \u043F\u043E\u043B\u0438\u043F\u0440\u043E\u043F\u0438\u043B\u0435\u043D / \u043A\u0435\u0440\u0430\u043C\u0438\u043A\u0430.'
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'div',
+                                    { className: 'unordered-list-header' },
+                                    '\u0412\u0438\u0434\u044B \u0438\u0441\u043F\u043E\u043B\u043D\u0435\u043D\u0438\u044F \u043F\u043E \u0430\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0437\u0430\u0446\u0438\u0438:'
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'ul',
+                                    { className: 'unordered-list' },
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'li',
+                                        null,
+                                        '\u0430\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0447\u0435\u0441\u043A\u043E\u0435, \u0441 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u0435\u043C \u0443\u043D\u0438\u0432\u0435\u0440\u0441\u0430\u043B\u044C\u043D\u044B\u0445 \u0443\u043F\u0440\u0430\u0432\u043B\u044F\u044E\u0449\u0438\u0445 \u043A\u043B\u0430\u043F\u0430\u043D\u043E\u0432 \u0442\u0438\u043F\u0430 Siata'
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'li',
+                                        null,
+                                        '\u0430\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0447\u0435\u0441\u043A\u043E\u0435, \u0441 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u0435\u043C \u0441\u0438\u0441\u0442\u0435\u043C\u044B \u0443\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u044F\u043D\u0430 \u0431\u0430\u0437\u0435 \u043F\u0440\u043E\u043C\u044B\u0448\u043B\u0435\u043D\u043D\u043E\u0433\u043E \u043A\u043E\u043D\u0442\u0440\u043E\u043B\u043B\u0435\u0440\u0430 Siemens \u043B\u0438\u0431\u043E \u0430\u043D\u0430\u043B\u043E\u0433\u043E\u0432.'
+                                    )
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'div',
+                                    { className: 'row' },
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'div',
+                                        { className: 'col-sm-9 col-xs-7 vcenter' },
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                            'div',
+                                            { className: 'unordered-list-header' },
+                                            '\u041F\u0440\u0438\u043C\u0435\u043D\u044F\u044E\u0442\u0441\u044F:'
+                                        ),
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                            'ul',
+                                            { className: 'unordered-list' },
+                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                'li',
+                                                null,
+                                                '\u0432 \u043F\u0440\u043E\u0446\u0435\u0441\u0441\u0430\u0445, \u0433\u0434\u0435 \u0442\u0440\u0435\u0431\u0443\u0435\u0442\u0441\u044F \u0443\u0434\u0430\u043B\u0435\u043D\u0438\u0435 \u0449\u0435\u043B\u043E\u0447\u043D\u043E\u0441\u0442\u0438 \u0438 \u0447\u0430\u0441\u0442\u0438\u0447\u043D\u043E\u0435 \u0443\u043C\u044F\u0433\u0447\u0435\u043D\u0438\u0435 \u0432\u043E\u0434\u044B:'
+                                            ),
+                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                'li',
+                                                null,
+                                                '\u043F\u0438\u0432\u043E\u0432\u0430\u0440\u0435\u043D\u0438\u0435;'
+                                            ),
+                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                'li',
+                                                null,
+                                                '\u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0441\u0442\u0432\u043E \u0430\u043B\u043A\u043E\u0433\u043E\u043B\u044C\u043D\u044B\u0445, \u0441/\u0430 \u0438 \u0431/\u0430 \u043D\u0430\u043F\u0438\u0442\u043A\u043E\u0432;'
+                                            ),
+                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                'li',
+                                                null,
+                                                '\u0432 \u043F\u043E\u0434\u0433\u043E\u0442\u043E\u0432\u043A\u0435 \u0432\u043E\u0434\u044B \u0434\u043B\u044F \u043A\u043E\u0442\u043B\u0430'
+                                            ),
+                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                'li',
+                                                null,
+                                                '\u0434\u043B\u044F \u043F\u043E\u0434\u0433\u043E\u0442\u043E\u0432\u043A\u0438 \u043F\u0438\u0442\u044C\u0435\u0432\u043E\u0439 \u0432\u043E\u0434\u044B'
+                                            )
+                                        )
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'div',
+                                        { className: 'col-sm-3 col-xs-5 vcenter' },
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_1_path___default.a.join(__dirname, './imgs/technologies/decarbonization_2.png'), className: 'img-responsive' })
+                                    )
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'div',
+                                    { className: 'unordered-list-header' },
+                                    '\u041F\u0440\u0438\u043C\u0435\u043D\u044F\u044E\u0442\u0441\u044F:'
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'ul',
+                                    { className: 'unordered-list' },
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'li',
+                                        null,
+                                        '\u0432 \u043F\u0440\u043E\u0446\u0435\u0441\u0441\u0430\u0445, \u0433\u0434\u0435 \u0442\u0440\u0435\u0431\u0443\u0435\u0442\u0441\u044F \u0443\u0434\u0430\u043B\u0435\u043D\u0438\u0435 \u0449\u0435\u043B\u043E\u0447\u043D\u043E\u0441\u0442\u0438 \u0438 \u0447\u0430\u0441\u0442\u0438\u0447\u043D\u043E\u0435 \u0443\u043C\u044F\u0433\u0447\u0435\u043D\u0438\u0435 \u0432\u043E\u0434\u044B:'
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'li',
+                                        null,
+                                        '\u043F\u0438\u0432\u043E\u0432\u0430\u0440\u0435\u043D\u0438\u0435;'
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'li',
+                                        null,
+                                        '\u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0441\u0442\u0432\u043E \u0430\u043B\u043A\u043E\u0433\u043E\u043B\u044C\u043D\u044B\u0445, \u0441/\u0430 \u0438 \u0431/\u0430 \u043D\u0430\u043F\u0438\u0442\u043A\u043E\u0432;'
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'li',
+                                        null,
+                                        '\u0432 \u043F\u043E\u0434\u0433\u043E\u0442\u043E\u0432\u043A\u0435 \u0432\u043E\u0434\u044B \u0434\u043B\u044F \u043A\u043E\u0442\u043B\u0430'
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'li',
+                                        null,
+                                        '\u0434\u043B\u044F \u043F\u043E\u0434\u0433\u043E\u0442\u043E\u0432\u043A\u0438 \u043F\u0438\u0442\u044C\u0435\u0432\u043E\u0439 \u0432\u043E\u0434\u044B'
+                                    )
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'div',
+                                    { className: 'unordered-list-header' },
+                                    '\u041F\u0420\u0415\u0418\u041C\u0423\u0429\u0415\u0421\u0422\u0412\u0410:'
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'ul',
+                                    { className: 'unordered-list' },
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'li',
+                                        null,
+                                        '\u0433\u0438\u0431\u043A\u043E\u0441\u0442\u044C \u043A\u043E\u043D\u0444\u0438\u0433\u0443\u0440\u0430\u0446\u0438\u0438, \u043B\u044E\u0431\u0430\u044F \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0438\u0442\u0435\u043B\u044C\u043D\u043E\u0441\u0442\u044C \u0441\u0438\u0441\u0442\u0435\u043C\u044B \u0434\u0435\u043A\u0430\u0440\u0431\u043E\u043D\u0438\u0437\u0430\u0446\u0438\u0438'
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'li',
+                                        null,
+                                        '\u0432\u044B\u0441\u043E\u043A\u0430\u044F \u044D\u0444\u0444\u0435\u043A\u0442\u0438\u0432\u043D\u043E\u0441\u0442\u044C \u0437\u0430 \u0441\u0447\u0435\u0442 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u044F \u043A\u0430\u0442\u0438\u043E\u043D\u0438\u0442\u043E\u0432 \u0431\u043E\u043B\u044C\u0448\u043E\u0439 \u0435\u043C\u043A\u043E\u0441\u0442\u0438'
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'li',
+                                        null,
+                                        '\u043F\u043E\u043B\u043D\u0430\u044F \u0430\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0437\u0430\u0446\u0438\u044F \u043D\u0430\u0440\u044F\u0434\u0443 \u0441 \u043F\u0440\u043E\u0441\u0442\u043E\u0442\u043E\u0439 \u0443\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u044F'
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'li',
+                                        null,
+                                        '\u043D\u0438\u0437\u043A\u0438\u0435 \u044D\u043A\u0441\u043F\u043B\u0443\u0430\u0442\u0430\u0446\u0438\u043E\u043D\u043D\u044B\u0435 \u0440\u0430\u0441\u0445\u043E\u0434\u044B'
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'li',
+                                        null,
+                                        '\u043D\u0430\u0434\u0435\u0436\u043D\u043E\u0441\u0442\u044C\u0438 \u0434\u043E\u043B\u0433\u043E\u0432\u0435\u0447\u043D\u043E\u0441\u0442\u044C \u043E\u0431\u043E\u0440\u0443\u0434\u043E\u0432\u0430\u043D\u0438\u044F'
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'li',
+                                        null,
+                                        '\u0443\u0434\u043E\u0431\u0441\u0442\u0432\u043E,\u043F\u0440\u043E\u0441\u0442\u043E\u0442\u0430 \u0438 \u0431\u0435\u0437\u043E\u043F\u0430\u0441\u043D\u043E\u0441\u0442\u044C \u043E\u0431\u0441\u043B\u0443\u0436\u0438\u0432\u0430\u043D\u0438\u044F \u043E\u0431\u043E\u0440\u0443\u0434\u043E\u0432\u0430\u043D\u0438\u044F, \u0440\u0430\u0431\u043E\u0442\u0430\u044E\u0449\u0435\u0433\u043E \u0441 \u043A\u0438\u0441\u043B\u043E\u0442\u043E\u0439'
                                     )
                                 )
                             ),
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'p',
-                                { className: 'paragraph-text blue' },
-                                '\u0414\u0435\u0433\u0430\u0437\u0430\u0442\u043E\u0440 \u2013 \u043F\u043E\u043B\u0438\u043F\u0440\u043E\u043F\u0438\u043B\u0435\u043D, \u043A\u043E\u043B\u044C\u0446\u0430 \u0420\u0430\u0448\u0438\u0433\u0430 \u2013 \u043F\u043E\u043B\u0438\u043F\u0440\u043E\u043F\u0438\u043B\u0435\u043D / \u043A\u0435\u0440\u0430\u043C\u0438\u043A\u0430.'
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                 'div',
-                                { className: 'unordered-list-header' },
-                                '\u0412\u0438\u0434\u044B \u0438\u0441\u043F\u043E\u043B\u043D\u0435\u043D\u0438\u044F \u043F\u043E \u0430\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0437\u0430\u0446\u0438\u0438:'
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'ul',
-                                { className: 'unordered-list' },
+                                { id: 'reverse-osmos', className: 'technologies-section' },
                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u0430\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0447\u0435\u0441\u043A\u043E\u0435, \u0441 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u0435\u043C \u0443\u043D\u0438\u0432\u0435\u0440\u0441\u0430\u043B\u044C\u043D\u044B\u0445 \u0443\u043F\u0440\u0430\u0432\u043B\u044F\u044E\u0449\u0438\u0445 \u043A\u043B\u0430\u043F\u0430\u043D\u043E\u0432 \u0442\u0438\u043F\u0430 Siata'
+                                    'h2',
+                                    { className: 'tech_category_title' },
+                                    '\u041E\u0431\u0440\u0430\u0442\u043D\u044B\u0439 \u043E\u0441\u043C\u043E\u0441'
                                 ),
                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u0430\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0447\u0435\u0441\u043A\u043E\u0435, \u0441 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u0435\u043C \u0441\u0438\u0441\u0442\u0435\u043C\u044B \u0443\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u044F\u043D\u0430 \u0431\u0430\u0437\u0435 \u043F\u0440\u043E\u043C\u044B\u0448\u043B\u0435\u043D\u043D\u043E\u0433\u043E \u043A\u043E\u043D\u0442\u0440\u043E\u043B\u043B\u0435\u0440\u0430 Siemens \u043B\u0438\u0431\u043E \u0430\u043D\u0430\u043B\u043E\u0433\u043E\u0432.'
-                                )
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { className: 'row' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                     'div',
-                                    { className: 'col-sm-9 col-xs-7 vcenter' },
+                                    { className: 'row' },
                                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                         'div',
-                                        { className: 'unordered-list-header' },
+                                        { className: 'col-sm-9 col-xs-7 vcenter' },
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                            'p',
+                                            { className: 'paragraph-text blue' },
+                                            '\u0421\u0438\u0441\u0442\u0435\u043C\u044B WET-RO \u043F\u043E\u0437\u0432\u043E\u043B\u044F\u044E\u0442 \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C \u043E\u0431\u0435\u0441\u0441\u043E\u043B\u0435\u043D\u043D\u0443\u044E \u0432\u043E\u0434\u0443 \u0441 \u043F\u043E\u043C\u043E\u0449\u044C\u044E \u043C\u0435\u043C\u0431\u0440\u0430\u043D\u043D\u043E\u0439 \u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043E\u0431\u0440\u0430\u0442\u043D\u043E\u0433\u043E. \u043E\u0441\u043C\u043E\u0441\u0430.'
+                                        ),
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                            'p',
+                                            { className: 'paragraph-text blue' },
+                                            '\u0412 \u043A\u0430\u0447\u0435\u0441\u0442\u0432\u0435 \u0444\u0438\u043B\u044C\u0442\u0440\u0443\u044E\u0449\u0438\u0445 \u044D\u043B\u0435\u043C\u0435\u043D\u0442\u043E\u0432 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u044E\u0442\u0441\u044F \u043C\u0435\u043C\u0431\u0440\u0430\u043D\u044B \u0432\u0435\u0434\u0443\u0449\u0438\u0445 \u043C\u0438\u0440\u043E\u0432\u044B\u0445 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0438\u0442\u0435\u043B\u0435\u0439.'
+                                        ),
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                            'p',
+                                            { className: 'paragraph-text blue' },
+                                            '\u041F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0438\u0442\u0435\u043B\u044C\u043D\u043E\u0441\u0442\u044C \u043E\u0434\u043D\u043E\u0433\u043E \u043C\u043E\u0434\u0443\u043B\u044F \u043E\u0442 1 \u0434\u043E 100 \u043C',
+                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                'sup',
+                                                null,
+                                                '3'
+                                            ),
+                                            '/\u0447'
+                                        )
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'div',
+                                        { className: 'col-sm-3 col-xs-5 vcenter' },
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_1_path___default.a.join(__dirname, './imgs/technologies/osmos_1.png'), className: 'img-responsive' })
+                                    )
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'div',
+                                    { className: 'unordered-list-header' },
+                                    '\u041A\u043E\u0440\u043F\u0443\u0441\u0430:'
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'ul',
+                                    { className: 'unordered-list' },
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'li',
+                                        null,
+                                        '\u041A\u043E\u043C\u043F\u043E\u0437\u0438\u0442\u043D\u044B\u0435, D 8" (end/sideport), 4", 2.5";',
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
+                                        ' \u0427\u0438\u0441\u043B\u043E \u043C\u0435\u043C\u0431\u0440\u0430\u043D: 1-8; P',
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                            'sub',
+                                            null,
+                                            '\u0440\u0430\u0431'
+                                        ),
+                                        ' 16-80 \u0430\u0442\u043C'
+                                    )
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'div',
+                                    { className: 'unordered-list-header' },
+                                    '\u0412\u0438\u0434\u044B \u0438\u0441\u043F\u043E\u043B\u043D\u0435\u043D\u0438\u044F \u043F\u043E \u0430\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0437\u0430\u0446\u0438\u0438:'
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'ul',
+                                    { className: 'unordered-list' },
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'li',
+                                        null,
+                                        '\u0430\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0447\u0435\u0441\u043A\u043E\u0435, \u0441 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u0435\u043C \u0441\u0438\u0441\u0442\u0435\u043C\u044B \u0443\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u044F \u043D\u0430 \u0431\u0430\u0437\u0435 \u043F\u0440\u043E\u043C\u044B\u0448\u043B\u0435\u043D\u043D\u043E\u0433\u043E \u043A\u043E\u043D\u0442\u0440\u043E\u043B\u043B\u0435\u0440\u0430 Siemens \u043B\u0438\u0431\u043E \u0430\u043D\u0430\u043B\u043E\u0433\u043E\u0432.'
+                                    )
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'p',
+                                    { className: 'paragraph-text blue' },
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'b',
+                                        null,
                                         '\u041F\u0440\u0438\u043C\u0435\u043D\u044F\u044E\u0442\u0441\u044F:'
                                     ),
+                                    ' \u0432 \u0441\u0430\u043C\u044B\u0445 \u0440\u0430\u0437\u043D\u044B\u0445 \u0441\u0445\u0435\u043C\u0430\u0445 \u0432\u043E\u0434\u043E\u043F\u043E\u0434\u0433\u043E\u0442\u043E\u0432\u043A\u0438 \u0434\u043B\u044F \u0440\u0430\u0437\u043B\u0438\u0447\u043D\u044B\u0445 \u043E\u0442\u0440\u0430\u0441\u043B\u0435\u0439 \u0438 \u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0439, \u0433\u0434\u0435 \u0442\u0440\u0435\u0431\u0443\u0435\u0442\u0441\u044F \u0447\u0430\u0441\u0442\u0438\u0447\u043D\u043E\u0435 \u0438\u043B\u0438 \u043F\u043E\u043B\u043D\u043E\u0435 \u043E\u0431\u0435\u0441\u0441\u043E\u043B\u0438\u0432\u0430\u043D\u0438\u0435 \u0432\u043E\u0434\u044B, \u0432 \u0442.\u0447.:'
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'ul',
+                                    { className: 'unordered-list' },
                                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        'ul',
-                                        { className: 'unordered-list' },
-                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                            'li',
-                                            null,
-                                            '\u0432 \u043F\u0440\u043E\u0446\u0435\u0441\u0441\u0430\u0445, \u0433\u0434\u0435 \u0442\u0440\u0435\u0431\u0443\u0435\u0442\u0441\u044F \u0443\u0434\u0430\u043B\u0435\u043D\u0438\u0435 \u0449\u0435\u043B\u043E\u0447\u043D\u043E\u0441\u0442\u0438 \u0438 \u0447\u0430\u0441\u0442\u0438\u0447\u043D\u043E\u0435 \u0443\u043C\u044F\u0433\u0447\u0435\u043D\u0438\u0435 \u0432\u043E\u0434\u044B:'
-                                        ),
-                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                            'li',
-                                            null,
-                                            '\u043F\u0438\u0432\u043E\u0432\u0430\u0440\u0435\u043D\u0438\u0435;'
-                                        ),
-                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                            'li',
-                                            null,
-                                            '\u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0441\u0442\u0432\u043E \u0430\u043B\u043A\u043E\u0433\u043E\u043B\u044C\u043D\u044B\u0445, \u0441/\u0430 \u0438 \u0431/\u0430 \u043D\u0430\u043F\u0438\u0442\u043A\u043E\u0432;'
-                                        ),
-                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                            'li',
-                                            null,
-                                            '\u0432 \u043F\u043E\u0434\u0433\u043E\u0442\u043E\u0432\u043A\u0435 \u0432\u043E\u0434\u044B \u0434\u043B\u044F \u043A\u043E\u0442\u043B\u0430'
-                                        ),
-                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                            'li',
-                                            null,
-                                            '\u0434\u043B\u044F \u043F\u043E\u0434\u0433\u043E\u0442\u043E\u0432\u043A\u0438 \u043F\u0438\u0442\u044C\u0435\u0432\u043E\u0439 \u0432\u043E\u0434\u044B'
-                                        )
-                                    )
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'div',
-                                    { className: 'col-sm-3 col-xs-5 vcenter' },
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_1_path___default.a.join(__dirname, './imgs/technologies/decarbonization_2.png'), className: 'img-responsive' })
-                                )
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { className: 'unordered-list-header' },
-                                '\u041F\u0440\u0438\u043C\u0435\u043D\u044F\u044E\u0442\u0441\u044F:'
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'ul',
-                                { className: 'unordered-list' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u0432 \u043F\u0440\u043E\u0446\u0435\u0441\u0441\u0430\u0445, \u0433\u0434\u0435 \u0442\u0440\u0435\u0431\u0443\u0435\u0442\u0441\u044F \u0443\u0434\u0430\u043B\u0435\u043D\u0438\u0435 \u0449\u0435\u043B\u043E\u0447\u043D\u043E\u0441\u0442\u0438 \u0438 \u0447\u0430\u0441\u0442\u0438\u0447\u043D\u043E\u0435 \u0443\u043C\u044F\u0433\u0447\u0435\u043D\u0438\u0435 \u0432\u043E\u0434\u044B:'
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u043F\u0438\u0432\u043E\u0432\u0430\u0440\u0435\u043D\u0438\u0435;'
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0441\u0442\u0432\u043E \u0430\u043B\u043A\u043E\u0433\u043E\u043B\u044C\u043D\u044B\u0445, \u0441/\u0430 \u0438 \u0431/\u0430 \u043D\u0430\u043F\u0438\u0442\u043A\u043E\u0432;'
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u0432 \u043F\u043E\u0434\u0433\u043E\u0442\u043E\u0432\u043A\u0435 \u0432\u043E\u0434\u044B \u0434\u043B\u044F \u043A\u043E\u0442\u043B\u0430'
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u0434\u043B\u044F \u043F\u043E\u0434\u0433\u043E\u0442\u043E\u0432\u043A\u0438 \u043F\u0438\u0442\u044C\u0435\u0432\u043E\u0439 \u0432\u043E\u0434\u044B'
-                                )
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { className: 'unordered-list-header' },
-                                '\u041F\u0420\u0415\u0418\u041C\u0423\u0429\u0415\u0421\u0422\u0412\u0410:'
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'ul',
-                                { className: 'unordered-list' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u0433\u0438\u0431\u043A\u043E\u0441\u0442\u044C \u043A\u043E\u043D\u0444\u0438\u0433\u0443\u0440\u0430\u0446\u0438\u0438, \u043B\u044E\u0431\u0430\u044F \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0438\u0442\u0435\u043B\u044C\u043D\u043E\u0441\u0442\u044C \u0441\u0438\u0441\u0442\u0435\u043C\u044B \u0434\u0435\u043A\u0430\u0440\u0431\u043E\u043D\u0438\u0437\u0430\u0446\u0438\u0438'
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u0432\u044B\u0441\u043E\u043A\u0430\u044F \u044D\u0444\u0444\u0435\u043A\u0442\u0438\u0432\u043D\u043E\u0441\u0442\u044C \u0437\u0430 \u0441\u0447\u0435\u0442 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u044F \u043A\u0430\u0442\u0438\u043E\u043D\u0438\u0442\u043E\u0432 \u0431\u043E\u043B\u044C\u0448\u043E\u0439 \u0435\u043C\u043A\u043E\u0441\u0442\u0438'
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u043F\u043E\u043B\u043D\u0430\u044F \u0430\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0437\u0430\u0446\u0438\u044F \u043D\u0430\u0440\u044F\u0434\u0443 \u0441 \u043F\u0440\u043E\u0441\u0442\u043E\u0442\u043E\u0439 \u0443\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u044F'
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u043D\u0438\u0437\u043A\u0438\u0435 \u044D\u043A\u0441\u043F\u043B\u0443\u0430\u0442\u0430\u0446\u0438\u043E\u043D\u043D\u044B\u0435 \u0440\u0430\u0441\u0445\u043E\u0434\u044B'
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u043D\u0430\u0434\u0435\u0436\u043D\u043E\u0441\u0442\u044C\u0438 \u0434\u043E\u043B\u0433\u043E\u0432\u0435\u0447\u043D\u043E\u0441\u0442\u044C \u043E\u0431\u043E\u0440\u0443\u0434\u043E\u0432\u0430\u043D\u0438\u044F'
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u0443\u0434\u043E\u0431\u0441\u0442\u0432\u043E,\u043F\u0440\u043E\u0441\u0442\u043E\u0442\u0430 \u0438 \u0431\u0435\u0437\u043E\u043F\u0430\u0441\u043D\u043E\u0441\u0442\u044C \u043E\u0431\u0441\u043B\u0443\u0436\u0438\u0432\u0430\u043D\u0438\u044F \u043E\u0431\u043E\u0440\u0443\u0434\u043E\u0432\u0430\u043D\u0438\u044F, \u0440\u0430\u0431\u043E\u0442\u0430\u044E\u0449\u0435\u0433\u043E \u0441 \u043A\u0438\u0441\u043B\u043E\u0442\u043E\u0439'
-                                )
-                            )
-                        ),
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'div',
-                            { id: 'reverse-osmos', className: 'technologies-section' },
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'h2',
-                                { className: 'tech_category_title' },
-                                '\u041E\u0431\u0440\u0430\u0442\u043D\u044B\u0439 \u043E\u0441\u043C\u043E\u0441'
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { className: 'row' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'div',
-                                    { className: 'col-sm-9 col-xs-7 vcenter' },
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        'p',
-                                        { className: 'paragraph-text blue' },
-                                        '\u0421\u0438\u0441\u0442\u0435\u043C\u044B WET-RO \u043F\u043E\u0437\u0432\u043E\u043B\u044F\u044E\u0442 \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C \u043E\u0431\u0435\u0441\u0441\u043E\u043B\u0435\u043D\u043D\u0443\u044E \u0432\u043E\u0434\u0443 \u0441 \u043F\u043E\u043C\u043E\u0449\u044C\u044E \u043C\u0435\u043C\u0431\u0440\u0430\u043D\u043D\u043E\u0439 \u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043E\u0431\u0440\u0430\u0442\u043D\u043E\u0433\u043E. \u043E\u0441\u043C\u043E\u0441\u0430.'
-                                    ),
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        'p',
-                                        { className: 'paragraph-text blue' },
-                                        '\u0412 \u043A\u0430\u0447\u0435\u0441\u0442\u0432\u0435 \u0444\u0438\u043B\u044C\u0442\u0440\u0443\u044E\u0449\u0438\u0445 \u044D\u043B\u0435\u043C\u0435\u043D\u0442\u043E\u0432 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u044E\u0442\u0441\u044F \u043C\u0435\u043C\u0431\u0440\u0430\u043D\u044B \u0432\u0435\u0434\u0443\u0449\u0438\u0445 \u043C\u0438\u0440\u043E\u0432\u044B\u0445 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0438\u0442\u0435\u043B\u0435\u0439.'
-                                    ),
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        'p',
-                                        { className: 'paragraph-text blue' },
-                                        '\u041F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0438\u0442\u0435\u043B\u044C\u043D\u043E\u0441\u0442\u044C \u043E\u0434\u043D\u043E\u0433\u043E \u043C\u043E\u0434\u0443\u043B\u044F \u043E\u0442 1 \u0434\u043E 100 \u043C3/\u0447'
-                                    )
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'div',
-                                    { className: 'col-sm-3 col-xs-5 vcenter' },
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_1_path___default.a.join(__dirname, './imgs/technologies/osmos_1.png'), className: 'img-responsive' })
-                                )
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { className: 'unordered-list-header' },
-                                '\u041A\u043E\u0440\u043F\u0443\u0441\u0430:'
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'ul',
-                                { className: 'unordered-list' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u041A\u043E\u043C\u043F\u043E\u0437\u0438\u0442\u043D\u044B\u0435, D 8" (end/sideport), 4", 2.5";',
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
-                                    ' \u0427\u0438\u0441\u043B\u043E \u043C\u0435\u043C\u0431\u0440\u0430\u043D: 1-8; P',
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        'sub',
+                                        'li',
                                         null,
-                                        '\u0440\u0430\u0431'
+                                        '\u0432 \u043F\u0438\u0449\u0435\u0432\u043E\u0439 \u043F\u0440\u043E\u043C\u044B\u0448\u043B\u0435\u043D\u043D\u043E\u0441\u0442\u0438 \u0434\u043B\u044F \u043F\u0440\u0438\u0433\u043E\u0442\u043E\u0432\u043B\u0435\u043D\u0438\u044F \u043D\u0430\u043F\u0438\u0442\u043A\u043E\u0432 \u0438 \u043F\u0440\u043E\u0434\u0443\u043A\u0442\u043E\u0432 \u043F\u0438\u0442\u0430\u043D\u0438\u044F;'
                                     ),
-                                    ' 16-80 \u0430\u0442\u043C'
-                                )
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { className: 'unordered-list-header' },
-                                '\u0412\u0438\u0434\u044B \u0438\u0441\u043F\u043E\u043B\u043D\u0435\u043D\u0438\u044F \u043F\u043E \u0430\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0437\u0430\u0446\u0438\u0438:'
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'ul',
-                                { className: 'unordered-list' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u0430\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0447\u0435\u0441\u043A\u043E\u0435, \u0441 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u0435\u043C \u0441\u0438\u0441\u0442\u0435\u043C\u044B \u0443\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u044F \u043D\u0430 \u0431\u0430\u0437\u0435 \u043F\u0440\u043E\u043C\u044B\u0448\u043B\u0435\u043D\u043D\u043E\u0433\u043E \u043A\u043E\u043D\u0442\u0440\u043E\u043B\u043B\u0435\u0440\u0430 Siemens \u043B\u0438\u0431\u043E \u0430\u043D\u0430\u043B\u043E\u0433\u043E\u0432.'
-                                )
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'p',
-                                { className: 'paragraph-text blue' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'b',
-                                    null,
-                                    '\u041F\u0440\u0438\u043C\u0435\u043D\u044F\u044E\u0442\u0441\u044F:'
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'li',
+                                        null,
+                                        '\u0432 \u044D\u043D\u0435\u0440\u0433\u0435\u0442\u0438\u043A\u0435/ \u043F\u0440\u043E\u043C\u044B\u0448\u043B\u0435\u043D\u043D\u043E\u0439 \u044D\u043D\u0435\u0440\u0433\u0435\u0442\u0438\u043A\u0435/ \u043A\u043E\u0442\u0435\u043B\u044C\u043D\u044B\u0445 \u0434\u043B\u044F \u043F\u043E\u0434\u0433\u043E\u0442\u043E\u0432\u043A\u0438 \u043A\u043E\u0442\u043B\u043E\u0432\u043E\u0439 \u0432\u043E\u0434\u044B;'
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'li',
+                                        null,
+                                        '\u0432 \u043C\u0435\u0442\u0430\u043B\u043B\u0443\u0440\u0433\u0438\u0438, \u043C\u0430\u0448\u0438\u043D\u043E\u0441\u0442\u0440\u043E\u0435\u043D\u0438\u0438, \u0445\u0438\u043C\u0438\u0447\u0435\u0441\u043A\u043E\u0439 \u043F\u0440\u043E\u043C\u044B\u0448\u043B\u0435\u043D\u043D\u043E\u0441\u0442\u0438, \u043D\u0435\u0444\u0442\u0435\u0433\u0430\u0437\u043F\u0435\u0440\u0435\u0440\u0430\u0431\u043E\u0442\u043A\u0435 \u0438 \u043F\u0440. \u2013 \u0434\u043B\u044F \u043F\u043E\u0434\u043F\u0438\u0442\u043A\u0438 \u043E\u0431\u043E\u0440\u043E\u0442\u043D\u044B\u0445 \u043E\u0445\u043B\u0430\u0434\u0438\u0442\u0435\u043B\u044C\u043D\u044B\u0445 \u0446\u0438\u043A\u043B\u043E\u0432;'
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'li',
+                                        null,
+                                        '\u0434\u043B\u044F \u0442\u0435\u043F\u043B\u0438\u0447\u043D\u044B\u0445 \u0445\u043E\u0437\u044F\u0439\u0441\u0442\u0432, \u0434\u043B\u044F \u043C\u0435\u0434\u0438\u0446\u0438\u043D\u044B, \u0434\u043B\u044F \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0441\u0442\u0432\u0430 \u044D\u043B\u0435\u043A\u0442\u0440\u043E\u043D\u0438\u043A\u0438 \u0438 \u043F\u0440.'
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'li',
+                                        null,
+                                        '\u0434\u043B\u044F \u043F\u043E\u0434\u0433\u043E\u0442\u043E\u0432\u043A\u0438 \u043F\u0438\u0442\u044C\u0435\u0432\u043E\u0439 \u0432\u043E\u0434\u044B'
+                                    )
                                 ),
-                                ' \u0432 \u0441\u0430\u043C\u044B\u0445 \u0440\u0430\u0437\u043D\u044B\u0445 \u0441\u0445\u0435\u043C\u0430\u0445 \u0432\u043E\u0434\u043E\u043F\u043E\u0434\u0433\u043E\u0442\u043E\u0432\u043A\u0438 \u0434\u043B\u044F \u0440\u0430\u0437\u043B\u0438\u0447\u043D\u044B\u0445 \u043E\u0442\u0440\u0430\u0441\u043B\u0435\u0439 \u0438 \u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0439, \u0433\u0434\u0435 \u0442\u0440\u0435\u0431\u0443\u0435\u0442\u0441\u044F \u0447\u0430\u0441\u0442\u0438\u0447\u043D\u043E\u0435 \u0438\u043B\u0438 \u043F\u043E\u043B\u043D\u043E\u0435 \u043E\u0431\u0435\u0441\u0441\u043E\u043B\u0438\u0432\u0430\u043D\u0438\u0435 \u0432\u043E\u0434\u044B, \u0432 \u0442.\u0447.:'
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'ul',
-                                { className: 'unordered-list' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u0432 \u043F\u0438\u0449\u0435\u0432\u043E\u0439 \u043F\u0440\u043E\u043C\u044B\u0448\u043B\u0435\u043D\u043D\u043E\u0441\u0442\u0438 \u0434\u043B\u044F \u043F\u0440\u0438\u0433\u043E\u0442\u043E\u0432\u043B\u0435\u043D\u0438\u044F \u043D\u0430\u043F\u0438\u0442\u043A\u043E\u0432 \u0438 \u043F\u0440\u043E\u0434\u0443\u043A\u0442\u043E\u0432 \u043F\u0438\u0442\u0430\u043D\u0438\u044F;'
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u0432 \u044D\u043D\u0435\u0440\u0433\u0435\u0442\u0438\u043A\u0435/ \u043F\u0440\u043E\u043C\u044B\u0448\u043B\u0435\u043D\u043D\u043E\u0439 \u044D\u043D\u0435\u0440\u0433\u0435\u0442\u0438\u043A\u0435/ \u043A\u043E\u0442\u0435\u043B\u044C\u043D\u044B\u0445 \u0434\u043B\u044F \u043F\u043E\u0434\u0433\u043E\u0442\u043E\u0432\u043A\u0438 \u043A\u043E\u0442\u043B\u043E\u0432\u043E\u0439 \u0432\u043E\u0434\u044B;'
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u0432 \u043C\u0435\u0442\u0430\u043B\u043B\u0443\u0440\u0433\u0438\u0438, \u043C\u0430\u0448\u0438\u043D\u043E\u0441\u0442\u0440\u043E\u0435\u043D\u0438\u0438, \u0445\u0438\u043C\u0438\u0447\u0435\u0441\u043A\u043E\u0439 \u043F\u0440\u043E\u043C\u044B\u0448\u043B\u0435\u043D\u043D\u043E\u0441\u0442\u0438, \u043D\u0435\u0444\u0442\u0435\u0433\u0430\u0437\u043F\u0435\u0440\u0435\u0440\u0430\u0431\u043E\u0442\u043A\u0435 \u0438 \u043F\u0440. \u2013 \u0434\u043B\u044F \u043F\u043E\u0434\u043F\u0438\u0442\u043A\u0438 \u043E\u0431\u043E\u0440\u043E\u0442\u043D\u044B\u0445 \u043E\u0445\u043B\u0430\u0434\u0438\u0442\u0435\u043B\u044C\u043D\u044B\u0445 \u0446\u0438\u043A\u043B\u043E\u0432;'
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u0434\u043B\u044F \u0442\u0435\u043F\u043B\u0438\u0447\u043D\u044B\u0445 \u0445\u043E\u0437\u044F\u0439\u0441\u0442\u0432, \u0434\u043B\u044F \u043C\u0435\u0434\u0438\u0446\u0438\u043D\u044B, \u0434\u043B\u044F \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0441\u0442\u0432\u0430 \u044D\u043B\u0435\u043A\u0442\u0440\u043E\u043D\u0438\u043A\u0438 \u0438 \u043F\u0440.'
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u0434\u043B\u044F \u043F\u043E\u0434\u0433\u043E\u0442\u043E\u0432\u043A\u0438 \u043F\u0438\u0442\u044C\u0435\u0432\u043E\u0439 \u0432\u043E\u0434\u044B'
-                                )
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { className: 'unordered-list-header' },
-                                '\u041F\u0420\u0415\u0418\u041C\u0423\u0429\u0415\u0421\u0422\u0412\u0410:'
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'ul',
-                                { className: 'unordered-list' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u0433\u0438\u0431\u043A\u043E\u0441\u0442\u044C \u043A\u043E\u043D\u0444\u0438\u0433\u0443\u0440\u0430\u0446\u0438\u0438, \u043B\u044E\u0431\u0430\u044F \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0438\u0442\u0435\u043B\u044C\u043D\u043E\u0441\u0442\u044C, \u043C\u043D\u043E\u0433\u043E\u0441\u0442\u0443\u043F\u0435\u043D\u0447\u0430\u0442\u044B\u0435 \u0441\u0445\u0435\u043C\u044B, \u0432\u043E\u0437\u043C\u043E\u0436\u043D\u043E\u0441\u0442\u044C \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u044F \u043A\u043E\u043D\u0446\u0435\u043D\u0442\u0440\u0430\u0442\u0430 (\u0431\u0435\u0441\u0441\u0442\u043E\u0447\u043D\u044B\u0435 \u0441\u0445\u0435\u043C\u044B);'
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u0432\u043E\u0437\u043C\u043E\u0436\u043D\u043E\u0441\u0442\u044C \u043A\u043E\u043C\u043F\u043B\u0435\u043A\u0442\u0430\u0446\u0438\u0438 \u0441\u0442\u0430\u043D\u0446\u0438\u0435\u0439 \u043F\u0440\u043E\u043C\u044B\u0432\u043A\u0438;'
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u0432\u044B\u0441\u043E\u043A\u0430\u044F \u044D\u0444\u0444\u0435\u043A\u0442\u0438\u0432\u043D\u043E\u0441\u0442\u044C \u0437\u0430 \u0441\u0447\u0435\u0442 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u044F \u043C\u0435\u043C\u0431\u0440\u0430\u043D \u0432\u0435\u0434\u0443\u0449\u0438\u0445 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0438\u0442\u0435\u043B\u0435\u0439'
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u043F\u043E\u043B\u043D\u0430\u044F \u0430\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0437\u0430\u0446\u0438\u044F \u043D\u0430\u0440\u044F\u0434\u0443 \u0441 \u043F\u0440\u043E\u0441\u0442\u043E\u0442\u043E\u0439 \u0443\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u044F'
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u043D\u0438\u0437\u043A\u0438\u0435 \u044D\u043A\u0441\u043F\u043B\u0443\u0430\u0442\u0430\u0446\u0438\u043E\u043D\u043D\u044B\u0435 \u0440\u0430\u0441\u0445\u043E\u0434\u044B'
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u043D\u0430\u0434\u0435\u0436\u043D\u043E\u0441\u0442\u044C \u0438 \u0434\u043E\u043B\u0433\u043E\u0432\u0435\u0447\u043D\u043E\u0441\u0442\u044C \u043E\u0431\u043E\u0440\u0443\u0434\u043E\u0432\u0430\u043D\u0438\u044F'
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u0443\u0434\u043E\u0431\u0441\u0442\u0432\u043E \u0438 \u043F\u0440\u043E\u0441\u0442\u043E\u0442\u0430 \u043E\u0431\u0441\u043B\u0443\u0436\u0438\u0432\u0430\u043D\u0438\u044F'
-                                )
-                            )
-                        ),
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'div',
-                            { id: 'ultrafiltration', className: 'technologies-section' },
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'h2',
-                                { className: 'tech_category_title' },
-                                '\u0423\u043B\u044C\u0442\u0440\u0430\u0444\u0438\u043B\u044C\u0442\u0440\u0430\u0446\u0438\u044F'
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { className: 'row' },
                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                     'div',
-                                    { className: 'col-sm-9 col-xs-7 vcenter' },
+                                    { className: 'unordered-list-header' },
+                                    '\u041F\u0420\u0415\u0418\u041C\u0423\u0429\u0415\u0421\u0422\u0412\u0410:'
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'ul',
+                                    { className: 'unordered-list' },
                                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        'p',
-                                        { className: 'paragraph-text blue' },
-                                        '\u0421\u0438\u0441\u0442\u0435\u043C\u044B ',
+                                        'li',
+                                        null,
+                                        '\u0433\u0438\u0431\u043A\u043E\u0441\u0442\u044C \u043A\u043E\u043D\u0444\u0438\u0433\u0443\u0440\u0430\u0446\u0438\u0438, \u043B\u044E\u0431\u0430\u044F \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0438\u0442\u0435\u043B\u044C\u043D\u043E\u0441\u0442\u044C, \u043C\u043D\u043E\u0433\u043E\u0441\u0442\u0443\u043F\u0435\u043D\u0447\u0430\u0442\u044B\u0435 \u0441\u0445\u0435\u043C\u044B, \u0432\u043E\u0437\u043C\u043E\u0436\u043D\u043E\u0441\u0442\u044C \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u044F \u043A\u043E\u043D\u0446\u0435\u043D\u0442\u0440\u0430\u0442\u0430 (\u0431\u0435\u0441\u0441\u0442\u043E\u0447\u043D\u044B\u0435 \u0441\u0445\u0435\u043C\u044B);'
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'li',
+                                        null,
+                                        '\u0432\u043E\u0437\u043C\u043E\u0436\u043D\u043E\u0441\u0442\u044C \u043A\u043E\u043C\u043F\u043B\u0435\u043A\u0442\u0430\u0446\u0438\u0438 \u0441\u0442\u0430\u043D\u0446\u0438\u0435\u0439 \u043F\u0440\u043E\u043C\u044B\u0432\u043A\u0438;'
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'li',
+                                        null,
+                                        '\u0432\u044B\u0441\u043E\u043A\u0430\u044F \u044D\u0444\u0444\u0435\u043A\u0442\u0438\u0432\u043D\u043E\u0441\u0442\u044C \u0437\u0430 \u0441\u0447\u0435\u0442 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u044F \u043C\u0435\u043C\u0431\u0440\u0430\u043D \u0432\u0435\u0434\u0443\u0449\u0438\u0445 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0438\u0442\u0435\u043B\u0435\u0439'
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'li',
+                                        null,
+                                        '\u043F\u043E\u043B\u043D\u0430\u044F \u0430\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0437\u0430\u0446\u0438\u044F \u043D\u0430\u0440\u044F\u0434\u0443 \u0441 \u043F\u0440\u043E\u0441\u0442\u043E\u0442\u043E\u0439 \u0443\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u044F'
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'li',
+                                        null,
+                                        '\u043D\u0438\u0437\u043A\u0438\u0435 \u044D\u043A\u0441\u043F\u043B\u0443\u0430\u0442\u0430\u0446\u0438\u043E\u043D\u043D\u044B\u0435 \u0440\u0430\u0441\u0445\u043E\u0434\u044B'
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'li',
+                                        null,
+                                        '\u043D\u0430\u0434\u0435\u0436\u043D\u043E\u0441\u0442\u044C \u0438 \u0434\u043E\u043B\u0433\u043E\u0432\u0435\u0447\u043D\u043E\u0441\u0442\u044C \u043E\u0431\u043E\u0440\u0443\u0434\u043E\u0432\u0430\u043D\u0438\u044F'
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'li',
+                                        null,
+                                        '\u0443\u0434\u043E\u0431\u0441\u0442\u0432\u043E \u0438 \u043F\u0440\u043E\u0441\u0442\u043E\u0442\u0430 \u043E\u0431\u0441\u043B\u0443\u0436\u0438\u0432\u0430\u043D\u0438\u044F'
+                                    )
+                                )
+                            ),
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                'div',
+                                { id: 'ultrafiltration', className: 'technologies-section' },
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'h2',
+                                    { className: 'tech_category_title' },
+                                    '\u0423\u043B\u044C\u0442\u0440\u0430\u0444\u0438\u043B\u044C\u0442\u0440\u0430\u0446\u0438\u044F'
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'div',
+                                    { className: 'row' },
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'div',
+                                        { className: 'col-sm-9 col-xs-7 vcenter' },
                                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                            'strong',
-                                            null,
-                                            'WET-UF'
-                                        ),
-                                        ' \u043F\u0440\u0435\u0434\u043D\u0430\u0437\u043D\u0430\u0447\u0435\u043D\u044B \u0434\u043B\u044F \u043E\u0447\u0438\u0441\u0442\u043A\u0438 \u0432\u043E\u0434\u044B \u043E\u0442 \u0442\u043E\u043D\u043A\u043E\u0434\u0438\u0441\u043F\u0435\u0440\u0441\u043D\u044B\u0445 \u0438 \u043A\u043E\u043B\u043B\u043E\u0438\u0434\u043D\u044B\u0445 \u043F\u0440\u0438\u043C\u0435\u0441\u0435\u0439, \u043E\u0434\u043D\u043E\u043A\u043B\u0435\u0442\u043E\u0447\u043D\u044B\u0445 \u043C\u0438\u043A\u0440\u043E\u043E\u0440\u0433\u0430\u043D\u0438\u0437\u043C\u043E\u0432, \u0432\u0438\u0440\u0443\u0441\u043E\u0432 \u0438 \u0431\u0430\u043A\u0442\u0435\u0440\u0438\u0439, \u043E\u0440\u0433\u0430\u043D\u0438\u0447\u0435\u0441\u043A\u0438\u0445 \u0441\u043E\u0435\u0434\u0438\u043D\u0435\u043D\u0438\u0439. \u0423\u043B\u044C\u0442\u0440\u0430\u0444\u0438\u043B\u044C\u0442\u0440\u0430\u0446\u0438\u044F \u2013 \u043C\u0435\u043C\u0431\u0440\u0430\u043D\u043D\u044B\u0439 \u043F\u0440\u043E\u0446\u0435\u0441\u0441, \u0437\u0430\u043D\u0438\u043C\u0430\u044E\u0449\u0438\u0439 \u043F\u043E \u0441\u0432\u043E\u0438\u043C \u0441\u0435\u043B\u0435\u043A\u0442\u0438\u0432\u043D\u044B\u043C \u0445\u0430\u0440\u0430\u043A\u0442\u0435\u0440\u0438\u0441\u0442\u0438\u043A\u0430\u043C \u043F\u0440\u043E\u043C\u0435\u0436\u0443\u0442\u043E\u0447\u043D\u043E\u0435 \u043F\u043E\u043B\u043E\u0436\u0435\u043D\u0438\u0435 \u043C\u0435\u0436\u0434\u0443 \u043D\u0430\u043D\u043E\u0444\u0438\u043B\u044C\u0442\u0440\u0430\u0446\u0438\u0435\u0439 \u0438 \u043C\u0438\u043A\u0440\u043E\u0444\u0438\u043B\u044C\u0442\u0440\u0430\u0446\u0438\u0435\u0439.'
-                                    )
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'div',
-                                    { className: 'col-sm-3 col-xs-5 vcenter' },
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_1_path___default.a.join(__dirname, './imgs/technologies/ultrafiltration_1.png'), className: 'img-responsive' })
-                                )
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'p',
-                                { className: 'paragraph-text blue' },
-                                '\u0412 \u043A\u0430\u0447\u0435\u0441\u0442\u0432\u0435 \u0444\u0438\u043B\u044C\u0442\u0440\u0443\u044E\u0449\u0438\u0445 \u044D\u043B\u0435\u043C\u0435\u043D\u0442\u043E\u0432 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u044E\u0442\u0441\u044F \u043C\u0435\u043C\u0431\u0440\u0430\u043D\u044B \u0432\u0435\u0434\u0443\u0449\u0438\u0445 \u043C\u0438\u0440\u043E\u0432\u044B\u0445 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0438\u0442\u0435\u043B\u0435\u0439. (Inge, Tor\u0430y \u0438 \u0434\u0440.) \u0412 \u043F\u0440\u043E\u043C\u044B\u0448\u043B\u0435\u043D\u043D\u044B\u0445 \u0438 \u043C\u0443\u043D\u0438\u0446\u0438\u043F\u0430\u043B\u044C\u043D\u044B\u0445 \u0443\u0441\u0442\u0430\u043D\u043E\u0432\u043A\u0430\u0445 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u044E\u0442\u0441\u044F \u043C\u0435\u043C\u0431\u0440\u0430\u043D\u044B \u0441 \u0440\u0430\u0437\u043C\u0435\u0440\u043E\u043C \u043F\u043E\u0440 \u043E\u043A\u043E\u043B\u043E 0,02 \u043C\u0438\u043A\u0440\u043E\u043D.'
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'p',
-                                { className: 'paragraph-text blue' },
-                                '\u041F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0438\u0442\u0435\u043B\u044C\u043D\u043E\u0441\u0442\u044C \u043E\u0434\u043D\u043E\u0433\u043E \u043C\u043E\u0434\u0443\u043B\u044F \u043E\u0442 1 \u0434\u043E 100 \u043C3/\u0447'
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { className: 'unordered-list-header' },
-                                '\u0412\u0438\u0434\u044B \u0438\u0441\u043F\u043E\u043B\u043D\u0435\u043D\u0438\u044F \u043F\u043E \u0430\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0437\u0430\u0446\u0438\u0438:'
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'ul',
-                                { className: 'unordered-list' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u0430\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0447\u0435\u0441\u043A\u043E\u0435, \u0441 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u0435\u043C \u0441\u0438\u0441\u0442\u0435\u043C\u044B \u0443\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u044F \u043D\u0430 \u0431\u0430\u0437\u0435'
-                                )
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'p',
-                                { className: 'paragraph-text blue' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'b',
-                                    null,
-                                    '\u041F\u0440\u0438\u043C\u0435\u043D\u044F\u044E\u0442\u0441\u044F:'
-                                ),
-                                ' \u0412\u044B\u0441\u043E\u043A\u0438\u0439 \u0443\u0440\u043E\u0432\u0435\u043D\u044C \u043E\u0447\u0438\u0441\u0442\u043A\u0438, \u0434\u043E\u0441\u0442\u0438\u0433\u0430\u0435\u043C\u044B\u0439 \u0441 \u043F\u043E\u043C\u043E\u0449\u044C\u044E \u0443\u043B\u044C\u0442\u0440\u0430\u0444\u0438\u043B\u044C\u0442\u0440\u0430\u0446\u0438\u0438, \u043F\u043E\u0437\u0432\u043E\u043B\u044F\u0435\u0442 \u0440\u0430\u0441\u0441\u043C\u0430\u0442\u0440\u0438\u0432\u0430\u0442\u044C \u044D\u0442\u043E\u0442 \u043C\u0435\u0442\u043E\u0434 \u043A\u0430\u043A \u0430\u043B\u044C\u0442\u0435\u0440\u043D\u0430\u0442\u0438\u0432\u0443 \u0442\u0440\u0430\u0434\u0438\u0446\u0438\u043E\u043D\u043D\u044B\u043C \u043F\u0440\u043E\u0446\u0435\u0441\u0441\u0430\u043C \u043E\u0441\u0432\u0435\u0442\u043B\u0435\u043D\u0438\u044F, \u0438 \u0444\u0438\u043B\u044C\u0442\u0440\u0430\u0446\u0438\u0438.'
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'ul',
-                                { className: 'unordered-list' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u0432 \u043F\u0438\u0449\u0435\u0432\u043E\u0439 \u043F\u0440\u043E\u043C\u044B\u0448\u043B\u0435\u043D\u043D\u043E\u0441\u0442\u0438 \u0434\u043B\u044F \u043F\u0440\u0438\u0433\u043E\u0442\u043E\u0432\u043B\u0435\u043D\u0438\u044F \u043D\u0430\u043F\u0438\u0442\u043A\u043E\u0432 \u0438 \u043F\u0440\u043E\u0434\u0443\u043A\u0442\u043E\u0432 \u043F\u0438\u0442\u0430\u043D\u0438\u044F;'
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u0432 \u044D\u043D\u0435\u0440\u0433\u0435\u0442\u0438\u043A\u0435/ \u043F\u0440\u043E\u043C\u044B\u0448\u043B\u0435\u043D\u043D\u043E\u0439 \u044D\u043D\u0435\u0440\u0433\u0435\u0442\u0438\u043A\u0435/ \u043A\u043E\u0442\u0435\u043B\u044C\u043D\u044B\u0445 \u0432 \u043A\u0430\u0447\u0435\u0441\u0442\u0432\u0435 \u043F\u0440\u0435\u0434\u043E\u0447\u0438\u0441\u0442\u043A\u0438 \u043F\u0435\u0440\u0435\u0434 \u043E\u0431\u043E\u0440\u0443\u0434\u043E\u0432\u0430\u043D\u0438\u0435\u043C \u043E\u0431\u0435\u0441\u0441\u043E\u043B\u0438\u0432\u0430\u043D\u0438\u044F;'
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u0432 \u043A\u0430\u0447\u0435\u0441\u0442\u0432\u0435 \u043F\u0440\u0435\u0434\u043E\u0447\u0438\u0441\u0442\u043A\u0438 \u043F\u0435\u0440\u0435\u0434 \u0441\u0438\u0441\u0442\u0435\u043C\u0430\u043C\u0438 \u043E\u0431\u0440\u0430\u0442\u043D\u043E\u0433\u043E \u043E\u0441\u043C\u043E\u0441\u0430, \u0433\u0434\u0435 \u043F\u0440\u0435\u0434\u044A\u044F\u0432\u043B\u044F\u044E\u0442\u0441\u044F \u0432\u044B\u0441\u043E\u043A\u0438\u0435 \u0442\u0440\u0435\u0431\u043E\u0432\u0430\u043D\u0438\u044F \u043A \u0432\u043E\u0434\u0435, \u043F\u043E\u0441\u0442\u0443\u043F\u0430\u044E\u0449\u0435\u0439 \u043D\u0430 \u043C\u0435\u043C\u0431\u0440\u0430\u043D\u043D\u044B\u0435 \u044D\u043B\u0435\u043C\u0435\u043D\u0442\u044B \u043E\u0431\u0440\u0430\u0442\u043D\u043E\u0433\u043E \u043E\u0441\u043C\u043E\u0441\u0430;'
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u0434\u043B\u044F \u043F\u043E\u0434\u0433\u043E\u0442\u043E\u0432\u043A\u0438 \u043F\u0438\u0442\u044C\u0435\u0432\u043E\u0439 \u0432\u043E\u0434\u044B.'
-                                )
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { className: 'unordered-list-header' },
-                                '\u041F\u0420\u0415\u0418\u041C\u0423\u0429\u0415\u0421\u0422\u0412\u0410:'
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'ul',
-                                { className: 'unordered-list' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u0433\u0438\u0431\u043A\u043E\u0441\u0442\u044C \u043A\u043E\u043D\u0444\u0438\u0433\u0443\u0440\u0430\u0446\u0438\u0438, \u043B\u044E\u0431\u0430\u044F \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0438\u0442\u0435\u043B\u044C\u043D\u043E\u0441\u0442\u044C, \u043C\u043D\u043E\u0433\u043E\u0441\u0442\u0443\u043F\u0435\u043D\u0447\u0430\u0442\u044B\u0435 \u0441\u0445\u0435\u043C\u044B,'
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u0432\u044B\u0441\u043E\u043A\u0430\u044F \u044D\u0444\u0444\u0435\u043A\u0442\u0438\u0432\u043D\u043E\u0441\u0442\u044C \u0437\u0430 \u0441\u0447\u0435\u0442 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u044F \u043C\u0435\u043C\u0431\u0440\u0430\u043D \u0432\u0435\u0434\u0443\u0449\u0438\u0445 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0438\u0442\u0435\u043B\u0435\u0439'
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u043F\u043E\u043B\u043D\u0430\u044F \u0430\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0437\u0430\u0446\u0438\u044F \u043D\u0430\u0440\u044F\u0434\u0443 \u0441 \u043F\u0440\u043E\u0441\u0442\u043E\u0442\u043E\u0439 \u0443\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u044F'
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u043D\u0438\u0437\u043A\u0438\u0435 \u044D\u043A\u0441\u043F\u043B\u0443\u0430\u0442\u0430\u0446\u0438\u043E\u043D\u043D\u044B\u0435 \u0440\u0430\u0441\u0445\u043E\u0434\u044B'
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u043D\u0430\u0434\u0435\u0436\u043D\u043E\u0441\u0442\u044C \u0438 \u0434\u043E\u043B\u0433\u043E\u0432\u0435\u0447\u043D\u043E\u0441\u0442\u044C \u043E\u0431\u043E\u0440\u0443\u0434\u043E\u0432\u0430\u043D\u0438\u044F'
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u0443\u0434\u043E\u0431\u0441\u0442\u0432\u043E \u0438 \u043F\u0440\u043E\u0441\u0442\u043E\u0442\u0430 \u043E\u0431\u0441\u043B\u0443\u0436\u0438\u0432\u0430\u043D\u0438\u044F'
-                                )
-                            )
-                        ),
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'div',
-                            { id: 'complex-water-equipment', className: 'technologies-section' },
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'h2',
-                                { className: 'tech_category_title' },
-                                '\u041A\u043E\u043C\u043F\u043B\u0435\u043A\u0441 \u043E\u0431\u043E\u0440\u0443\u0434\u043E\u0432\u0430\u043D\u0438\u044F \u0432\u043E\u0434\u043E\u043F\u043E\u0434\u0433\u043E\u0442\u043E\u0432\u043A\u0438'
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'p',
-                                { className: 'paragraph-text blue' },
-                                '\u0418\u0441\u0445\u043E\u0434\u044F \u0438\u0437 \u0432\u0430\u0448\u0435\u0433\u043E \u0442\u0435\u0445\u043D\u0438\u0447\u0435\u0441\u043A\u043E\u0433\u043E \u0437\u0430\u0434\u0430\u043D\u0438\u044F, \u0430\u043D\u0430\u043B\u0438\u0437\u0430 \u0432\u043E\u0434\u044B, \u0442\u0440\u0435\u0431\u043E\u0432\u0430\u043D\u0438\u0439 \u043A \u043E\u0447\u0438\u0449\u0435\u043D\u043D\u043E\u0439 \u0432\u043E\u0434\u0435, \u043D\u0430\u043B\u0438\u0447\u0438\u044F \u043C\u0435\u0441\u0442\u0430 \u0438 \u043F\u0440\u043E\u0447\u0438\u0445 \u0443\u0441\u043B\u043E\u0432\u0438\u0439, \u043D\u0430\u0448\u0438 \u0438\u043D\u0436\u0435\u043D\u0435\u0440\u0430 \u043F\u0440\u0435\u0434\u043B\u043E\u0436\u0430\u0442 \u043E\u043F\u0442\u0438\u043C\u0430\u043B\u044C\u043D\u0443\u044E \u0441\u0445\u0435\u043C\u0443 \u0432\u043E\u0434\u043E\u043F\u043E\u0434\u0433\u043E\u0442\u043E\u0432\u043A\u0438 \u043D\u0430 \u0431\u0430\u0437\u0435 \u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0439 WET.'
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { className: 'row' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'div',
-                                    { className: 'col-sm-9 col-xs-7 vcenter' },
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        'p',
-                                        { className: 'paragraph-text blue' },
-                                        '\u0412 \u0441\u043B\u0443\u0447\u0430\u0435, \u0435\u0441\u043B\u0438 \u0432\u044B \u043D\u0435 \u0437\u043D\u0430\u0435\u0442\u0435 \u043A\u0430\u043A\u043E\u0435 \u043A\u0430\u0447\u0435\u0441\u0442\u0432\u043E \u0432\u043E\u0434\u044B \u043D\u0435\u043E\u0431\u0445\u043E\u0434\u0438\u043C\u043E \u0434\u043B\u044F \u0440\u0435\u0448\u0435\u043D\u0438\u044F \u0432\u0430\u0448\u0435\u0439 \u0437\u0430\u0434\u0430\u0447\u0438, \u043C\u044B \u043C\u043E\u0436\u0435\u043C \u0434\u0430\u0442\u044C \u0440\u0435\u043A\u043E\u043C\u0435\u043D\u0434\u0430\u0446\u0438\u0438, \u043E\u043F\u0438\u0440\u0430\u044F\u0441\u044C \u043D\u0430 \u0441\u0432\u043E\u0439 14-\u043B\u0435\u0442\u043D\u0438\u0439 \u043E\u043F\u044B\u0442 \u0440\u0430\u0431\u043E\u0442\u044B \u0432 \u0441\u0444\u0435\u0440\u0435 \u0432\u043E\u0434\u043E\u043F\u043E\u0434\u0433\u043E\u0442\u043E\u0432\u043A\u0438.'
+                                            'p',
+                                            { className: 'paragraph-text blue' },
+                                            '\u0421\u0438\u0441\u0442\u0435\u043C\u044B ',
+                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                'strong',
+                                                null,
+                                                'WET-UF'
+                                            ),
+                                            ' \u043F\u0440\u0435\u0434\u043D\u0430\u0437\u043D\u0430\u0447\u0435\u043D\u044B \u0434\u043B\u044F \u043E\u0447\u0438\u0441\u0442\u043A\u0438 \u0432\u043E\u0434\u044B \u043E\u0442 \u0442\u043E\u043D\u043A\u043E\u0434\u0438\u0441\u043F\u0435\u0440\u0441\u043D\u044B\u0445 \u0438 \u043A\u043E\u043B\u043B\u043E\u0438\u0434\u043D\u044B\u0445 \u043F\u0440\u0438\u043C\u0435\u0441\u0435\u0439, \u043E\u0434\u043D\u043E\u043A\u043B\u0435\u0442\u043E\u0447\u043D\u044B\u0445 \u043C\u0438\u043A\u0440\u043E\u043E\u0440\u0433\u0430\u043D\u0438\u0437\u043C\u043E\u0432, \u0432\u0438\u0440\u0443\u0441\u043E\u0432 \u0438 \u0431\u0430\u043A\u0442\u0435\u0440\u0438\u0439, \u043E\u0440\u0433\u0430\u043D\u0438\u0447\u0435\u0441\u043A\u0438\u0445 \u0441\u043E\u0435\u0434\u0438\u043D\u0435\u043D\u0438\u0439. \u0423\u043B\u044C\u0442\u0440\u0430\u0444\u0438\u043B\u044C\u0442\u0440\u0430\u0446\u0438\u044F \u2013 \u043C\u0435\u043C\u0431\u0440\u0430\u043D\u043D\u044B\u0439 \u043F\u0440\u043E\u0446\u0435\u0441\u0441, \u0437\u0430\u043D\u0438\u043C\u0430\u044E\u0449\u0438\u0439 \u043F\u043E \u0441\u0432\u043E\u0438\u043C \u0441\u0435\u043B\u0435\u043A\u0442\u0438\u0432\u043D\u044B\u043C \u0445\u0430\u0440\u0430\u043A\u0442\u0435\u0440\u0438\u0441\u0442\u0438\u043A\u0430\u043C \u043F\u0440\u043E\u043C\u0435\u0436\u0443\u0442\u043E\u0447\u043D\u043E\u0435 \u043F\u043E\u043B\u043E\u0436\u0435\u043D\u0438\u0435 \u043C\u0435\u0436\u0434\u0443 \u043D\u0430\u043D\u043E\u0444\u0438\u043B\u044C\u0442\u0440\u0430\u0446\u0438\u0435\u0439 \u0438 \u043C\u0438\u043A\u0440\u043E\u0444\u0438\u043B\u044C\u0442\u0440\u0430\u0446\u0438\u0435\u0439.'
+                                        )
                                     ),
                                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        'p',
-                                        { className: 'paragraph-text blue' },
-                                        '\u041C\u044B \u043C\u043E\u0436\u0435\u043C \u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u0430\u0442\u044C \u043A\u043E\u043C\u043F\u043B\u0435\u043A\u0441 \u0432\u043E\u0434\u043E\u043F\u043E\u0434\u0433\u043E\u0442\u043E\u0432\u043A\u0438 \u0441 \u043F\u043E\u043B\u0443\u0447\u0435\u043D\u0438\u0435\u043C \u0432\u043E\u0434\u044B \u0440\u0430\u0437\u043B\u0438\u0447\u043D\u043E\u0433\u043E \u043A\u0430\u0447\u0435\u0441\u0442\u0432\u0430 \u0434\u043B\u044F \u043E\u0434\u043D\u043E\u0432\u0440\u0435\u043C\u0435\u043D\u043D\u043E\u0433\u043E \u0440\u0435\u0448\u0435\u043D\u0438\u044F \u0441\u0440\u0430\u0437\u0443 \u043D\u0435\u0441\u043A\u043E\u043B\u044C\u043A\u0438\u0445 \u0432\u0430\u0448\u0438\u0445 \u0437\u0430\u0434\u0430\u0447, \u0442\u0435\u043C \u0441\u0430\u043C\u044B\u043C \u0441\u043E\u043A\u0440\u0430\u0449\u0430\u044F \u043A\u0430\u043F\u0438\u0442\u0430\u043B\u044C\u043D\u044B\u0435 \u0437\u0430\u0442\u0440\u0430\u0442\u044B \u0438 \u044D\u043A\u043E\u043D\u043E\u043C\u044F \u043F\u043B\u043E\u0449\u0430\u0434\u044C.'
+                                        'div',
+                                        { className: 'col-sm-3 col-xs-5 vcenter' },
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_1_path___default.a.join(__dirname, './imgs/technologies/ultrafiltration_1.png'), className: 'img-responsive' })
+                                    )
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'p',
+                                    { className: 'paragraph-text blue' },
+                                    '\u0412 \u043A\u0430\u0447\u0435\u0441\u0442\u0432\u0435 \u0444\u0438\u043B\u044C\u0442\u0440\u0443\u044E\u0449\u0438\u0445 \u044D\u043B\u0435\u043C\u0435\u043D\u0442\u043E\u0432 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u044E\u0442\u0441\u044F \u043C\u0435\u043C\u0431\u0440\u0430\u043D\u044B \u0432\u0435\u0434\u0443\u0449\u0438\u0445 \u043C\u0438\u0440\u043E\u0432\u044B\u0445 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0438\u0442\u0435\u043B\u0435\u0439. (Inge, Tor\u0430y \u0438 \u0434\u0440.) \u0412 \u043F\u0440\u043E\u043C\u044B\u0448\u043B\u0435\u043D\u043D\u044B\u0445 \u0438 \u043C\u0443\u043D\u0438\u0446\u0438\u043F\u0430\u043B\u044C\u043D\u044B\u0445 \u0443\u0441\u0442\u0430\u043D\u043E\u0432\u043A\u0430\u0445 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u044E\u0442\u0441\u044F \u043C\u0435\u043C\u0431\u0440\u0430\u043D\u044B \u0441 \u0440\u0430\u0437\u043C\u0435\u0440\u043E\u043C \u043F\u043E\u0440 \u043E\u043A\u043E\u043B\u043E 0,02 \u043C\u0438\u043A\u0440\u043E\u043D.'
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'p',
+                                    { className: 'paragraph-text blue' },
+                                    '\u041F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0438\u0442\u0435\u043B\u044C\u043D\u043E\u0441\u0442\u044C \u043E\u0434\u043D\u043E\u0433\u043E \u043C\u043E\u0434\u0443\u043B\u044F \u043E\u0442 1 \u0434\u043E 100 \u043C',
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'sup',
+                                        null,
+                                        '3'
+                                    ),
+                                    '/\u0447'
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'div',
+                                    { className: 'unordered-list-header' },
+                                    '\u0412\u0438\u0434\u044B \u0438\u0441\u043F\u043E\u043B\u043D\u0435\u043D\u0438\u044F \u043F\u043E \u0430\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0437\u0430\u0446\u0438\u0438:'
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'ul',
+                                    { className: 'unordered-list' },
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'li',
+                                        null,
+                                        '\u0430\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0447\u0435\u0441\u043A\u043E\u0435, \u0441 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u0435\u043C \u0441\u0438\u0441\u0442\u0435\u043C\u044B \u0443\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u044F \u043D\u0430 \u0431\u0430\u0437\u0435'
+                                    )
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'p',
+                                    { className: 'paragraph-text blue' },
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'b',
+                                        null,
+                                        '\u041F\u0440\u0438\u043C\u0435\u043D\u044F\u044E\u0442\u0441\u044F:'
+                                    ),
+                                    ' \u0412\u044B\u0441\u043E\u043A\u0438\u0439 \u0443\u0440\u043E\u0432\u0435\u043D\u044C \u043E\u0447\u0438\u0441\u0442\u043A\u0438, \u0434\u043E\u0441\u0442\u0438\u0433\u0430\u0435\u043C\u044B\u0439 \u0441 \u043F\u043E\u043C\u043E\u0449\u044C\u044E \u0443\u043B\u044C\u0442\u0440\u0430\u0444\u0438\u043B\u044C\u0442\u0440\u0430\u0446\u0438\u0438, \u043F\u043E\u0437\u0432\u043E\u043B\u044F\u0435\u0442 \u0440\u0430\u0441\u0441\u043C\u0430\u0442\u0440\u0438\u0432\u0430\u0442\u044C \u044D\u0442\u043E\u0442 \u043C\u0435\u0442\u043E\u0434 \u043A\u0430\u043A \u0430\u043B\u044C\u0442\u0435\u0440\u043D\u0430\u0442\u0438\u0432\u0443 \u0442\u0440\u0430\u0434\u0438\u0446\u0438\u043E\u043D\u043D\u044B\u043C \u043F\u0440\u043E\u0446\u0435\u0441\u0441\u0430\u043C \u043E\u0441\u0432\u0435\u0442\u043B\u0435\u043D\u0438\u044F, \u0438 \u0444\u0438\u043B\u044C\u0442\u0440\u0430\u0446\u0438\u0438.'
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'ul',
+                                    { className: 'unordered-list' },
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'li',
+                                        null,
+                                        '\u0432 \u043F\u0438\u0449\u0435\u0432\u043E\u0439 \u043F\u0440\u043E\u043C\u044B\u0448\u043B\u0435\u043D\u043D\u043E\u0441\u0442\u0438 \u0434\u043B\u044F \u043F\u0440\u0438\u0433\u043E\u0442\u043E\u0432\u043B\u0435\u043D\u0438\u044F \u043D\u0430\u043F\u0438\u0442\u043A\u043E\u0432 \u0438 \u043F\u0440\u043E\u0434\u0443\u043A\u0442\u043E\u0432 \u043F\u0438\u0442\u0430\u043D\u0438\u044F;'
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'li',
+                                        null,
+                                        '\u0432 \u044D\u043D\u0435\u0440\u0433\u0435\u0442\u0438\u043A\u0435/ \u043F\u0440\u043E\u043C\u044B\u0448\u043B\u0435\u043D\u043D\u043E\u0439 \u044D\u043D\u0435\u0440\u0433\u0435\u0442\u0438\u043A\u0435/ \u043A\u043E\u0442\u0435\u043B\u044C\u043D\u044B\u0445 \u0432 \u043A\u0430\u0447\u0435\u0441\u0442\u0432\u0435 \u043F\u0440\u0435\u0434\u043E\u0447\u0438\u0441\u0442\u043A\u0438 \u043F\u0435\u0440\u0435\u0434 \u043E\u0431\u043E\u0440\u0443\u0434\u043E\u0432\u0430\u043D\u0438\u0435\u043C \u043E\u0431\u0435\u0441\u0441\u043E\u043B\u0438\u0432\u0430\u043D\u0438\u044F;'
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'li',
+                                        null,
+                                        '\u0432 \u043A\u0430\u0447\u0435\u0441\u0442\u0432\u0435 \u043F\u0440\u0435\u0434\u043E\u0447\u0438\u0441\u0442\u043A\u0438 \u043F\u0435\u0440\u0435\u0434 \u0441\u0438\u0441\u0442\u0435\u043C\u0430\u043C\u0438 \u043E\u0431\u0440\u0430\u0442\u043D\u043E\u0433\u043E \u043E\u0441\u043C\u043E\u0441\u0430, \u0433\u0434\u0435 \u043F\u0440\u0435\u0434\u044A\u044F\u0432\u043B\u044F\u044E\u0442\u0441\u044F \u0432\u044B\u0441\u043E\u043A\u0438\u0435 \u0442\u0440\u0435\u0431\u043E\u0432\u0430\u043D\u0438\u044F \u043A \u0432\u043E\u0434\u0435, \u043F\u043E\u0441\u0442\u0443\u043F\u0430\u044E\u0449\u0435\u0439 \u043D\u0430 \u043C\u0435\u043C\u0431\u0440\u0430\u043D\u043D\u044B\u0435 \u044D\u043B\u0435\u043C\u0435\u043D\u0442\u044B \u043E\u0431\u0440\u0430\u0442\u043D\u043E\u0433\u043E \u043E\u0441\u043C\u043E\u0441\u0430;'
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'li',
+                                        null,
+                                        '\u0434\u043B\u044F \u043F\u043E\u0434\u0433\u043E\u0442\u043E\u0432\u043A\u0438 \u043F\u0438\u0442\u044C\u0435\u0432\u043E\u0439 \u0432\u043E\u0434\u044B.'
                                     )
                                 ),
                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                     'div',
-                                    { className: 'col-sm-3 col-xs-5 vcenter' },
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_1_path___default.a.join(__dirname, './imgs/technologies/preparation_1.png'), className: 'img-responsive' })
+                                    { className: 'unordered-list-header' },
+                                    '\u041F\u0420\u0415\u0418\u041C\u0423\u0429\u0415\u0421\u0422\u0412\u0410:'
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'ul',
+                                    { className: 'unordered-list' },
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'li',
+                                        null,
+                                        '\u0433\u0438\u0431\u043A\u043E\u0441\u0442\u044C \u043A\u043E\u043D\u0444\u0438\u0433\u0443\u0440\u0430\u0446\u0438\u0438, \u043B\u044E\u0431\u0430\u044F \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0438\u0442\u0435\u043B\u044C\u043D\u043E\u0441\u0442\u044C, \u043C\u043D\u043E\u0433\u043E\u0441\u0442\u0443\u043F\u0435\u043D\u0447\u0430\u0442\u044B\u0435 \u0441\u0445\u0435\u043C\u044B,'
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'li',
+                                        null,
+                                        '\u0432\u044B\u0441\u043E\u043A\u0430\u044F \u044D\u0444\u0444\u0435\u043A\u0442\u0438\u0432\u043D\u043E\u0441\u0442\u044C \u0437\u0430 \u0441\u0447\u0435\u0442 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u044F \u043C\u0435\u043C\u0431\u0440\u0430\u043D \u0432\u0435\u0434\u0443\u0449\u0438\u0445 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0438\u0442\u0435\u043B\u0435\u0439'
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'li',
+                                        null,
+                                        '\u043F\u043E\u043B\u043D\u0430\u044F \u0430\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0437\u0430\u0446\u0438\u044F \u043D\u0430\u0440\u044F\u0434\u0443 \u0441 \u043F\u0440\u043E\u0441\u0442\u043E\u0442\u043E\u0439 \u0443\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u044F'
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'li',
+                                        null,
+                                        '\u043D\u0438\u0437\u043A\u0438\u0435 \u044D\u043A\u0441\u043F\u043B\u0443\u0430\u0442\u0430\u0446\u0438\u043E\u043D\u043D\u044B\u0435 \u0440\u0430\u0441\u0445\u043E\u0434\u044B'
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'li',
+                                        null,
+                                        '\u043D\u0430\u0434\u0435\u0436\u043D\u043E\u0441\u0442\u044C \u0438 \u0434\u043E\u043B\u0433\u043E\u0432\u0435\u0447\u043D\u043E\u0441\u0442\u044C \u043E\u0431\u043E\u0440\u0443\u0434\u043E\u0432\u0430\u043D\u0438\u044F'
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'li',
+                                        null,
+                                        '\u0443\u0434\u043E\u0431\u0441\u0442\u0432\u043E \u0438 \u043F\u0440\u043E\u0441\u0442\u043E\u0442\u0430 \u043E\u0431\u0441\u043B\u0443\u0436\u0438\u0432\u0430\u043D\u0438\u044F'
+                                    )
                                 )
                             ),
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                 'div',
-                                { className: 'unordered-list-header' },
-                                '\u041F\u0420\u0415\u0418\u041C\u0423\u0429\u0415\u0421\u0422\u0412\u0410 \u0420\u0410\u0411\u041E\u0422\u042B \u0421 \u041E\u041E\u041E \xAB\u0412\u041E\u0422\u0415\u0420 \u042D\u041A\u041E \u0422\u0415\u0425\xBB:'
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'ul',
-                                { className: 'unordered-list' },
+                                { id: 'complex-water-equipment', className: 'technologies-section' },
                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u0432\u044B\u0441\u043E\u043A\u043E\u0435 \u043A\u0430\u0447\u0435\u0441\u0442\u0432\u043E \u043E\u0431\u043E\u0440\u0443\u0434\u043E\u0432\u0430\u043D\u0438\u044F \u0438 \u0432\u044B\u043F\u043E\u043B\u043D\u044F\u0435\u043C\u044B\u0445 \u0440\u0430\u0431\u043E\u0442;'
+                                    'h2',
+                                    { className: 'tech_category_title' },
+                                    '\u041A\u043E\u043C\u043F\u043B\u0435\u043A\u0441 \u043E\u0431\u043E\u0440\u0443\u0434\u043E\u0432\u0430\u043D\u0438\u044F \u0432\u043E\u0434\u043E\u043F\u043E\u0434\u0433\u043E\u0442\u043E\u0432\u043A\u0438'
                                 ),
                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u0432\u043E\u0437\u043C\u043E\u0436\u043D\u043E\u0441\u0442\u044C \u043F\u043E\u0441\u0442\u0440\u043E\u0435\u043D\u0438\u044F \u043B\u044E\u0431\u043E\u0439 \u0441\u0445\u0435\u043C\u044B \u0432\u043E\u0434\u043E\u043F\u043E\u0434\u0433\u043E\u0442\u043E\u0432\u043A\u0438 \xAB\u043F\u043E\u0434 \u043A\u043B\u0438\u0435\u043D\u0442\u0430\xBB'
+                                    'p',
+                                    { className: 'paragraph-text blue' },
+                                    '\u0418\u0441\u0445\u043E\u0434\u044F \u0438\u0437 \u0432\u0430\u0448\u0435\u0433\u043E \u0442\u0435\u0445\u043D\u0438\u0447\u0435\u0441\u043A\u043E\u0433\u043E \u0437\u0430\u0434\u0430\u043D\u0438\u044F, \u0430\u043D\u0430\u043B\u0438\u0437\u0430 \u0432\u043E\u0434\u044B, \u0442\u0440\u0435\u0431\u043E\u0432\u0430\u043D\u0438\u0439 \u043A \u043E\u0447\u0438\u0449\u0435\u043D\u043D\u043E\u0439 \u0432\u043E\u0434\u0435, \u043D\u0430\u043B\u0438\u0447\u0438\u044F \u043C\u0435\u0441\u0442\u0430 \u0438 \u043F\u0440\u043E\u0447\u0438\u0445 \u0443\u0441\u043B\u043E\u0432\u0438\u0439, \u043D\u0430\u0448\u0438 \u0438\u043D\u0436\u0435\u043D\u0435\u0440\u0430 \u043F\u0440\u0435\u0434\u043B\u043E\u0436\u0430\u0442 \u043E\u043F\u0442\u0438\u043C\u0430\u043B\u044C\u043D\u0443\u044E \u0441\u0445\u0435\u043C\u0443 \u0432\u043E\u0434\u043E\u043F\u043E\u0434\u0433\u043E\u0442\u043E\u0432\u043A\u0438 \u043D\u0430 \u0431\u0430\u0437\u0435 \u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0439 WET.'
                                 ),
                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u0448\u0438\u0440\u043E\u043A\u0438\u0439 \u0432\u044B\u0431\u043E\u0440 \u043C\u0430\u0442\u0435\u0440\u0438\u0430\u043B\u043E\u0432, \u0432\u0430\u0440\u0438\u0430\u043D\u0442\u043E\u0432 \u0438\u0441\u043F\u043E\u043B\u043D\u0435\u043D\u0438\u044F \u0438 \u0430\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0437\u0430\u0446\u0438\u0438 \u043E\u0431\u043E\u0440\u0443\u0434\u043E\u0432\u0430\u043D\u0438\u044F'
+                                    'div',
+                                    { className: 'row' },
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'div',
+                                        { className: 'col-sm-9 col-xs-7 vcenter' },
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                            'p',
+                                            { className: 'paragraph-text blue' },
+                                            '\u0412 \u0441\u043B\u0443\u0447\u0430\u0435, \u0435\u0441\u043B\u0438 \u0432\u044B \u043D\u0435 \u0437\u043D\u0430\u0435\u0442\u0435 \u043A\u0430\u043A\u043E\u0435 \u043A\u0430\u0447\u0435\u0441\u0442\u0432\u043E \u0432\u043E\u0434\u044B \u043D\u0435\u043E\u0431\u0445\u043E\u0434\u0438\u043C\u043E \u0434\u043B\u044F \u0440\u0435\u0448\u0435\u043D\u0438\u044F \u0432\u0430\u0448\u0435\u0439 \u0437\u0430\u0434\u0430\u0447\u0438, \u043C\u044B \u043C\u043E\u0436\u0435\u043C \u0434\u0430\u0442\u044C \u0440\u0435\u043A\u043E\u043C\u0435\u043D\u0434\u0430\u0446\u0438\u0438, \u043E\u043F\u0438\u0440\u0430\u044F\u0441\u044C \u043D\u0430 \u0441\u0432\u043E\u0439 14-\u043B\u0435\u0442\u043D\u0438\u0439 \u043E\u043F\u044B\u0442 \u0440\u0430\u0431\u043E\u0442\u044B \u0432 \u0441\u0444\u0435\u0440\u0435 \u0432\u043E\u0434\u043E\u043F\u043E\u0434\u0433\u043E\u0442\u043E\u0432\u043A\u0438.'
+                                        ),
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                            'p',
+                                            { className: 'paragraph-text blue' },
+                                            '\u041C\u044B \u043C\u043E\u0436\u0435\u043C \u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u0430\u0442\u044C \u043A\u043E\u043C\u043F\u043B\u0435\u043A\u0441 \u0432\u043E\u0434\u043E\u043F\u043E\u0434\u0433\u043E\u0442\u043E\u0432\u043A\u0438 \u0441 \u043F\u043E\u043B\u0443\u0447\u0435\u043D\u0438\u0435\u043C \u0432\u043E\u0434\u044B \u0440\u0430\u0437\u043B\u0438\u0447\u043D\u043E\u0433\u043E \u043A\u0430\u0447\u0435\u0441\u0442\u0432\u0430 \u0434\u043B\u044F \u043E\u0434\u043D\u043E\u0432\u0440\u0435\u043C\u0435\u043D\u043D\u043E\u0433\u043E \u0440\u0435\u0448\u0435\u043D\u0438\u044F \u0441\u0440\u0430\u0437\u0443 \u043D\u0435\u0441\u043A\u043E\u043B\u044C\u043A\u0438\u0445 \u0432\u0430\u0448\u0438\u0445 \u0437\u0430\u0434\u0430\u0447, \u0442\u0435\u043C \u0441\u0430\u043C\u044B\u043C \u0441\u043E\u043A\u0440\u0430\u0449\u0430\u044F \u043A\u0430\u043F\u0438\u0442\u0430\u043B\u044C\u043D\u044B\u0435 \u0437\u0430\u0442\u0440\u0430\u0442\u044B \u0438 \u044D\u043A\u043E\u043D\u043E\u043C\u044F \u043F\u043B\u043E\u0449\u0430\u0434\u044C.'
+                                        )
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'div',
+                                        { className: 'col-sm-3 col-xs-5 vcenter' },
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_1_path___default.a.join(__dirname, './imgs/technologies/preparation_1.png'), className: 'img-responsive' })
+                                    )
                                 ),
                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    null,
-                                    '\u043D\u0430\u043B\u0438\u0447\u0438\u0435 \u0441\u043E\u0431\u0441\u0442\u0432\u0435\u043D\u043D\u043E\u0439 \u0441\u043B\u0443\u0436\u0431\u044B \u043C\u043E\u043D\u0442\u0430\u0436\u0430 \u0438 \u0441\u0435\u0440\u0432\u0438\u0441\u0430 \u0441 \u043C\u043D\u043E\u0433\u043E\u043B\u0435\u0442\u043D\u0438\u043C \u043E\u043F\u044B\u0442\u043E\u043C \u0440\u0430\u0431\u043E\u0442\u044B'
+                                    'div',
+                                    { className: 'unordered-list-header' },
+                                    '\u041F\u0420\u0415\u0418\u041C\u0423\u0429\u0415\u0421\u0422\u0412\u0410 \u0420\u0410\u0411\u041E\u0422\u042B \u0421 \u041E\u041E\u041E \xAB\u0412\u041E\u0422\u0415\u0420 \u042D\u041A\u041E \u0422\u0415\u0425\xBB:'
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'ul',
+                                    { className: 'unordered-list' },
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'li',
+                                        null,
+                                        '\u0432\u044B\u0441\u043E\u043A\u043E\u0435 \u043A\u0430\u0447\u0435\u0441\u0442\u0432\u043E \u043E\u0431\u043E\u0440\u0443\u0434\u043E\u0432\u0430\u043D\u0438\u044F \u0438 \u0432\u044B\u043F\u043E\u043B\u043D\u044F\u0435\u043C\u044B\u0445 \u0440\u0430\u0431\u043E\u0442;'
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'li',
+                                        null,
+                                        '\u0432\u043E\u0437\u043C\u043E\u0436\u043D\u043E\u0441\u0442\u044C \u043F\u043E\u0441\u0442\u0440\u043E\u0435\u043D\u0438\u044F \u043B\u044E\u0431\u043E\u0439 \u0441\u0445\u0435\u043C\u044B \u0432\u043E\u0434\u043E\u043F\u043E\u0434\u0433\u043E\u0442\u043E\u0432\u043A\u0438 \xAB\u043F\u043E\u0434 \u043A\u043B\u0438\u0435\u043D\u0442\u0430\xBB'
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'li',
+                                        null,
+                                        '\u0448\u0438\u0440\u043E\u043A\u0438\u0439 \u0432\u044B\u0431\u043E\u0440 \u043C\u0430\u0442\u0435\u0440\u0438\u0430\u043B\u043E\u0432, \u0432\u0430\u0440\u0438\u0430\u043D\u0442\u043E\u0432 \u0438\u0441\u043F\u043E\u043B\u043D\u0435\u043D\u0438\u044F \u0438 \u0430\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0437\u0430\u0446\u0438\u0438 \u043E\u0431\u043E\u0440\u0443\u0434\u043E\u0432\u0430\u043D\u0438\u044F'
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'li',
+                                        null,
+                                        '\u043D\u0430\u043B\u0438\u0447\u0438\u0435 \u0441\u043E\u0431\u0441\u0442\u0432\u0435\u043D\u043D\u043E\u0439 \u0441\u043B\u0443\u0436\u0431\u044B \u043C\u043E\u043D\u0442\u0430\u0436\u0430 \u0438 \u0441\u0435\u0440\u0432\u0438\u0441\u0430 \u0441 \u043C\u043D\u043E\u0433\u043E\u043B\u0435\u0442\u043D\u0438\u043C \u043E\u043F\u044B\u0442\u043E\u043C \u0440\u0430\u0431\u043E\u0442\u044B'
+                                    )
                                 )
                             )
                         )
                     )
-                )
+                ),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_7__components_footer_footer_module__["a" /* default */], null)
             );
         }
     }]);
@@ -71615,7 +71670,7 @@ var TechnologiesWrapper = function (_Component) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_sliding_pane___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_react_sliding_pane__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_sliding_pane_dist_react_sliding_pane_css__ = __webpack_require__(37);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_sliding_pane_dist_react_sliding_pane_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_react_sliding_pane_dist_react_sliding_pane_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_footer_footer_module__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_footer_footer_module__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_titles_paragraph__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_titles_categoryTitle__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__Shared_css__ = __webpack_require__(8);

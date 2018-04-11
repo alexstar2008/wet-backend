@@ -53,6 +53,9 @@
     margin-top: 122px;
     height: 540px;
 }
+.slide-pane__overlay{
+    overflow-y: scroll !important;
+}
 .tech-sliding-pane .slide-pane__header{
     flex: 0 0 35px;
 }

@@ -1,5 +1,5 @@
-import React, {Component} from 'react';
-import {CSSTransition} from 'react-transition-group';
+import React, { Component } from 'react';
+import { CSSTransition } from 'react-transition-group';
 
 import './content-box-picture.css';
 
@@ -20,7 +20,7 @@ class ContentBoxPicture extends Component {
 
     render() {
         const listItem = this.props.list.map((item, index) => {
-            return <li key={index}>{item}</li>;
+            return <li key={index} dangerouslySetInnerHTML={{__html:item}}></li>;
         });
         let animatedList = null;
         // if(this.state.showList){
@@ -34,7 +34,7 @@ class ContentBoxPicture extends Component {
             <div className="col-xs-12 col-md-6">
                 <div className="cbp-wrapper">
                     <div className={"cbp-img " + imgStyles}>
-                        <img src={this.props.picture}/>
+                        <img src={this.props.picture} />
                     </div>
                     <div className="cbp-title">
                         {this.props.title}
@@ -42,7 +42,7 @@ class ContentBoxPicture extends Component {
                     {animatedList}
                     <div className="show-more-btn" onClick={this.toggleList}>
                         <i className={this.state.showList && "fa fa-chevron-down fa-rotate-180" || "fa fa-chevron-down"}
-                           aria-hidden="true"></i>
+                            aria-hidden="true"></i>
                     </div>
                 </div>
             </div>

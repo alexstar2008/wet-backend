@@ -39,10 +39,10 @@
 
 
 .slider-template{
+    position: fixed;
     background-color: #fff;
     z-index: 1001;
     cursor: pointer;
-    position: absolute;
     margin-left: auto;
     margin-right: auto;
     left: 0;
@@ -67,6 +67,15 @@
     z-index: 0;
     opacity: 0;
     transition: opacity 1s;
+}
+.slider-hidden .slider-desc{
+    opacity: 0;
+}
+.slider-hidden .slider-arrow{
+    opacity: 0;
+}
+.slider-hidden .slider-close{
+    opacity: 0;
 }
 
 .slider-template:hover{

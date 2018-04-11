@@ -44,7 +44,7 @@ class MainSlider extends React.Component{
                         <div className="container main-slider-content-wrapper">
                             <div className="row">
                                 <div className="main-slider-content">
-                                    «Контур Глобал» (Кока-кола) 
+                                    «Контур Глобал» (Кока-кола)<br/>
                                     пгт. Б. Дымерка, Киевская обл.<br/><br/>
                                     Комплекс ХВО 24 м<sup>3</sup>/ч обессоленной воды для
                                     парогенератора и подпитки охладительных
@@ -62,7 +62,7 @@ class MainSlider extends React.Component{
                                 <div className="main-slider-content">
                                     ОАО «Мироновский Хлебопродукт»,
                                     Птицефабрика «Винницкий Бройлер»
-                                    г. Ладыжин<br></br>
+                                    г. Ладыжин<br/><br/>
                                     ВОДОПОДГОТОВИТЕЛЬНАЯ СТАНЦИЯ 684 м<sup>3</sup>/ч
                                     4-х секционные осветлители с пульсирующим
                                     режимом работы

@@ -2,9 +2,6 @@ import React, { Component } from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
 import { HashLink as Link } from 'react-router-hash-link';
 import "animate.css/animate.min.css";
-// import {
-//     Link
-// } from 'react-router-dom';
 
 import '../../Shared.css';
 

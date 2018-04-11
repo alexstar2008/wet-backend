@@ -182,7 +182,7 @@ header .phone-list-item-content{
   position: fixed;
   bottom: 10%;
   right:5%;
-  padding-top: 4px;
+  padding-top: 10px;
   width: 52px;
   height: 52px;
   background-color: rgba(15, 76, 101, 0.5);

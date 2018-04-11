@@ -6,7 +6,7 @@ import Scrollchor from 'react-scrollchor';
         return (
             <Scrollchor to="#top" animate={{duration:700}}>
                 <div className="arrow-up">               
-                        <i className="fa fa-3x fa-arrow-up" aria-hidden="true"></i>
+                        <i className="fa fa-2x fa-arrow-up" aria-hidden="true"></i>
                 </div>
             </Scrollchor>
         );

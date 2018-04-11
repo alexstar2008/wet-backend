@@ -12,7 +12,7 @@ class Reference extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            table: <div>Loading...</div>
+            table: <img src="./imgs/Loading.svg"/>
         }
         this.getReference = this.getReference.bind(this);
         this.generateTable = this.generateTable.bind(this);

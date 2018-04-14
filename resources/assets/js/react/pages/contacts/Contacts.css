@@ -28,7 +28,7 @@
     .contacts-info-wrapper{
         margin-bottom: 20px;
     }
-    .address-item .phone-list div:first-child{
+    .contacts-info-wrapper .address-item .phone-list div:first-child{
         width: auto;
     }   
     .address-title{

@@ -30,7 +30,7 @@ class Technologies extends Component {
     render() {
         const itemsRendered = this.items.map((item, index) => {
             return (
-                <Link to={item.link}>
+                <Link to={item.link} key={index} >
                     <CardBoxPicture item={item} />
                 </Link>
             );

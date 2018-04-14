@@ -33,14 +33,13 @@ class Library extends Component {
             .then(data => {
                 this.createBooksTemplate(data);
                 this.setState({ docs: data });
-                console.log(data);
             })
             .catch(err => console.log(err));
     }
     createBooksTemplate(docs) {
-        const menu = docs.map((doc) => {
+        const menu = docs.map((doc,index) => {
             return (
-                <Scrollchor to={doc.doc} animate={{ duration: 300 }}>
+                <Scrollchor to={doc.doc} key={index} animate={{ duration: 300 }}>
                     <div className="tech-nav-item">
                         {doc.name}
                     </div>
@@ -97,7 +96,7 @@ class Library extends Component {
                     </div>
                 </div>
             </div>
-            <Footer/>
+            {this.state.docsRendered && <Footer/> }
         </div>
         );
     }

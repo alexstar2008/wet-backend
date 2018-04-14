@@ -42,9 +42,9 @@ class Equipment extends Component {
             .catch(err => console.log(err));
     }
     createDocumentTemplate(docs) {
-        const menu = docs.map((doc) => {
+        const menu = docs.map((doc,key) => {
             return (
-                <Scrollchor to={doc.doc} animate={{ duration: 300 }}>
+                <Scrollchor to={doc.doc} key={key} animate={{ duration: 300 }}>
                     <div className="tech-nav-item">
                         {doc.name}
                     </div>
@@ -104,7 +104,8 @@ class Equipment extends Component {
                         </div>
                     </div>
                 </div>
-                <Footer />
+                {this.state.docsRendered && <Footer /> }
+                
             </div >
 
         );

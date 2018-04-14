@@ -18,7 +18,7 @@ class Contacts extends Component{
         const phoneList = <ul className="phone-list">
             <li><div>Тел./Факс:</div><div className="phone-list-item-content"> +38 044 507 07 12</div></li>
             <li><div>Водафон:</div><div className="phone-list-item-content"> +38 050 351 49 51</div></li>
-            <li><div>Киевстар:</div><div className="phone-list-item-content"> +38 050 351 49 51</div></li>
+            <li><div>Киевстар:</div><div className="phone-list-item-content"> +38 068 849 61 68</div></li>
         </ul>;
         const mailList = <ul className="phone-list">
             <li><div>E-mail:</div><div className="phone-list-item-content"> wet@wet.com.ua</div></li>

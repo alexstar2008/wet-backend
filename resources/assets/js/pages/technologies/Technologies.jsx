@@ -20,7 +20,7 @@ class Technologies extends Component {
             { name: "Сорбция - фильтры с активированным углем WET-AC", img: "./imgs/technologies/menu/menu_4.png", desc: "4Desc", link: "technologies-content#sorbtion" },
             { name: "Умягчение (Na – катионирование)", img: "./imgs/technologies/menu/menu_5.png", desc: "5Desc", link: "technologies-content#softening" },
             { name: "Декарбонизация (Н – катионирование)", img: "./imgs/technologies/menu/menu_6.png", desc: "6Desc", link: "technologies-content#decarbonization" },
-            { name: "Обратный осмосё", img: "./imgs/technologies/menu/menu_7.png", desc: "6Desc", link: "technologies-content#reverse-osmos" },
+            { name: "Обратный осмос", img: "./imgs/technologies/menu/menu_7.png", desc: "6Desc", link: "technologies-content#reverse-osmos" },
             { name: "Ультрафильтрация", img: "./imgs/technologies/menu/menu_8.png", desc: "6Desc", link: "technologies-content#ultrafiltration" },
             { name: "Комплекс оборудования водоподготовки", img: "./imgs/technologies/menu/menu_9.png", desc: "6Desc", link: "technologies-content#complex-water-equipment" },
         ];

@@ -143,8 +143,7 @@ class AssemblingService extends Component{
                                 <span>инженер</span>
                                 <address>
                                     <h4>Контактные телефоны:</h4>
-                                    <div className="engineers-phones">Водафон: +38 050 381 02 74</div>
-                                    <div className="engineers-phones">Киевстар: +38 050 445 27 85</div>
+                                    <div className="engineers-phones">Водафон: +38 050 445 27 85</div>
                                 </address>
                             </div>
                         </div>

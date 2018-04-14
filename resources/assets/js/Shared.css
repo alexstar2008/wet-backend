@@ -65,6 +65,11 @@ body{
     border-left: none;  
     padding-left: 0;
 }
+@media screen and (max-width:767px){
+    .address-item .phone-list{
+        padding-left: 5%;
+    }
+}
 .address-item .phone-list li{
     font-size:1em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;

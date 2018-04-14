@@ -74,7 +74,9 @@ class Gallery extends Component {
                             </div>
                         </div>
                         <div className="row">
-                        <img src="./imgs/Loading.svg"/>
+                            <div className="col-xs-12 text-center">
+                                <img src="./imgs/Loading.svg"/>
+                            </div>  
                         </div>
                     </div>
                     <Footer/>
@@ -98,7 +100,7 @@ class Gallery extends Component {
             </div>
             <div className="slider-desc">
                 <span>{sliderItem.name}</span><br/>
-                {sliderItem.desc}
+                <div dangerouslySetInnerHTML={{__html: sliderItem.desc.replace(/м\^3/g,'м<sup>3</sup>')}}></div>
             </div>
         </div>;
 

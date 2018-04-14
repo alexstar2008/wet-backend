@@ -61382,7 +61382,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "/* Header */\nbody{\n    background-color: #fff;\n  }\n  header{\n    width: 100%;\n    position: fixed; \n    z-index: 1000;\n    background-color: #fff; \n  }\n  .main-wrapper{\n    overflow-x: hidden;\n  }\n  .main-wrapper>div{\n    padding-top: 132px;\n    overflow-x: hidden;\n  }\n  @media screen and (max-height:767px) {\n    .main-wrapper>div{\n      padding-top: 120px;\n    } \n  }\n  \n  @media screen and (max-width:767px){\n    body{\n      font-size: 12px;\n    }\n  }\n\n\n.vcenter {\n    display: inline-block;\n    vertical-align: middle;\n    float: none;\n }\n/* Address.jsx */\n.address-title{\n    color:#0f4c65;\n    font-size: 1.3em;\n    font-weight: bold;\n}\n.address-item{\n    text-align: center;\n  }\n.address-inline{\n    display: inline-block;\n    width: 85%;\n    vertical-align: top;\n    text-align: left;\n}\n.address-marker{\n    color:#207ca1;\n    font-size: 2em;\n    min-width: 25px;\n    width: 5%;\n} \n.address-content{\n    font-family: Verdana, Geneva, Tahoma, sans-serif;\n    color:#0f4c65;\n    font-size: 1.15em;\n}   \n/*phone-list*/\n.address-item .phone-list{\n    list-style-type: none;\n    border-left: none;  \n    padding-left: 0;\n}\n.address-item .phone-list li{\n    font-size:1em;\n    font-family: Verdana, Geneva, Tahoma, sans-serif;\n    color:#0f4c65;\n    padding-top: 5px;\n}\n.address-item .phone-list div:first-child {\n    font-weight: bold;\n    display: inline-block;\n    width: 100px;\n    vertical-align: top;\n}\n.phone-list-item-content{\n    vertical-align: top;\n    display: inline-block;\n    text-align: right;\n    width: 140px;\n}\n\n/*------------TITLES-----------*/\n/* SUB-TITLE */\n.paragraph_title{\n    text-align: center;\n    text-transform: uppercase;\n    color:#0f4c65;\n    letter-spacing: 2px;\n    font-family: Georgia, 'Times New Roman', Times, serif;\n    font-weight: bold;\n    font-size: 1.3em;\n}\n/* PAGE-TITLE */\n.category_title{\n    text-align: center;\n    text-transform: uppercase;\n    color:#0f4c65;\n    letter-spacing: 2px;\n    font-family: Georgia, 'Times New Roman', Times, serif;\n    font-weight: bold;\n    font-size: 1.5em;\n  }\n  .white{\n    color: WHITE;\n  }\n/*------------TEXT-----------*/\n/* PARAGRAPH-TEXT */\n.paragraph-text{\n    font-family: Verdana,Geneva,Tahoma,sans-serif;\n    font-size: 1.15em;\n    margin-top: 25px;\n}\n.blue{\n    color:#0f4b65;\n}\n\n/* Paragraph shared */\n/* bold title and bold list headers */\n/* left padding of each item */\n.paragraph-header{\n    font-family: Verdana,Geneva,Tahoma,sans-serif;    \n    margin-top: 25px;\n    font-weight: bold;\n    color:#0f4c65;\n    font-size:1.2em;\n}\n.paragraph-list-header{\n    font-family: Verdana,Geneva,Tahoma,sans-serif;    \n    margin-top: 50px;\n    font-weight: bold;\n    color:#0f4c65;\n    font-size:1.15em;\n}\n.paragraph-list-item{\n    font-family: Verdana,Geneva,Tahoma,sans-serif;    \n    color:#0f4c65;\n    font-size:1.15em;\n    padding-left: 35px;\n}\n.dark-blue{\n color: #0f4c65 !important;\n}\n/* list with subitems no padding */\n.list_type-one-header{\n    color:#0f4c65;\n    font-family: Verdana,Geneva,Tahoma,sans-serif;    \n    margin-top: 40px;\n    font-weight: bold;\n    font-size:1.15em;   \n    text-transform: uppercase;\n}\n.list_type-one-item{\n    font-family: Verdana,Geneva,Tahoma,sans-serif;    \n    color:#0f4c65;\n    font-size:1.15em;\n    line-height: 22px;\n}\n/* header and dash list */\n.unordered-list-header{\n    font-family: Verdana,Geneva,Tahoma,sans-serif;    \n    margin-top: 20px;\n    font-weight: bold;\n    color:#0f4c65;\n    font-size:1.15em;\n}\n.unordered-list{\n    margin-top: 7px;\n    padding-left: 20px;\n}\n.unordered-list li{\n    list-style-type: none;\n    font-family: Verdana,Geneva,Tahoma,sans-serif;    \n    color:#0f4c65;\n    font-size:1.15em;\n}\n.unordered-list li:before {\n    content: \"-\";\n}\n.list-without-order li:before {\n    content: \"\" !important;\n}\n\n/* fuck */\n.margin_bottom_50{\n    margin-bottom: 50px;\n}", ""]);
+exports.push([module.i, "/* Header */\nbody{\n    background-color: #fff;\n  }\n  header{\n    width: 100%;\n    position: fixed; \n    z-index: 1000;\n    background-color: #fff; \n  }\n  .main-wrapper{\n    overflow-x: hidden;\n  }\n  .main-wrapper>div{\n    padding-top: 132px;\n    overflow-x: hidden;\n  }\n  @media screen and (max-height:767px) {\n    .main-wrapper>div{\n      padding-top: 120px;\n    } \n  }\n  \n  @media screen and (max-width:767px){\n    body{\n      font-size: 12px;\n    }\n  }\n\n\n.vcenter {\n    display: inline-block;\n    vertical-align: middle;\n    float: none;\n }\n/* Address.jsx */\n.address-title{\n    color:#0f4c65;\n    font-size: 1.3em;\n    font-weight: bold;\n}\n.address-item{\n    text-align: center;\n  }\n.address-inline{\n    display: inline-block;\n    width: 85%;\n    vertical-align: top;\n    text-align: left;\n}\n.address-marker{\n    color:#207ca1;\n    font-size: 2em;\n    min-width: 25px;\n    width: 5%;\n} \n.address-content{\n    font-family: Verdana, Geneva, Tahoma, sans-serif;\n    color:#0f4c65;\n    font-size: 1.15em;\n}   \n/*phone-list*/\n.address-item .phone-list{\n    list-style-type: none;\n    border-left: none;  \n    padding-left: 0;\n}\n@media screen and (max-width:767px){\n    .address-item .phone-list{\n        padding-left: 5%;\n    }\n}\n.address-item .phone-list li{\n    font-size:1em;\n    font-family: Verdana, Geneva, Tahoma, sans-serif;\n    color:#0f4c65;\n    padding-top: 5px;\n}\n.address-item .phone-list div:first-child {\n    font-weight: bold;\n    display: inline-block;\n    width: 100px;\n    vertical-align: top;\n}\n.phone-list-item-content{\n    vertical-align: top;\n    display: inline-block;\n    text-align: right;\n    width: 140px;\n}\n\n/*------------TITLES-----------*/\n/* SUB-TITLE */\n.paragraph_title{\n    text-align: center;\n    text-transform: uppercase;\n    color:#0f4c65;\n    letter-spacing: 2px;\n    font-family: Georgia, 'Times New Roman', Times, serif;\n    font-weight: bold;\n    font-size: 1.3em;\n}\n/* PAGE-TITLE */\n.category_title{\n    text-align: center;\n    text-transform: uppercase;\n    color:#0f4c65;\n    letter-spacing: 2px;\n    font-family: Georgia, 'Times New Roman', Times, serif;\n    font-weight: bold;\n    font-size: 1.5em;\n  }\n  .white{\n    color: WHITE;\n  }\n/*------------TEXT-----------*/\n/* PARAGRAPH-TEXT */\n.paragraph-text{\n    font-family: Verdana,Geneva,Tahoma,sans-serif;\n    font-size: 1.15em;\n    margin-top: 25px;\n}\n.blue{\n    color:#0f4b65;\n}\n\n/* Paragraph shared */\n/* bold title and bold list headers */\n/* left padding of each item */\n.paragraph-header{\n    font-family: Verdana,Geneva,Tahoma,sans-serif;    \n    margin-top: 25px;\n    font-weight: bold;\n    color:#0f4c65;\n    font-size:1.2em;\n}\n.paragraph-list-header{\n    font-family: Verdana,Geneva,Tahoma,sans-serif;    \n    margin-top: 50px;\n    font-weight: bold;\n    color:#0f4c65;\n    font-size:1.15em;\n}\n.paragraph-list-item{\n    font-family: Verdana,Geneva,Tahoma,sans-serif;    \n    color:#0f4c65;\n    font-size:1.15em;\n    padding-left: 35px;\n}\n.dark-blue{\n color: #0f4c65 !important;\n}\n/* list with subitems no padding */\n.list_type-one-header{\n    color:#0f4c65;\n    font-family: Verdana,Geneva,Tahoma,sans-serif;    \n    margin-top: 40px;\n    font-weight: bold;\n    font-size:1.15em;   \n    text-transform: uppercase;\n}\n.list_type-one-item{\n    font-family: Verdana,Geneva,Tahoma,sans-serif;    \n    color:#0f4c65;\n    font-size:1.15em;\n    line-height: 22px;\n}\n/* header and dash list */\n.unordered-list-header{\n    font-family: Verdana,Geneva,Tahoma,sans-serif;    \n    margin-top: 20px;\n    font-weight: bold;\n    color:#0f4c65;\n    font-size:1.15em;\n}\n.unordered-list{\n    margin-top: 7px;\n    padding-left: 20px;\n}\n.unordered-list li{\n    list-style-type: none;\n    font-family: Verdana,Geneva,Tahoma,sans-serif;    \n    color:#0f4c65;\n    font-size:1.15em;\n}\n.unordered-list li:before {\n    content: \"-\";\n}\n.list-without-order li:before {\n    content: \"\" !important;\n}\n\n/* fuck */\n.margin_bottom_50{\n    margin-bottom: 50px;\n}", ""]);
 
 // exports
 
@@ -65302,7 +65302,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "/* Сontacts */\n.contacts{\n    margin-top: 85px;\n  }\n  .addresses-group{\n    margin: 20px 0;\n  }\n  .addresses-group .address-item:last-of-type{\n    margin-left: 0;\n    padding: 0 !important;\n  }\n  @media screen and (max-width:767px) {\n    .contacts{\n      margin-top: 40px;\n    }\n  }\n.contacts .phone-list-item-content{\n    width: auto;\n}\n  \n  ", ""]);
+exports.push([module.i, "/* Сontacts */\n.contacts{\n    margin-top: 85px;\n  }\n  .addresses-group{\n    margin: 20px 0;\n  }\n  .addresses-group .address-item:last-of-type{\n    margin-left: 0;\n    padding: 0 !important;\n  }\n  @media screen and (max-width:767px) {\n    .contacts{\n      margin-top: 40px;\n    }\n  }\n.contacts-info-wrapper .phone-list-item-content{\n    width: auto;\n}\n  \n  ", ""]);
 
 // exports
 
@@ -65395,20 +65395,7 @@ var ClientsSlider = function (_React$Component) {
         var _this = _possibleConstructorReturn(this, (ClientsSlider.__proto__ || Object.getPrototypeOf(ClientsSlider)).call(this, props));
 
         _this.state = {
-            clients: [
-            // {name:'Carlsberg Group',src:'./imgs/clients/',alt:'client'},
-            // {name:'Перша Приватна Броварня',src:'./imgs/clients/',alt:'client'},
-            // {name:'Оболонь',src:'./imgs/clients/',alt:'client'},
-
-            { name: 'МХП', src: './imgs/clients/МХП.png', alt: 'client' },
-
-            // {name:'Перечинский ЛХК',src:'./imgs/clients/',alt:'client'},
-
-            { name: 'Нидан-Фудс Берегово', src: './imgs/nidan-juices.png', alt: 'client' },
-
-            //  {name:'CarlsbergGroup ПЗ Славутич',src:'./imgs/clients/',alt:'client'},
-
-            { name: 'Rusnac - MoldAqua', src: './imgs/clients/Rusnac – MoldAqua.png', alt: 'client' }, { name: 'Донбасэнерго, Старобешевская ТЭС', src: './imgs/clients/Донбассэнерго.png', alt: 'client' }, { name: 'Камелия-PR', src: './imgs/clients/Камелия-PR.png', alt: 'client' }, { name: 'Луцьк Фудз', src: './imgs/clients/Луцьк Фудз.png', alt: 'client' }, { name: 'ИСД', src: './imgs/clients/ИСД.png', alt: 'client' }, { name: 'Инкерман, Крым', src: './imgs/clients/Инкерман.png', alt: 'client' }, { name: 'ПрАТ "Вентс', src: './imgs/clients/ПрАТ «Вентс».png', alt: 'client' }, { name: 'ООО НПП "Гетьман"', src: './imgs/clients/ООО НПП «Гетьман».png', alt: 'client' }, { name: 'Биогазэнерго', src: './imgs/clients/Биогазэнерго.png', alt: 'client' }]
+            clients: [{ name: 'Carlsberg Group', src: './imgs/clients/Lvovskoe.png', alt: 'client' }, { name: 'Перша Приватна Броварня', src: './imgs/clients/PershaPrivatna.png', alt: 'client' }, { name: 'Оболонь', src: './imgs/clients/Obolon.png', alt: 'client' }, { name: 'МХП', src: './imgs/clients/МХП.png', alt: 'client' }, { name: 'Перечинский ЛХК', src: './imgs/clients/PerechenskiiLHK.png', alt: 'client' }, { name: 'Нидан-Фудс Берегово', src: './imgs/nidan-juices.png', alt: 'client' }, { name: 'CarlsbergGroup ПЗ Славутич', src: './imgs/clients/Slavutych.png', alt: 'client' }, { name: 'Rusnac - MoldAqua', src: './imgs/clients/Rusnac – MoldAqua.png', alt: 'client' }, { name: 'Донбасэнерго, Старобешевская ТЭС', src: './imgs/clients/Донбассэнерго.png', alt: 'client' }, { name: 'Камелия-PR', src: './imgs/clients/Камелия-PR.png', alt: 'client' }, { name: 'Луцьк Фудз', src: './imgs/clients/Луцьк Фудз.png', alt: 'client' }, { name: 'ИСД', src: './imgs/clients/ИСД.png', alt: 'client' }, { name: 'Инкерман, Крым', src: './imgs/clients/Инкерман.png', alt: 'client' }, { name: 'ПрАТ "Вентс', src: './imgs/clients/ПрАТ «Вентс».png', alt: 'client' }, { name: 'ООО НПП "Гетьман"', src: './imgs/clients/ООО НПП «Гетьман».png', alt: 'client' }, { name: 'Биогазэнерго', src: './imgs/clients/Биогазэнерго.png', alt: 'client' }]
         };
         return _this;
     }
@@ -65809,7 +65796,7 @@ var Equipment = function (_Component) {
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                 'div',
                                 { className: 'col-sm-8 col-sm-offset-1' },
-                                this.state.docsRendered
+                                this.state.docsRendered || __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: './imgs/Loading.svg' })
                             )
                         )
                     )
@@ -66767,7 +66754,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, ".img-responsive {\n    margin: 0 auto;\n}\n.vcenter {\n    display: inline-block;\n    vertical-align: middle;\n    float: none;\n}\n\n.technologies{\n    margin-top: 20px;\n    margin-bottom: 15px;\n}\n\n.tech_category_title{\n    text-align: left;\n    text-transform: uppercase;\n    letter-spacing: 2px;\n    font-family: Georgia, 'Times New Roman', Times, serif;\n    font-weight: bold;\n    font-size: 1.5em;\n}\n@media screen and (min-width:768px) and (max-width:821px){\n    .technologies{\n        margin-top: 120px;\n    }\n}\n@media screen and (max-width:767px) {\n    .tech_category_title{\n       text-align: center;\n    }\n}\n.table-wrapper{\n    overflow-x: scroll;\n    max-width: 100%; \n}\n.tech-table{\n    margin-top: 20px;\n}\n.tech-table td,th{\n    padding: 5px 15px;\n    border: 1px solid #abb4b4;\n    color: #0f4c65;\n    font-size: 1.15em;\n}\n.tech-table td {\n    text-transform: uppercase;\n}\n\n\n/* Sliding pane */\n.tech-sliding-pane{\n    margin-top: 122px;\n    height: 540px;\n}\n.slide-pane__overlay{\n    overflow-y: scroll !important;\n}\n.tech-sliding-pane .slide-pane__header{\n    flex: 0 0 35px;\n}\n.tech-sliding-pane .tech-nav{\n    width: 100%;\n    left: 0;\n    top:35px;\n\n}\n.tech-sliding-pane .tech-nav-item{\n    border-left: none;\n    border-right: none;\n}\n.tech-sliding-pane .tech-nav-item:first-child{\n    border-top: none;\n}\n\n/* Navigations */\n.tech-arrow{\n    z-index: 1000;\n    position: fixed;\n    top: 25%;\n    left: 0;\n    padding-top: 16px;\n    width: 32px;\n    height: 62px;\n    background-color: rgba(15, 76, 101, 0.5);\n    /* border-radius: 50%; */\n    color: #fff;\n    text-align: center;\n    transition: background-color .5s;\n}\n.tech-nav{\n    position: fixed;\n    width: 25%;\n    max-width: 280px;\n}\n.tech-nav a{\n    text-decoration: none !important;\n}\n.tech-nav-item{\n    cursor: pointer;\n    border: 1px solid #167198;\n    border-top: none;\n    font-size: 1.15em;\n    color: #167198;\n    text-align: center;\n    padding: 10px 15px;\n}\n.tech-nav-item:first-child{\n    border-top: 1px solid #167198;\n}\n.tech-nav-item:hover{\n    color:#fff;\n    background-color: #66bee4;\n}\n\n.active{\n    color:#fff;\n    background-color: rgb(22, 113, 152);\n}\n\n.technologies-section{\n    padding-top: 40px;\n    padding-bottom: 40px;\n}\n@media screen and (max-width:767px){\n    .technologies-section{\n        padding-top: 25px;\n        padding-bottom: 25px;\n    }\n}\n\n.technologies_iframe{\n    margin: 50px auto;\n    text-align: center;\n}\n.technologies_iframe iframe{\n    max-width: 100%;\n}\n/* .technologies-section:nth-child(2n){\n  background-color: #edf6f6;  \n} */", ""]);
+exports.push([module.i, ".library-doc_title{\n    margin-top: 75px !important;\n}\n.img-responsive {\n    margin: 0 auto;\n}\n.vcenter {\n    display: inline-block;\n    vertical-align: middle;\n    float: none;\n}\n\n.technologies{\n    margin-top: 20px;\n    margin-bottom: 15px;\n}\n\n.tech_category_title{\n    text-align: left;\n    text-transform: uppercase;\n    letter-spacing: 2px;\n    font-family: Georgia, 'Times New Roman', Times, serif;\n    font-weight: bold;\n    font-size: 1.5em;\n}\n@media screen and (min-width:768px) and (max-width:821px){\n    .technologies{\n        margin-top: 120px;\n    }\n}\n@media screen and (max-width:767px) {\n    .tech_category_title{\n       text-align: center;\n    }\n}\n.table-wrapper{\n    overflow-x: scroll;\n    max-width: 100%; \n}\n.tech-table{\n    margin-top: 20px;\n}\n.tech-table td,th{\n    padding: 5px 15px;\n    border: 1px solid #abb4b4;\n    color: #0f4c65;\n    font-size: 1.15em;\n}\n.tech-table td {\n    text-transform: uppercase;\n}\n\n\n/* Sliding pane */\n.tech-sliding-pane{\n    margin-top: 122px;\n    height: 540px;\n}\n.slide-pane__overlay{\n    overflow-y: scroll !important;\n}\n.tech-sliding-pane .slide-pane__header{\n    flex: 0 0 35px;\n}\n.tech-sliding-pane .tech-nav{\n    width: 100%;\n    left: 0;\n    top:35px;\n\n}\n.tech-sliding-pane .tech-nav-item{\n    border-left: none;\n    border-right: none;\n}\n.tech-sliding-pane .tech-nav-item:first-child{\n    border-top: none;\n}\n\n/* Navigations */\n.tech-arrow{\n    z-index: 1000;\n    position: fixed;\n    top: 25%;\n    left: 0;\n    padding-top: 16px;\n    width: 32px;\n    height: 62px;\n    background-color: rgba(15, 76, 101, 0.5);\n    /* border-radius: 50%; */\n    color: #fff;\n    text-align: center;\n    transition: background-color .5s;\n}\n.tech-nav{\n    position: fixed;\n    width: 25%;\n    max-width: 280px;\n}\n.tech-nav a{\n    text-decoration: none !important;\n}\n.tech-nav-item{\n    cursor: pointer;\n    border: 1px solid #167198;\n    border-top: none;\n    font-size: 1.15em;\n    color: #167198;\n    text-align: center;\n    padding: 10px 15px;\n}\n.tech-nav-item:first-child{\n    border-top: 1px solid #167198;\n}\n.tech-nav-item:hover{\n    color:#fff;\n    background-color: #66bee4;\n}\n\n.active{\n    color:#fff;\n    background-color: rgb(22, 113, 152);\n}\n\n.technologies-section{\n    padding-top: 40px;\n    padding-bottom: 40px;\n}\n@media screen and (max-width:767px){\n    .technologies-section{\n        padding-top: 25px;\n        padding-bottom: 25px;\n    }\n}\n\n.technologies_iframe{\n    margin: 50px auto;\n    text-align: center;\n}\n.technologies_iframe iframe{\n    max-width: 100%;\n}\n/* .technologies-section:nth-child(2n){\n  background-color: #edf6f6;  \n} */", ""]);
 
 // exports
 
@@ -66914,7 +66901,7 @@ var Contacts = function (_Component) {
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                         'div',
                         { className: 'phone-list-item-content' },
-                        ' +38 050 351 49 51'
+                        ' +38 068 849 61 68'
                     )
                 )
             );
@@ -67053,7 +67040,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, ".contacts-page{\n    margin-top: 55px;\n}\n.paragraph-text{\n    font-family: Verdana,Geneva,Tahoma,sans-serif;\n    font-size: 1.15em;\n    margin-top: 25px;\n}\n.blue{\n    color:#0f4b65;\n}\n/* Info */\n.contacts-info-wrapper{\n    margin-top: 20px;\n    margin-bottom: 50px;\n}\n.contacts-info-wrapper .address-inline{\n    width: 75%;\n}\n.contacts-info-wrapper .address-marker{\n    font-size: 4em;\n    width: 20%;\n}\n.contacts-info-wrapper .address-item{\n    margin-bottom: 25px;\n}\n@media screen and (max-width:767px){\n    .contacts-info-wrapper{\n        margin-bottom: 20px;\n    }\n    .address-item .phone-list div:first-child{\n        width: auto;\n    }   \n    .address-title{\n        text-align: center;\n    }\n    .phone-list-item-content{\n        width: auto;\n    }\n}\n\n/* Maps */\n.maps-wrapper{\n    margin-top: 35px;\n    margin-bottom: 100px;\n}\n@media screen and (max-width:767px) {\n    .maps-wrapper-item:first-of-type{\n        margin-bottom: 25px;\n    }\n}", ""]);
+exports.push([module.i, ".contacts-page{\n    margin-top: 55px;\n}\n.paragraph-text{\n    font-family: Verdana,Geneva,Tahoma,sans-serif;\n    font-size: 1.15em;\n    margin-top: 25px;\n}\n.blue{\n    color:#0f4b65;\n}\n/* Info */\n.contacts-info-wrapper{\n    margin-top: 20px;\n    margin-bottom: 50px;\n}\n.contacts-info-wrapper .address-inline{\n    width: 75%;\n}\n.contacts-info-wrapper .address-marker{\n    font-size: 4em;\n    width: 20%;\n}\n.contacts-info-wrapper .address-item{\n    margin-bottom: 25px;\n}\n@media screen and (max-width:767px){\n    .contacts-info-wrapper{\n        margin-bottom: 20px;\n    }\n    .address-item .phone-list div:first-child{\n        width: auto;\n    }   \n    .address-title{\n        text-align: center;\n    }\n    .phone-list-item-content{\n        width: auto;\n    }\n}\n\n/* Maps */\n.maps-wrapper{\n    margin-top: 35px;\n    margin-bottom: 100px;\n}\n@media screen and (max-width:767px) {\n    .maps-wrapper-item:first-of-type{\n        margin-bottom: 25px;\n    }\n    .phone-list{\n        text-align: left !important;\n    }\n}", ""]);
 
 // exports
 
@@ -67190,7 +67177,7 @@ var Maps = function (_React$Component) {
                             { className: 'map-label' },
                             '\u041F\u0440\u043E\u043B\u043E\u0436\u0435\u043D\u043D\u044B\u0439 \u043C\u0430\u0440\u0448\u0440\u0443\u0442 \u043A \u0441\u043A\u043B\u0430\u0434\u0443'
                         ),
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('iframe', { title: 'contact-map', src: 'https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d5077.170306945716!2d30.481484490079392!3d50.4860662921178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x40d4cdfbd2ea035b%3A0x43791b0e3a517f26!2z0JzQvtGB0LrQvtCy0YHRjNC60LjQuSDQv9GA0L7RgdC_0LXQutGCLCAyMSwg0JrQuNGX0LIsINC80ZbRgdGC0L4g0JrQuNGX0LI!3m2!1d50.489582899999995!2d30.4929882!4m5!1s0x40d4cde4c5665971%3A0x2b4c6bae44045038!2z0LLRg9C7LiDQktGW0LrQtdC90YLRltGPINCl0LLQvtC50LrQuCwgMjEsINCa0LjRl9Cy!3m2!1d50.485564499999995!2d30.4885584!5e0!3m2!1suk!2sua!4v1457992118730', frameBorder: '0', className: 'map-iframe', allowFullScreen: true })
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('iframe', { title: 'contact-map', src: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2538.5840069630112!2d30.486728234059296!3d50.486087633781075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cde4c0da45a7%3A0x34f368e7a689b2cd!2z0KHQutC70LDQtCAxNS8z0JA!5e0!3m2!1suk!2sua!4v1523659712221', frameBorder: '0', className: 'map-iframe', allowFullScreen: true })
                     )
                 )
             );
@@ -67291,7 +67278,7 @@ var Reference = function (_Component) {
         var _this = _possibleConstructorReturn(this, (Reference.__proto__ || Object.getPrototypeOf(Reference)).call(this, props));
 
         _this.state = {
-            table: __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: './imgs/Loading.svg' })
+            table: ''
         };
         _this.getReference = _this.getReference.bind(_this);
         _this.generateTable = _this.generateTable.bind(_this);
@@ -67395,7 +67382,7 @@ var Reference = function (_Component) {
                             )
                         )
                     ),
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    this.state.table !== '' && __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                         __WEBPACK_IMPORTED_MODULE_1_react_animate_on_scroll___default.a,
                         { animateOnce: true, animateIn: 'fadeInUp', duration: 2 },
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -67437,6 +67424,15 @@ var Reference = function (_Component) {
                                     )
                                 )
                             )
+                        )
+                    ),
+                    this.state.table === '' && __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'div',
+                        { className: 'row' },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            'div',
+                            { className: 'col-xs-12 text-center' },
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: './imgs/Loading.svg' })
                         )
                     ),
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -67794,12 +67790,7 @@ var AssemblingService = function (_Component) {
                                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                         'div',
                                         { className: 'engineers-phones' },
-                                        '\u0412\u043E\u0434\u0430\u0444\u043E\u043D: +38 050 381 02 74'
-                                    ),
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        'div',
-                                        { className: 'engineers-phones' },
-                                        '\u041A\u0438\u0435\u0432\u0441\u0442\u0430\u0440: +38 050 445 27 85'
+                                        '\u0412\u043E\u0434\u0430\u0444\u043E\u043D: +38 050 445 27 85'
                                     )
                                 )
                             )
@@ -68852,7 +68843,11 @@ var Gallery = function (_Component) {
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                             'div',
                             { className: 'row' },
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: './imgs/Loading.svg' })
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                'div',
+                                { className: 'col-xs-12 text-center' },
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: './imgs/Loading.svg' })
+                            )
                         )
                     ),
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__components_footer_footer_module__["a" /* default */], null)
@@ -68894,7 +68889,7 @@ var Gallery = function (_Component) {
                         sliderItem.name
                     ),
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
-                    sliderItem.desc
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { dangerouslySetInnerHTML: { __html: sliderItem.desc.replace(/м\^3/g, 'м<sup>3</sup>') } })
                 )
             );
 
@@ -69517,7 +69512,7 @@ var Technologies = function (_Component) {
 
         var _this = _possibleConstructorReturn(this, (Technologies.__proto__ || Object.getPrototypeOf(Technologies)).call(this, props));
 
-        _this.items = [{ name: "Осветление воды", img: "./imgs/technologies/menu/menu_1.png", desc: "1Desc", link: "technologies-content#clarification" }, { name: "Механическая фильтрация", img: "./imgs/technologies/menu/menu_2.png", desc: "2Desc", link: "technologies-content#filtration" }, { name: "Удаление железа / марганца на фильтрах WET- FE", img: "./imgs/technologies/menu/menu_3.png", desc: "3Desc", link: "technologies-content#ferum-remove" }, { name: "Сорбция - фильтры с активированным углем WET-AC", img: "./imgs/technologies/menu/menu_4.png", desc: "4Desc", link: "technologies-content#sorbtion" }, { name: "Умягчение (Na – катионирование)", img: "./imgs/technologies/menu/menu_5.png", desc: "5Desc", link: "technologies-content#softening" }, { name: "Декарбонизация (Н – катионирование)", img: "./imgs/technologies/menu/menu_6.png", desc: "6Desc", link: "technologies-content#decarbonization" }, { name: "Обратный осмосё", img: "./imgs/technologies/menu/menu_7.png", desc: "6Desc", link: "technologies-content#reverse-osmos" }, { name: "Ультрафильтрация", img: "./imgs/technologies/menu/menu_8.png", desc: "6Desc", link: "technologies-content#ultrafiltration" }, { name: "Комплекс оборудования водоподготовки", img: "./imgs/technologies/menu/menu_9.png", desc: "6Desc", link: "technologies-content#complex-water-equipment" }];
+        _this.items = [{ name: "Осветление воды", img: "./imgs/technologies/menu/menu_1.png", desc: "1Desc", link: "technologies-content#clarification" }, { name: "Механическая фильтрация", img: "./imgs/technologies/menu/menu_2.png", desc: "2Desc", link: "technologies-content#filtration" }, { name: "Удаление железа / марганца на фильтрах WET- FE", img: "./imgs/technologies/menu/menu_3.png", desc: "3Desc", link: "technologies-content#ferum-remove" }, { name: "Сорбция - фильтры с активированным углем WET-AC", img: "./imgs/technologies/menu/menu_4.png", desc: "4Desc", link: "technologies-content#sorbtion" }, { name: "Умягчение (Na – катионирование)", img: "./imgs/technologies/menu/menu_5.png", desc: "5Desc", link: "technologies-content#softening" }, { name: "Декарбонизация (Н – катионирование)", img: "./imgs/technologies/menu/menu_6.png", desc: "6Desc", link: "technologies-content#decarbonization" }, { name: "Обратный осмос", img: "./imgs/technologies/menu/menu_7.png", desc: "6Desc", link: "technologies-content#reverse-osmos" }, { name: "Ультрафильтрация", img: "./imgs/technologies/menu/menu_8.png", desc: "6Desc", link: "technologies-content#ultrafiltration" }, { name: "Комплекс оборудования водоподготовки", img: "./imgs/technologies/menu/menu_9.png", desc: "6Desc", link: "technologies-content#complex-water-equipment" }];
 
         return _this;
     }
@@ -71828,7 +71823,7 @@ var Library = function (_Component) {
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                             'div',
                             { className: 'col-sm-8 col-sm-offset-1' },
-                            this.state.docsRendered
+                            this.state.docsRendered || __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: './imgs/Loading.svg' })
                         )
                     )
                 ),

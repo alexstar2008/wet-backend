@@ -93,7 +93,7 @@ class Library extends Component {
                         </div>
                     </div>
                     <div className="col-sm-8 col-sm-offset-1">
-                        {this.state.docsRendered}
+                        {this.state.docsRendered || <img src="./imgs/Loading.svg"/> }
                     </div>
                 </div>
             </div>

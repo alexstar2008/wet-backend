@@ -12,7 +12,7 @@ class Reference extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            table: <img src="./imgs/Loading.svg"/>
+            table: ''
         }
         this.getReference = this.getReference.bind(this);
         this.generateTable = this.generateTable.bind(this);
@@ -80,26 +80,36 @@ class Reference extends Component {
                             </p>
                         </div>
                     </div>
-                    <ScrollAnimation animateOnce={true} animateIn="fadeInUp" duration={2}>
-                        <div className="row">
-                            <div className="col-xs-12 references_table_wrapper">
-                                <table className="references_table">
-                                    <thead>
-                                        <tr>
-                                            <th>Название предприятия</th>
-                                            <th>Предназначения</th>
-                                            <th>Оборудование/работы</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        {
-                                            this.state.table
-                                        }
-                                    </tbody>
-                                </table >
+                    {this.state.table !== '' &&
+                        <ScrollAnimation animateOnce={true} animateIn="fadeInUp" duration={2}>
+                            <div className="row">
+                                <div className="col-xs-12 references_table_wrapper">
+                                    <table className="references_table">
+                                        <thead>
+                                            <tr>
+                                                <th>Название предприятия</th>
+                                                <th>Предназначения</th>
+                                                <th>Оборудование/работы</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            {
+                                                this.state.table
+                                            }
+                                        </tbody>
+                                    </table >
+                                </div>
                             </div>
-                        </div>
-                    </ScrollAnimation>
+                        </ScrollAnimation>
+                    }
+                    { this.state.table === '' &&
+                            <div className="row">
+                                <div className="col-xs-12 text-center">
+                                    <img src="./imgs/Loading.svg"/>
+                                </div>
+                            </div>
+                    }
+
                     <div className="row">
                         <div className="col-xs-12 col-md-8">
                             <h4 className="paragraph-header">Специалистами отдела Химической обработки воды разработаны

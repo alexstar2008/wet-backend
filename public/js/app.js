@@ -18740,7 +18740,7 @@ var Reference = function (_Component) {
                     { key: categoryIndex },
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                         'tr',
-                        { key: categoryIndex },
+                        null,
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                             'td',
                             { colSpan: '3', className: 'references_section_header' },

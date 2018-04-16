@@ -52,6 +52,17 @@ class Equipment extends Component {
             );
         });
         const template = docs.map((doc) => {
+            const isImg = (/\.(gif|jpg|jpeg|tiff|png)$/i).test(doc.doc);
+            if(isImg){
+                return (
+                    <div className="col-xs-12 col-md-10 col-md-push-1">
+                         <div id={doc.doc}>
+                            <h2 className="library-doc_title">{doc.name}</h2>
+                            <img className="img-responsive" src={'/files/' + doc.doc} alt={doc.name}/>
+                        </div>
+                    </div>
+                );                
+            }
             return (
                 <div id={doc.doc}>
                     <h2 className="library-doc_title">{doc.name}</h2>

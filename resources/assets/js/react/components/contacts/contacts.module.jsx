@@ -27,7 +27,7 @@ class Contacts extends React.Component{
                         <ContactsAddress title='Контактные телефоны:' list={phoneList}/>
                     </div>
                 </div>
-                <ContactsMap title="Как к нам добраться:" />
+                <ContactsMap title="РАСПОЛОЖЕНИЕ ОФИСА:" />
             </div>
         );
     }

@@ -26,8 +26,8 @@ class NavBar extends React.Component {
       })
       .catch(err => console.log(err));
   }
-  componentDidMount() {
-    $(".navbar-nav li .sub").click(function (event) {
+  componentDidUpdate() {
+    $(".sub").click(function (event) {
       $(".navbar-collapse").collapse('hide');
     });
   }

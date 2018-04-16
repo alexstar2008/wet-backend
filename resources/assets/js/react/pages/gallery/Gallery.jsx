@@ -105,7 +105,7 @@ class Gallery extends Component {
         </div>;
 
         const itemsRendered = this.state.items.map((item, index) => {
-            return <div className="col-xs-12 col-sm-6 col-md-4">
+            return <div className="col-md-4  col-sm-6 col-xs-12" key={index}>
                 <div className="gallery-item" onClick={() => {
                     this.toggleSlider(index);
                 }}>

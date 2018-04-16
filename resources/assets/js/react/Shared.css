@@ -1,7 +1,17 @@
 /* Header */
 body{
     background-color: #fff;
-  }
+}
+p.about-desc, 
+.list_type-one-item,
+.content-box-body,
+.about-us_list-item,
+.paragraph-text,
+.paragraph-list-item,
+.unordered-list li
+{
+    text-align: justify;
+}
   header{
     width: 100%;
     position: fixed; 

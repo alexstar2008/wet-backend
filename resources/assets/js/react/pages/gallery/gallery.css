@@ -4,7 +4,7 @@
 }
 .gallery-item{
     cursor: pointer;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 .gallery-photo{
     text-align: center;
@@ -24,6 +24,7 @@
     text-align: center;
     max-width: 302px;
     margin: 0 auto;
+    height:75px;
 }
 .gallery-item .gallery-title{
     background-color: inherit;

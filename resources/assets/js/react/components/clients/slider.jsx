@@ -8,6 +8,8 @@ class ClientsSlider extends React.Component {
         super(props);
         this.state = {
             clients: [
+                {name:'Ovostar Union',src:'./imgs/clients/ovostart.png',alt:'client'},
+                {name:'ООО "КЛИАР ЭНЕРДЖИ"',src:'./imgs/clients/clearenergy.png',alt:'client'},
                 {name:'Carlsberg Group',src:'./imgs/clients/Lvovskoe.png',alt:'client'},
                 { name: 'Перша Приватна Броварня', src: './imgs/clients/PershaPrivatna.png', alt: 'client' },
                 { name: 'Оболонь', src: './imgs/clients/Obolon.png', alt: 'client' },

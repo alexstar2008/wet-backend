@@ -100,12 +100,12 @@ class TechnologiesWrapper extends Component {
                                     <Scrollchor to="ferum-remove" animate={{ duration: 700 }}  afterAnimate={() => this.setState({ isPaneOpenLeft: false })}>
                                         <div className="tech-nav-item">
                                             Удаление железа / марганца<br/>
-                                            на фильтрах WET- FE
+                                            на фильтрах <strong>WET- FE</strong>
                                         </div>
                                     </Scrollchor>
                                     <Scrollchor to="sorbtion" animate={{ duration: 700 }}  afterAnimate={() => this.setState({ isPaneOpenLeft: false })}>
                                         <div className="tech-nav-item">
-                                            Сорбция - фильтры с активированным углем WET-AC                                
+                                            Сорбция - фильтры с активированным углем <strong>WET-AC</strong>                                
                                         </div>
                                     </Scrollchor>
                                     <Scrollchor to="softening" animate={{ duration: 700 }}  afterAnimate={() => this.setState({ isPaneOpenLeft: false })}>
@@ -149,12 +149,12 @@ class TechnologiesWrapper extends Component {
                                 <Scrollchor to="ferum-remove" animate={{ duration: 700 }}>
                                     <div className="tech-nav-item">
                                         Удаление железа / марганца<br/>
-                                        на фильтрах WET- FE
+                                        на фильтрах <strong>WET- FE</strong>
                                     </div>
                                 </Scrollchor>
                                 <Scrollchor to="sorbtion" animate={{ duration: 700 }}>
                                     <div className="tech-nav-item">
-                                        Сорбция - фильтры с активированным углем WET-AC                                
+                                        Сорбция - фильтры с активированным углем <strong>WET-AC</strong>                              
                                     </div>
                                 </Scrollchor>
                                 <Scrollchor to="softening" animate={{ duration: 700 }}>
@@ -213,7 +213,7 @@ class TechnologiesWrapper extends Component {
                                             ООО «Вотер Эко Тех» предлагает осветлители разработки ОВИ<sup>ТМ</sup>
                                         </div>
                                         <p className="paragraph-text blue">
-                                            Осветлитель ОВИ<sup>ТМ</sup> импульсного типа, секционный.
+                                            Осветлитель <strong>ОВИ<sup>ТМ</sup></strong> импульсного типа, секционный.
                                             Материал – усиленный полипропилен.
                                             Для удобства обслуживания внутренние конструкции выполнены легко-разборными.
                                             Требуемая производительность набирается путем подбора
@@ -394,12 +394,12 @@ class TechnologiesWrapper extends Component {
                                     <iframe width="560" height="315"src="https://www.youtube.com/embed/ejVupHlQj5o" frameBorder="0" allowFullScreen=""></iframe>
                                 </div>
                                 <div className="unordered-list-header">
-                                    Напорная фильтрация WET-F
+                                    Напорная фильтрация <strong>WET-F</strong>
                                 </div>
                                 <div className="row">
                                     <div className="col-sm-9 col-xs-7 vcenter">
                                         <p className="paragraph-text blue">
-                                            Серия механических фильтров WET-F – это напорные
+                                            Серия механических фильтров <strong>WET-F</strong> – это напорные
                                             механические фильтры, в которых в качестве фильтрующей
                                             загрузки используется кварцевый песок и/или антрацит.
                                         </p>
@@ -457,9 +457,9 @@ class TechnologiesWrapper extends Component {
                                 </ul>
                             </div>
                             <div id="ferum-remove" className="technologies-section">
-                                <h2 className="tech_category_title">Удаление железа/марганца на фильтрах WET- FE</h2>
+                                <h2 className="tech_category_title">Удаление железа/марганца на фильтрах <strong>WET- FE</strong></h2>
                                 <p className="paragraph-text blue">
-                                    Технология удаления изводыжелеза/ марганца сводится к их
+                                    Технология удаления из воды железа/ марганца сводится к их
                                     окислению (воздухом, гипохлоритом и пр.) и последующей
                                     фильтрацией на напорных механических фильтрах.
                                     Для ускорения процесса окисления в загрузку фильтра добавляют
@@ -553,7 +553,7 @@ class TechnologiesWrapper extends Component {
                                 </ul>
                             </div>
                             <div id="sorbtion" className="technologies-section">
-                                <h2 className="tech_category_title">Сорбция - фильтры с активированным углем WET-AC</h2>
+                                <h2 className="tech_category_title">Сорбция - фильтры с активированным углем <strong>WET-AC</strong></h2>
                                 <div className="row">
                                     <div className="col-sm-3 col-xs-5 vcenter">
                                         <img src={path.join(__dirname,'./imgs/technologies/sorbtion_1.png')} className="img-responsive" />
@@ -622,7 +622,7 @@ class TechnologiesWrapper extends Component {
                                 <div className="row">
                                     <div className="col-sm-9 col-xs-7 vcenter">
                                         <p className="paragraph-text blue">
-                                            Серия фильтров WET-NA предназначена для умягчения воды
+                                            Серия фильтров <strong>WET-NA</strong> предназначена для умягчения воды
                                             – удаления ионов кальция и магния путем ионного обмена.
                                         </p>
                                         <p className="paragraph-text blue">
@@ -673,7 +673,7 @@ class TechnologiesWrapper extends Component {
                                         продукты питания, окрашивание тканей и пр.)
                                     </li>
                                     <li>
-                                        для экономии моющих средств (бутыломойки, системы CIP)
+                                        для экономии моющих средств (бутыломойки, системы <strong>CIP</strong>)
                                     </li>
                                 </ul>
                                 <div className="unordered-list-header">
@@ -714,7 +714,7 @@ class TechnologiesWrapper extends Component {
                                             отдув углекислоты на дегазаторе.
                                         </p>
                                         <p className="paragraph-text blue">
-                                            Для этого мы предлагаем напорные фильтры серии WET-H,
+                                            Для этого мы предлагаем напорные фильтры серии <strong>WET-H</strong>,
                                             засыпанные высококачественным слабокислотным
                                             катионитом.
                                         </p>
@@ -828,7 +828,7 @@ class TechnologiesWrapper extends Component {
                                 <div className="row">
                                     <div className="col-sm-9 col-xs-7 vcenter">
                                         <p className="paragraph-text blue">
-                                            Системы WET-RO позволяют получить обессоленную
+                                            Системы <strong>WET-RO</strong> позволяют получить обессоленную
                                             воду с помощью мембранной технологии обратного. осмоса.
                                         </p>
                                         <p className="paragraph-text blue">
@@ -994,7 +994,7 @@ class TechnologiesWrapper extends Component {
                                 <p className="paragraph-text blue">
                                     Исходя из вашего технического задания, анализа воды, требований к очищенной воде,
                                     наличия места и прочих условий, наши инженера предложат оптимальную схему
-                                    водоподготовки на базе технологий WET.
+                                    водоподготовки на базе технологий <strong>WET</strong>.
                                 </p>
                                 <div className="row">
                                     <div className="col-sm-9 col-xs-7 vcenter">

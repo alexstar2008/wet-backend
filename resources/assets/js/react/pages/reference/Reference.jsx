@@ -65,7 +65,9 @@ class Reference extends Component {
         this.setState({ table: template });
     }
 
+
     render() {
+        const experience = new Date().getFullYear() - 2004;
         return (
             <div className="body-test">
                 <div className="references container">
@@ -75,7 +77,7 @@ class Reference extends Component {
                     <div className="row">
                         <div className="col-xs-12">
                             <p className="paragraph-text blue">
-                                За последние 12 лет работы нашими специалистами установлено и успешно введено в
+                                За последние {experience} лет работы нашими специалистами установлено и успешно введено в
                                 эксплуатацию оборудование:
                             </p>
                         </div>

@@ -11,6 +11,7 @@ import './we-offer.css';
 class WeOffer extends  Component{
 
     render(){
+        const experience = new Date().getFullYear() - 2004;
         const services = [
             {title:'Инжиниринг',img:'./imgs/icons/Engineering.png',list:[
                 ' подбор и проектирование оборудования под индивидуальный запрос клиента;',
@@ -119,7 +120,7 @@ class WeOffer extends  Component{
                     <div className="row">
                         <div className="col-xs-12 col-md-8 col-md-push-2">
                             <p className="paragraph-text blue">
-                                Специалисты ООО «Вотер Эко Тех» имеют двенадцатилетний успешный  опыт решения
+                                Специалисты ООО «Вотер Эко Тех» имеют {experience}-летний успешный  опыт решения
                                 задач водоподготовки в самых разных отраслях и сферах деятельности: для
                                 молокоперерабатывающих заводов, сахарных заводов, табачных фабрик, тепличных хозяйств,
                                 деревообрабатывающей промышленности и пр.

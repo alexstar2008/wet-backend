@@ -1,4 +1,12 @@
 /* Navigation */
+@media screen and (min-width:768px) and (max-width:1205px){
+  header + div {
+    margin-top: 75px;
+  }
+  header .phone-list-item-content{
+    font-size: 0.8em;
+  }
+}
 .navbar-toggle{
     border: 1px solid #fff;
   }
